@@ -1,0 +1,331 @@
+<title>NIMCET PYQ Heat Map — 2008–2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #0e1014;
+    --panel: #161a21;
+    --panel-2: #1c222b;
+    --line: #262d38;
+    --ink: #e8ecf2;
+    --ink-soft: #a3adbb;
+    --ink-faint: #6b7686;
+    --accent: #ffae3b;
+    --accent-ink: #1a1206;
+    --math: #ff8a3d;
+    --reasoning: #4fd1c5;
+    --english: #a78bfa;
+    --computer: #f6c453;
+    --unknown: #454e5c;
+    --t1: #ff4d4d;
+    --t2: #ffae3b;
+    --t3: #6b8cc4;
+    --t4: #5a6472;
+    --shadow: 0 1px 0 rgba(255,255,255,.03), 0 12px 32px -12px rgba(0,0,0,.6);
+    --font-display: "Helvetica Neue", "Arial Narrow", system-ui, sans-serif;
+    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f4f1ea; --panel: #fffdf9; --panel-2: #f0ece2; --line: #e0d9cb;
+      --ink: #1d2733; --ink-soft: #4c5666; --ink-faint: #8a93a1;
+      --accent: #d8791a; --accent-ink: #fff;
+      --math: #e06a1e; --reasoning: #0d9488; --english: #7c5cf0; --computer: #c99312;
+      --unknown: #c3bcae; --t1: #dc2626; --t2: #d8791a; --t3: #3f6bb0; --t4: #9aa1ac;
+      --shadow: 0 1px 0 rgba(255,255,255,.6), 0 14px 30px -16px rgba(60,50,30,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e1014; --panel: #161a21; --panel-2: #1c222b; --line: #262d38;
+    --ink: #e8ecf2; --ink-soft: #a3adbb; --ink-faint: #6b7686;
+    --accent: #ffae3b; --accent-ink: #1a1206;
+    --math: #ff8a3d; --reasoning: #4fd1c5; --english: #a78bfa; --computer: #f6c453;
+    --unknown: #454e5c; --t1: #ff4d4d; --t2: #ffae3b; --t3: #6b8cc4; --t4: #5a6472;
+    --shadow: 0 1px 0 rgba(255,255,255,.03), 0 12px 32px -12px rgba(0,0,0,.6);
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f1ea; --panel: #fffdf9; --panel-2: #f0ece2; --line: #e0d9cb;
+    --ink: #1d2733; --ink-soft: #4c5666; --ink-faint: #8a93a1;
+    --accent: #d8791a; --accent-ink: #fff;
+    --math: #e06a1e; --reasoning: #0d9488; --english: #7c5cf0; --computer: #c99312;
+    --unknown: #c3bcae; --t1: #dc2626; --t2: #d8791a; --t3: #3f6bb0; --t4: #9aa1ac;
+    --shadow: 0 1px 0 rgba(255,255,255,.6), 0 14px 30px -16px rgba(60,50,30,.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--font-body); line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 22px 80px; }
+
+  /* ---- header ---- */
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+  .eyebrow {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--font-display); font-weight: 800; letter-spacing: -.02em;
+    font-size: clamp(38px, 7vw, 68px); line-height: .95; margin: 0;
+    text-wrap: balance;
+  }
+  h1 .hot { color: var(--math); }
+  .lede { color: var(--ink-soft); max-width: 46ch; margin: 16px 0 0; font-size: 16px; }
+  .toggle {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: .05em;
+    background: var(--panel); color: var(--ink-soft); border: 1px solid var(--line);
+    border-radius: 999px; padding: 8px 14px; cursor: pointer; white-space: nowrap;
+  }
+  .toggle:hover { color: var(--ink); border-color: var(--ink-faint); }
+  .toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---- kpi row ---- */
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 36px 0 14px; }
+  .kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 16px 14px; box-shadow: var(--shadow); }
+  .kpi .n { font-family: var(--font-mono); font-size: clamp(24px, 4vw, 34px); font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .kpi .l { font-size: 12px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .08em; margin-top: 4px; }
+  .kpi.accent { border-color: color-mix(in srgb, var(--math) 45%, var(--line)); }
+  .kpi.accent .n { color: var(--math); }
+
+  /* ---- section split bar ---- */
+  .block { margin-top: 34px; }
+  .block h2 { font-family: var(--font-display); font-weight: 800; font-size: 15px; letter-spacing: .02em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 14px; }
+  .split { display: flex; height: 40px; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+  .split > span { display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: #0e1014; transition: flex-grow .9s cubic-bezier(.2,.8,.2,1); overflow: hidden; white-space: nowrap; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; font-size: 13px; color: var(--ink-soft); }
+  .legend b { color: var(--ink); font-variant-numeric: tabular-nums; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 7px; vertical-align: baseline; }
+
+  /* ---- focus callout ---- */
+  .focus {
+    margin-top: 34px; background: linear-gradient(135deg, color-mix(in srgb, var(--math) 16%, var(--panel)), var(--panel));
+    border: 1px solid color-mix(in srgb, var(--math) 35%, var(--line)); border-radius: 16px; padding: 22px 24px;
+    display: flex; gap: 22px; align-items: center; flex-wrap: wrap; box-shadow: var(--shadow);
+  }
+  .focus .big { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px,5vw,44px); color: var(--math); line-height: 1; font-variant-numeric: tabular-nums; }
+  .focus p { margin: 0; color: var(--ink-soft); font-size: 15px; max-width: 52ch; }
+  .focus p b { color: var(--ink); }
+
+  /* ---- filters ---- */
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 30px 0 16px; }
+  .filters button {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em; text-transform: uppercase;
+    background: var(--panel); color: var(--ink-soft); border: 1px solid var(--line);
+    border-radius: 999px; padding: 7px 14px; cursor: pointer; transition: all .15s;
+  }
+  .filters button:hover { color: var(--ink); }
+  .filters button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .filters button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---- ranking rows ---- */
+  .rows { display: flex; flex-direction: column; gap: 2px; }
+  .row {
+    display: grid; grid-template-columns: 30px minmax(0,1fr) 74px 88px; gap: 14px; align-items: center;
+    padding: 11px 12px; border-radius: 10px; transition: background .15s;
+  }
+  .row:hover { background: var(--panel); }
+  .row.hidden { display: none; }
+  .rank { font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint); text-align: right; font-variant-numeric: tabular-nums; }
+  .topic { min-width: 0; }
+  .topic .name { font-size: 14.5px; font-weight: 600; display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+  .chip { font-family: var(--font-mono); font-size: 10px; letter-spacing: .04em; padding: 2px 7px; border-radius: 5px; text-transform: uppercase; font-weight: 700; }
+  .tierchip { color: #0e1014; }
+  .bar-track { margin-top: 7px; height: 8px; background: var(--panel-2); border-radius: 999px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; width: 0; transition: width 1s cubic-bezier(.2,.8,.2,1); }
+  .spark { width: 74px; height: 30px; display: block; }
+  .avg { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  .avg .v { font-size: 18px; font-weight: 700; }
+  .avg .u { font-size: 10px; color: var(--ink-faint); display: block; letter-spacing: .05em; }
+
+  /* ---- tiers ---- */
+  .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+  .tier { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px; box-shadow: var(--shadow); }
+  .tier .head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .tier .band { width: 26px; height: 6px; border-radius: 3px; }
+  .tier h3 { font-family: var(--font-display); font-size: 14px; font-weight: 800; margin: 0; text-transform: uppercase; letter-spacing: .03em; }
+  .tier .sub { font-size: 11.5px; color: var(--ink-faint); margin: 0 0 12px; }
+  .tier ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+  .tier li { font-size: 13px; color: var(--ink-soft); display: flex; justify-content: space-between; gap: 8px; }
+  .tier li b { color: var(--ink); font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-weight: 600; }
+
+  footer { margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--ink-faint); font-size: 12.5px; }
+  footer code { font-family: var(--font-mono); color: var(--ink-soft); }
+
+  @media (max-width: 720px) {
+    .kpis { grid-template-columns: repeat(2,1fr); }
+    .tiers { grid-template-columns: 1fr 1fr; }
+    .row { grid-template-columns: 24px minmax(0,1fr) 70px; }
+    .spark { display: none; }
+  }
+  @media (max-width: 480px) { .tiers { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">NIMCET · Previous Year Questions · 2008–2026</p>
+      <h1>The <span class="hot">Heat</span> Map</h1>
+      <p class="lede">Every question from 19 papers, classified by topic. Bars run cool&nbsp;→&nbsp;hot by how often a topic actually shows up. Chase the heat.</p>
+    </div>
+    <button class="toggle" id="themeBtn" aria-label="Toggle theme">◐ theme</button>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi accent"><div class="n">2248</div><div class="l">Questions analyzed</div></div>
+    <div class="kpi"><div class="n">19</div><div class="l">Papers · 2008–26</div></div>
+    <div class="kpi"><div class="n">47<span style="font-size:.6em">%</span></div><div class="l">Is Mathematics</div></div>
+    <div class="kpi"><div class="n">37</div><div class="l">Distinct topics</div></div>
+  </div>
+
+  <div class="block">
+    <h2>What the paper is made of</h2>
+    <div class="split" id="split"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <div class="focus">
+    <div class="big">~24<span style="font-size:.45em;color:var(--ink-faint)"> Q/yr</span></div>
+    <p><b>Three focus areas carry the paper.</b> The 8 core Math topics (~40 Q/yr) plus <b>Logical Deduction</b> (10/yr) and <b>Number System &amp; Boolean</b> (7/yr). Your weak section is also the biggest — effort compounds where it matters most.</p>
+  </div>
+
+  <div class="block">
+    <h2>Topic heat ranking — avg questions / year</h2>
+    <div class="filters" id="filters"></div>
+    <div class="rows" id="rows"></div>
+  </div>
+
+  <div class="block">
+    <h2>Priority tiers</h2>
+    <div class="tiers" id="tiers"></div>
+  </div>
+
+  <footer>
+    Source: aspirestudy.in year-wise PYQ (2008–2026), 2248 questions LLM-classified into a fixed taxonomy · 4.3% unclassifiable (garbled math text) excluded from ranking · Generated 2026-07-15. Full report: <code>pyq-pattern-RESULT.md</code>.
+  </footer>
+</div>
+
+<script>
+const DATA = {"years":[2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"sections":{"Math":1060,"Reasoning":577,"English":297,"Computer":218,"Unknown":96},"total":2248,"topics":[{"s":"Reasoning","t":"Logical Deduction & Puzzles","tot":194,"avg":10.2,"yrs":19,"tier":2,"by":[19,19,13,10,6,15,8,15,8,9,5,10,9,6,10,7,13,5,7]},{"s":"Math","t":"Calculus","tot":146,"avg":7.7,"yrs":19,"tier":1,"by":[6,5,9,6,6,7,9,6,5,11,9,4,11,8,8,10,9,8,9]},{"s":"Math","t":"Trigonometry","tot":129,"avg":6.8,"yrs":19,"tier":1,"by":[4,6,4,8,3,8,7,8,5,9,8,5,10,8,10,5,4,9,8]},{"s":"Computer","t":"Number System & Boolean Logic","tot":129,"avg":6.8,"yrs":18,"tier":2,"by":[10,4,3,8,4,6,10,0,7,8,6,10,7,3,8,12,10,8,5]},{"s":"Math","t":"Algebra & Progressions","tot":128,"avg":6.7,"yrs":19,"tier":1,"by":[12,10,2,8,2,8,7,5,10,5,9,5,3,5,6,7,4,9,11]},{"s":"Math","t":"Coordinate & Conic Geometry","tot":113,"avg":5.9,"yrs":19,"tier":1,"by":[5,5,8,5,4,6,6,9,7,5,7,5,2,6,8,6,7,6,6]},{"s":"Math","t":"Arithmetic (speed-time-work, ratio, %, mixture)","tot":112,"avg":5.9,"yrs":18,"tier":1,"by":[9,6,4,7,2,2,5,2,4,3,7,9,14,0,2,12,7,6,11]},{"s":"Math","t":"Vectors & 3D Geometry","tot":99,"avg":5.2,"yrs":19,"tier":1,"by":[5,3,5,5,2,6,6,8,6,6,4,4,8,7,5,6,6,6,1]},{"s":"English","t":"Vocabulary (synonym/antonym)","tot":94,"avg":4.9,"yrs":18,"tier":2,"by":[4,5,5,8,5,2,7,0,7,5,6,8,6,7,8,3,4,2,2]},{"s":"Math","t":"Probability","tot":89,"avg":4.7,"yrs":19,"tier":1,"by":[6,6,3,3,4,7,4,4,6,6,4,5,2,4,3,5,7,6,4]},{"s":"Computer","t":"Hardware OS & General CS","tot":75,"avg":3.9,"yrs":16,"tier":3,"by":[4,6,7,1,2,3,0,0,2,2,2,0,3,6,2,8,8,9,10]},{"s":"Math","t":"Permutation & Combination","tot":69,"avg":3.6,"yrs":18,"tier":1,"by":[4,7,3,4,4,4,6,4,3,3,4,6,4,4,0,1,4,3,1]},{"s":"Reasoning","t":"Seating & Arrangement","tot":68,"avg":3.6,"yrs":16,"tier":2,"by":[2,0,2,1,1,7,12,3,14,9,0,3,2,0,1,2,3,3,3]},{"s":"English","t":"Fill in the Blanks","tot":64,"avg":3.4,"yrs":17,"tier":2,"by":[4,2,2,10,0,5,4,0,4,7,2,2,3,5,4,4,2,2,2]},{"s":"Math","t":"Sets Relations & Functions","tot":62,"avg":3.3,"yrs":19,"tier":3,"by":[2,4,3,3,1,1,1,2,4,1,5,2,4,3,5,6,5,3,7]},{"s":"Reasoning","t":"Series & Sequence","tot":61,"avg":3.2,"yrs":18,"tier":2,"by":[3,3,6,2,0,2,2,6,1,6,3,3,2,6,4,3,1,6,2]},{"s":"English","t":"Grammar & Error Spotting","tot":53,"avg":2.8,"yrs":16,"tier":2,"by":[1,3,2,3,0,7,4,0,3,1,6,3,3,0,7,1,2,4,3]},{"s":"Reasoning","t":"Coding-Decoding","tot":51,"avg":2.7,"yrs":16,"tier":2,"by":[0,2,9,1,0,1,1,3,3,1,0,3,3,6,4,8,2,2,2]},{"s":"Reasoning","t":"Blood Relations","tot":50,"avg":2.6,"yrs":17,"tier":2,"by":[5,0,0,5,2,4,5,4,4,4,1,1,1,5,2,1,1,2,3]},{"s":"English","t":"Reading Comprehension","tot":48,"avg":2.5,"yrs":15,"tier":3,"by":[3,2,2,4,0,0,2,0,4,5,4,3,4,8,2,2,1,0,2]},{"s":"Reasoning","t":"Syllogism","tot":43,"avg":2.3,"yrs":14,"tier":3,"by":[0,4,2,5,0,4,0,2,1,0,5,2,2,0,3,2,3,5,3]},{"s":"Math","t":"Statistics","tot":39,"avg":2.1,"yrs":16,"tier":3,"by":[0,0,2,3,0,1,2,1,2,1,1,3,3,3,3,3,4,3,4]},{"s":"Math","t":"Matrices & Determinants","tot":33,"avg":1.7,"yrs":17,"tier":3,"by":[0,2,2,1,0,2,2,3,2,1,3,1,3,2,1,1,2,3,2]},{"s":"Math","t":"Number Theory (HCF/LCM/divisibility)","tot":28,"avg":1.5,"yrs":13,"tier":3,"by":[5,6,2,1,0,1,0,1,0,1,3,3,0,1,1,0,2,1,0]},{"s":"English","t":"Idioms & Phrases","tot":28,"avg":1.5,"yrs":15,"tier":3,"by":[1,1,1,0,1,4,0,0,2,2,2,4,4,0,1,1,1,2,1]},{"s":"Reasoning","t":"Clocks & Calendars","tot":27,"avg":1.4,"yrs":16,"tier":3,"by":[2,0,1,2,0,3,1,2,3,1,2,1,1,2,2,0,2,1,1]},{"s":"Reasoning","t":"Data Interpretation","tot":27,"avg":1.4,"yrs":7,"tier":3,"by":[0,5,6,3,0,0,0,0,0,0,0,0,0,7,3,1,0,0,2]},{"s":"Reasoning","t":"Analogy","tot":17,"avg":0.9,"yrs":8,"tier":3,"by":[0,1,3,1,0,0,1,0,0,0,0,0,0,4,3,1,3,0,0]},{"s":"Reasoning","t":"Direction Sense","tot":17,"avg":0.9,"yrs":10,"tier":3,"by":[0,0,3,0,0,1,6,1,0,1,1,0,1,0,0,1,0,1,1]},{"s":"Reasoning","t":"Odd-one-out & Classification","tot":12,"avg":0.6,"yrs":7,"tier":3,"by":[0,0,3,0,0,0,0,0,1,0,1,0,0,3,1,0,2,1,0]},{"s":"Reasoning","t":"Cubes Dice & Visual","tot":10,"avg":0.5,"yrs":7,"tier":4,"by":[0,1,0,1,1,0,0,0,0,3,0,0,1,0,2,0,0,1,0]},{"s":"Computer","t":"Networking & Internet","tot":8,"avg":0.4,"yrs":4,"tier":4,"by":[0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,5]},{"s":"Math","t":"Complex Numbers","tot":7,"avg":0.4,"yrs":5,"tier":4,"by":[1,0,2,0,0,0,0,0,0,1,0,2,0,0,0,1,0,0,0]},{"s":"English","t":"Sentence Arrangement","tot":7,"avg":0.4,"yrs":5,"tier":4,"by":[0,2,1,0,0,1,2,0,0,0,1,0,0,0,0,0,0,0,0]},{"s":"Computer","t":"Programming DS & Algorithms","tot":6,"avg":0.3,"yrs":5,"tier":4,"by":[1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,2,1]},{"s":"Math","t":"Differential Equations","tot":6,"avg":0.3,"yrs":5,"tier":4,"by":[0,0,0,0,0,0,0,1,0,2,1,1,0,0,1,0,0,0,0]},{"s":"English","t":"Analogy","tot":3,"avg":0.2,"yrs":2,"tier":4,"by":[2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0]}]};
+
+const SEC_COLOR = { Math:'var(--math)', Reasoning:'var(--reasoning)', English:'var(--english)', Computer:'var(--computer)', Unknown:'var(--unknown)' };
+const TIER_META = {
+  1: { c:'var(--t1)', name:'Master first', sub:'High-freq · your weak section' },
+  2: { c:'var(--t2)', name:'Big scorers', sub:'Fast ROI outside Math' },
+  3: { c:'var(--t3)', name:'Cover next', sub:"Solid, don't obsess" },
+  4: { c:'var(--t4)', name:'Skim last', sub:'Rare · ≤0.5 / yr' },
+};
+const MAXAVG = Math.max(...DATA.topics.map(t => t.avg));
+
+// heat: cool blue (low) -> hot red (high)
+function heat(avg) {
+  const t = Math.min(avg / 10, 1);
+  const hue = 205 - t * 191;          // 205 blue -> 14 red
+  const sat = 58 + t * 32;
+  const lig = 52 + (1 - t) * 6;
+  return `hsl(${hue} ${sat}% ${lig}%)`;
+}
+
+/* ---- section split ---- */
+(function(){
+  const order = ['Math','Reasoning','English','Computer','Unknown'];
+  const split = document.getElementById('split'), legend = document.getElementById('legend');
+  order.forEach(s => {
+    const v = DATA.sections[s]; if (!v) return;
+    const el = document.createElement('span');
+    el.style.background = SEC_COLOR[s];
+    el.style.flexGrow = '0';
+    el.dataset.grow = v;
+    const pct = (100*v/DATA.total).toFixed(1);
+    if (v/DATA.total > 0.08) el.textContent = s === 'Math' ? `Math ${pct}%` : `${pct}%`;
+    split.appendChild(el);
+    const li = document.createElement('span');
+    li.innerHTML = `<span class="dot" style="background:${SEC_COLOR[s]}"></span>${s} <b>${v}</b>`;
+    legend.appendChild(li);
+  });
+  requestAnimationFrame(() => split.querySelectorAll('span').forEach(el => el.style.flexGrow = el.dataset.grow));
+})();
+
+/* ---- sparkline ---- */
+function sparkline(by, color) {
+  const w = 74, h = 30, pad = 3, n = by.length, mx = Math.max(...by, 1);
+  const x = i => pad + i * (w - 2*pad) / (n - 1);
+  const y = v => h - pad - v/mx * (h - 2*pad);
+  let d = ''; by.forEach((v,i) => d += (i?'L':'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1) + ' ');
+  const lastX = x(n-1).toFixed(1), lastY = y(by[n-1]).toFixed(1);
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" fill="none" aria-hidden="true">
+    <polyline points="${by.map((v,i)=>x(i).toFixed(1)+','+y(v).toFixed(1)).join(' ')}" stroke="${color}" stroke-width="1.5" stroke-linejoin="round" opacity=".85"/>
+    <circle cx="${lastX}" cy="${lastY}" r="2.4" fill="${color}"/>
+  </svg>`;
+}
+
+/* ---- ranking rows ---- */
+(function(){
+  const rows = document.getElementById('rows');
+  DATA.topics.forEach((t, i) => {
+    const c = heat(t.avg);
+    const row = document.createElement('div');
+    row.className = 'row'; row.dataset.section = t.s;
+    row.innerHTML = `
+      <div class="rank">${i+1}</div>
+      <div class="topic">
+        <div class="name">${t.t}
+          <span class="chip" style="background:color-mix(in srgb, ${SEC_COLOR[t.s]} 22%, transparent); color:${SEC_COLOR[t.s]}">${t.s}</span>
+          <span class="chip tierchip" style="background:${TIER_META[t.tier].c}">T${t.tier}</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-w="${(100*t.avg/MAXAVG).toFixed(1)}" style="background:${c}"></div></div>
+      </div>
+      ${sparkline(t.by, c)}
+      <div class="avg"><span class="v">${t.avg.toFixed(1)}</span><span class="u">/ yr · ${t.tot} tot</span></div>`;
+    rows.appendChild(row);
+  });
+  requestAnimationFrame(() => setTimeout(() => rows.querySelectorAll('.bar-fill').forEach((b,i) => {
+    setTimeout(() => b.style.width = b.dataset.w + '%', i * 22);
+  }), 60));
+})();
+
+/* ---- filters ---- */
+(function(){
+  const box = document.getElementById('filters');
+  const secs = ['All','Math','Reasoning','English','Computer'];
+  secs.forEach((s,i) => {
+    const b = document.createElement('button');
+    b.textContent = s; b.setAttribute('aria-pressed', i===0);
+    b.onclick = () => {
+      box.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed','false'));
+      b.setAttribute('aria-pressed','true');
+      document.querySelectorAll('.row').forEach(r => {
+        r.classList.toggle('hidden', s !== 'All' && r.dataset.section !== s);
+      });
+    };
+    box.appendChild(b);
+  });
+})();
+
+/* ---- tiers ---- */
+(function(){
+  const box = document.getElementById('tiers');
+  [1,2,3,4].forEach(tier => {
+    const items = DATA.topics.filter(t => t.tier === tier).sort((a,b)=>b.avg-a.avg);
+    const m = TIER_META[tier];
+    const el = document.createElement('div');
+    el.className = 'tier';
+    el.innerHTML = `<div class="head"><span class="band" style="background:${m.c}"></span><h3>Tier ${tier}</h3></div>
+      <p class="sub">${m.name} — ${m.sub}</p>
+      <ul>${items.map(t => `<li><span>${t.t.replace(/ \(.*$/,'')}</span><b>${t.avg.toFixed(1)}</b></li>`).join('')}</ul>`;
+    box.appendChild(el);
+  });
+})();
+
+/* ---- theme toggle ---- */
+(function(){
+  const btn = document.getElementById('themeBtn'), root = document.documentElement;
+  btn.onclick = () => {
+    const cur = root.getAttribute('data-theme')
+      || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    root.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+  };
+})();
+</script>
