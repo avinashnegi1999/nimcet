@@ -100,4 +100,22 @@ Source papers: aspirestudy.in year-wise PYQ archive. Analysis generated 2026-07-
 
 ---
 
-*Personal prep repo — goal: NIMCET 2027, NIT MCA seat.*
+## Contributing
+
+Found a better video, a broken link, or a resource worth adding? **PRs welcome.**
+
+- Add/fix video links inside `01-learn-hindi/`, `02-learn-english/`, or `03-practice-pyq/` READMEs.
+- Keep the format: `[title](link) · channel · views · length`.
+- Corrections to the PYQ classification (`data/`) are especially valued.
+
+Not on GitHub? Open an [issue](https://github.com/avinashnegi1999/nimcet/issues) with the link.
+
+## License
+
+[MIT](LICENSE) — free to use, fork, and share. Built for every NIMCET aspirant.
+
+⭐ **Star the repo** if it helps — it helps others find it too.
+
+---
+
+*Free, open prep resource for NIMCET / NIT MCA aspirants. Good luck — go get that seat.*
