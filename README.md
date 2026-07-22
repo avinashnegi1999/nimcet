@@ -70,6 +70,78 @@ The single most important purchase for NIMCET prep: **all NIMCET PYQs with full 
 
 Videos build the concept; this book is where you **grind PYQs and check written solutions**. Buy early.
 
+#### 📑 Which chapters to read → [`04-arihant-book/`](04-arihant-book/README.md)
+
+Every Arihant chapter mapped to the priority tiers, with page numbers. Tier 1 first, Tier 2 next, skip the rest until the last week.
+
+**🔴 Tier 1 — Section I Mathematics (pp 1–792)**
+
+| Ch | Topic | Pages |
+|----|-------|-------|
+| 2 | Inequality | 13–23 |
+| 3 | Surds, Indices, Logarithms | 24–33 |
+| 5 | Sequences & Series | 52–82 |
+| 6 | Theory of Quadratic Equations | 83–104 |
+| 7 | Permutations & Combinations | 105–126 |
+| 8 | Binomial Theorem | 127–145 |
+| 9 | Matrices & Determinants | 146–171 |
+| 11 | Limits, Continuity & Differentiability | 205–237 |
+| 12 | Differentiation | 238–261 |
+| 13 | Application of Derivatives | 262–295 |
+| 14 | Indefinite Integral | 296–333 |
+| 15 | Definite Integral | 334–362 |
+| 16 | Area Under Curve | 363–376 |
+| 18 | Cartesian System, Straight Line | 401–443 |
+| 19 | Circle | 444–475 |
+| 20 | Parabola | 476–495 |
+| 21 | Ellipse | 496–514 |
+| 22 | Hyperbola | 515–532 |
+| 23 | Trigonometric Ratios & Identities | 533–560 |
+| 24 | Trigonometric Equations | 561–574 |
+| 25 | Properties & Solution of Triangles | 575–597 |
+| 26 | Inverse Trigonometric Functions | 598–614 |
+| 28 | Vectors | 628–651 |
+| 29 | Three Dimensional Geometry | 652–672 |
+| 30 | Probability & Probability Distribution | 673–703 |
+
+**🔴 Tier 1 — Section IV Quantitative / Arithmetic (pp 1–159)**
+
+| Ch | Topic | Pages |
+|----|-------|-------|
+| 1 | Number System | 3–14 |
+| 2 | HCF & LCM | 15–19 |
+| 3 | Percentage | 20–31 |
+| 4 | Profit & Loss | 32–44 |
+| 5 | Average | 45–54 |
+| 6 | Time, Speed & Distance | 55–67 |
+| 7 | Simple & Compound Interest | 68–79 |
+| 8 | Time & Work | 80–91 |
+| 9 | Ratio & Proportion | 92–102 |
+| 10 | Mixture or Alligations | 103–109 |
+
+**🟡 Tier 2 — Section II Analytical & Logical (pp 1–168)**
+
+| Ch | Topic | Pages |
+|----|-------|-------|
+| 4 | Series Test | 48–59 |
+| 5 | Coding-Decoding Test | 60–66 |
+| 6 | Blood Relation Test | 67–70 |
+| 8 | Sitting Arrangement Test | 74–85 |
+| 10 | Mathematical Operations & Reasoning | 91–96 |
+| 12 | Decision Making Test | 111–118 |
+| 13 | Data Sufficiency Test | 119–121 |
+| 16 | Input & Output Test | 128–134 |
+
+**🟡 Tier 2 — Section III Computer Awareness (pp 1–84)**
+
+| Ch | Topic | Pages |
+|----|-------|-------|
+| 1 | Computer Fundamentals & PC Applications | 3–17 |
+| 6 | 'C' Language | 44–76 |
+| 7 | Data Structures | 77–84 |
+
+**🟡 Tier 2 — Section V General English (pp 1–28):** Solved Paper 2024 (1–18) · Solved Paper 2025 (1–18)
+
 ---
 
 ## Repo layout
@@ -89,7 +161,8 @@ nimcet/
 ├── resources/              # syllabus + formula books + reference PYQs
 ├── 01-learn-hindi/         # YouTube guide — learn from zero (Hindi, NCERT)
 ├── 02-learn-english/       # YouTube guide — learn from zero (English)
-└── 03-practice-pyq/        # YouTube guide — NIMCET PYQ practice
+├── 03-practice-pyq/        # YouTube guide — NIMCET PYQ practice
+└── 04-arihant-book/        # Arihant chapters mapped to tiers, with page numbers
 ```
 
 ## Method
