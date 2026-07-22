@@ -49,6 +49,29 @@ These are guaranteed to reappear. Master these before anything else.
 
 ---
 
+## 🎥 Study resources (curated YouTube, per Tier 1 & 2 topic)
+
+Most-viewed videos per priority topic, with one-click no-login playlist links inside each.
+
+| Folder | Use | Language |
+|--------|-----|----------|
+| [`01-learn-hindi/`](01-learn-hindi/README.md) | **Learn from zero** — NCERT/Indian syllabus | Hindi |
+| [`02-learn-english/`](02-learn-english/README.md) | **Learn from zero** — freeCodeCamp / Khan / OCT | English |
+| [`03-practice-pyq/`](03-practice-pyq/README.md) | **Exam-pattern practice** — NIMCET PYQ solving | Hindi/Eng |
+
+Flow: **learn** a topic (folder 01 or 02) → **practice** its PYQ pattern (folder 03).
+
+### 📕 Must-buy book — Arihant MCA Entrance combo
+
+The single most important purchase for NIMCET prep: **all NIMCET PYQs with full written solutions**, which no video gives you.
+
+> **[Combo — ACE The MCA Entrance Exam 2026 + Solved Papers (+ free One Word Substitution)](https://arihantbooks.com/products/combo-of-ace-the-mca-entrance-exam-2026-mca-entrance-exam-2026-solved-paper-with-free-one-word-substitution-english-medium)**
+> Arihant · English medium · ~₹1263 (MRP ₹1685) · Study guide with 3500+ practice Qs + year-wise solved papers.
+
+Videos build the concept; this book is where you **grind PYQs and check written solutions**. Buy early.
+
+---
+
 ## Repo layout
 
 ```
@@ -63,7 +86,10 @@ nimcet/
 ├── data/
 │   └── pyq-analysis-result.json   # raw classified counts (per-topic, per-year)
 ├── papers/                 # the 19 source papers (nimcet-2008 … 2026)
-└── resources/              # syllabus + formula books + reference PYQs
+├── resources/              # syllabus + formula books + reference PYQs
+├── 01-learn-hindi/         # YouTube guide — learn from zero (Hindi, NCERT)
+├── 02-learn-english/       # YouTube guide — learn from zero (English)
+└── 03-practice-pyq/        # YouTube guide — NIMCET PYQ practice
 ```
 
 ## Method
