@@ -161,19 +161,36 @@
   }
   @media (max-width: 480px) { .tiers { grid-template-columns: 1fr; } }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  /* ---- top repo banner ---- */
+  .repo-banner {
+    display: flex; align-items: center; justify-content: center; gap: 10px 16px; flex-wrap: wrap;
+    text-decoration: none; margin-bottom: 26px; padding: 13px 20px; border-radius: 12px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 22%, var(--panel)), var(--panel));
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+    box-shadow: var(--shadow); color: var(--ink); font-size: 14.5px; text-align: center;
+    transition: border-color .15s, transform .15s;
+  }
+  .repo-banner:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .repo-banner b { color: var(--accent); }
+  .repo-banner .cta {
+    font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; letter-spacing: .03em;
+    background: var(--accent); color: var(--accent-ink); padding: 6px 13px; border-radius: 999px; white-space: nowrap;
+  }
 </style>
 
 <div class="wrap">
+  <a class="repo-banner" href="https://github.com/avinashnegi1999/nimcet" target="_blank" rel="noopener">
+    <span>⭐ <b>Free &amp; open-source</b> — full analysis, YouTube study guides (Hindi &amp; English) &amp; PYQ resources</span>
+    <span class="cta">View on GitHub →</span>
+  </a>
   <header>
     <div>
       <p class="eyebrow">NIMCET · Previous Year Questions · 2008–2026</p>
       <h1>The <span class="hot">Heat</span> Map</h1>
       <p class="lede">Every question from 19 papers, classified by topic. Bars run cool&nbsp;→&nbsp;hot by how often a topic actually shows up. Chase the heat.</p>
     </div>
-    <div style="display:flex; gap:8px; flex-wrap:wrap;">
-      <a class="toggle" href="https://github.com/avinashnegi1999/nimcet" target="_blank" rel="noopener" style="text-decoration:none;">★ GitHub repo</a>
-      <button class="toggle" id="themeBtn" aria-label="Toggle theme">◐ theme</button>
-    </div>
+    <button class="toggle" id="themeBtn" aria-label="Toggle theme">◐ theme</button>
   </header>
 
   <div class="kpis">
