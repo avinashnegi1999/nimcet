@@ -7,8 +7,10 @@ Data-driven breakdown of **19 years of NIMCET question papers** — every questi
 ### 📊 [→ Open the live dashboard](https://avinashnegi1999.github.io/nimcet/)
 Interactive heat-map + topic ranking + year trends. Works on any device, anytime.
 
-### 🔮 [→ NIMCET 2027 Forecast — what the next paper will most likely ask](https://claude.ai/code/artifact/10f48734-667d-4d7d-a573-a7085fff346a)
+### 🔮 [→ NIMCET 2027 Forecast — what the next paper will most likely ask](https://avinashnegi1999.github.io/nimcet/forecast.html)
 Nineteen papers parsed, every topic trend significance-tested, eleven forecasting methods back-tested against the real papers. Shows the predicted 2027 topic distribution to **±1.4 questions**, the 19-year heat-map, and the 300 recycled questions that reveal which past papers NIMCET reuses — and when.
+
+<sub>Served from this repo ([`forecast.html`](forecast.html)) — one self-contained file, no external dependencies, works offline. A [mirror](https://claude.ai/code/artifact/10f48734-667d-4d7d-a573-a7085fff346a) also exists but requires a Claude login.</sub>
 
 ---
 

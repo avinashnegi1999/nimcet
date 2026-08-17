@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Statistical forecast of the NIMCET 2027 paper, built from all 19 past papers (2008-2026) and back-tested.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128208;</text></svg>">
+<style>*{margin:0;padding:0;box-sizing:border-box}</style>
+<title>NIMCET 2027 Forecast</title>
+<style>
+/* ---------- tokens: OMR sheet palette — graph-paper ground, bubble ink, registration red ---------- */
+:root{
+  --paper:#F3F4F0; --surface:#FBFBF9; --sunk:#EAECE6;
+  --ink:#191D21; --pencil:#616C77; --faint:#8A939C;
+  --grid:#D6DAD1; --rule:#C3C9BE;
+  --bubble:#17385F; --bubble-soft:#5C7FAE; --bubble-wash:#DDE5EF;
+  --reg:#B5262C; --reg-wash:#F3DEDE;
+  --good:#2F6B4F; --warn:#9A6B18;
+  --h0:#F0F1EC; --h1:#DCE3EC; --h2:#B4C6DC; --h3:#7E9CC3; --h4:#4A72A3; --h5:#1F4272;
+  --shadow:0 1px 2px rgba(25,29,33,.06),0 8px 24px -12px rgba(25,29,33,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#111417; --surface:#181C21; --sunk:#1F242A;
+    --ink:#E7E9E3; --pencil:#98A2AC; --faint:#6E7882;
+    --grid:#272D34; --rule:#333A42;
+    --bubble:#7FA6D8; --bubble-soft:#4E6E9B; --bubble-wash:#1B2735;
+    --reg:#E0706E; --reg-wash:#33201F;
+    --good:#6FB894; --warn:#D2A24C;
+    --h0:#171B1F; --h1:#1D2833; --h2:#263A4E; --h3:#345470; --h4:#47709B; --h5:#6E9BD0;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#111417; --surface:#181C21; --sunk:#1F242A;
+  --ink:#E7E9E3; --pencil:#98A2AC; --faint:#6E7882;
+  --grid:#272D34; --rule:#333A42;
+  --bubble:#7FA6D8; --bubble-soft:#4E6E9B; --bubble-wash:#1B2735;
+  --reg:#E0706E; --reg-wash:#33201F;
+  --good:#6FB894; --warn:#D2A24C;
+  --h0:#171B1F; --h1:#1D2833; --h2:#263A4E; --h3:#345470; --h4:#47709B; --h5:#6E9BD0;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px; line-height:1.6;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:28px 28px; background-position:-1px -1px;
+}
+.wrap{max-width:1120px; margin:0 auto; padding:0 24px 96px}
+.serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+.mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+header.mast{padding:64px 0 40px; border-bottom:2px solid var(--ink)}
+.eyebrow{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--reg); font-weight:650}
+h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+   font-size:clamp(38px,6.2vw,68px); line-height:1.02; margin:14px 0 0; letter-spacing:-.02em; text-wrap:balance; font-weight:600}
+.dek{max-width:62ch; color:var(--pencil); margin:18px 0 0; font-size:17px}
+.provenance{display:flex; flex-wrap:wrap; gap:8px 28px; margin-top:26px; font-size:13px; color:var(--faint)}
+.provenance b{color:var(--ink); font-weight:600}
+
+section{padding-top:56px}
+h2{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+   font-size:29px; margin:0 0 6px; letter-spacing:-.01em; font-weight:600; text-wrap:balance}
+.sub{color:var(--pencil); margin:0 0 22px; max-width:70ch; font-size:15px}
+h3{font-size:14px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); margin:32px 0 12px; font-weight:650}
+
+/* ---------- section split cards ---------- */
+.splits{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px}
+.split{background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:18px 18px 16px; box-shadow:var(--shadow)}
+.split .name{font-size:13px; color:var(--pencil); font-weight:600}
+.split .q{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-variant-numeric:tabular-nums;
+  font-size:44px; line-height:1; margin:10px 0 4px; color:var(--bubble); font-weight:600}
+.split .meta{font-size:12px; color:var(--faint)}
+.split.changed{border-color:var(--reg)}
+.split.changed .q{color:var(--reg)}
+.chg{display:inline-block; margin-top:8px; font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+  background:var(--reg-wash); color:var(--reg); padding:2px 7px; border-radius:2px; font-weight:650}
+
+/* ---------- finding cards ---------- */
+.findings{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:14px}
+.finding{background:var(--surface); border:1px solid var(--rule); border-left:3px solid var(--bubble); border-radius:3px; padding:18px}
+.finding.alert{border-left-color:var(--reg)}
+.finding .stat{font-family:ui-monospace,Menlo,monospace; font-size:30px; font-weight:600; letter-spacing:-.02em}
+.finding .lbl{font-size:13px; font-weight:650; margin:6px 0 6px}
+.finding p{margin:0; font-size:14px; color:var(--pencil)}
+
+/* ---------- prediction bars ---------- */
+.bars{display:flex; flex-direction:column; gap:2px; background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:16px}
+.bar{display:grid; grid-template-columns:210px 1fr 58px; align-items:center; gap:14px; padding:5px 0}
+.bar .t{font-size:14px}
+.bar .track{position:relative; height:22px; background:var(--sunk); border-radius:2px; overflow:hidden}
+.bar .band{position:absolute; top:0; bottom:0; background:var(--bubble-wash)}
+.bar .fill{position:absolute; top:0; bottom:0; left:0; background:var(--bubble)}
+.bar .actual{position:absolute; top:-2px; bottom:-2px; width:2px; background:var(--reg)}
+.bar .v{font-family:ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums; font-size:15px; text-align:right; font-weight:600}
+.legend{display:flex; flex-wrap:wrap; gap:18px; font-size:12px; color:var(--faint); margin-top:14px}
+.legend i{display:inline-block; width:12px; height:12px; border-radius:2px; vertical-align:-2px; margin-right:6px}
+
+/* ---------- heatmap ---------- */
+.hm-tabs{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:14px}
+.hm-tabs button{font:inherit; font-size:13px; font-weight:600; padding:6px 14px; border-radius:2px;
+  border:1px solid var(--rule); background:var(--surface); color:var(--pencil); cursor:pointer}
+.hm-tabs button[aria-pressed="true"]{background:var(--bubble); border-color:var(--bubble); color:var(--surface)}
+.hm-tabs button:focus-visible{outline:2px solid var(--reg); outline-offset:2px}
+.scroller{overflow-x:auto; background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:14px}
+table.hm{border-collapse:separate; border-spacing:2px; font-size:12px}
+table.hm th{font-weight:600; color:var(--faint); font-size:11px; padding:0 4px; white-space:nowrap}
+table.hm th.row{text-align:left; color:var(--ink); font-size:13px; font-weight:500; padding-right:10px; position:sticky; left:0; background:var(--surface)}
+table.hm td{width:30px; height:26px; text-align:center; border-radius:2px;
+  font-family:ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums; color:var(--ink)}
+table.hm td.p{outline:2px solid var(--reg); font-weight:700}
+table.hm col.pred{background:var(--reg-wash)}
+.scale{display:flex; align-items:center; gap:8px; margin-top:12px; font-size:12px; color:var(--faint)}
+.scale span{width:26px; height:14px; border-radius:2px; display:inline-block}
+
+/* ---------- tables ---------- */
+table.data{width:100%; border-collapse:collapse; font-size:14px; background:var(--surface)}
+table.data th{text-align:left; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--faint);
+  border-bottom:1px solid var(--rule); padding:10px 12px; font-weight:650}
+table.data td{border-bottom:1px solid var(--grid); padding:10px 12px; vertical-align:top}
+table.data tr:last-child td{border-bottom:none}
+table.data td.num{font-family:ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap}
+.best{color:var(--good); font-weight:650}
+.worst{color:var(--reg); font-weight:650}
+.tag{display:inline-block; font-size:11px; padding:2px 7px; border-radius:2px; font-weight:650; letter-spacing:.04em}
+.tag.s{background:var(--bubble); color:var(--surface)}
+.tag.a{background:var(--bubble-wash); color:var(--bubble)}
+.tag.b{background:var(--sunk); color:var(--pencil)}
+.tag.no{background:var(--reg-wash); color:var(--reg)}
+
+/* ---------- misc ---------- */
+.note{background:var(--surface); border:1px solid var(--rule); border-top:3px solid var(--reg); border-radius:3px; padding:22px 24px}
+.note ul{margin:10px 0 0; padding-left:20px}
+.note li{margin:7px 0; color:var(--pencil); font-size:15px}
+.note li b{color:var(--ink)}
+.kicker{font-family:"Iowan Old Style",Palatino,Georgia,serif; font-size:20px; margin:0 0 4px}
+footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font-size:13px; color:var(--faint)}
+@media (max-width:640px){
+  .bar{grid-template-columns:130px 1fr 46px; gap:9px}
+  .bar .t{font-size:12.5px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .fill{transition:width .5s ease}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Forecast from 19 papers · 2,249 questions</div>
+  <h1>NIMCET 2027 Forecast</h1>
+  <p class="dek">Every NIMCET paper from 2008 to 2026 was parsed, classified and back-tested to answer one question: what is most likely to be asked in June 2027, and how confident can we be about it?</p>
+  <div class="provenance">
+    <div><b>19</b> papers parsed</div>
+    <div><b>2,249</b> questions extracted</div>
+    <div><b>300</b> recycled question pairs found</div>
+    <div><b>±1.4</b> questions — measured back-test error</div>
+  </div>
+</header>
+
+<section>
+  <h2>The paper you will sit</h2>
+  <p class="sub">The section split is not a guess. NIMCET changed it in <b>2023</b> — not 2026 — and has held it for four consecutive papers.</p>
+  <div class="splits">
+    <div class="split"><div class="name">Mathematics</div><div class="q">50</div><div class="meta">600 marks · unchanged since 2008</div></div>
+    <div class="split"><div class="name">Analytical Ability &amp; Logical Reasoning</div><div class="q">40</div><div class="meta">480 marks · unchanged since 2008</div></div>
+    <div class="split changed"><div class="name">Computer Awareness</div><div class="q">20</div><div class="meta">240 marks · was 10 until 2022</div><div class="chg">doubled in 2023</div></div>
+    <div class="split changed"><div class="name">General English</div><div class="q">10</div><div class="meta">120 marks · was 20 until 2022</div><div class="chg">halved in 2023</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Three findings that change what you study</h2>
+  <div class="findings">
+    <div class="finding alert">
+      <div class="stat" style="color:var(--reg)">6 &rarr; 1</div>
+      <div class="lbl">Vectors is gone</div>
+      <p>Vector &amp; 3D questions ran at 5–8 per paper for 18 years, then collapsed to a single question in 2026 when the revised syllabus dropped vector algebra. Those slots moved into Algebra (+3.6) and Sets &amp; Functions (+1.8).</p>
+    </div>
+    <div class="finding">
+      <div class="stat">1 in 10</div>
+      <div class="lbl">Questions are recycled</div>
+      <p>300 cross-year near-duplicates were detected, 44 of them near-verbatim. The gap peaks at <b>2 years</b> and <b>4 years</b> — which points 2027 straight at the 2025 and 2023 papers.</p>
+    </div>
+    <div class="finding">
+      <div class="stat">1.43 vs 1.81</div>
+      <div class="lbl">Don't just copy last year</div>
+      <p>A slow exponential average of the whole history predicts each topic to ±1.43 questions. Predicting "same as last year" scores 1.81 — the worst of eleven methods tested.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Mathematics, topic by topic</h2>
+  <p class="sub">Blue bar is the 2027 prediction, pale band is the 80% interval from back-test residuals, red tick is what 2026 actually asked.</p>
+  <div class="bars" id="mathbars"></div>
+  <div class="legend">
+    <div><i style="background:var(--bubble)"></i>2027 prediction</div>
+    <div><i style="background:var(--bubble-wash)"></i>80% interval</div>
+    <div><i style="background:var(--reg);width:3px"></i>2026 actual</div>
+  </div>
+
+  <h3>Reasoning · Computer · English</h3>
+  <div class="bars" id="otherbars"></div>
+</section>
+
+<section>
+  <h2>Nineteen years, one grid</h2>
+  <p class="sub">Questions per topic per paper. The last column is the 2027 prediction. 2012 is partly missing (59 of its questions exist only as images in the source PDF) and 2015 stops at question 90 — both are down-weighted, never scored against.</p>
+  <div class="hm-tabs" role="group" aria-label="Choose section">
+    <button aria-pressed="true" data-sec="Math">Mathematics</button>
+    <button aria-pressed="false" data-sec="Reasoning">Reasoning</button>
+    <button aria-pressed="false" data-sec="Computer">Computer</button>
+    <button aria-pressed="false" data-sec="English">English</button>
+  </div>
+  <div class="scroller"><table class="hm" id="heat"></table></div>
+  <div class="scale">
+    <span style="background:var(--h0)"></span><span style="background:var(--h1)"></span><span style="background:var(--h2)"></span><span style="background:var(--h3)"></span><span style="background:var(--h4)"></span><span style="background:var(--h5)"></span>
+    <span style="width:auto;height:auto">0 &rarr; 12+ questions</span>
+  </div>
+</section>
+
+<section>
+  <h2>The recycling evidence</h2>
+  <p class="sub">Detected by cosine similarity over question stems with every numeral masked, so a question re-asked with different numbers still matches. Whole multi-question puzzle sets get lifted intact.</p>
+  <div class="scroller">
+  <table class="data">
+    <thead><tr><th>Question</th><th>Appeared in</th><th class="num">Gap</th></tr></thead>
+    <tbody>
+      <tr><td>Clock: when do the needles coincide between 3 and 4 o'clock</td><td class="mono">2018 Q80/Q85 → 2022 Q87</td><td class="num">4 yr</td></tr>
+      <tr><td>"Five houses lettered A–E in a row" puzzle set</td><td class="mono">2009 Q61–65 → 2012 Q86–88</td><td class="num">3 yr</td></tr>
+      <tr><td>"Family of six, two married couples" puzzle set</td><td class="mono">2015 Q12–15 → 2017 Q92–94</td><td class="num">2 yr</td></tr>
+      <tr><td>"Nine individuals, three committees" puzzle set</td><td class="mono">2018 Q113 → 2020 Q21–22</td><td class="num">2 yr</td></tr>
+      <tr><td>"A–G travelling in three vehicles" puzzle set</td><td class="mono">2024 Q61–63 → 2025 Q104</td><td class="num">1 yr</td></tr>
+      <tr><td>Two-plant factory, defective item, Bayes</td><td class="mono">2019 Q13 → 2023 Q103</td><td class="num">4 yr</td></tr>
+      <tr><td>Tangent to x = a·cos2t, y = 2√2·a·sin t</td><td class="mono">2015 Q45 → 2023 Q112</td><td class="num">8 yr</td></tr>
+      <tr><td>"EXAMINATION coded as 56149512965"</td><td class="mono">2015 Q35 → 2016 Q37</td><td class="num">1 yr</td></tr>
+      <tr><td>Synonym: DEBACLE</td><td class="mono">2018 Q24 → 2022 Q64</td><td class="num">4 yr</td></tr>
+      <tr><td>Caterpillar climbing a 75-inch pole</td><td class="mono">2017 Q105 → 2018 Q89</td><td class="num">1 yr</td></tr>
+      <tr><td>Circle touching the X-axis and a circle at (0,3)</td><td class="mono">2015 Q70 → 2023 Q57</td><td class="num">8 yr</td></tr>
+      <tr><td>Syllogism: "All mangoes are golden in colour"</td><td class="mono">2018 Q96 → 2022 Q71</td><td class="num">4 yr</td></tr>
+      <tr><td>City literacy ratio (40% adults illiterate)</td><td class="mono">2018 Q76 → 2020 Q10</td><td class="num">2 yr</td></tr>
+      <tr><td>Bootstrap loader: first instruction location</td><td class="mono">2008 Q110 → 2017 Q30</td><td class="num">9 yr</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Where repeated questions come from</h3>
+  <div class="bars" id="gapbars"></div>
+  <p class="sub" style="margin-top:14px"><b>Read this as a study order:</b> a 2-year gap points at <b>2025</b>, a 4-year gap at <b>2023</b>. Those two papers should be the ones you can recognise on sight.</p>
+</section>
+
+<section>
+  <h2>Does the method actually work?</h2>
+  <p class="sub">Each method predicted year Y using only papers up to Y−1, scored against the real paper, for every target from 2016 to 2026. Error is in questions per topic.</p>
+  <div class="scroller">
+  <table class="data">
+    <thead><tr><th>Method</th><th class="num">Mean abs. error</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td class="best">EWMA α = 0.20 &nbsp;<span class="tag s">selected</span></td><td class="num best">1.431</td><td>Exponentially decaying weights over all 19 years</td></tr>
+      <tr><td>EWMA α = 0.35</td><td class="num">1.436</td><td>Faster decay, more weight on recent papers</td></tr>
+      <tr><td>Blend 45/30/25</td><td class="num">1.464</td><td>Last year + 3-year mean + all-time mean</td></tr>
+      <tr><td>Median of last 5</td><td class="num">1.469</td><td>Robust to a single odd year</td></tr>
+      <tr><td>Mean of last 5</td><td class="num">1.493</td><td>Flat recent window</td></tr>
+      <tr><td>Linear regression</td><td class="num">1.591</td><td>Extrapolates the trend line</td></tr>
+      <tr><td class="worst">Last year only</td><td class="num worst">1.703</td><td>Assume 2027 = 2026</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="sub" style="margin-top:14px">Only two topics show a statistically significant trend across 2008–2025: <b>Statistics is rising</b> (Mann-Kendall τ = +0.57, p = 0.002) and <b>Logical deduction puzzles are falling</b> (τ = −0.44, p = 0.012). Everything else is stationary noise — which is exactly why mean-reverting methods beat trend-following ones here.</p>
+</section>
+
+<section>
+  <h2>What to study, in order</h2>
+  <p class="sub">Ranked by marks at stake against effort, at 12 marks per question.</p>
+  <div class="scroller">
+  <table class="data">
+    <thead><tr><th>Priority</th><th>Area</th><th class="num">Q</th><th class="num">Marks</th><th>Why it ranks here</th></tr></thead>
+    <tbody>
+      <tr><td><span class="tag s">Tier S</span></td><td>Number systems &amp; Boolean logic</td><td class="num">10</td><td class="num">120</td><td>Biggest single block in the paper; mechanical and fully learnable</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Logical puzzles &amp; conditional grouping</td><td class="num">10</td><td class="num">120</td><td>Largest Reasoning block and the most-recycled question type</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Calculus</td><td class="num">8</td><td class="num">96</td><td>Largest Math topic, stable for 19 years, zero syllabus risk</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Algebra &amp; progressions</td><td class="num">8</td><td class="num">96</td><td>Absorbed the vector slots — 11 questions in 2026</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Trigonometry</td><td class="num">7</td><td class="num">84</td><td>Height &amp; distance appears almost every single year</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Architecture, OS &amp; memory hierarchy</td><td class="num">7</td><td class="num">84</td><td>Grew with the doubled Computer section</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Coordinate &amp; conic geometry</td><td class="num">6</td><td class="num">72</td><td>Circle first — it is the most repeated sub-form</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Arithmetic word problems</td><td class="num">6</td><td class="num">72</td><td>Sits in the Reasoning section, not Mathematics</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Sets, relations &amp; functions</td><td class="num">5</td><td class="num">60</td><td>Rising; absorbed vector slots</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Probability</td><td class="num">5</td><td class="num">60</td><td>Present in all 19 papers</td></tr>
+      <tr><td><span class="tag b">Tier B</span></td><td>Series, coding-decoding, syllogism</td><td class="num">12</td><td class="num">144</td><td>Low effort, high volume — drill patterns, not theory</td></tr>
+      <tr><td><span class="tag b">Tier B</span></td><td>Blood relations, seating, clocks, direction</td><td class="num">9</td><td class="num">108</td><td>Fully mechanical once you have a notation</td></tr>
+      <tr><td><span class="tag b">Tier B</span></td><td>Statistics</td><td class="num">3</td><td class="num">36</td><td>The one significantly rising Math topic</td></tr>
+      <tr><td><span class="tag b">Tier B</span></td><td>Grammar &amp; vocabulary</td><td class="num">5</td><td class="num">60</td><td>English is only 10 questions now — cap your time</td></tr>
+      <tr><td><span class="tag no">Skip</span></td><td>Vector algebra, para jumbles, verbal analogy, linear programming</td><td class="num">0</td><td class="num">0</td><td>Removed from syllabus or absent for 8+ years</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>What this forecast cannot do</h2>
+  <div class="note">
+    <p class="kicker">Read this before you trust any number above.</p>
+    <ul>
+      <li><b>No individual question is predicted.</b> The generated 2027 paper reproduces concept, structure and difficulty — not content. Expect concept-level hits, never question-level ones.</li>
+      <li><b>Small topics are noise.</b> Permutation &amp; combination, number theory and complex numbers sit at 0–3 questions, so their intervals run to zero. Do not over-read them.</li>
+      <li><b>Two papers are damaged.</b> 2012 lost 59 questions to image-only pages and 2015 stops at Q90, so pre-2016 trends carry more uncertainty than the tables suggest.</li>
+      <li><b>A new syllabus revision would invalidate this.</b> If NIMCET publishes a revised syllabus for 2027, the section split and the vectors call must both be re-checked first.</li>
+      <li><b>The recycling rate is a floor, not a ceiling.</b> The detector only reads cleanly-extracted text stems — 1,400 of 2,249 questions — so the true repeat rate is higher than 1 in 10.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  Built from <span class="mono">papers/nimcet-2008.pdf</span> … <span class="mono">nimcet-2026.pdf</span>. Full report in <span class="mono">analysis/nimcet-2027-prediction.md</span>; the generated paper in <span class="mono">analysis/nimcet-2027-predicted-paper.md</span>, whose 67 computable answers are checked by <span class="mono">analysis/verify_predicted_paper.py</span>.
+</footer>
+</div>
+
+<script>
+const YEARS=[2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
+const DATA={
+ Math:[
+  ["Calculus",[6,5,9,6,6,7,9,6,5,11,9,4,11,8,8,10,9,8,9],8.3,4.3,9.2],
+  ["Algebra & Progressions",[12,10,2,8,2,8,7,5,10,5,9,5,3,5,6,7,4,9,11],8.1,4.5,10.0],
+  ["Trigonometry",[4,6,4,8,3,8,7,8,5,9,8,5,10,8,10,5,4,9,8],7.1,2.9,8.6],
+  ["Coordinate & Conic Geometry",[5,5,8,5,4,6,6,9,7,5,7,5,2,6,8,6,7,6,6],5.9,3.7,6.5],
+  ["Sets, Relations & Functions",[2,4,3,3,1,1,1,2,4,1,5,2,4,3,5,6,5,3,7],5.1,3.2,6.5],
+  ["Probability",[6,6,3,3,4,7,4,4,6,6,4,5,2,4,3,5,7,6,4],4.7,2.0,4.8],
+  ["Statistics",[0,0,2,3,0,1,2,1,2,1,1,3,3,3,3,3,4,3,4],3.3,2.4,4.1],
+  ["Permutation & Combination",[4,7,3,4,4,4,6,4,3,3,4,6,4,4,0,1,4,3,1],2.7,0,3.0],
+  ["Matrices & Determinants",[0,2,2,1,0,2,2,3,2,1,3,1,3,2,1,1,2,3,2],2.2,1.2,2.9],
+  ["Vectors & 3D Geometry",[5,3,5,5,2,6,6,8,6,6,4,4,8,7,5,6,6,6,1],1.2,0,2.9],
+  ["Number Theory",[5,6,2,1,0,1,0,1,0,1,3,3,0,1,1,0,2,1,0],0.9,0,2.2],
+  ["Complex Numbers",[1,0,2,0,0,0,0,0,0,1,0,2,0,0,0,1,0,0,0],0.2,0,0.9],
+  ["Differential Equations",[0,0,0,0,0,0,0,1,0,2,1,1,0,0,1,0,0,0,0],0.2,0,0.8]
+ ],
+ Reasoning:[
+  ["Logical Deduction & Puzzles",[19,19,13,10,6,15,8,15,8,9,5,10,9,6,10,7,13,5,7],10.1,5.4,16.5],
+  ["Arithmetic Word Problems",[9,6,4,7,2,2,5,2,4,3,7,9,14,0,2,12,7,6,11],5.9,3.8,12.1],
+  ["Series & Sequence",[3,3,6,2,0,2,2,6,1,6,3,3,2,6,4,3,1,6,2],3.9,3.0,9.6],
+  ["Coding-Decoding",[0,2,9,1,0,1,1,3,3,1,0,3,3,6,4,8,2,2,2],3.7,2.3,8.1],
+  ["Syllogism",[0,4,2,5,0,4,0,2,1,0,5,2,2,0,3,2,3,5,3],3.6,2.3,8.5],
+  ["Seating & Arrangement",[2,0,2,1,1,7,12,3,14,9,0,3,2,0,1,2,3,3,3],3.5,0,6.3],
+  ["Blood Relations",[5,0,0,5,2,4,5,4,4,4,1,1,1,5,2,1,1,2,3],2.7,0.7,5.0],
+  ["Clocks & Calendars",[2,0,1,2,0,3,1,2,3,1,2,1,1,2,2,0,2,1,1],1.5,1.0,3.7],
+  ["Data Interpretation",[0,5,6,3,0,0,0,0,0,0,0,0,0,7,3,1,0,0,2],1.5,0.1,3.7],
+  ["Analogy",[0,1,3,1,0,0,1,0,0,0,0,0,0,4,3,1,3,0,0],1.1,0,3.8],
+  ["Direction Sense",[0,0,3,0,0,1,6,1,0,1,1,0,1,0,0,1,0,1,1],0.9,0,1.8],
+  ["Odd-one-out",[0,0,3,0,0,0,0,0,1,0,1,0,0,3,1,0,2,1,0],0.9,0,2.9],
+  ["Cubes, Dice & Visual",[0,1,0,1,1,0,0,0,0,3,0,0,1,0,2,0,0,1,0],0.6,0,2.2]
+ ],
+ Computer:[
+  ["Number System & Boolean Logic",[10,4,3,8,4,6,10,0,7,8,6,10,7,3,8,12,10,8,5],10.5,5.8,11.8],
+  ["Hardware, OS & Architecture",[4,6,7,1,2,3,0,0,2,2,2,0,3,6,2,8,8,9,10],7.6,6.7,10.6],
+  ["Networking & Internet",[0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,5],1.1,0.7,1.7],
+  ["Programming & Data Structures",[1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,2,1],0.8,0.6,1.8]
+ ],
+ English:[
+  ["Vocabulary",[4,5,5,8,5,2,7,0,7,5,6,8,6,7,8,3,4,2,2],2.9,1.5,3.6],
+  ["Grammar & Error Spotting",[1,3,2,3,0,7,4,0,3,1,6,3,3,0,7,1,2,4,3],2.3,0,5.2],
+  ["Fill in the Blanks",[4,2,2,10,0,5,4,0,4,7,2,2,3,5,4,4,2,2,2],2.1,0.1,3.9],
+  ["Reading Comprehension",[3,2,2,4,0,0,2,0,4,5,4,3,4,8,2,2,1,0,2],1.5,0,4.2],
+  ["Idioms & Phrases",[1,1,1,0,1,4,0,0,2,2,2,4,4,0,1,1,1,2,1],1.1,0,2.8],
+  ["Sentence Arrangement",[0,2,1,0,0,1,2,0,0,0,1,0,0,0,0,0,0,0,0],0.1,0,0.5],
+  ["Verbal Analogy",[2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],0.0,0,0.4]
+ ]
+};
+
+/* ---- prediction bars ---- */
+function bars(el, rows, max){
+  el.innerHTML = rows.map(r=>{
+    const [name, series, pred, lo, hi] = r;
+    const actual = series[series.length-1];
+    return `<div class="bar">
+      <div class="t">${name}</div>
+      <div class="track">
+        <div class="band" style="left:${lo/max*100}%;width:${Math.max(0,(hi-lo))/max*100}%"></div>
+        <div class="fill" style="width:${pred/max*100}%"></div>
+        <div class="actual" style="left:${actual/max*100}%" title="2026 actual: ${actual}"></div>
+      </div>
+      <div class="v">${pred.toFixed(1)}</div>
+    </div>`;
+  }).join("");
+}
+bars(document.getElementById("mathbars"), DATA.Math, 12);
+bars(document.getElementById("otherbars"),
+     [...DATA.Reasoning.slice(0,6), ...DATA.Computer.slice(0,3), ...DATA.English.slice(0,3)], 17);
+
+/* ---- recycling gap bars ---- */
+const GAPS=[[1,31],[2,52],[3,32],[4,42],[5,14],[6,33],[7,22],[8,19],[9,8],[10,9]];
+const gmax=Math.max(...GAPS.map(g=>g[1]));
+document.getElementById("gapbars").innerHTML = GAPS.map(([g,n])=>{
+  const hot = (g===2||g===4);
+  return `<div class="bar">
+    <div class="t">${g} year gap${hot?' &nbsp;<span class="tag no">peak</span>':''}</div>
+    <div class="track"><div class="fill" style="width:${n/gmax*100}%${hot?';background:var(--reg)':''}"></div></div>
+    <div class="v">${n}</div>
+  </div>`;
+}).join("");
+
+/* ---- heatmap ---- */
+function shade(v){
+  if(v<=0) return "var(--h0)";
+  if(v<=1) return "var(--h1)";
+  if(v<=3) return "var(--h2)";
+  if(v<=5) return "var(--h3)";
+  if(v<=8) return "var(--h4)";
+  return "var(--h5)";
+}
+function drawHeat(sec){
+  const rows=DATA[sec];
+  let html='<colgroup><col /><col span="19" /><col class="pred" /></colgroup><thead><tr><th class="row">Topic</th>';
+  html+=YEARS.map(y=>`<th>${String(y).slice(2)}</th>`).join("");
+  html+='<th style="color:var(--reg)">27</th></tr></thead><tbody>';
+  for(const [name,series,pred] of rows){
+    html+=`<tr><th class="row">${name}</th>`;
+    html+=series.map((v,i)=>{
+      const broken = YEARS[i]===2012 || YEARS[i]===2015;
+      return `<td style="background:${shade(v)}${broken?';opacity:.45':''}" title="${YEARS[i]}: ${v}${broken?' (partial paper)':''}">${v||""}</td>`;
+    }).join("");
+    html+=`<td class="p" style="background:${shade(pred)}" title="2027 prediction">${pred.toFixed(1)}</td></tr>`;
+  }
+  return html+"</tbody>";
+}
+const heat=document.getElementById("heat");
+heat.innerHTML=drawHeat("Math");
+document.querySelectorAll(".hm-tabs button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll(".hm-tabs button").forEach(x=>x.setAttribute("aria-pressed","false"));
+    b.setAttribute("aria-pressed","true");
+    heat.innerHTML=drawHeat(b.dataset.sec);
+  });
+});
+</script>
+</body>
+</html>
