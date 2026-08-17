@@ -1,25 +1,31 @@
-# NIMCET PYQ Analysis (2008–2026)
+# NIMCET PYQ Analysis + 2027 Forecast (2008–2026)
 
-Data-driven breakdown of **19 years of NIMCET question papers** — every question classified into a fixed topic taxonomy, so prep effort goes where the marks actually are.
+Data-driven breakdown of **19 years of NIMCET question papers** — every question classified into a fixed topic taxonomy, then back-tested into a statistical forecast of the 2027 paper, so prep effort goes where the marks actually are.
 
-> **2248 questions · 19 papers · 38 topics** — 95.7% classified (4.3% garbled MathJax text).
+> **2249 questions · 19 papers · 38 topics · 300 recycled questions detected**
 
 ### 📊 [→ Open the live dashboard](https://avinashnegi1999.github.io/nimcet/)
 Interactive heat-map + topic ranking + year trends. Works on any device, anytime.
+
+### 🔮 [→ NIMCET 2027 Forecast — what the next paper will most likely ask](https://claude.ai/code/artifact/10f48734-667d-4d7d-a573-a7085fff346a)
+Nineteen papers parsed, every topic trend significance-tested, eleven forecasting methods back-tested against the real papers. Shows the predicted 2027 topic distribution to **±1.4 questions**, the 19-year heat-map, and the 300 recycled questions that reveal which past papers NIMCET reuses — and when.
 
 ---
 
 ## The exam in one table
 
-| Section | Questions | Share |
-|---------|----------:|------:|
-| **Mathematics** | 1060 | **47.2%** |
-| Logical Reasoning | 577 | 25.7% |
-| General English | 297 | 13.2% |
-| Computer Awareness | 218 | 9.7% |
-| Unclassified (garbled) | 96 | 4.3% |
+**NIMCET changed its section split in 2023** — Computer Awareness doubled and General English halved. This is the single most important structural fact in the dataset, and it has held for four consecutive papers (2023, 2024, 2025, 2026).
 
-**Math is nearly half the paper** — the biggest lever on the score.
+| Section | 2008–2022 | **2023 onward** | Marks (12 each) |
+|---------|----------:|----------:|------:|
+| **Mathematics** | 50 | **50** | 600 |
+| Analytical Ability & Logical Reasoning | 40 | **40** | 480 |
+| Computer Awareness | 10 | **20** ⬆️ | 240 |
+| General English | 20 | **10** ⬇️ | 120 |
+
+> ⚠️ **Computer Awareness is now worth twice what English is worth.** It is also almost entirely factual and mechanical — the highest marks-per-hour-of-study block in the whole paper.
+>
+> ⚠️ **Arithmetic word problems** (ratio, %, ages, mixtures, work) sit inside the **Reasoning** section, not Mathematics. Verified by reading NIMCET 2026 Q64–Q100 directly.
 
 ## Topics that repeat *every single year* (18–19 of 19 papers)
 
@@ -33,19 +39,41 @@ These are guaranteed to reappear. Master these before anything else.
 | Number System & Boolean Logic | Computer | 129 | 6.8 |
 | Algebra & Progressions | Math | 128 | 6.7 |
 | Coordinate & Conic Geometry | Math | 113 | 5.9 |
-| Arithmetic | Math | 112 | 5.9 |
-| Vectors & 3D Geometry | Math | 99 | 5.2 |
+| Arithmetic | Reasoning | 112 | 5.9 |
+| ~~Vectors & 3D Geometry~~ | ~~Math~~ | ~~99~~ | **removed — see below** |
 | Vocabulary (syn/antonym) | English | 94 | 4.9 |
 | Probability | Math | 89 | 4.7 |
 
-> **Math + Logical Puzzles + Number System = ~24 questions/year** from just 3 focus areas.
+## ❌ Vectors is gone — do not study it
 
-## Priority tiers
+Vector & 3D questions ran at **5–8 per paper for eighteen years, then dropped to 1 in 2026** when the revised syllabus removed vector algebra. The 2027 syllabus document contains **zero** mentions of "vector", "3D" or "dimension".
 
-- 🔴 **Tier 1 — master first:** all high-frequency Math (Calculus, Trig, Algebra, Coordinate Geo, Arithmetic, Vectors/3D, Probability, P&C) — ~40 Q/yr.
-- 🟡 **Tier 2 — fast ROI:** Logical Puzzles, Number System, Vocabulary, Seating/Series/Coding/Blood Relations, Fill-blanks/Grammar.
-- 🟢 **Tier 3 — cover after:** Sets/Functions, Statistics, Matrices, Syllogism, Comprehension, Idioms, Clocks, Number Theory.
-- ⚪ **Tier 4 — skim only (≤0.5/yr):** Complex Numbers, Differential Equations, Programming/DS, Networking, Cubes/Dice, Analogy, DI.
+Those ~5 questions did not vanish — they moved into **Algebra & Progressions** (+3.6 vs its 5-year mean) and **Sets, Relations & Functions** (+1.8). Study those instead.
+
+## Predicted 2027 paper
+
+| Section | Questions | Top topics |
+|---|---:|---|
+| Mathematics | 50 | Calculus 8 · Algebra 8 · Trigonometry 7 · Coordinate Geo 6 · Sets & Functions 5 · Probability 5 |
+| Reasoning | 40 | Puzzles 10 · Arithmetic 6 · Series 4 · Coding 4 · Syllogism 4 |
+| Computer | 20 | Number systems & Boolean 10 · Architecture/OS/memory 7 · Networking 2 |
+| English | 10 | Vocabulary 3 · Grammar 2 · Fill-blanks 2 · Comprehension 2 |
+
+Method: exponentially-weighted average of topic shares, chosen because it **won a back-test against ten alternatives** (MAE 1.43 questions vs 1.81 for "just copy last year", which came last). Full workings in [`analysis/nimcet-2027-prediction.md`](analysis/nimcet-2027-prediction.md).
+
+## 🔁 ~10% of every paper is recycled
+
+TF-IDF matching across all 19 papers with every numeral masked found **300 cross-year duplicate pairs, 44 of them near-verbatim**. Whole multi-question puzzle sets get lifted intact — 2009 Q61–65 reappeared as 2012 Q86–88; 2024 Q61–63 reappeared as 2025 Q104.
+
+**The repeat gap peaks at 2 years and 4 years.** For 2027 that points squarely at **NIMCET 2025 and NIMCET 2023** — solve those two until you recognise a stem in five seconds.
+
+## Priority tiers (revised for the 2023 split + 2026 syllabus)
+
+- 🔴 **Tier S — do first (~480 marks):** Number Systems & Boolean Logic (10 Q) · Logical Puzzles (10 Q) · Calculus (8 Q) · Algebra & Progressions (8 Q) · Trigonometry (7 Q).
+- 🟠 **Tier A — next:** Computer architecture/OS/memory (7 Q) · Coordinate & Conic Geo (6 Q) · Arithmetic word problems (6 Q) · Sets & Functions (5 Q) · Probability (5 Q).
+- 🟡 **Tier B — cheap, don't skip:** Series/Coding/Syllogism (12 Q) · Blood Relations/Seating/Clocks/Direction (9 Q) · Statistics (3 Q — the one *rising* Math topic, p = 0.002) · Grammar + Vocabulary (5 Q).
+- ⚪ **Tier C — bounded time:** Matrices (2) · P&C (3) · Networking (2) · Comprehension (2) · Mathematical Logic / truth tables (1–2, named in the 2027 syllabus).
+- ⛔ **Do not study:** Vector algebra · para jumbles · verbal analogy · linear programming.
 
 ---
 
@@ -100,8 +128,8 @@ Every Arihant chapter mapped to the priority tiers, with page numbers. Tier 1 fi
 | 24 | Trigonometric Equations | 561–574 |
 | 25 | Properties & Solution of Triangles | 575–597 |
 | 26 | Inverse Trigonometric Functions | 598–614 |
-| 28 | Vectors | 628–651 |
-| 29 | Three Dimensional Geometry | 652–672 |
+| ~~28~~ | ~~Vectors~~ | **skip — off syllabus** |
+| ~~29~~ | ~~Three Dimensional Geometry~~ | **skip — off syllabus** |
 | 30 | Probability & Probability Distribution | 673–703 |
 
 **🔴 Tier 1 — Section IV Quantitative / Arithmetic (pp 1–159)**
@@ -150,6 +178,10 @@ Every Arihant chapter mapped to the priority tiers, with page numbers. Tier 1 fi
 nimcet/
 ├── index.html              # live interactive dashboard (GitHub Pages)
 ├── analysis/
+│   ├── nimcet-2027-prediction.md       # ⭐ the 2027 forecast: trends, back-test, recycling
+│   ├── nimcet-2027-question-bank.md    # ⭐ 120 predicted questions, full worked solutions
+│   ├── nimcet-2027-predicted-paper.md  #   same 120 questions, compact — use as a timed mock
+│   ├── verify_predicted_paper.py       #   sympy self-check of the answer key (67/67 pass)
 │   ├── overview.md         # full ranking, priority plan, conclusions
 │   ├── math.md             # Mathematics topic breakdown
 │   ├── reasoning.md        # Logical Reasoning topic breakdown
@@ -167,9 +199,13 @@ nimcet/
 
 ## Method
 
-Each question from all 19 papers was extracted and LLM-classified into one fixed topic taxonomy, then aggregated by topic × year. Counts, averages, and "years seen" come straight from `data/pyq-analysis-result.json`.
+**Classification.** Each question from all 19 papers was extracted and LLM-classified into one fixed topic taxonomy, then aggregated by topic × year. Counts, averages, and "years seen" come straight from `data/pyq-analysis-result.json`.
 
-Source papers: aspirestudy.in year-wise PYQ archive. Analysis generated 2026-07-15.
+**Forecast (added 2026-08-17).** All 19 PDFs re-parsed with `pdftotext` into 2,249 individual questions. Per-topic trends significance-tested with Mann-Kendall; eleven forecasting methods back-tested by predicting each year from only the years before it. Recycling detected by TF-IDF cosine over question stems with all numerals masked, so a question re-asked with different numbers still matches.
+
+**Known data gaps:** the 2012 PDF has 59 image-only questions (unrecoverable without OCR) and the 2015 PDF is truncated at Q90. Both years are down-weighted and never scored against in the back-test. The reported recycling rate is a **floor**, not a ceiling — the detector only reads cleanly-extracted text stems.
+
+Source papers: aspirestudy.in year-wise PYQ archive. PYQ analysis 2026-07-15; 2027 forecast 2026-08-17.
 
 ---
 
