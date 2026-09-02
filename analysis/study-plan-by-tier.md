@@ -1,6 +1,6 @@
 # What to Study, in Order — Chapter by Chapter
 
-Every tier opened into its chapters. Inside each chapter the question forms are listed one per line, the most-repeated ones first, with the paper years they appeared in. Read a chapter, then solve those exact forms from the PYQ papers.
+**Every past question, printed in full, chapter by chapter:** [Tier S](pyq-by-chapter/tier-S.md) · [Tier A](pyq-by-chapter/tier-A.md) · [Tier B](pyq-by-chapter/tier-B.md) · [Tier C](pyq-by-chapter/tier-C.md). This page is the index: Every tier opened into its chapters. Inside each chapter the question forms are listed one per line, the most-repeated ones first, with the paper years they appeared in. Read a chapter, then solve those exact forms from the PYQ papers.
 
 The tier table on the [forecast page](https://avinashnegi1999.github.io/nimcet/forecast.html) says *which areas* matter. This page opens each area into the **chapters and question-types that have actually been asked**, taken from the sub-topic label on every one of the 2,248 classified questions (`data/questions-classified.jsonl`). Counts are over 19 papers; ★ marks the forms that come back nearly every year — do those first inside each chapter.
 
