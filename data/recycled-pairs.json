@@ -1,0 +1,3782 @@
+[
+{
+"sim": 1.0,
+"a": [
+2018,
+29,
+"Calculus"
+],
+"b": [
+2022,
+30,
+"Calculus"
+],
+"stem": "−−−−−\nThe function f (x) = log(x + √x2 + 1 ) is\n  1  An even function\n  2  An odd function\n  3  A periodic Function\n  4 "
+},
+{
+"sim": 1.0,
+"a": [
+2018,
+96,
+"Syllogism"
+],
+"b": [
+2022,
+71,
+"Syllogism"
+],
+"stem": "Statements :\nAll mangoes are golden in colour.\nNo golden-coloured things are cheap.\nConclusions :\nI) All mangoes are che"
+},
+{
+"sim": 1.0,
+"a": [
+2018,
+76,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2020,
+10,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "In a city 40% of the adults are illiterate while 85% of the children are literate If the ratio of the adults to that of "
+},
+{
+"sim": 1.0,
+"a": [
+2018,
+24,
+"Vocabulary (synonym/antonym)"
+],
+"b": [
+2022,
+64,
+"Vocabulary (synonym/antonym)"
+],
+"stem": "Find the synonym that is most nearly similar in meaning to the word : DEBACLE.\n  1  Catastrophe\n  2  Dandy\n  3  Corker\n "
+},
+{
+"sim": 1.0,
+"a": [
+2008,
+42,
+"Probability"
+],
+"b": [
+2013,
+5,
+"Probability"
+],
+"stem": "A six-faced die is a biased one. It is thrice more likely to show an odd number than to show an even\nnumber. It is throw"
+},
+{
+"sim": 1.0,
+"a": [
+2011,
+107,
+"Vocabulary (synonym/antonym)"
+],
+"b": [
+2016,
+10,
+"Vocabulary (synonym/antonym)"
+],
+"stem": "The meaning of the word EGRESS is\n  1  Entrance\n  2  Exit\n  3  Double\n  4  Program"
+},
+{
+"sim": 1.0,
+"a": [
+2015,
+45,
+"Calculus"
+],
+"b": [
+2023,
+112,
+"Calculus"
+],
+"stem": "–\nThe equation of the tangent at any point of the curve x = acos2t , y = 2√2asint with m as its\nslope is\n  1\n  1  y = mx"
+},
+{
+"sim": 1.0,
+"a": [
+2016,
+96,
+"Number System & Boolean Logic"
+],
+"b": [
+2018,
+3,
+"Number System & Boolean Logic"
+],
+"stem": "Consider the equation (43)x = (y3)8 where x and y are unknown. The number of possible solutions is\n  1  4\n  2  6\n  3  5\n"
+},
+{
+"sim": 1.0,
+"a": [
+2018,
+80,
+"Clocks & Calendars"
+],
+"b": [
+2022,
+87,
+"Clocks & Calendars"
+],
+"stem": "At what time, in minutes, between 3 o'clock and 4 o'clock, both the needles will coincide each other?\n\f  ′′\n  1\n  1  5\n "
+},
+{
+"sim": 1.0,
+"a": [
+2019,
+5,
+"Statistics"
+],
+"b": [
+2023,
+104,
+"Statistics"
+],
+"stem": "The mean of 5 observation is 5 and their variance is 12.4. If three of the observations are 1,2 and 6; then the mean dev"
+},
+{
+"sim": 1.0,
+"a": [
+2023,
+35,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2024,
+43,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "In the half yearly exam only 60% of the students were passed. Out of these (passed in half-yearly)\nonly 70% students are"
+},
+{
+"sim": 1.0,
+"a": [
+2011,
+1,
+"Statistics"
+],
+"b": [
+2018,
+37,
+"Statistics"
+],
+"stem": "If the mean of the squares of first n natural numbers be 11, then n is equal to\n  13\n  1  −\n  2\n  2  11\n  3  5\n  4  4"
+},
+{
+"sim": 0.986,
+"a": [
+2017,
+3,
+"Cubes Dice & Visual"
+],
+"b": [
+2020,
+43,
+"Cubes Dice & Visual"
+],
+"stem": "How many minimum number of colours will be required to paint all the sides of a cube without the\nadjacent sides having t"
+},
+{
+"sim": 0.983,
+"a": [
+2021,
+80,
+"Statistics"
+],
+"b": [
+2023,
+108,
+"Statistics"
+],
+"stem": "Consider the following frequency distribution table.\n  Class Interval  10-20  20-30  30-40  40-50  50-60  60-70  70-80\n "
+},
+{
+"sim": 0.978,
+"a": [
+2015,
+35,
+"Coding-Decoding"
+],
+"b": [
+2016,
+37,
+"Coding-Decoding"
+],
+"stem": "If the English word “EXAMINATION” is coded as 56149512965, then the word “GOVERNMENT” is\ncoded as\n  1  7645954552\n  2  7"
+},
+{
+"sim": 0.976,
+"a": [
+2008,
+110,
+"Hardware OS & General CS"
+],
+"b": [
+2017,
+30,
+"Hardware OS & General CS"
+],
+"stem": "The first instruction of bootstrap loader program of an operating system is stored in\n  1  Ram\n  2  BIOS\n  3  Hard Disk\n"
+},
+{
+"sim": 0.969,
+"a": [
+2015,
+70,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2023,
+57,
+"Coordinate & Conic Geometry"
+],
+"stem": "A circle touches the X-axis and also touches another circle with centre at (0, 3) and radius 2. Then\nthe locus of the ce"
+},
+{
+"sim": 0.968,
+"a": [
+2019,
+13,
+"Probability"
+],
+"b": [
+2023,
+103,
+"Probability"
+],
+"stem": "A computer producing factory has only two plants T1 and T2 produces 20% and plant T2 produces 80% of the total\ncomputers"
+},
+{
+"sim": 0.959,
+"a": [
+2018,
+32,
+"Probability"
+],
+"b": [
+2020,
+87,
+"Probability"
+],
+"stem": "A and B play a game where each is asked to select a number from 1 to 25. If the two number match, both of them win a\npri"
+},
+{
+"sim": 0.959,
+"a": [
+2015,
+30,
+"Syllogism"
+],
+"b": [
+2019,
+100,
+"Syllogism"
+],
+"stem": "If the statements “All chickens are birds”, “Some chickens are hens” and “Female birds lay eggs”, are\nall facts, then wh"
+},
+{
+"sim": 0.957,
+"a": [
+2024,
+61,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2025,
+104,
+"Logical Deduction & Puzzles"
+],
+"stem": "Directions: A, B, C, D, E, F and G are travelling in three different vehicles. There are at least two\npassengers in each"
+},
+{
+"sim": 0.957,
+"a": [
+2024,
+63,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2025,
+104,
+"Logical Deduction & Puzzles"
+],
+"stem": "Directions: A, B, C, D, E, F and G are travelling in three different vehicles. There are at least two\npassengers in each"
+},
+{
+"sim": 0.957,
+"a": [
+2024,
+59,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2025,
+104,
+"Logical Deduction & Puzzles"
+],
+"stem": "Directions: A, B, C, D, E, F and G are travelling in three different vehicles. There are at least two\npassengers in each"
+},
+{
+"sim": 0.956,
+"a": [
+2020,
+12,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2022,
+89,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "A person’s present age is two fifth of the age of his mother. After 8 years, he will be one-half of the\nage of his mothe"
+},
+{
+"sim": 0.956,
+"a": [
+2018,
+104,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2020,
+11,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "A runs 1 2/3 times as fast as B. If A gives B a start of 80 m, how far must the winning 3 post be so that A and B might\n"
+},
+{
+"sim": 0.95,
+"a": [
+2015,
+51,
+"Statistics"
+],
+"b": [
+2019,
+38,
+"Statistics"
+],
+"stem": "If the mean deviation of the numbers 1, 1 + d, 1 + 2d, ....., 1 + 100d from their mean is 255, then the\nvalue of d is\n  "
+},
+{
+"sim": 0.946,
+"a": [
+2015,
+46,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2023,
+120,
+"Coordinate & Conic Geometry"
+],
+"stem": "The locus of the mid points of all chords of the parabola y 2 = 4x which are drawn through its vertex,\nis\n  1  y\n  2\n  ="
+},
+{
+"sim": 0.945,
+"a": [
+2016,
+117,
+"Algebra & Progressions"
+],
+"b": [
+2019,
+26,
+"Algebra & Progressions"
+],
+"stem": "If a1 , a2 , … , an are in A.P. and a1 = 0 then the value of\n  a3  a4  an  1  1  1\n(  +  + ⋯ +  ) − a2 (  +  + ⋯ +  )  i"
+},
+{
+"sim": 0.944,
+"a": [
+2016,
+81,
+"Vectors & 3D Geometry"
+],
+"b": [
+2020,
+112,
+"Vectors & 3D Geometry"
+],
+"stem": "Let a⃗, b ⃗ and c ⃗ be three non-zero vectors, no two of which are collinear, if the vector a⃗ + 2b ⃗ is\ncollinear with "
+},
+{
+"sim": 0.942,
+"a": [
+2015,
+12,
+"Blood Relations"
+],
+"b": [
+2017,
+92,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.942,
+"a": [
+2020,
+2,
+"Trigonometry"
+],
+"b": [
+2022,
+6,
+"Trigonometry"
+],
+"stem": "Angle of elevation of the top of the tower from 3 points (collinear) A, B and C on a road leading to the\n foot of the to"
+},
+{
+"sim": 0.941,
+"a": [
+2023,
+84,
+"Hardware OS & General CS"
+],
+"b": [
+2024,
+81,
+"Hardware OS & General CS"
+],
+"stem": "A CPU generates 32-bit virtual addresses. The page size is 4 KB. The processor has a translation\nlook-aside buffer (TLB)"
+},
+{
+"sim": 0.94,
+"a": [
+2020,
+55,
+"Hardware OS & General CS"
+],
+"b": [
+2023,
+88,
+"Hardware OS & General CS"
+],
+"stem": "The time required for fetching and execution of one simple machine instruction is known as\n  1  Delay time\n  2  CPU cycl"
+},
+{
+"sim": 0.937,
+"a": [
+2011,
+55,
+"Blood Relations"
+],
+"b": [
+2013,
+55,
+"Blood Relations"
+],
+"stem": "Directions for questions 56-59: Study the following information to answer the given questions; In a\nfamily of 6 persons,"
+},
+{
+"sim": 0.937,
+"a": [
+2018,
+84,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2020,
+14,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "Two pipes A and B can fill a cistern in 37.5 and 45 min, respectively. Both pipes are opened. The cistern will be filled"
+},
+{
+"sim": 0.932,
+"a": [
+2015,
+6,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2019,
+102,
+"Logical Deduction & Puzzles"
+],
+"stem": "Using only 2 5 10 25 and 50 paise coins what is the smallest number of coins required to pay\n\fUsing only 2, 5,10, 25 and"
+},
+{
+"sim": 0.927,
+"a": [
+2011,
+72,
+"Clocks & Calendars"
+],
+"b": [
+2013,
+63,
+"Clocks & Calendars"
+],
+"stem": "A doctor said to his compounder “I go to see the patients at their residence after every 3:30 hours. I\nhave already gone"
+},
+{
+"sim": 0.924,
+"a": [
+2010,
+100,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2024,
+67,
+"Logical Deduction & Puzzles"
+],
+"stem": "A, B, C, D and E are five integers. When written in ascending order of values the difference between\nany two adjacent in"
+},
+{
+"sim": 0.924,
+"a": [
+2010,
+100,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2024,
+65,
+"Logical Deduction & Puzzles"
+],
+"stem": "A, B, C, D and E are five integers. When written in ascending order of values the difference between\nany two adjacent in"
+},
+{
+"sim": 0.923,
+"a": [
+2017,
+105,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2018,
+89,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "caterpillar crawls up a pole of 75 inches high standing from the ground. Each day is crawls up 5\ninches and each night i"
+},
+{
+"sim": 0.92,
+"a": [
+2010,
+100,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2024,
+69,
+"Logical Deduction & Puzzles"
+],
+"stem": "A, B, C, D and E are five integers. When written in ascending order of values the difference between\nany two adjacent in"
+},
+{
+"sim": 0.917,
+"a": [
+2008,
+31,
+"Algebra & Progressions"
+],
+"b": [
+2021,
+52,
+"Algebra & Progressions"
+],
+"stem": "If H1 , H2 , … , Hn are n harmonic means between a and b, a ≠ b , then the value of\nH1 + a  Hn + b\n  +  is equal to\nH1 −"
+},
+{
+"sim": 0.916,
+"a": [
+2010,
+100,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2024,
+71,
+"Logical Deduction & Puzzles"
+],
+"stem": "A, B, C, D and E are five integers. When written in ascending order of values the difference between\nany two adjacent in"
+},
+{
+"sim": 0.915,
+"a": [
+2019,
+10,
+"Algebra & Progressions"
+],
+"b": [
+2023,
+109,
+"Algebra & Progressions"
+],
+"stem": "The sum of infinite terms of a decreasing GP is equal to the greatest value of the functionf(x) = x 3 + 3x − 9 in the in"
+},
+{
+"sim": 0.907,
+"a": [
+2013,
+71,
+"Syllogism"
+],
+"b": [
+2022,
+71,
+"Syllogism"
+],
+"stem": "Read the statements and then decide which of the conclusions logically follow.\nStatements:\ni) All mangoes are golden in "
+},
+{
+"sim": 0.907,
+"a": [
+2013,
+71,
+"Syllogism"
+],
+"b": [
+2018,
+96,
+"Syllogism"
+],
+"stem": "Read the statements and then decide which of the conclusions logically follow.\nStatements:\ni) All mangoes are golden in "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+62,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+87,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+61,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+88,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+62,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+88,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+64,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+86,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+63,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+86,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+65,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+86,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+64,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+87,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+63,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+87,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+65,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+87,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+64,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+88,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+63,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+88,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+65,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+88,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+61,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+86,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+62,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+86,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.904,
+"a": [
+2009,
+61,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2012,
+87,
+"Logical Deduction & Puzzles"
+],
+"stem": "Five houses lettered A, B, C, D and E are built in a row next to each other. The houses are lined up in\nthe order A, B, "
+},
+{
+"sim": 0.894,
+"a": [
+2008,
+114,
+"Number System & Boolean Logic"
+],
+"b": [
+2012,
+111,
+"Number System & Boolean Logic"
+],
+"stem": "Let A = 11111010 and B = 00001010 be two 8 bit 2’s complement numbers. Their product in 2’s\ncomplement is\n  1  11000100\n"
+},
+{
+"sim": 0.887,
+"a": [
+2013,
+40,
+"Trigonometry"
+],
+"b": [
+2020,
+118,
+"Trigonometry"
+],
+"stem": "The value of tan θ + 2 tan 2θ + 4 tan 4θ + 8 cot 8θ is\n  1  cot θ\n  2  tan θ\n  3  sin θ\n  4  cos θ"
+},
+{
+"sim": 0.887,
+"a": [
+2008,
+48,
+"Vectors & 3D Geometry"
+],
+"b": [
+2023,
+116,
+"Vectors & 3D Geometry"
+],
+"stem": "–\nLet A⃗ = 2i ⃗ + j ⃗ − 2k ⃗ and B⃗ = i ⃗ + j .⃗ If C ⃗ is a vector such that A⃗ ⋅ C ⃗ = |C |⃗ , |C ⃗ − A|⃗ = 2√2 and th"
+},
+{
+"sim": 0.882,
+"a": [
+2014,
+107,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2019,
+23,
+"Coordinate & Conic Geometry"
+],
+"stem": "The median AD of ΔABC is bisected at E and BE is produced to meet the side AC at F. Then, AF ∶ FC\nis\n\f  1  2:1\n  2  1:2\n"
+},
+{
+"sim": 0.879,
+"a": [
+2018,
+118,
+"Number System & Boolean Logic"
+],
+"b": [
+2022,
+100,
+"Number System & Boolean Logic"
+],
+"stem": "If a signal passing through a gate is initiated by sending a low into one of the inputs and the output is high, the gate"
+},
+{
+"sim": 0.879,
+"a": [
+2014,
+73,
+"Statistics"
+],
+"b": [
+2023,
+107,
+"Statistics"
+],
+"stem": "In a group of 200 students, the mean and the standard deviation of scores were found to be 40 and\n15, respectively. Late"
+},
+{
+"sim": 0.877,
+"a": [
+2022,
+95,
+"Hardware OS & General CS"
+],
+"b": [
+2023,
+83,
+"Hardware OS & General CS"
+],
+"stem": "If a processor clock is rated as 2500 million cycles per second, then its clock period is:\n  1  2 50 × 10\n  −10\n\f  1  2."
+},
+{
+"sim": 0.874,
+"a": [
+2015,
+15,
+"Blood Relations"
+],
+"b": [
+2017,
+93,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.872,
+"a": [
+2013,
+40,
+"Trigonometry"
+],
+"b": [
+2014,
+101,
+"Trigonometry"
+],
+"stem": "The value of tan θ + 2 tan 2θ + 4 tan 4θ + 8 cot 8θ is\n  1  cot θ\n  2  tan θ\n  3  sin θ\n  4  cos θ"
+},
+{
+"sim": 0.865,
+"a": [
+2020,
+114,
+"Vectors & 3D Geometry"
+],
+"b": [
+2022,
+11,
+"Vectors & 3D Geometry"
+],
+"stem": "If the volume of a parallelepiped whose adjacent edges are\na = 2i + 3j + 4k,\nb = i + αj + 2k\n  i  k  k\n\fc = i + 2k + αk\n"
+},
+{
+"sim": 0.864,
+"a": [
+2015,
+13,
+"Blood Relations"
+],
+"b": [
+2021,
+105,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.864,
+"a": [
+2015,
+14,
+"Blood Relations"
+],
+"b": [
+2017,
+94,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.856,
+"a": [
+2015,
+5,
+"Permutation & Combination"
+],
+"b": [
+2022,
+27,
+"Probability"
+],
+"stem": "How many 3-digit numbers divisible by 5, can be formed using the digits 2 3 5 6 7 and 9, without\nrepetition of digits?\n "
+},
+{
+"sim": 0.856,
+"a": [
+2010,
+31,
+"Algebra & Progressions"
+],
+"b": [
+2016,
+117,
+"Algebra & Progressions"
+],
+"stem": "If (1 + x)n = a0 + a1 x + a2 x2 + ⋯ + an xn , then\n  a1  a2  a3  an\n(1 +  ) (1 +  ) (1 +  ) … (1 +  )\n  a0  a1  a2  an−1"
+},
+{
+"sim": 0.855,
+"a": [
+2010,
+31,
+"Algebra & Progressions"
+],
+"b": [
+2019,
+26,
+"Algebra & Progressions"
+],
+"stem": "If (1 + x)n = a0 + a1 x + a2 x2 + ⋯ + an xn , then\n  a1  a2  a3  an\n(1 +  ) (1 +  ) (1 +  ) … (1 +  )\n  a0  a1  a2  an−1"
+},
+{
+"sim": 0.852,
+"a": [
+2010,
+60,
+"Vectors & 3D Geometry"
+],
+"b": [
+2016,
+22,
+"Vectors & 3D Geometry"
+],
+"stem": "If C is midpoint of AB and P is any point outside AB, then\n  −\n  −→\n  PA\n  −\n  −→\n  1\n  + PB\n  −\n  −→\n  = PC\n  −\n  −→\n  "
+},
+{
+"sim": 0.848,
+"a": [
+2011,
+55,
+"Blood Relations"
+],
+"b": [
+2013,
+54,
+"Blood Relations"
+],
+"stem": "Directions for questions 56-59: Study the following information to answer the given questions; In a\nfamily of 6 persons,"
+},
+{
+"sim": 0.847,
+"a": [
+2022,
+48,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2026,
+1,
+"Coordinate & Conic Geometry"
+],
+"stem": "1\nThe eccentricity of an ellipse, with its center at the origin is 3 . If one of the directrices is x = 9, then\nthe equa"
+},
+{
+"sim": 0.847,
+"a": [
+2011,
+55,
+"Blood Relations"
+],
+"b": [
+2013,
+56,
+"Blood Relations"
+],
+"stem": "Directions for questions 56-59: Study the following information to answer the given questions; In a\nfamily of 6 persons,"
+},
+{
+"sim": 0.84,
+"a": [
+2014,
+101,
+"Trigonometry"
+],
+"b": [
+2020,
+118,
+"Trigonometry"
+],
+"stem": "If tan A - tan B = x and cot B - cot A = y, then cot (A - B) is equal to\n  1  1\n  +\n  1\n  x  y\n  1  1\n  2  x\n  −\n  y\n  1"
+},
+{
+"sim": 0.836,
+"a": [
+2015,
+15,
+"Blood Relations"
+],
+"b": [
+2017,
+92,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.835,
+"a": [
+2020,
+3,
+"Calculus"
+],
+"b": [
+2022,
+32,
+"Coordinate & Conic Geometry"
+],
+"stem": "The area enclosed between the curves y2 = x and y = |x| is\n  1  2/3 sq. unit\n  2  1 sq. unit\n  3  1/6 sq. unit\n  4  1/3 "
+},
+{
+"sim": 0.833,
+"a": [
+2016,
+42,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2019,
+107,
+"Logical Deduction & Puzzles"
+],
+"stem": "A team must be selected from the ten probable players A, B, C, D, E, F, G, H, I and J. Of these, A, C, E and\nJ are forwa"
+},
+{
+"sim": 0.833,
+"a": [
+2016,
+40,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2019,
+107,
+"Logical Deduction & Puzzles"
+],
+"stem": "A team must be selected from the ten probable players A, B, C, D, E, F, G, H, I and J. Of these, A, C, E and\nJ are forwa"
+},
+{
+"sim": 0.833,
+"a": [
+2016,
+41,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2019,
+107,
+"Logical Deduction & Puzzles"
+],
+"stem": "A team must be selected from the ten probable players A, B, C, D, E, F, G, H, I and J. Of these, A, C, E and\nJ are forwa"
+},
+{
+"sim": 0.833,
+"a": [
+2018,
+113,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2020,
+21,
+"Logical Deduction & Puzzles"
+],
+"stem": "Nine individuals Z, Y, X, W, V, U, T, S and R are the only candidates who can serve on three Committees A, B and C and e"
+},
+{
+"sim": 0.827,
+"a": [
+2016,
+107,
+"Matrices & Determinants"
+],
+"b": [
+2021,
+62,
+"Matrices & Determinants"
+],
+"stem": "The system of equations\nx + y + 2z = a\nx+z=b\n2x + y + 3z = c\nhas a solution if\n  1  b = c\n  2  c = a + b\n  c = a\n  3\n  +"
+},
+{
+"sim": 0.819,
+"a": [
+2008,
+52,
+"Blood Relations"
+],
+"b": [
+2021,
+95,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.818,
+"a": [
+2008,
+51,
+"Blood Relations"
+],
+"b": [
+2021,
+109,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.812,
+"a": [
+2015,
+14,
+"Blood Relations"
+],
+"b": [
+2017,
+92,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.811,
+"a": [
+2018,
+113,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2020,
+22,
+"Logical Deduction & Puzzles"
+],
+"stem": "Nine individuals Z, Y, X, W, V, U, T, S and R are the only candidates who can serve on three Committees A, B and C and e"
+},
+{
+"sim": 0.806,
+"a": [
+2018,
+115,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2020,
+21,
+"Logical Deduction & Puzzles"
+],
+"stem": "Nine individuals Z, Y, X, W, V, U, T, S and R are the only candidates who can serve on three Committees A, B and C and e"
+},
+{
+"sim": 0.806,
+"a": [
+2016,
+26,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2019,
+21,
+"Coordinate & Conic Geometry"
+],
+"stem": "The equation of a circle with diameters are 2x – 3y + 12 = 0 and x + 4y – 5 = 0 and area of 154 sq.\nunits is\n\f  1  x2 + "
+},
+{
+"sim": 0.805,
+"a": [
+2018,
+114,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2020,
+21,
+"Logical Deduction & Puzzles"
+],
+"stem": "Nine individuals Z, Y, X, W, V, U, T, S and R are the only candidates who can serve on three Committees A, B and C and e"
+},
+{
+"sim": 0.804,
+"a": [
+2009,
+58,
+"Series & Sequence"
+],
+"b": [
+2016,
+117,
+"Algebra & Progressions"
+],
+"stem": "If A1 = {3}, A2 = {5, 7, 9}, A3 = {11, 13, 15, 17, 19}, A4 = {21, 23, 25, 27, 29, 31, 33} and so on, what\nis the average"
+},
+{
+"sim": 0.803,
+"a": [
+2015,
+10,
+"Seating & Arrangement"
+],
+"b": [
+2017,
+90,
+"Seating & Arrangement"
+],
+"stem": "There are five books A, B, C, D and E placed on table. If A is placed blow E, C is placed above D, B\nis placed below A a"
+},
+{
+"sim": 0.802,
+"a": [
+2009,
+58,
+"Series & Sequence"
+],
+"b": [
+2019,
+26,
+"Algebra & Progressions"
+],
+"stem": "If A1 = {3}, A2 = {5, 7, 9}, A3 = {11, 13, 15, 17, 19}, A4 = {21, 23, 25, 27, 29, 31, 33} and so on, what\nis the average"
+},
+{
+"sim": 0.797,
+"a": [
+2015,
+14,
+"Blood Relations"
+],
+"b": [
+2021,
+84,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.796,
+"a": [
+2018,
+10,
+"Analogy"
+],
+"b": [
+2022,
+57,
+"Analogy"
+],
+"stem": "Select the pair of words, which are related in the same way as the capitalized words are related to each other.\nBUTTERFL"
+},
+{
+"sim": 0.791,
+"a": [
+2023,
+43,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2024,
+55,
+"Statistics"
+],
+"stem": "In a reality show, two judges independently provided marks based on the performance of the\nparticipants. If the marks pr"
+},
+{
+"sim": 0.791,
+"a": [
+2018,
+115,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2020,
+22,
+"Logical Deduction & Puzzles"
+],
+"stem": "Nine individuals Z, Y, X, W, V, U, T, S and R are the only candidates who can serve on three Committees A, B and C and e"
+},
+{
+"sim": 0.79,
+"a": [
+2011,
+42,
+"Trigonometry"
+],
+"b": [
+2013,
+40,
+"Trigonometry"
+],
+"stem": "If sin x,  cos x,  tan x  are in GP, find cot 6x − cot 2x.\n  1  2\n  2  −1\n  3  1\n  4  0"
+},
+{
+"sim": 0.79,
+"a": [
+2018,
+114,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2020,
+22,
+"Logical Deduction & Puzzles"
+],
+"stem": "Nine individuals Z, Y, X, W, V, U, T, S and R are the only candidates who can serve on three Committees A, B and C and e"
+},
+{
+"sim": 0.79,
+"a": [
+2008,
+52,
+"Blood Relations"
+],
+"b": [
+2021,
+109,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.79,
+"a": [
+2015,
+15,
+"Blood Relations"
+],
+"b": [
+2021,
+86,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.789,
+"a": [
+2015,
+13,
+"Blood Relations"
+],
+"b": [
+2017,
+92,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.789,
+"a": [
+2016,
+113,
+"Vectors & 3D Geometry"
+],
+"b": [
+2022,
+16,
+"Vectors & 3D Geometry"
+],
+"stem": "−−\nIf a⃗, b ⃗ are vector such that |a⃗ + b|⃗ = √29 and a⃗ × (2^  ^  ^  ^  ^  ^  ⃗\n  i + 3 j + 4k ) = (2 i + 3 j + 4k ) ×"
+},
+{
+"sim": 0.788,
+"a": [
+2009,
+2,
+"Algebra & Progressions"
+],
+"b": [
+2010,
+31,
+"Algebra & Progressions"
+],
+"stem": "If (1 + x − 2x2 )6 = 1 + a1 x + a2 x2 + … + a12 x12 , then the value of\na 2 + a 4 + a 6 + … + a 12 is:\n  1  1024\n  2  64"
+},
+{
+"sim": 0.785,
+"a": [
+2020,
+23,
+"Series & Sequence"
+],
+"b": [
+2021,
+94,
+"Series & Sequence"
+],
+"stem": "Fill in the blank in the series: ELFA, GLHA, ILJA, _____, MLNA:\n  1  OLPA\n  2  KLMA\n  3  LLMA\n  4  KLLA"
+},
+{
+"sim": 0.784,
+"a": [
+2013,
+34,
+"Probability"
+],
+"b": [
+2018,
+58,
+"Probability"
+],
+"stem": "5  1  ¯\n  ¯¯¯  1\nIf A and B are two events such that P (A ∪ B) = 6 , P (A ∩ B) = 3 and P (B) = 2 , then the\nevents A and"
+},
+{
+"sim": 0.775,
+"a": [
+2020,
+54,
+"Number System & Boolean Logic"
+],
+"b": [
+2023,
+89,
+"Number System & Boolean Logic"
+],
+"stem": "Consider the following circuit.\nHow many minimum numbers of two input NAND gates are required to design the above circui"
+},
+{
+"sim": 0.775,
+"a": [
+2008,
+13,
+"Permutation & Combination"
+],
+"b": [
+2014,
+71,
+"Permutation & Combination"
+],
+"stem": "The number of functions f from A = 0, 1, 2 into B = 0, 1, 2, 3, 4, 5, 6, 7 such that f (i) ≤ f (j) for $i\n  1  8C3\n  8C3"
+},
+{
+"sim": 0.774,
+"a": [
+2010,
+59,
+"Vectors & 3D Geometry"
+],
+"b": [
+2020,
+109,
+"Vectors & 3D Geometry"
+],
+"stem": "Let a⃗, b,⃗ c ⃗ be three non-zero vectors, no two collinear. If a⃗ + b ⃗ is collinear with c ⃗ and b ⃗ + c ⃗ is\ncollinea"
+},
+{
+"sim": 0.773,
+"a": [
+2016,
+50,
+"Clocks & Calendars"
+],
+"b": [
+2017,
+96,
+"Clocks & Calendars"
+],
+"stem": "The day after the day after tomorrow is four days after Monday. What day is it today?\n  1  Monday\n  2  Tuesday\n  3  Wedn"
+},
+{
+"sim": 0.773,
+"a": [
+2015,
+12,
+"Blood Relations"
+],
+"b": [
+2017,
+93,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.77,
+"a": [
+2018,
+50,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2021,
+34,
+"Coordinate & Conic Geometry"
+],
+"stem": "2  2\n  x  y\nEquation of the common tangents with a positive slope to the circle x2 + y 2 − 8x = 0 and  −  = 1  is\n  9  4"
+},
+{
+"sim": 0.77,
+"a": [
+2015,
+12,
+"Blood Relations"
+],
+"b": [
+2021,
+87,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.77,
+"a": [
+2018,
+82,
+"Permutation & Combination"
+],
+"b": [
+2019,
+108,
+"Permutation & Combination"
+],
+"stem": "Let n be the number of different 5 digit numbers, divisible by 4 that can be formed with the digits 1,2, 3, 4, 5 and 6, "
+},
+{
+"sim": 0.769,
+"a": [
+2008,
+44,
+"Trigonometry"
+],
+"b": [
+2018,
+46,
+"Trigonometry"
+],
+"stem": "If cos α + cos β = a, sin α + sin β = b and θ is the arithmetic mean between α and β, then\nsin 2θ + cos 2θ is equal to\n "
+},
+{
+"sim": 0.767,
+"a": [
+2015,
+61,
+"Vectors & 3D Geometry"
+],
+"b": [
+2021,
+36,
+"Vectors & 3D Geometry"
+],
+"stem": "⃗\nLet a⃗ = ^  ^  ^  ^  ^  ^  ^  ^  ^\n  i + j + k , b = i − j + k and c ⃗ = i − j − k be three vectors. A vector v ⃗ in t"
+},
+{
+"sim": 0.764,
+"a": [
+2023,
+114,
+"Probability"
+],
+"b": [
+2024,
+54,
+"Probability"
+],
+"stem": "A speaks truth in 60% and B speaks the truth in 50% cases. In what percentage of cases they are\nlikely incontradict each"
+},
+{
+"sim": 0.763,
+"a": [
+2016,
+77,
+"Calculus"
+],
+"b": [
+2022,
+32,
+"Coordinate & Conic Geometry"
+],
+"stem": "The area of region bounded by the lines y = |x − 1| and y = 3 − |x| is\n  1  3  sq. unit\n  2  4  sq. unit\n  3  6  sq. uni"
+},
+{
+"sim": 0.762,
+"a": [
+2009,
+2,
+"Algebra & Progressions"
+],
+"b": [
+2016,
+117,
+"Algebra & Progressions"
+],
+"stem": "If (1 + x − 2x2 )6 = 1 + a1 x + a2 x2 + … + a12 x12 , then the value of\na 2 + a 4 + a 6 + … + a 12 is:\n  1  1024\n  2  64"
+},
+{
+"sim": 0.762,
+"a": [
+2015,
+5,
+"Permutation & Combination"
+],
+"b": [
+2025,
+66,
+"Permutation & Combination"
+],
+"stem": "How many 3-digit numbers divisible by 5, can be formed using the digits 2 3 5 6 7 and 9, without\nrepetition of digits?\n "
+},
+{
+"sim": 0.761,
+"a": [
+2009,
+2,
+"Algebra & Progressions"
+],
+"b": [
+2019,
+26,
+"Algebra & Progressions"
+],
+"stem": "If (1 + x − 2x2 )6 = 1 + a1 x + a2 x2 + … + a12 x12 , then the value of\na 2 + a 4 + a 6 + … + a 12 is:\n  1  1024\n  2  64"
+},
+{
+"sim": 0.76,
+"a": [
+2013,
+45,
+"Vectors & 3D Geometry"
+],
+"b": [
+2015,
+64,
+"Vectors & 3D Geometry"
+],
+"stem": "Let a⃗, b,⃗ c ⃗ be the position vectors of three vertices A, B, C of a triangle respectively then the area of\nthis trian"
+},
+{
+"sim": 0.758,
+"a": [
+2016,
+77,
+"Calculus"
+],
+"b": [
+2020,
+3,
+"Calculus"
+],
+"stem": "The area of region bounded by the lines y = |x − 1| and y = 3 − |x| is\n  1  3  sq. unit\n  2  4  sq. unit\n  3  6  sq. uni"
+},
+{
+"sim": 0.757,
+"a": [
+2008,
+96,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2016,
+43,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "A group of 630 children is arranged in rows for a group photograph session.\nEach row contains three fewer children than "
+},
+{
+"sim": 0.755,
+"a": [
+2016,
+74,
+"Vectors & 3D Geometry"
+],
+"b": [
+2020,
+114,
+"Vectors & 3D Geometry"
+],
+"stem": "The volume of the parallelepiped determined by u = i + 2j − k, ; v = −2i + 3k and\nw = 7j − 4k\n  1  21\n  2  22\n  3  23\n  "
+},
+{
+"sim": 0.755,
+"a": [
+2015,
+15,
+"Blood Relations"
+],
+"b": [
+2021,
+87,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.754,
+"a": [
+2009,
+8,
+"Probability"
+],
+"b": [
+2017,
+35,
+"Probability"
+],
+"stem": "A and B are independent witnesses. Probability A speaks the truth = x, Probability B speaks the truth\n= y. If both agree"
+},
+{
+"sim": 0.754,
+"a": [
+2013,
+77,
+"Clocks & Calendars"
+],
+"b": [
+2015,
+29,
+"Clocks & Calendars"
+],
+"stem": "If the third day of a month falls on Friday, what day will be on the fourth day after twenty first of the\nmonth?\n\f  1  M"
+},
+{
+"sim": 0.751,
+"a": [
+2015,
+12,
+"Blood Relations"
+],
+"b": [
+2021,
+86,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.749,
+"a": [
+2008,
+54,
+"Blood Relations"
+],
+"b": [
+2021,
+95,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.745,
+"a": [
+2015,
+12,
+"Blood Relations"
+],
+"b": [
+2021,
+84,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.744,
+"a": [
+2008,
+54,
+"Blood Relations"
+],
+"b": [
+2021,
+109,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.743,
+"a": [
+2010,
+66,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2022,
+12,
+"Coordinate & Conic Geometry"
+],
+"stem": "Distance between the parallel lines y = 2x + 4 and 6x = 3y + 5 is\n  17\n  1  –\n  √3\n  2  1\n  3\n  3  –\n  √5\n  –\n  17√5\n  4"
+},
+{
+"sim": 0.743,
+"a": [
+2014,
+85,
+"Trigonometry"
+],
+"b": [
+2022,
+6,
+"Trigonometry"
+],
+"stem": "From three collinear points A, B and C on a level ground, which are on the same side of a tower, the\nangles of elevation"
+},
+{
+"sim": 0.743,
+"a": [
+2008,
+55,
+"Blood Relations"
+],
+"b": [
+2021,
+95,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.743,
+"a": [
+2022,
+27,
+"Probability"
+],
+"b": [
+2025,
+66,
+"Permutation & Combination"
+],
+"stem": "A four-digit number is formed using the digits 1, 2, 3, 4, 5 without repetition. The probability that is\ndivisible by 3 "
+},
+{
+"sim": 0.742,
+"a": [
+2010,
+59,
+"Vectors & 3D Geometry"
+],
+"b": [
+2020,
+112,
+"Vectors & 3D Geometry"
+],
+"stem": "Let a⃗, b,⃗ c ⃗ be three non-zero vectors, no two collinear. If a⃗ + b ⃗ is collinear with c ⃗ and b ⃗ + c ⃗ is\ncollinea"
+},
+{
+"sim": 0.739,
+"a": [
+2008,
+53,
+"Blood Relations"
+],
+"b": [
+2021,
+95,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.739,
+"a": [
+2013,
+23,
+"Vectors & 3D Geometry"
+],
+"b": [
+2018,
+69,
+"Vectors & 3D Geometry"
+],
+"stem": "Force 3^  ^  ^  ^  ^  ^\n  i + 2 j + 5k and 2 i + j − 3k are acting on a particle and displace it from the point\n ^  ^  ^"
+},
+{
+"sim": 0.739,
+"a": [
+2008,
+55,
+"Blood Relations"
+],
+"b": [
+2021,
+109,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.739,
+"a": [
+2008,
+54,
+"Blood Relations"
+],
+"b": [
+2021,
+106,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.738,
+"a": [
+2019,
+33,
+"Sets Relations & Functions"
+],
+"b": [
+2021,
+66,
+"Sets Relations & Functions"
+],
+"stem": "Suppose A1, A2, ... 30 are thirty sets, each with five elements and B1, B2, ...., Bn are n sets each with three elements"
+},
+{
+"sim": 0.735,
+"a": [
+2008,
+53,
+"Blood Relations"
+],
+"b": [
+2021,
+109,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.731,
+"a": [
+2017,
+92,
+"Blood Relations"
+],
+"b": [
+2021,
+87,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.731,
+"a": [
+2022,
+16,
+"Vectors & 3D Geometry"
+],
+"b": [
+2023,
+116,
+"Vectors & 3D Geometry"
+],
+"stem": "⃗  ⃗  ⃗\nLet a⃗ = 2^  ^  ^  ^  ^  ^\n  i + 2 j + k and b be another vector such that a ⃗. b = 14 and a ⃗ × b = 3 i + j − 8"
+},
+{
+"sim": 0.73,
+"a": [
+2015,
+15,
+"Blood Relations"
+],
+"b": [
+2021,
+84,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.73,
+"a": [
+2017,
+92,
+"Blood Relations"
+],
+"b": [
+2021,
+84,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.729,
+"a": [
+2010,
+59,
+"Vectors & 3D Geometry"
+],
+"b": [
+2016,
+81,
+"Vectors & 3D Geometry"
+],
+"stem": "Let a⃗, b,⃗ c ⃗ be three non-zero vectors, no two collinear. If a⃗ + b ⃗ is collinear with c ⃗ and b ⃗ + c ⃗ is\ncollinea"
+},
+{
+"sim": 0.727,
+"a": [
+2009,
+58,
+"Series & Sequence"
+],
+"b": [
+2010,
+31,
+"Algebra & Progressions"
+],
+"stem": "If A1 = {3}, A2 = {5, 7, 9}, A3 = {11, 13, 15, 17, 19}, A4 = {21, 23, 25, 27, 29, 31, 33} and so on, what\nis the average"
+},
+{
+"sim": 0.724,
+"a": [
+2008,
+28,
+"Algebra & Progressions"
+],
+"b": [
+2018,
+62,
+"Algebra & Progressions"
+],
+"stem": "Let α and β be the roots of x2 + x + 1 = 0 . The equation whose roots are α19 and β 19 is\n  2\n  x  − x\n  1\n  − 1 = 0\n  2"
+},
+{
+"sim": 0.723,
+"a": [
+2016,
+117,
+"Algebra & Progressions"
+],
+"b": [
+2026,
+31,
+"Probability"
+],
+"stem": "If a1 , a2 , … , an are in A.P. and a1 = 0 then the value of\n  a3  a4  an  1  1  1\n(  +  + ⋯ +  ) − a2 (  +  + ⋯ +  )  i"
+},
+{
+"sim": 0.723,
+"a": [
+2015,
+13,
+"Blood Relations"
+],
+"b": [
+2017,
+93,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.723,
+"a": [
+2011,
+42,
+"Trigonometry"
+],
+"b": [
+2014,
+101,
+"Trigonometry"
+],
+"stem": "If sin x,  cos x,  tan x  are in GP, find cot 6x − cot 2x.\n  1  2\n  2  −1\n  3  1\n  4  0"
+},
+{
+"sim": 0.722,
+"a": [
+2019,
+26,
+"Algebra & Progressions"
+],
+"b": [
+2026,
+31,
+"Probability"
+],
+"stem": "If  , then the values of A1, A2, A3, A4 are\n  1  A1 = 1/2 , A2 =1/4 , A 3= 1/6 , A4 = 1/8\n  2  A1 = 1/8, A2=1/16 , A3= 1"
+},
+{
+"sim": 0.721,
+"a": [
+2009,
+39,
+"Probability"
+],
+"b": [
+2011,
+15,
+"Probability"
+],
+"stem": "An anti-aircraft gun fires a maximum of four shots. Probabilities of hitting in the 1st, 2nd, 3rd, and 4th\nshot are 0.4,"
+},
+{
+"sim": 0.721,
+"a": [
+2014,
+75,
+"Statistics"
+],
+"b": [
+2015,
+51,
+"Statistics"
+],
+"stem": "The mean deviation from the mean of the AP a, a + d, a + 2d, ..., a + 2nd, is:\n  n\n  1  n+1\n  d\n  n\n  2  d\n  2n+1\n  n+1\n"
+},
+{
+"sim": 0.72,
+"a": [
+2015,
+12,
+"Blood Relations"
+],
+"b": [
+2017,
+94,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.719,
+"a": [
+2015,
+13,
+"Blood Relations"
+],
+"b": [
+2021,
+87,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.717,
+"a": [
+2014,
+75,
+"Statistics"
+],
+"b": [
+2019,
+38,
+"Statistics"
+],
+"stem": "The mean deviation from the mean of the AP a, a + d, a + 2d, ..., a + 2nd, is:\n  n\n  1  n+1\n  d\n  n\n  2  d\n  2n+1\n  n+1\n"
+},
+{
+"sim": 0.715,
+"a": [
+2015,
+14,
+"Blood Relations"
+],
+"b": [
+2021,
+87,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.714,
+"a": [
+2015,
+14,
+"Blood Relations"
+],
+"b": [
+2017,
+93,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.713,
+"a": [
+2017,
+92,
+"Blood Relations"
+],
+"b": [
+2021,
+86,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.712,
+"a": [
+2015,
+12,
+"Blood Relations"
+],
+"b": [
+2021,
+105,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.708,
+"a": [
+2012,
+89,
+"Grammar & Error Spotting"
+],
+"b": [
+2018,
+9,
+"Grammar & Error Spotting"
+],
+"stem": "For the word, four spellings are given. Choose the correct one.\n  1  Cieling\n  2  Cealing\n  3  Ceiling\n  4  Ceeling"
+},
+{
+"sim": 0.706,
+"a": [
+2009,
+57,
+"Coding-Decoding"
+],
+"b": [
+2016,
+53,
+"Coding-Decoding"
+],
+"stem": "How many pairs of letters are there in the word PRISON such that the number of letters between\nthem in the word is the s"
+},
+{
+"sim": 0.706,
+"a": [
+2015,
+15,
+"Blood Relations"
+],
+"b": [
+2017,
+94,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.705,
+"a": [
+2009,
+2,
+"Algebra & Progressions"
+],
+"b": [
+2021,
+32,
+"Algebra & Progressions"
+],
+"stem": "If (1 + x − 2x2 )6 = 1 + a1 x + a2 x2 + … + a12 x12 , then the value of\na 2 + a 4 + a 6 + … + a 12 is:\n  1  1024\n  2  64"
+},
+{
+"sim": 0.703,
+"a": [
+2008,
+47,
+"Vectors & 3D Geometry"
+],
+"b": [
+2017,
+67,
+"Vectors & 3D Geometry"
+],
+"stem": "The value of λ such that the four points whose position vectors are\n  ⃗  ⃗  ⃗\n  ⃗  ⃗  ⃗  ⃗  ⃗  ⃗\n3i − 2j + λk , 6i + 3j "
+},
+{
+"sim": 0.701,
+"a": [
+2015,
+13,
+"Blood Relations"
+],
+"b": [
+2021,
+86,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.699,
+"a": [
+2011,
+42,
+"Trigonometry"
+],
+"b": [
+2020,
+118,
+"Trigonometry"
+],
+"stem": "If sin x,  cos x,  tan x  are in GP, find cot 6x − cot 2x.\n  1  2\n  2  −1\n  3  1\n  4  0"
+},
+{
+"sim": 0.697,
+"a": [
+2015,
+14,
+"Blood Relations"
+],
+"b": [
+2021,
+86,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.697,
+"a": [
+2015,
+15,
+"Blood Relations"
+],
+"b": [
+2021,
+105,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.696,
+"a": [
+2008,
+112,
+"Number System & Boolean Logic"
+],
+"b": [
+2024,
+91,
+"Number System & Boolean Logic"
+],
+"stem": "The addition of 4 bit, 2’s complement binary numbers 1101 and 0100 results in\n  1  0001 and an overflow\n  2  1001 and no"
+},
+{
+"sim": 0.695,
+"a": [
+2016,
+117,
+"Algebra & Progressions"
+],
+"b": [
+2021,
+32,
+"Algebra & Progressions"
+],
+"stem": "If a1 , a2 , … , an are in A.P. and a1 = 0 then the value of\n  a3  a4  an  1  1  1\n(  +  + ⋯ +  ) − a2 (  +  + ⋯ +  )  i"
+},
+{
+"sim": 0.691,
+"a": [
+2015,
+13,
+"Blood Relations"
+],
+"b": [
+2021,
+84,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.691,
+"a": [
+2017,
+93,
+"Blood Relations"
+],
+"b": [
+2021,
+86,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.691,
+"a": [
+2018,
+51,
+"Calculus"
+],
+"b": [
+2020,
+3,
+"Calculus"
+],
+"stem": "The area enclosed between the curves y 2 = x and y = |x| is\n  1  2/3 sq. units\n  2  1 sq. units\n  3  1/6 sq. units\n  4  "
+},
+{
+"sim": 0.69,
+"a": [
+2008,
+52,
+"Blood Relations"
+],
+"b": [
+2021,
+106,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.689,
+"a": [
+2016,
+50,
+"Clocks & Calendars"
+],
+"b": [
+2022,
+51,
+"Clocks & Calendars"
+],
+"stem": "The day after the day after tomorrow is four days after Monday. What day is it today?\n  1  Monday\n  2  Tuesday\n  3  Wedn"
+},
+{
+"sim": 0.689,
+"a": [
+2018,
+46,
+"Trigonometry"
+],
+"b": [
+2025,
+64,
+"Trigonometry"
+],
+"stem": "–  –\nLet P = {θ : sin θ − cos θ = √2 cos θ} and Q = {θ : sin θ + cos θ = √2 sin θ} be two sets. Then\n  P ⊂ Q  and Q − P\n"
+},
+{
+"sim": 0.689,
+"a": [
+2017,
+94,
+"Blood Relations"
+],
+"b": [
+2021,
+84,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.684,
+"a": [
+2008,
+73,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2020,
+44,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "If a man walks at the rate of 4 kmph, he misses a train by 6 minutes. If he walks at 5 kmph, he reaches the\nstation 6 mi"
+},
+{
+"sim": 0.683,
+"a": [
+2015,
+5,
+"Permutation & Combination"
+],
+"b": [
+2019,
+108,
+"Permutation & Combination"
+],
+"stem": "How many 3-digit numbers divisible by 5, can be formed using the digits 2 3 5 6 7 and 9, without\nrepetition of digits?\n "
+},
+{
+"sim": 0.682,
+"a": [
+2023,
+27,
+"Sets Relations & Functions"
+],
+"b": [
+2026,
+52,
+"Calculus"
+],
+"stem": "−1  −2 ≤ x ≤ 0\nA real valued function f is defined as f (x) = {  . Which of the following\n  x − 1  0 ≤ x ≤ 2\nstatement i"
+},
+{
+"sim": 0.681,
+"a": [
+2014,
+64,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2025,
+57,
+"Coordinate & Conic Geometry"
+],
+"stem": "An equilateral triangle is inscribed in the parabola y 2 = 4ax , such that one of the vertices of the\ntriangle coincides"
+},
+{
+"sim": 0.678,
+"a": [
+2016,
+94,
+"Number System & Boolean Logic"
+],
+"b": [
+2023,
+76,
+"Number System & Boolean Logic"
+],
+"stem": "Consider the following min term expression for F.\nF(P,Q,R,S) = ∑ (0, 2, 5, 7, 8, 10, 13, 15)\n h  i  d  d\n\fThe minterms 2"
+},
+{
+"sim": 0.678,
+"a": [
+2010,
+9,
+"Direction Sense"
+],
+"b": [
+2018,
+90,
+"Direction Sense"
+],
+"stem": "If the direction North-East becomes South-East how will other directions change?\n  1  West to North\n  2  South to South-"
+},
+{
+"sim": 0.677,
+"a": [
+2014,
+85,
+"Trigonometry"
+],
+"b": [
+2020,
+2,
+"Trigonometry"
+],
+"stem": "From three collinear points A, B and C on a level ground, which are on the same side of a tower, the\nangles of elevation"
+},
+{
+"sim": 0.676,
+"a": [
+2008,
+114,
+"Number System & Boolean Logic"
+],
+"b": [
+2024,
+95,
+"Number System & Boolean Logic"
+],
+"stem": "Let A = 11111010 and B = 00001010 be two 8 bit 2’s complement numbers. Their product in 2’s\ncomplement is\n  1  11000100\n"
+},
+{
+"sim": 0.676,
+"a": [
+2011,
+46,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2021,
+100,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "Pushpa is twice as old as Rita was two years ago. If the difference between their ages is 2 years,\nhow old is Pushpa tod"
+},
+{
+"sim": 0.674,
+"a": [
+2016,
+76,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2017,
+58,
+"Coordinate & Conic Geometry"
+],
+"stem": "If 2x2 + 7xy + 3y 2 + 8x + 14y + λ = 0 represents a pair of straight lines, the value of λ is\n  1  2\n  2  4\n  3  6\n  4  "
+},
+{
+"sim": 0.673,
+"a": [
+2017,
+92,
+"Blood Relations"
+],
+"b": [
+2021,
+105,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.673,
+"a": [
+2009,
+38,
+"Probability"
+],
+"b": [
+2017,
+39,
+"Probability"
+],
+"stem": "1  1  1\nEvents A and B satisfy: P (A ∪ B) =  , P (A ∩ B) =  , P (A) =  Then events A and B\n  6  4  4\nare:\n  1  Independe"
+},
+{
+"sim": 0.671,
+"a": [
+2017,
+36,
+"Algebra & Progressions"
+],
+"b": [
+2026,
+103,
+"Algebra & Progressions"
+],
+"stem": "The harmonic mean of two numbers is 4. Their arithmetic mean A and the geometric mean G satisfy\nthe relation 2A+G2 = 27,"
+},
+{
+"sim": 0.67,
+"a": [
+2008,
+22,
+"Trigonometry"
+],
+"b": [
+2011,
+42,
+"Trigonometry"
+],
+"stem": "The maximum value of (cos α1 )(cos α2 ) ⋯ (cos αn ) where 0 ≤ α1 , α2 , … , αn ≤ π and\n(cot α 1 )(cot α 2 ) ⋯ (cot α n )"
+},
+{
+"sim": 0.668,
+"a": [
+2008,
+96,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"b": [
+2025,
+2,
+"Arithmetic (speed-time-work, ratio, %, mixture)"
+],
+"stem": "A group of 630 children is arranged in rows for a group photograph session.\nEach row contains three fewer children than "
+},
+{
+"sim": 0.668,
+"a": [
+2012,
+5,
+"Calculus"
+],
+"b": [
+2014,
+95,
+"Coordinate & Conic Geometry"
+],
+"stem": "Normal to the curve y = x3 − 3x + 2 at the point (2, 4) is:\n  9x − y\n  1\n  − 14 = 0\n  x − 9y\n  2\n  + 40 = 0\n  x + 9y\n  3"
+},
+{
+"sim": 0.668,
+"a": [
+2017,
+89,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2019,
+2,
+"Logical Deduction & Puzzles"
+],
+"stem": "A, B, C, D, E are a group of 7 friends from a club. There are two houses wives, one lecturer, one\narchitect, one account"
+},
+{
+"sim": 0.667,
+"a": [
+2021,
+62,
+"Matrices & Determinants"
+],
+"b": [
+2024,
+30,
+"Matrices & Determinants"
+],
+"stem": "If the system of equations 3x − y + 4z = 3 , x + 2y − 3z = −2 , 6x + 5y + λz = −3 has\natleast one solution, then λ =\n  1"
+},
+{
+"sim": 0.667,
+"a": [
+2016,
+74,
+"Vectors & 3D Geometry"
+],
+"b": [
+2017,
+67,
+"Vectors & 3D Geometry"
+],
+"stem": "The volume of the parallelepiped determined by u = i + 2j − k, ; v = −2i + 3k and\nw = 7j − 4k\n  1  21\n  2  22\n  3  23\n  "
+},
+{
+"sim": 0.667,
+"a": [
+2010,
+31,
+"Algebra & Progressions"
+],
+"b": [
+2021,
+32,
+"Algebra & Progressions"
+],
+"stem": "If (1 + x)n = a0 + a1 x + a2 x2 + ⋯ + an xn , then\n  a1  a2  a3  an\n(1 +  ) (1 +  ) (1 +  ) … (1 +  )\n  a0  a1  a2  an−1"
+},
+{
+"sim": 0.665,
+"a": [
+2015,
+13,
+"Blood Relations"
+],
+"b": [
+2017,
+94,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.663,
+"a": [
+2009,
+35,
+"Trigonometry"
+],
+"b": [
+2022,
+36,
+"Trigonometry"
+],
+"stem": "Q  Q  (  p  p  y  y pyq  y  y  )\n  −−−−−−−  −−−−−−−−  π\nNumber of solutions for tan−1 √x(x + 1) + sin−1 √x2 + x + 1 =  i"
+},
+{
+"sim": 0.663,
+"a": [
+2018,
+88,
+"Series & Sequence"
+],
+"b": [
+2022,
+63,
+"Series & Sequence"
+],
+"stem": "In the below series, you will be looking at the letter pattern, diagram pattern or number pattern. Fill the blank in the"
+},
+{
+"sim": 0.663,
+"a": [
+2021,
+62,
+"Matrices & Determinants"
+],
+"b": [
+2026,
+41,
+"Algebra & Progressions"
+],
+"stem": "If the system of equations 3x − y + 4z = 3 , x + 2y − 3z = −2 , 6x + 5y + λz = −3 has\natleast one solution, then λ =\n  1"
+},
+{
+"sim": 0.662,
+"a": [
+2014,
+101,
+"Trigonometry"
+],
+"b": [
+2020,
+119,
+"Trigonometry"
+],
+"stem": "If tan A - tan B = x and cot B - cot A = y, then cot (A - B) is equal to\n  1  1\n  +\n  1\n  x  y\n  1  1\n  2  x\n  −\n  y\n  1"
+},
+{
+"sim": 0.661,
+"a": [
+2017,
+93,
+"Blood Relations"
+],
+"b": [
+2021,
+87,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.66,
+"a": [
+2021,
+99,
+"Clocks & Calendars"
+],
+"b": [
+2025,
+109,
+"Clocks & Calendars"
+],
+"stem": "If it is Saturday on January 1, 2000, then January 1, 2001 would have been\n\f  1  Monday\n  2  Sunday\n  3  Tuesday\n  4  Fr"
+},
+{
+"sim": 0.659,
+"a": [
+2008,
+25,
+"Algebra & Progressions"
+],
+"b": [
+2018,
+62,
+"Algebra & Progressions"
+],
+"stem": "If a, b are the roots of x2 + px + 1 = 0 and c, d are the roots of x2 + qx + 1 = 0 , the value of\nE = (a − c)(b − c)(a +"
+},
+{
+"sim": 0.657,
+"a": [
+2012,
+15,
+"Sets Relations & Functions"
+],
+"b": [
+2024,
+98,
+"Sets Relations & Functions"
+],
+"stem": "In a class of 100 students, 55 passed in Mathematics and 67 passed in Physics.The number of\nstudents who passed in Physi"
+},
+{
+"sim": 0.657,
+"a": [
+2015,
+14,
+"Blood Relations"
+],
+"b": [
+2021,
+105,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples.\n  D is the grandmother of A and mother of "
+},
+{
+"sim": 0.656,
+"a": [
+2009,
+38,
+"Probability"
+],
+"b": [
+2018,
+58,
+"Probability"
+],
+"stem": "1  1  1\nEvents A and B satisfy: P (A ∪ B) =  , P (A ∩ B) =  , P (A) =  Then events A and B\n  6  4  4\nare:\n  1  Independe"
+},
+{
+"sim": 0.655,
+"a": [
+2010,
+31,
+"Algebra & Progressions"
+],
+"b": [
+2026,
+31,
+"Probability"
+],
+"stem": "If (1 + x)n = a0 + a1 x + a2 x2 + ⋯ + an xn , then\n  a1  a2  a3  an\n(1 +  ) (1 +  ) (1 +  ) … (1 +  )\n  a0  a1  a2  an−1"
+},
+{
+"sim": 0.654,
+"a": [
+2021,
+62,
+"Matrices & Determinants"
+],
+"b": [
+2026,
+43,
+"Matrices & Determinants"
+],
+"stem": "If the system of equations 3x − y + 4z = 3 , x + 2y − 3z = −2 , 6x + 5y + λz = −3 has\natleast one solution, then λ =\n  1"
+},
+{
+"sim": 0.653,
+"a": [
+2020,
+73,
+"Grammar & Error Spotting"
+],
+"b": [
+2024,
+27,
+"Sets Relations & Functions"
+],
+"stem": "Choose the correct sentence of the following:\n  1  I prefer coffee to tea.\n  2  I prefer coffee for tea.\n  3  I prefer c"
+},
+{
+"sim": 0.652,
+"a": [
+2008,
+44,
+"Trigonometry"
+],
+"b": [
+2025,
+64,
+"Trigonometry"
+],
+"stem": "If cos α + cos β = a, sin α + sin β = b and θ is the arithmetic mean between α and β, then\nsin 2θ + cos 2θ is equal to\n "
+},
+{
+"sim": 0.652,
+"a": [
+2008,
+51,
+"Blood Relations"
+],
+"b": [
+2021,
+95,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.65,
+"a": [
+2019,
+26,
+"Algebra & Progressions"
+],
+"b": [
+2021,
+32,
+"Algebra & Progressions"
+],
+"stem": "If  , then the values of A1, A2, A3, A4 are\n  1  A1 = 1/2 , A2 =1/4 , A 3= 1/6 , A4 = 1/8\n  2  A1 = 1/8, A2=1/16 , A3= 1"
+},
+{
+"sim": 0.648,
+"a": [
+2008,
+48,
+"Vectors & 3D Geometry"
+],
+"b": [
+2022,
+16,
+"Vectors & 3D Geometry"
+],
+"stem": "–\nLet A⃗ = 2i ⃗ + j ⃗ − 2k ⃗ and B⃗ = i ⃗ + j .⃗ If C ⃗ is a vector such that A⃗ ⋅ C ⃗ = |C |⃗ , |C ⃗ − A|⃗ = 2√2 and th"
+},
+{
+"sim": 0.648,
+"a": [
+2023,
+90,
+"Hardware OS & General CS"
+],
+"b": [
+2024,
+93,
+"Hardware OS & General CS"
+],
+"stem": "How many 32K × 1 RAM chips are needed to provide a memory capacity of 256K bytes?\n  1  64\n  2  32\n  3  8\n  4  128"
+},
+{
+"sim": 0.646,
+"a": [
+2008,
+111,
+"Number System & Boolean Logic"
+],
+"b": [
+2026,
+55,
+"Trigonometry"
+],
+"stem": "The function AB'C + A'BC + ABC' + A'B'C + AB'C' is equivalent to\n  1  AC' + AB + A'C\n  2  AB' + ABC' + A'C\n  3  A'B + AC"
+},
+{
+"sim": 0.644,
+"a": [
+2008,
+55,
+"Blood Relations"
+],
+"b": [
+2021,
+106,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.644,
+"a": [
+2008,
+112,
+"Number System & Boolean Logic"
+],
+"b": [
+2019,
+52,
+"Number System & Boolean Logic"
+],
+"stem": "The addition of 4 bit, 2’s complement binary numbers 1101 and 0100 results in\n  1  0001 and an overflow\n  2  1001 and no"
+},
+{
+"sim": 0.643,
+"a": [
+2013,
+22,
+"Algebra & Progressions"
+],
+"b": [
+2020,
+96,
+"Algebra & Progressions"
+],
+"stem": "The sum of n terms of an arithmetic series is 216. The value of the first term is n and the value of\nthe nth term is 2n."
+},
+{
+"sim": 0.641,
+"a": [
+2008,
+53,
+"Blood Relations"
+],
+"b": [
+2021,
+106,
+"Blood Relations"
+],
+"stem": "(i) P ψ Q means P is mother of Q\n(ii) P ∈ Q means P is sister of Q\n(iii) P $ Q means P is father of Q\n(iv) P # Q means P"
+},
+{
+"sim": 0.639,
+"a": [
+2017,
+93,
+"Blood Relations"
+],
+"b": [
+2021,
+84,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.636,
+"a": [
+2008,
+28,
+"Algebra & Progressions"
+],
+"b": [
+2025,
+63,
+"Algebra & Progressions"
+],
+"stem": "Let α and β be the roots of x2 + x + 1 = 0 . The equation whose roots are α19 and β 19 is\n  2\n  x  − x\n  1\n  − 1 = 0\n  2"
+},
+{
+"sim": 0.632,
+"a": [
+2009,
+25,
+"Sets Relations & Functions"
+],
+"b": [
+2016,
+104,
+"Number System & Boolean Logic"
+],
+"stem": "If P = (4n − 3n − 1) : n ∈ N and Q = (9n − 9) : n ∈ N , then P ∪ Q equals to:\n  1  N\n  2  P\n  3  Q\n  4  None of these"
+},
+{
+"sim": 0.632,
+"a": [
+2016,
+113,
+"Vectors & 3D Geometry"
+],
+"b": [
+2023,
+116,
+"Vectors & 3D Geometry"
+],
+"stem": "−−\nIf a⃗, b ⃗ are vector such that |a⃗ + b|⃗ = √29 and a⃗ × (2^  ^  ^  ^  ^  ^  ⃗\n  i + 3 j + 4k ) = (2 i + 3 j + 4k ) ×"
+},
+{
+"sim": 0.629,
+"a": [
+2008,
+33,
+"Permutation & Combination"
+],
+"b": [
+2015,
+5,
+"Permutation & Combination"
+],
+"stem": "An eight digit number divisible by 9 is to be formed by using 8 digits out of the digits 0, 1, … , 9 without\nreplacement"
+},
+{
+"sim": 0.629,
+"a": [
+2008,
+48,
+"Vectors & 3D Geometry"
+],
+"b": [
+2017,
+67,
+"Vectors & 3D Geometry"
+],
+"stem": "–\nLet A⃗ = 2i ⃗ + j ⃗ − 2k ⃗ and B⃗ = i ⃗ + j .⃗ If C ⃗ is a vector such that A⃗ ⋅ C ⃗ = |C |⃗ , |C ⃗ − A|⃗ = 2√2 and th"
+},
+{
+"sim": 0.628,
+"a": [
+2017,
+67,
+"Vectors & 3D Geometry"
+],
+"b": [
+2020,
+114,
+"Vectors & 3D Geometry"
+],
+"stem": "If = (i + 2j - 3k) and =(3i -j + 2k), then the angle between ( + ) and ( - )\n  1  π/3\n  2  π/4\n  3  π/2\n  4  2π/3"
+},
+{
+"sim": 0.628,
+"a": [
+2015,
+82,
+"Trigonometry"
+],
+"b": [
+2022,
+43,
+"Trigonometry"
+],
+"stem": "If the angles of a triangle are in the ratio 2 : 3 : 7, then the ratio of the sides opposite to these angles\nis\n  –  –\n "
+},
+{
+"sim": 0.627,
+"a": [
+2011,
+47,
+"Clocks & Calendars"
+],
+"b": [
+2016,
+59,
+"Clocks & Calendars"
+],
+"stem": "A clock is set right at 8 a.m. The clock gains 10 minutes in 24 hours. What will be the correct time\nwhen the clock show"
+},
+{
+"sim": 0.626,
+"a": [
+2013,
+40,
+"Trigonometry"
+],
+"b": [
+2020,
+119,
+"Trigonometry"
+],
+"stem": "The value of tan θ + 2 tan 2θ + 4 tan 4θ + 8 cot 8θ is\n  1  cot θ\n  2  tan θ\n  3  sin θ\n  4  cos θ"
+},
+{
+"sim": 0.625,
+"a": [
+2017,
+52,
+"Trigonometry"
+],
+"b": [
+2025,
+77,
+"Trigonometry"
+],
+"stem": "If cosθ = 4/5 and cosϕ = 12/13, θ and ϕ both in the fourth quadrant, the value of cos( θ + ϕ )is\n  1  -16/65\n  2  -33/65"
+},
+{
+"sim": 0.624,
+"a": [
+2025,
+77,
+"Trigonometry"
+],
+"b": [
+2026,
+109,
+"Trigonometry"
+],
+"stem": "√3\nIf cos2 (10°) cos(20°) cos(40°) cos(50°) cos(70°) = α + 16 cos(10°), then 3α−1 is equal to\n  1  9\n  32\n  2  64\n  3  1"
+},
+{
+"sim": 0.624,
+"a": [
+2015,
+66,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2019,
+28,
+"Coordinate & Conic Geometry"
+],
+"stem": "If 3x + 4y + k = 0 is a tangent to the hyperbola ,9x2 − 16y 2 = 144 then the value of K is\n  1  0\n  2  1\n  3  -1\n  4  -3"
+},
+{
+"sim": 0.624,
+"a": [
+2017,
+89,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2019,
+3,
+"Logical Deduction & Puzzles"
+],
+"stem": "A, B, C, D, E are a group of 7 friends from a club. There are two houses wives, one lecturer, one\narchitect, one account"
+},
+{
+"sim": 0.623,
+"a": [
+2010,
+19,
+"Direction Sense"
+],
+"b": [
+2025,
+114,
+"Direction Sense"
+],
+"stem": "A cyclist goes 30 km North and then turning East he goes 40 km. Again he turns right and goes 20\nkm. After this he turns"
+},
+{
+"sim": 0.622,
+"a": [
+2019,
+52,
+"Number System & Boolean Logic"
+],
+"b": [
+2025,
+13,
+"Number System & Boolean Logic"
+],
+"stem": "With 4-bit 2's complement arithmetic, which of the following addition will result in overflow?\n  1  1111 + 1101\n  2  011"
+},
+{
+"sim": 0.62,
+"a": [
+2009,
+7,
+"Trigonometry"
+],
+"b": [
+2018,
+46,
+"Trigonometry"
+],
+"stem": "If sin−1 x + cos−1 (1 − x) = sin−1 (1 − x) then x satisfies the equation:\n  2\n  2x  − x\n  1\n  + 2 = 0\n  2\n  2x  − 3x\n  2"
+},
+{
+"sim": 0.62,
+"a": [
+2016,
+107,
+"Matrices & Determinants"
+],
+"b": [
+2024,
+30,
+"Matrices & Determinants"
+],
+"stem": "The system of equations\nx + y + 2z = a\nx+z=b\n2x + y + 3z = c\nhas a solution if\n  1  b = c\n  2  c = a + b\n  c = a\n  3\n  +"
+},
+{
+"sim": 0.62,
+"a": [
+2020,
+96,
+"Algebra & Progressions"
+],
+"b": [
+2026,
+37,
+"Algebra & Progressions"
+],
+"stem": "An arithmetic progression has 3 as its first term. Also, the sum of the first 8 terms is twice the sum of\nthe first 5 te"
+},
+{
+"sim": 0.619,
+"a": [
+2014,
+80,
+"Matrices & Determinants"
+],
+"b": [
+2016,
+107,
+"Matrices & Determinants"
+],
+"stem": "Suppose, the system of linear equations\n\f-2x + y + z = l\nx - 2y + z = m\nx + y - 2z = n\nis such that l + m + n = 0, then "
+},
+{
+"sim": 0.618,
+"a": [
+2013,
+31,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2026,
+45,
+"Coordinate & Conic Geometry"
+],
+"stem": "The lines 3x – 4y + 4 = 0 and 6x – 8y – 7 = 0 are tangent to the same circle. The radius of the this\ncircle is.\n  1  3/2"
+},
+{
+"sim": 0.618,
+"a": [
+2013,
+39,
+"Statistics"
+],
+"b": [
+2017,
+40,
+"Statistics"
+],
+"stem": "A random variable X has the distribution law as given below:\n  X  1  2  3\n  P(X=x)  0.3  0.4  0.3\nThe variance of the di"
+},
+{
+"sim": 0.618,
+"a": [
+2017,
+94,
+"Blood Relations"
+],
+"b": [
+2021,
+87,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.617,
+"a": [
+2008,
+22,
+"Trigonometry"
+],
+"b": [
+2014,
+101,
+"Trigonometry"
+],
+"stem": "The maximum value of (cos α1 )(cos α2 ) ⋯ (cos αn ) where 0 ≤ α1 , α2 , … , αn ≤ π and\n(cot α 1 )(cot α 2 ) ⋯ (cot α n )"
+},
+{
+"sim": 0.617,
+"a": [
+2008,
+22,
+"Trigonometry"
+],
+"b": [
+2020,
+118,
+"Trigonometry"
+],
+"stem": "The maximum value of (cos α1 )(cos α2 ) ⋯ (cos αn ) where 0 ≤ α1 , α2 , … , αn ≤ π and\n(cot α 1 )(cot α 2 ) ⋯ (cot α n )"
+},
+{
+"sim": 0.617,
+"a": [
+2014,
+101,
+"Trigonometry"
+],
+"b": [
+2020,
+5,
+"Trigonometry"
+],
+"stem": "If tan A - tan B = x and cot B - cot A = y, then cot (A - B) is equal to\n  1  1\n  +\n  1\n  x  y\n  1  1\n  2  x\n  −\n  y\n  1"
+},
+{
+"sim": 0.617,
+"a": [
+2013,
+28,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2018,
+52,
+"Coordinate & Conic Geometry"
+],
+"stem": "The equations of the line parallel to the line 2x– 3y = 7 and passing through the middle point of the\nline segment joini"
+},
+{
+"sim": 0.615,
+"a": [
+2009,
+58,
+"Series & Sequence"
+],
+"b": [
+2026,
+31,
+"Probability"
+],
+"stem": "If A1 = {3}, A2 = {5, 7, 9}, A3 = {11, 13, 15, 17, 19}, A4 = {21, 23, 25, 27, 29, 31, 33} and so on, what\nis the average"
+},
+{
+"sim": 0.613,
+"a": [
+2012,
+16,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2013,
+45,
+"Vectors & 3D Geometry"
+],
+"stem": "If (4, −3) and (−9, 7) are two vertices of a triangle and (1, 4) is its centroid, find the area of the\ntriangle.\n  138\n "
+},
+{
+"sim": 0.611,
+"a": [
+2013,
+40,
+"Trigonometry"
+],
+"b": [
+2020,
+5,
+"Trigonometry"
+],
+"stem": "The value of tan θ + 2 tan 2θ + 4 tan 4θ + 8 cot 8θ is\n  1  cot θ\n  2  tan θ\n  3  sin θ\n  4  cos θ"
+},
+{
+"sim": 0.61,
+"a": [
+2017,
+93,
+"Blood Relations"
+],
+"b": [
+2021,
+105,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.608,
+"a": [
+2008,
+22,
+"Trigonometry"
+],
+"b": [
+2013,
+40,
+"Trigonometry"
+],
+"stem": "The maximum value of (cos α1 )(cos α2 ) ⋯ (cos αn ) where 0 ≤ α1 , α2 , … , αn ≤ π and\n(cot α 1 )(cot α 2 ) ⋯ (cot α n )"
+},
+{
+"sim": 0.606,
+"a": [
+2017,
+96,
+"Clocks & Calendars"
+],
+"b": [
+2022,
+51,
+"Clocks & Calendars"
+],
+"stem": "If the day after in the day tomorrow is three days before Friday, then today is\n  1  Tuesday\n  2  Thursday\n  3  Saturday"
+},
+{
+"sim": 0.606,
+"a": [
+2024,
+30,
+"Matrices & Determinants"
+],
+"b": [
+2026,
+41,
+"Algebra & Progressions"
+],
+"stem": "The system of equations x + 2y + 2z = 5, x + 2y + 3z = 6, x + 2y + λz = μ has infinitely\nmany solutions if\n  1  λ ≠ 2\n  "
+},
+{
+"sim": 0.605,
+"a": [
+2012,
+111,
+"Number System & Boolean Logic"
+],
+"b": [
+2024,
+95,
+"Number System & Boolean Logic"
+],
+"stem": "Let x = 11111010 and y = 00001010 be two 8-bit 2’s complement numbers. Their product in 2’s\ncomplement notation is\n  1  "
+},
+{
+"sim": 0.604,
+"a": [
+2008,
+47,
+"Vectors & 3D Geometry"
+],
+"b": [
+2016,
+74,
+"Vectors & 3D Geometry"
+],
+"stem": "The value of λ such that the four points whose position vectors are\n  ⃗  ⃗  ⃗\n  ⃗  ⃗  ⃗  ⃗  ⃗  ⃗\n3i − 2j + λk , 6i + 3j "
+},
+{
+"sim": 0.603,
+"a": [
+2017,
+94,
+"Blood Relations"
+],
+"b": [
+2021,
+86,
+"Blood Relations"
+],
+"stem": "In a family of six-person A, B, C, D, E, and F there are two married couples. D is the grandmother of A and\nmother of B."
+},
+{
+"sim": 0.602,
+"a": [
+2009,
+41,
+"Logical Deduction & Puzzles"
+],
+"b": [
+2016,
+70,
+"Logical Deduction & Puzzles"
+],
+"stem": "If all digits 6 in the numbers from 1 to 100 are replaced by 9, by how much does the algebraic sum\nchange?\n  1  330\n\f  2"
+},
+{
+"sim": 0.601,
+"a": [
+2016,
+76,
+"Coordinate & Conic Geometry"
+],
+"b": [
+2024,
+84,
+"Coordinate & Conic Geometry"
+],
+"stem": "If 2x2 + 7xy + 3y 2 + 8x + 14y + λ = 0 represents a pair of straight lines, the value of λ is\n  1  2\n  2  4\n  3  6\n  4  "
+},
+{
+"sim": 0.601,
+"a": [
+2021,
+54,
+"Trigonometry"
+],
+"b": [
+2025,
+77,
+"Trigonometry"
+],
+"stem": "If 32 tan8 θ = 2 cos2 α − 3 cos α and 3 cos 2θ = 1 , then the general value of α =\n  π\n  1  nπ ±\n  3\n  2  2nπ ±\n  2π\n  3"
+}
+]
