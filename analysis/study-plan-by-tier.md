@@ -1,6 +1,9 @@
 # What to Study, in Order — Chapter by Chapter
+
 Every tier opened into its chapters. Inside each chapter the question forms are listed one per line, the most-repeated ones first, with the paper years they appeared in. Read a chapter, then solve those exact forms from the PYQ papers.
+
 The tier table on the [forecast page](https://avinashnegi1999.github.io/nimcet/forecast.html) says *which areas* matter. This page opens each area into the **chapters and question-types that have actually been asked**, taken from the sub-topic label on every one of the 2,248 classified questions (`data/questions-classified.jsonl`). Counts are over 19 papers; ★ marks the forms that come back nearly every year — do those first inside each chapter.
+
 Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −3 per wrong answer.
 
 &nbsp;
@@ -57,7 +60,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - Binary arithmetic: multiplication (1100 × 1011), division (11010111 ÷ 101), hex addition and XOR (4AC0 ⊕ B53F)
 - Digits needed: n bits ↔ d decimal digits (d ≈ n log₁₀2)
-- A ternary-like number system with digits 0, 1, A
+- a ternary-like number system with digits 0, 1, A
 
 &nbsp;
 
@@ -84,7 +87,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Double precision exponent range
 - Representation of +∞
 - Associativity failure (A + B) + C ≠ A + (B + C) with 2×10³⁰
-- Max value from mantissa/exponent bits
+- max value from mantissa/exponent bits
 
 &nbsp;
 
@@ -106,7 +109,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Number of minterms (2ⁿ)
 - Tautology test
 - Venn diagram ↔ Boolean expression
-- A truth-table row that makes (A ⊕ B) ∧ (B → C) true
+- a truth-table row that makes (A ⊕ B) ∧ (B → C) true
 
 &nbsp;
 
@@ -149,7 +152,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Nested radicals √x/√(x+√(x+√x))
 - Limit as a Riemann sum (1/n)Σ sin(kπ/n)
 - Limit with greatest-integer function
-- Sandwich/"exists or not" with |x|
+- sandwich/"exists or not" with |x|
 - Limits with a parameter: lim (x⁴−1)/(x−1) = lim (x³−k³)/(x²−k²), find k
 
 &nbsp;
@@ -159,16 +162,16 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Most repeated — do these first:**
 
 - ★ Find the constant that makes a piecewise function continuous (sin x / ax; x² − 1 / 2ax; (1+2x)^(1/x) at 0)
-- ★ X sin(1/x), x² sin(1/x), x^α sin(1/x^β) at 0 — continuity vs differentiability vs continuity of f′
+- ★ x sin(1/x), x² sin(1/x), x^α sin(1/x^β) at 0 — continuity vs differentiability vs continuity of f′
 - ★ |x|-type functions: x + |x|, x/(1+|x|), |cos x| + 3, |x + 1|e^(−x) — where not differentiable, number of corners
 
 **Also asked:**
 
 - Greatest-integer discontinuities of ⌊x² − 3⌋ on (1, 2)
 - Signum composition sgn(g(x))
-- F(x) = 1/(e^(1/x) − 1)-style at 0
+- f(x) = 1/(e^(1/x) − 1)-style at 0
 - Derivative of an inverse function (f⁻¹)′(2)
-- Odd/even function tests (log(x + √(x²+1)), log(x³ + √(x⁶+1)))
+- odd/even function tests (log(x + √(x²+1)), log(x³ + √(x⁶+1)))
 
 &nbsp;
 
@@ -180,8 +183,8 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Parametric second derivative (x = a cos t, y = b sin t), d²x/dy² in terms of dy/dx
 - Implicit: xᵐyⁿ = (x + y)^(m+n) ⟹ dy/dx = y/x
 - Derivative of log₁₀x w.r.t. logₓ10
-- Log(log x)
-- Cos²(x²)
+- log(log x)
+- cos²(x²)
 - Functional equations: f(a+b) = f(a)f(b), f(x)f(1/x) = f(x) + f(1/x), polynomial with f(n) = n + 1
 
 &nbsp;
@@ -196,12 +199,12 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Also asked:**
 
 - Monotonicity / inflection: xˣ decreasing on (0, 1/e)
-- X^(2/3)(6 − x)^(1/3)
+- x^(2/3)(6 − x)^(1/3)
 - Increasing interval of 2x³eˣ
-- No extremum condition a² < 3b for a cubic
+- no extremum condition a² < 3b for a cubic
 - Rolle / IVT root counting: eˣ sin x = 1 vs eˣ cos x = −1
-- X² − x sin x − cos x = 0
-- Sin(eˣ) = 5ˣ + 5⁻ˣ
+- x² − x sin x − cos x = 0
+- sin(eˣ) = 5ˣ + 5⁻ˣ
 - |x² − 6x + 8| = a with four roots
 - Related rates: conical tank, shadow of a man, circle radius/area
 - Acceleration x − x² (distance to next rest)
@@ -244,7 +247,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Compare integrals (I₁ = ∫₀¹ 2^(x²) vs ∫₀¹ 2^(x³) …)
 - Integral inequalities with a parameter a
 - ∫₀^(π/4) sec⁴x dx = 4/3
-- D/dx of ∫ with variable limits (Leibniz)
+- d/dx of ∫ with variable limits (Leibniz)
 - ∫₋₁¹ f⁻¹(y) dy
 - Derivative-under-integral: ∫₀^sin²x sin⁻¹√t dt + ∫₀^cos²x cos⁻¹√t dt = π/4
 
@@ -256,7 +259,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ Area between y² = x and y = |x| (asked 2018, 2020)
 - ★ |x| + |y| = 1 or 2
-- ★ Y = |x − 1| and y = 3 − |x|
+- ★ y = |x − 1| and y = 3 − |x|
 
 **Also asked:**
 
@@ -269,7 +272,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Also asked:**
 
 - Separable: (eˣ + 1)y dy = (y + 1)eˣ dx
-- Dy/dx = e^(x+y) + x²e^y
+- dy/dx = e^(x+y) + x²e^y
 - Linear y dx − (x + 3y²) dy = 0 through (1, 1)
 - "family of curves that divide a rectangle 2 : 1" (area condition → dy/dx)
 
@@ -289,7 +292,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ Successive percentage change (+30% then −20%)
 - ★ "increased by 15% becomes 161"
-- ★ A number's fraction changed by 25% / −20%
+- ★ a number's fraction changed by 25% / −20%
 - ★ Discount and markup: 20% cash discount and still 11.11% / 20% profit, "16 articles to a dozen"
 - ★ Shares with 2% brokerage each way
 
@@ -325,7 +328,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Milk : water 15 : 4, remove P, add 18 l
 - 30 l with 10% water → 2%
 - Containers 5 : 3 and 1 : 3 → 1 : 1 (2 : 3 and 2.1 litres)
-- Two-liquid vessels A/B mixing
+- two-liquid vessels A/B mixing
 
 &nbsp;
 
@@ -405,14 +408,14 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Exam marking scheme with two deduction rules (160 questions, scores 79 and 76)
 - Sachin–Lara runs and balls
 - Distances Akash–Sanjay
-- Rectangle-walk diagonals
+- rectangle-walk diagonals
 - Friends buying a CD player where two withdraw
 - Sum 10600 into A, B, C, D with averages
 - 405 sweets, each child gets one-fifth of the number of children
 - Rows with three fewer children (630)
-- Erased-number average
+- erased-number average
 - Students in ratio 2 : 3 : 5 becoming 4 : 5 : 7
-- Cat/dog owners (70% of cat owners own dogs, 20% of 1001 dog owners own cats)
+- cat/dog owners (70% of cat owners own dogs, 20% of 1001 dog owners own cats)
 - Mensuration one-offs: rainfall volume on 1.5 hectares
 - Cylinder : cone : hemisphere volumes 3 : 1 : 2
 - Spheres moulded into a cylinder
@@ -428,6 +431,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 ## S4 · Logical puzzles & conditional grouping — 8 Q
 
 194 questions — the single most frequent topic in 19 years — but sliding (τ = −0.44, p = 0.010): 3, 7, 12, 8, 7 in 2022–26. Most-recycled question type: whole sets return after 2–4 years.
+
 **Chapter 1 — Conditional grouping / selection sets** (3–5 questions from one passage)
 **Most repeated — do these first:**
 
@@ -494,9 +498,9 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ Statement → course of action (2022 ×2, 2026)
 - ★ Implicit assumptions (2018)
-- ★ Cause-and-effect pairs (2018, 2025)
+- ★ cause-and-effect pairs (2018, 2025)
 - ★ "which conclusion can be deduced from the paragraph" (2018, 2026)
-- ★ Weaken-the-argument (2009)
+- ★ weaken-the-argument (2009)
 - ★ Circular argument (2026)
 - ★ Definition → best example (2025)
 - ★ Logical sequence of words (2023, 2024)
@@ -520,6 +524,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 ## S5 · Trigonometry — 8 Q
 
 133 questions, every one of 19 papers, 37 in the last five.
+
 **Chapter 1 — Heights and distances** ★ (asked in 2010, 2013, 2014, 2015, 2016, 2020, 2022, 2023, 2025 ×5, 2026)
 **Also asked:**
 
@@ -541,28 +546,28 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ Products: sin 12° sin 48° sin 54° = 1/8 (2008, 2020), sin 20° sin 40° sin 80° = √3/8, sin 10° sin 50° sin 70° = 1/8, tan 1°·tan 2°…tan 89° = 1, cos²10° cos 20° cos 40° cos 50° cos 70°, (1 + tan 1°)(1 + tan 2°)…(1 + tan 45°) = 2²³
 - ★ (1 + tan A)(1 − tan B) when A − B = π/4 (2012 ×2, 2013)
-- ★ Cos 20° + cos 100° + cos 140° = 0
-- ★ Tan 9° − tan 27° − tan 63° + tan 81° = 4
-- ★ Tan 7π/8 = √2 − 1
+- ★ cos 20° + cos 100° + cos 140° = 0
+- ★ tan 9° − tan 27° − tan 63° + tan 81° = 4
+- ★ tan 7π/8 = √2 − 1
 - ★ (1 − tan²15°)/(1 + tan²15°) = √3/2
 
 **Also asked:**
 
 - Telescoping: tan θ + 2 tan 2θ + 4 tan 4θ + 8 cot 8θ = cot θ
 - Σ sin d·cosec aₖ cosec aₖ₊₁
-- Cot(A − B) from tan A − tan B = x, cot B − cot A = y
+- cot(A − B) from tan A − tan B = x, cot B − cot A = y
 - Powers: sin²x + sin x = 1 ⟹ cos⁴x + cos²x = 1 (2012, 2013)
 - Range of cos²θ + sin⁴θ ∈ [3/4, 1] (2009, 2025)
-- Sin²⁰θ + cos⁴⁸θ ≤ 1
-- Cos 6x expansion coefficients
-- A cos θ + b sin θ = 2, a sin θ − b cos θ = 3 ⟹ a² + b² = 13
-- Sin x + a cos x = b ⟹ |a sin x − cos x| = √(a² − b² + 1) (2013, 2014)
+- sin²⁰θ + cos⁴⁸θ ≤ 1
+- cos 6x expansion coefficients
+- a cos θ + b sin θ = 2, a sin θ − b cos θ = 3 ⟹ a² + b² = 13
+- sin x + a cos x = b ⟹ |a sin x − cos x| = √(a² − b² + 1) (2013, 2014)
 - 3 sin x + 4 cos x = 5 ⟹ tan(x/2)
 - Maxima: max of cos²θ − 6 sin θ cos θ + 3 sin²θ + 2 = 4 + √10
-- Max of sin x + sin(x + 1)
-- Min of tan A + tan B with A + B = π/6
-- Max of Π sin αᵢ given Π tan αᵢ = 1
-- Max product of cosines given product of cotangents
+- max of sin x + sin(x + 1)
+- min of tan A + tan B with A + B = π/6
+- max of Π sin αᵢ given Π tan αᵢ = 1
+- max product of cosines given product of cotangents
 
 &nbsp;
 
@@ -576,8 +581,8 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Also asked:**
 
 - Sets P = {sin θ − cos θ = √2 cos θ} vs Q = {sin θ + cos θ = √2 sin θ} are equal
-- Sin x = sin y and cos x = cos y ⟹ x − y = 2nπ
-- Sin 1° vs sin 1
+- sin x = sin y and cos x = cos y ⟹ x − y = 2nπ
+- sin 1° vs sin 1
 
 &nbsp;
 
@@ -586,19 +591,19 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Most repeated — do these first:**
 
 - ★ Solve tan⁻¹2x + tan⁻¹3x = π/4 (2009, 2026)
-- ★ Tan⁻¹√(x² + x) + sin⁻¹√(x² + x + 1) = π/2 (2009, 2022)
-- ★ Cot(cosec⁻¹(5/3) + tan⁻¹(2/3)) = 6/17 (2018, 2022)
+- ★ tan⁻¹√(x² + x) + sin⁻¹√(x² + x + 1) = π/2 (2009, 2022)
+- ★ cot(cosec⁻¹(5/3) + tan⁻¹(2/3)) = 6/17 (2018, 2022)
 
 **Also asked:**
 
 - Principal values: cos⁻¹(cos(−π/6)) + sin⁻¹(sin 5π/6)
-- Cos⁻¹(−x) = π − cos⁻¹x
+- cos⁻¹(−x) = π − cos⁻¹x
 - 2 tan⁻¹[cosec(tan⁻¹x) − tan(cot⁻¹x)]
-- Cot⁻¹21 + cot⁻¹13 + cot⁻¹(−8) = π
-- Sin⁻¹x + cos⁻¹(1 − x) = sin⁻¹(1 − x)
+- cot⁻¹21 + cot⁻¹13 + cot⁻¹(−8) = π
+- sin⁻¹x + cos⁻¹(1 − x) = sin⁻¹(1 − x)
 - Sums to infinity: Σ tan⁻¹(1/(1 + k(k+1))) = tan⁻¹(n/(n+2))
 - Σ sin⁻¹((√k − √(k−1))/√(k(k+1))) = π/2
-- Cos⁻¹(x/2) + cos⁻¹(y/3) = φ ⟹ 9x² − 12xy cos φ + 4y² = 36 sin²φ
+- cos⁻¹(x/2) + cos⁻¹(y/3) = φ ⟹ 9x² − 12xy cos φ + 4y² = 36 sin²φ
 
 &nbsp;
 
@@ -607,21 +612,21 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Most repeated — do these first:**
 
 - ★ Which rule is *not* correct (sine rule, Napier's tangent rule)
-- ★ Tan((A − B)/2) = (1/3) tan((A + B)/2) ⟹ a : b = 2 : 1
+- ★ tan((A − B)/2) = (1/3) tan((A + B)/2) ⟹ a : b = 2 : 1
 
 **Also asked:**
 
 - Sides x² + x + 1, 2x + 1, x² − 1 → largest angle 120°
 - (a + b + c)(a + b − c) = ab ⟹ C = 120°
-- A = 4, b = 3, A = 60° ⟹ quadratic in c
+- a = 4, b = 3, A = 60° ⟹ quadratic in c
 - Angles in ratio 2 : 3 : 7 ⟹ sides √2 : 2 : √3 + 1
-- A = 2, b = 4, C = 60°
+- a = 2, b = 4, C = 60°
 - 8R² = a² + b² + c² ⟹ right-angled
 - 2(r + R) = a + b in a right triangle
 - Altitudes in HP ⟹ sines in AP
 - Δ = a² − (b − c)² ⟹ tan A = 8/15
 - Perimeter = 6 × mean of sines, a = 1 ⟹ A = π/6
-- A cos²(C/2) + c cos²(A/2) = 3b/2 ⟹ sides in AP
+- a cos²(C/2) + c cos²(A/2) = 3b/2 ⟹ sides in AP
 - Hypotenuse = 4 × altitude ⟹ 15°
 - Area 10√3 with AB = 8, AC = 5 ⟹ A = 60° or 120°
 - Heron product 3s²(s−a)(s−b)(s−c)
@@ -660,11 +665,11 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Which unit stores intermediate ALU results
 - Instruction format: opcode vs operand
 - 16-bit instruction with 4-bit opcode → 4096 addresses
-- Max distinct instructions with 6 registers and 32-bit words
+- max distinct instructions with 6 registers and 32-bit words
 - Register allocation for a straight-line program (min registers without spilling)
 - Control unit: hardwired vs microprogrammed (speed, ease of modification, horizontal vs vertical microcode)
 - Von Neumann = single memory for data and instructions
-- Stored-program machine
+- stored-program machine
 - Clock: 2500 MHz → period 4 × 10⁻¹⁰ s
 - What affects CPU performance (cores, cache, clock — not RAM size)
 - Execution time of 2n² steps at 10⁶ instr/s
@@ -682,7 +687,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ DRAM (capacitor, needs refresh, slower) vs SRAM (flip-flop)
 - ★ Effective access time with hit ratio (10 ms memory, 10 µs cache, 15% hit)
 - ★ Memory bandwidth from access time + gap
-- ★ Direct-mapped cache drawback
+- ★ direct-mapped cache drawback
 - ★ Sizing: 4K × 16 needs 12 address + 16 data lines
 - ★ 12-bit address bus and 16 KB → word length
 - ★ FFFF is the last address of 64K
@@ -696,7 +701,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ASCII 7 bits, 8 bits = 256 characters, ASCII vs Unicode
 - ROM is primary memory
 - EEPROM expansion
-- Flip-flop as memory element
+- flip-flop as memory element
 - Primary vs secondary cost/speed
 - SSD vs HDD vs optical vs tape access time
 - Backup device speed
@@ -723,7 +728,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - DMA transfers memory ↔ I/O without CPU
 - I/O-mapped vs memory-mapped I/O
 - Programmed I/O polls status flags
-- Interrupt-driven vs programmed I/O for CPU- vs I/O-bound jobs
+- interrupt-driven vs programmed I/O for CPU- vs I/O-bound jobs
 - CPU action on an interrupt (after the current instruction)
 - I/O processor
 - Buffer compensates for speed differences
@@ -734,7 +739,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Compiler vs interpreter
 - Errors caught by compilers (syntax) and not by assemblers (logic)
 - Debugger
-- Data-processing functions
+- data-processing functions
 
 &nbsp;
 
@@ -798,7 +803,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Also asked:**
 
 - Common tangents circle–parabola (x² + y² = 2a², y² = 8ax; (x − 3)² + y² = 9, y² = 4x)
-- Circle–line intersection point
+- circle–line intersection point
 - Parallel tangents 3x − 4y + 4 = 0 and 6x − 8y − 7 = 0 → radius 3/4
 
 &nbsp;
@@ -811,7 +816,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ Directrix x = 1 of y² = kx − 8
 - ★ Locus of midpoints of chords through the vertex → y² = 2x (2015, 2023)
 - ★ Point at distance 5a from the focus
-- ★ Focal-chord tangents meet on the directrix (x₁x₂ = −4a²)
+- ★ focal-chord tangents meet on the directrix (x₁x₂ = −4a²)
 
 **Also asked:**
 
@@ -874,7 +879,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Reflection → translation → rotation of a point
 - Rotated square common area
 - |x| + |y| = 1 / 2 areas (2, 8)
-- D(x, y) = max(|x|, |y|) = 1 is a square
+- d(x, y) = max(|x|, |y|) = 1 is a square
 - Graph shift of y = (x − 2)² − 3
 
 &nbsp;
@@ -893,7 +898,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ Transformed roots: equation with roots α/β and β/α, αⁿ + βⁿ when roots of x² − 2x cos θ + 1 = 0, (α + 2)/(α − 1)-type (2026), 1/(α³ + αβ + β³) roots (2025), α⁶ + β⁶ for x² − 2x + 4 = 0, α¹⁹ and β¹⁹ for x² + x + 1 = 0
 - ★ Always-positive / sign conditions: (k − 2)x² + (k + 8)x + 4 > 0 for all x
-- ★ X² + 2ax + 10 − 3a > 0
+- ★ x² + 2ax + 10 − 3a > 0
 - ★ Both roots real, distinct, negative
 - ★ Minimum of the sum of squares of roots
 - ★ Sum of squares of roots ≥ …
@@ -926,13 +931,13 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ 9^(1/3) · 9^(1/9) · 9^(1/27)… = 3
 - ★ HP and means: pth term q, qth term p ⟹ pqth term 1
 - ★ Mth term n and nth term m ⟹ (m + n)th term
-- ★ N harmonic means (H₁ + a)/(H₁ − a) + (Hₙ + b)/(Hₙ − b) = 2n (2008, 2021)
+- ★ n harmonic means (H₁ + a)/(H₁ − a) + (Hₙ + b)/(Hₙ − b) = 2n (2008, 2021)
 - ★ AM = 5, HM = 3.2 ⟹ 2 and 8
 - ★ HM 4 with 2A + G² = 27
 - ★ One AM and two GMs ⟹ p³ + q³ = 2apq
-- ★ A, b, c in AP with p, q, r in HP
+- ★ a, b, c in AP with p, q, r in HP
 - ★ AM–GM minimum of px + qy with xy = r²
-- ★ A, b, c, d in HP with AM of products 9 ⟹ ad
+- ★ a, b, c, d in HP with AM of products 9 ⟹ ad
 
 **Also asked:**
 
@@ -944,7 +949,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Σ 6Aₖ − 3k = 31
 - Layers of stacked balls (8436 → 36)
 - Tetrahedral numbers
-- Digit-replacement sum change (6 → 9 in 1–100: 330)
+- digit-replacement sum change (6 → 9 in 1–100: 330)
 
 &nbsp;
 
@@ -954,12 +959,12 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ Solve 3ˣ = 4ˣ⁻¹, 8ˣ⁻¹ = (1/4)ˣ then a log expression, x^(8 log x − 24) = 5⁻⁴ (product of roots 125), 4ˣ − 3·2ˣ⁺³ + 128 = 0 (sum of roots 7), 2²ᵃ − 3·2ᵃ⁺² + 32 = 0, 2ᵃ = 3ᵇ = 6⁻ᶜ ⟹ ab + bc + ca = 0, (2x)^ln2 = (3y)^ln3
 - ★ Log identities: a = log₁₂18, b = log₂₄54 ⟹ ab + 5(a − b) = 1
-- ★ Log₃2, log₃(2ˣ − 5), log₃(2ˣ − 7/2) in AP ⟹ x = 3
-- ★ Log₃5 vs log₁₇25
-- ★ Log(1 + xz) = 2 log y for consecutive integers
+- ★ log₃2, log₃(2ˣ − 5), log₃(2ˣ − 7/2) in AP ⟹ x = 3
+- ★ log₃5 vs log₁₇25
+- ★ log(1 + xz) = 2 log y for consecutive integers
 - ★ 3^(3 − log₃5) = 27/5
-- ★ Log_x 2 · log_{2x} 2 = log_{4x} 2
-- ★ Nested-radical + log₁/₄ expression = 6
+- ★ log_x 2 · log_{2x} 2 = log_{4x} 2
+- ★ nested-radical + log₁/₄ expression = 6
 - ★ 0.36^(log₀.₂₅(1/3 + 1/9 + …))
 - ★ Π(2 log_x 4)(2 log_x 16)… = 2
 
@@ -977,7 +982,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Most repeated — do these first:**
 
 - ★ Sum of even coefficients of (1 + x − 2x²)⁶ = 31 (2009, 2019)
-- ★ A₀ + a₂ + … for (1 − x + x²)ⁿ
+- ★ a₀ + a₂ + … for (1 − x + x²)ⁿ
 - ★ Σ(−1)ᵏC(2n, k)²-type alternating sums
 - ★ Π(1 + aₖ/aₖ₋₁) = (n + 1)ⁿ/n!
 - ★ C(20,8) + C(20,9) + C(21,10) + C(22,11) − C(23,11)
@@ -986,10 +991,10 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - Coefficient of x⁵⁰ in (1 + x)¹⁰⁰⁰ + 2x(1 + x)⁹⁹⁹ + …
 - Coefficient of x¹⁰ in (x² + 1/x)¹² + (x + 1/x²)¹²
-- X¹⁹ coefficient in (x + 1)(x + 4)…(x + 400)
-- Xⁿ in (1 − 2x + 3x² − …)⁻ⁿ
+- x¹⁹ coefficient in (x + 1)(x + 4)…(x + 400)
+- xⁿ in (1 − 2x + 3x² − …)⁻ⁿ
 - Binomial approximation for small x
-- Log-series coefficients (a₃ + a₆ + …, x¹⁰⁰ in log((1 + x)/(1 + x²)))
+- log-series coefficients (a₃ + a₆ + …, x¹⁰⁰ in log((1 + x)/(1 + x²)))
 
 &nbsp;
 
@@ -1007,12 +1012,12 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ Two people choose 1–25, no match (24/25) — 2018, 2020
 - ★ Captains of India and Australia adjacent (2/5)
-- ★ A married couple both in or both out of a committee of 5 from 9 (4/9)
+- ★ a married couple both in or both out of a committee of 5 from 9 (4/9)
 - ★ Three of 1–100 all divisible by 6 (4/1155)
-- ★ A² − b² divisible by 3 from 1–30
-- ★ A³ + b³ + c³ − 3abc divisible by 3 from 1–99
-- ★ Four-digit number from 1–5 divisible by 3 (1/5)
-- ★ X + 100/x > 29 for x in 1–100
+- ★ a² − b² divisible by 3 from 1–30
+- ★ a³ + b³ + c³ − 3abc divisible by 3 from 1–99
+- ★ four-digit number from 1–5 divisible by 3 (1/5)
+- ★ x + 100/x > 29 for x in 1–100
 - ★ Dice: sum a prime (5/12), 5 before 7 (2/5), biased die 3× odd → even sum (5/8; 2008 & 2013), "1 appears in an even-numbered throw" (5/11), "first die ≥ 4 or second ≥ 4" (3/4), a determinant of 0/1 entries non-zero (3/8), coefficients from coin tosses giving imaginary roots (7/8)
 - ★ Balls and cards: no black ball in 3 from 5Y 4B 3G (14/55), none green from 12 caps (7/99), neither red nor green (1/3), same letter from STATISTICS and ASSISTANT (19/90), balls chosen by a die roll all red, tickets in AP from 2n + 1 (3n/(4n² − 1)), r digits chosen with replacement all distinct
 
@@ -1024,7 +1029,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 - ★ "A and B contradict each other" (4/5 & 3/4 → 7/20; 70% & 60% → 23/50; 60% & 50% → 1/2; 40% & 50% → 1/2) — asked six times
 - ★ Two independent witnesses agree — probability the statement is true, xy/(xy + (1 − x)(1 − y)) (2009, 2017)
-- ★ A man who speaks truth 2/3 reports a 1 on a die (2/7)
+- ★ a man who speaks truth 2/3 reports a 1 on a die (2/7)
 - ★ Student knows 90%, guesses otherwise — P(guessing | correct) = 1/37
 - ★ Bayes with plants/bags: two-plant factory (78/93; 2019 & 2023)
 - ★ Ball transferred from bag I to bag II then black drawn (P(red transferred))
@@ -1057,9 +1062,9 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ At least one / exactly k: quiz of 5 with 4 options (at least one right 0.7627)
 - ★ 3 surgeries with p = 0.6, exactly two recover (0.432)
 - ★ Problem solved by A, B, C (1/2, 1/3, 1/4 → 3/4; with C unknown and total 63/64)
-- ★ At least 4 successes in 6 trials with p = 2/3 (496/729)
+- ★ at least 4 successes in 6 trials with p = 2/3 (496/729)
 - ★ Gun hits in four shots (0.6976; 2009 & 2011)
-- ★ At least two hits by A, B, C (4/5, 3/4, 2/3)
+- ★ at least two hits by A, B, C (4/5, 3/4, 2/3)
 - ★ Packets of 10 blades with p = 0.002 out of 10000
 - ★ Odd number of heads in n / 8 tosses = 1/2 (2012, 2024)
 - ★ Alternate heads and tails in 3 tosses (1/4)
@@ -1069,11 +1074,11 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Also asked:**
 
 - Geometric/first-to: A and B throw a die, first 1 wins ₹110 (expectations 60 & 50)
-- First-to-die among n persons ((1 − (1 − p)ⁿ)/n; 2009 & 2021)
+- first-to-die among n persons ((1 − (1 − p)ⁿ)/n; 2009 & 2021)
 - Triplets not more than twice in three throws
 - Geometric probability: two people meet within 20 minutes in an hour (5/9)
 - Point inside the larger of two concentric-ish circles (1/4)
-- First-quadrant region x² + y² < 4 with r > s (1/2)
+- first-quadrant region x² + y² < 4 with r > s (1/2)
 - Raffle fair price (₹11)
 - Poisson-style and Bernoulli product Z = XY
 
@@ -1096,7 +1101,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ 500 employees coffee/tea
 - ★ 50 students, 30 Hitavad 35 Hindustan 10 neither (25)
 - ★ 21 English, 10 both of 50 (Hindi only 29)
-- ★ Beauty-contest voters (24)
+- ★ beauty-contest voters (24)
 - ★ Exactly one / all three: 100 students Maths 32, Business 38, Literature 30 with pairwise 7, 10, 8 and all 5 (exactly one = 55)
 - ★ 100 undergraduates 47/47/57 with 7 in all three
 - ★ 40 students watched films A/B/C either one or all three (4)
@@ -1138,11 +1143,11 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Pairs (A, B) with A ⊆ B (3ⁿ)
 - Triples with A ∩ B ⊆ C ⊆ A ∪ B (6ⁿ)
 - (A ∪ B) × (A ∩ B) × (A Δ B) count (24)
-- Triples/tuples (x, y) with x² = 2y in ℕ (none), x² + 2y² = 3 with x > y in ℤ
+- triples/tuples (x, y) with x² = 2y in ℕ (none), x² + 2y² = 3 with x > y in ℤ
 - Functional equations: f(x) + f(1 − x) = 2 sum over k/2001 (2000)
-- F(x)f(1/x) = f(x) + f(1/x), f(3) = 28 ⟹ f(4) = 65
-- F((1 − x)/(1 + x)) = x + 2 ⟹ f(1)
-- Cf(x) + df(1/x) = |log|x|| + 3 then ∫₁^e f
+- f(x)f(1/x) = f(x) + f(1/x), f(3) = 28 ⟹ f(4) = 65
+- f((1 − x)/(1 + x)) = x + 2 ⟹ f(1)
+- cf(x) + df(1/x) = |log|x|| + 3 then ∫₁^e f
 
 &nbsp;
 
@@ -1153,7 +1158,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ Number of relations from A (m elements) to A × A (2^(m³))
 - ★ Reflexive relation on 10 elements has ≥ 10 pairs
 - ★ R = {(x, y) : y = 2x − 7} on {1..20} (7 elements)
-- ★ A ~ b iff a − 2b divisible by 3 — reflexive/symmetric/transitive test (2026)
+- ★ a ~ b iff a − 2b divisible by 3 — reflexive/symmetric/transitive test (2026)
 - ★ Which statement about R ⊂ ℕ × ℕ representing a function is true
 - ★ Counting functions: injections from 3-set to 4-set (24) / 5-set (60; 2015 & 2024)
 - ★ Injective f : {1,2,3,4} → {1..8} sending evens to evens (2ᵃ3ᵇ5ᶜ)
@@ -1163,11 +1168,11 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 **Also asked:**
 
 - Inverse functions: f(x) = 2^(x(x − 1)) on [1, ∞)
-- F(x) = (10ˣ − 10⁻ˣ)/(10ˣ + 10⁻ˣ) ⟹ ½ log((1 + x)/(1 − x))
-- Self-inverse (1 − x)/(1 + x)
+- f(x) = (10ˣ − 10⁻ˣ)/(10ˣ + 10⁻ˣ) ⟹ ½ log((1 + x)/(1 − x))
+- self-inverse (1 − x)/(1 + x)
 - Domain of cos⁻¹x/[x]
-- H = f∘g with piecewise f, g → interval where h = 1
-- F(|x|) vs |f(x)| statements for a piecewise f
+- h = f∘g with piecewise f, g → interval where h = 1
+- f(|x|) vs |f(x)| statements for a piecewise f
 
 &nbsp;
 
@@ -1197,8 +1202,8 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Median of a combined set given the medians
 - Missing value x so that mean = median = mode (10)
 - Mean 1, median 3x, mode 9x (mode 9)
-- Mean/median/mode of three small data sets
-- Grouped-data mean (20–25 … 45–50 → 33.75)
+- mean/median/mode of three small data sets
+- grouped-data mean (20–25 … 45–50 → 33.75)
 - Median with two unknown frequencies (f₁, f₂ from N = 686 and median 42.6 — 2021 & 2023)
 - Percentiles (10th and 50th of five values)
 
@@ -1212,8 +1217,8 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ MD of 1, 1 + d, …, 1 + 100d = 255 ⟹ d = 10.1 (2015, 2019)
 - ★ MD when mean = 5, variance 12.4 and three values known (2019, 2023)
 - ★ Variance/SD under transformation: adding 4 leaves SD 30
-- ★ Y = 10.5 + 2x with Var(y) = 100 ⟹ Var(x) = 25
-- ★ Wᵢ = pxᵢ + k with means 48 → 55 and SDs 12 → 15 (p = 1.25, k = −5)
+- ★ y = 10.5 + 2x with Var(y) = 100 ⟹ Var(x) = 25
+- ★ wᵢ = pxᵢ + k with means 48 → 55 and SDs 12 → 15 (p = 1.25, k = −5)
 - ★ Variance of 101–200 vs 151–250 (ratio 1)
 - ★ Which SD statement is not correct (units, scale change, SD ≥ MD, minimum about the mean)
 
@@ -1297,7 +1302,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Alphanumeric ZA5, Y4B, XC6, W3D
 - Q1F, S2E, U6D, W21C → Y88B
 - "look-and-say" 1, 11, 21, 1211 …
-- Figure/matrix missing numbers (2010 ×3, 2020 ×4, 2026)
+- figure/matrix missing numbers (2010 ×3, 2020 ×4, 2026)
 
 **Coding-decoding (forecast 3; 52 total, 16 recent)**
 **Most repeated — do these first:**
@@ -1363,7 +1368,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ All cakes are ice cream / no ice cream is chocolate
 - ★ All apples are fruits / all fruits are tasty
 - ★ Some professors are doctors / all doctors are patients
-- ★ No woman teacher can play / some woman teachers are athletes (2015, 2022)
+- ★ no woman teacher can play / some woman teachers are athletes (2015, 2022)
 - ★ Most teachers are boys / some boys are students
 - ★ All engineers are good at math
 - ★ All politicians are honest / all honest are fair
@@ -1375,8 +1380,8 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - Which conclusion must be false (polymers/compounds/plastics, 2026)
 - "if the statements are facts, which must also be a fact" (chickens/hens 2015 & 2019; stuffed toys 2016; apples/blackberries/coconuts 2013)
 - G's/H's/J's/K's set-inclusion logic (2013)
-- Freshmen/students/humans (2011)
-- Dancers/singers/slim (2020)
+- freshmen/students/humans (2011)
+- dancers/singers/slim (2020)
 - "which alternative's third statement is implied by the first two" (2010 ×2)
 - Venn-diagram choice for lions/elephants/animals
 
@@ -1448,7 +1453,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ Months with the same calendar
 - ★ Ramu every 15 days and Samu every 20 (LCM)
 - ★ Train every 45 min
-- ★ Mirror-image clock time
+- ★ mirror-image clock time
 - ★ Counting to a billion at 200/min with leap days
 
 **Direction sense (forecast 1; 18 total)**
@@ -1459,7 +1464,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 - ★ Roads grid A–M with half-km offsets (2014 ×5)
 - ★ Road junctions farthest south/east (2014)
 - ★ NE becomes SE rotation (2010)
-- ★ A man walks 3 NE then 4 NW — vector OP (2024)
+- ★ a man walks 3 NE then 4 NW — vector OP (2024)
 
 &nbsp;
 
@@ -1470,6 +1475,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 ## B3 · Grammar & vocabulary — 6 Q
 
 English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 fill-in, 1 idiom in the forecast.
+
 **Vocabulary (forecast 3; 95 total)**
 **Most repeated — do these first:**
 
@@ -1483,7 +1489,7 @@ English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 
 - ★ Word halves that form opposites (2024)
 - ★ Dictionary order (complicit, compline, compliment, complete)
 - ★ "which word is different" (indisputable vs uncertain/dubious/doubtful)
-- ★ Technical-writing facts (covering letter, what a résumé excludes, essential element of a technical report)
+- ★ technical-writing facts (covering letter, what a résumé excludes, essential element of a technical report)
 
 **Grammar & error spotting (forecast 3; 74 total)**
 **Most repeated — do these first:**
@@ -1523,7 +1529,7 @@ English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 
 - Phrasal verbs (get off, hurry up, evening out, faff about, carried out / turned down / came across / called off)
 - Error spotting (cope with, "my elder brother is an M.A.", "if I were he", "average students", "located in Rio de Janeiro")
 - Spelling (ceiling, deceive, hindrance, entrepreneur)
-- Noun/adjective identification
+- noun/adjective identification
 - Phrase types (noun/adjectival/adverbial)
 - Sentence improvement ("a nation is built not by legislation but by …")
 
@@ -1590,7 +1596,7 @@ English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 
 - Σ ⁿPᵣ/r! = 2ⁿ − 1
 - 42·ⁿP₂ = ⁿP₄ ⟹ n = 9
 - ⁿC₂ : ⁿC₄ = 2 : 1
-- N·ⁿ⁻¹Cᵣ₋₁ = r·ⁿCᵣ
+- n·ⁿ⁻¹Cᵣ₋₁ = r·ⁿCᵣ
 - Passwords two letters + three digits from 0–3
 - License plates 26³ × 10⁴
 
@@ -1600,16 +1606,16 @@ English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 
 - ★ Homogeneous systems with a non-trivial solution: 4x + ky + 2z … (two values of k), 3x + ky − 2z … (k = 33/2), trigonometric coefficients sin θ / cos θ (4 values in [0, 2π]), a³x + (a + 1)³y + … (a = −1)
 - ★ Consistency of x + y + 2z = a … (c = a + b)
 - ★ Infinitely many solutions (λ = 2, μ = 5; (k + 1)x + 8y = 4k …)
-- ★ L + m + n = 0 system
-- ★ At least one solution with λz (λ = −5)
+- ★ l + m + n = 0 system
+- ★ at least one solution with λz (λ = −5)
 - ★ System with ω coefficients
 - ★ Determinant values: cube-root-of-unity determinants (2010, 2013, 2025 circulant)
-- ★ X, x + 1, x + 3 / x + 1, x + 3, x + 6 / … at x = 2026 (= −1)
+- ★ x, x + 1, x + 3 / x + 1, x + 3, x + 6 / … at x = 2026 (= −1)
 - ★ |x x² 2 + x³| rows ⟹ xyz = −1
 - ★ Determinant with 2bc − a², c², b² of cubic roots
-- ★ Sin(A + B + C) trig determinant = 0
+- ★ sin(A + B + C) trig determinant = 0
 - ★ Determinant divisible by x and y
-- ★ Det(Mᵣ) sum for r = 1..2015 (2015²)
+- ★ det(Mᵣ) sum for r = 1..2015 (2015²)
 - ★ |a b c / b c a / c a b| orthogonal ⟹ a² + b² + c² = 1
 
 **Also asked:**
@@ -1623,19 +1629,25 @@ English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 
 - A² + 5A + 5I = 0 & B² + 3B + I = 0 ⟹ inverse of BA + 2B + 2A + 4I
 - 6A⁻¹ = A² + cA + dI (Cayley–Hamilton)
 - I + A + A² + … for a 2 × 2
-- Skew-symmetric inverse is skew-symmetric
-- Invertible-matrix properties (|adj A| ≠ 0 …)
-- Det(cA) = cⁿ det A is the false one
+- skew-symmetric inverse is skew-symmetric
+- invertible-matrix properties (|adj A| ≠ 0 …)
+- det(cA) = cⁿ det A is the false one
 - AB and BA both exist ⟹ x = 3, y = 8
 - Matrix X with 2A + B + X = 0
 - Solve x + y + z = 1, 4x + 9y + 16z = 25, 16x + 81y + 256z = 625
 
 **Reading comprehension (forecast 2; 50 total)** — passages have been 2–8 questions long (Cuban missile crisis, pterosaurs, fungi, air pollution & cardiovascular disease, white cement, left-handedness, corporate takeovers, lichens, university education, Churchill "we shall fight", VR, science vs religion, climate change, accelerating universe); also single-paragraph "which conclusion can be deduced" items (gig workers 2026) and sentence-that-logically-completes-the-passage (qualitative research 2026). Practice for speed; no study material.
+
 **Networking & Internet (forecast 1–2 but 6 in 2026)** — DNS translates URL → IP; cookies; browser rendering engine; URL / HTTP / DNS definitions matched; IMAP vs POP3 (POP3 downloads and deletes, IMAP syncs); TCP/IP needed for Internet access; www = World Wide Web. One evening covers it.
+
 **Mathematical logic (forecast 1; named in the 2027 syllabus)** — negation of ¬S ∨ (¬R ∧ S) (= S ∧ R); count truth-table rows where (¬p ∨ q) ⇒ r is true (5 of 8); tautology test; implication chains P ⟹ Q ⟹ R with S. Learn truth tables for ∧, ∨, ¬, ⇒, ⇔ and De Morgan for statements.
+
 **Number theory (forecast 1; 22 total)** — greatest number dividing 1657 and 2037 with remainders 6 and 5 (127 — 2019, 2022); smallest number leaving remainders 4, 5, 10, 15 on 9, 10, 15, 20 (355); coins one more than a multiple of 3, two more than 4 … (58); 34041 and 32506 same remainder ⟹ n = 307; remainder of 1! + 2! + … + 100! mod 24 / 240 (2009, 2021); 2³¹ mod 5; unit digit of 13647³²⁶⁵; last digit of 81 × 82 × … × 89; numbers ≤ 1000 divisible by 2, 3, 4, 5, 6 (16); odd multiples of 3 not 7 in 100–200; even numbers 99–999 not multiples of 3 or 5 (240); squares that are also cubes below 1000 (2); parity of (x − z)²y etc.; 565xy divisible by 80; smallest a with 7² and 3³ dividing a × 11³ × 6² × 13¹¹; ordered pairs with 7ᵐ + 7ⁿ divisible by 5 (2500); reversed digits increasing by 18
+
 **Data interpretation, cubes/dice & figures, data sufficiency (~3 Q together)** — pie charts (car cost 2009 ×5, Arts/Commerce institutes 2022 ×3), bar graph of five products (2021 ×3), cumulative marks table (2021 ×4), profit-growth chart (2026), nutrient table diet (2026); Venn-region counting (educated/hardworking/urban/honest 2011 ×3, employed/social worker/illiterate/truthful 2024, married teachers 2024, girls who are players not coaches 2023), count triangles/squares in a figure (2009, 2018, 2022, 2025; 6 × 6 grid squares = 91), cube colouring with 3 colours (2017, 2020), cube of 125 small cubes with three faces visible (8), dice opposite faces, figure analogies and matrix patterns (2011, 2018 ×2, 2022, 2026); data sufficiency (two statements: ages, seating middle, profit %, readers, heaviest brother, x² + y² from xy and x + y — 2014, 2015, 2018, 2019 ×3, 2022, 2024)
+
 **Complex numbers & differential equations (forecast 0.3 together)** — |z| < √3 − 1 ⟹ |z² + 2z cos α| < 2; Σ of nth roots of unity = 0; z₀ = 1 + 2i moved 5 right, 3 up, √2 along î + ĵ, rotated π/2; polynomial value at −5 + 4i; ω-determinants. Differential equations listed under Calculus chapter 8.
+
 **Programming / DS (forecast 1)** — array A[A[5]] indexing; bit-toggle expression x ^ (((1 << m) − 1) << p); compiler phases matching (intermediate representation, top-down parsing, runtime environments, register allocation); debugger definition; minimum registers for a straight-line program; errors an assembler cannot detect (logical).
 
 &nbsp;
