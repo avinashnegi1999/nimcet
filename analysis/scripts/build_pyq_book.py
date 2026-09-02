@@ -1,4 +1,4 @@
-"""Build tier-S/A/B/C 'PYQ by chapter' pages with every classified question written out in full."""
+"""Build one 'PYQ by chapter' page per row of the study-plan tier table (S1..S5, A1..A6, B1..B3, C, Skip), every classified question written out in full."""
 import json, re, os, collections
 R=os.environ.get("NIMCET_REPO", os.path.join(os.path.dirname(os.path.abspath(__file__)),"..",".."))
 rows=[json.loads(l) for l in open(f"{R}/data/questions-classified.jsonl")]
@@ -43,10 +43,26 @@ C={
 "Sentence Arrangement":[("Sentence arrangement",r".")],
 "Vectors & 3D Geometry":[("Vectors and 3D (off syllabus since 2026 — reference only)",r".")],
 }
-TIERS={"S":[("Number System & Boolean Logic","S1 · Number systems & Boolean logic"),("Calculus","S2 · Calculus"),("Arithmetic (speed-time-work, ratio, %, mixture)","S3 · Arithmetic word problems"),("Logical Deduction & Puzzles","S4 · Logical puzzles & conditional grouping"),("Trigonometry","S5 · Trigonometry")],
-"A":[("Hardware OS & General CS","A1 · Computer architecture, OS & memory"),("Coordinate & Conic Geometry","A2 · Coordinate & conic geometry"),("Algebra & Progressions","A3 · Algebra & progressions"),("Probability","A4 · Probability"),("Sets Relations & Functions","A5 · Sets, relations & functions"),("Statistics","A6 · Statistics")],
-"B":[("Series & Sequence","B1a · Series"),("Coding-Decoding","B1b · Coding-decoding"),("Syllogism","B1c · Syllogism"),("Seating & Arrangement","B2a · Seating & arrangement"),("Blood Relations","B2b · Blood relations"),("Clocks & Calendars","B2c · Clocks & calendars"),("Direction Sense","B2d · Direction sense"),("Vocabulary (synonym/antonym)","B3a · Vocabulary"),("Grammar & Error Spotting","B3b · Grammar & error spotting")],
-"C":[("Permutation & Combination","C1 · Permutation & combination"),("Matrices & Determinants","C2 · Matrices & determinants"),("Reading Comprehension","C3 · Reading comprehension"),("Fill in the Blanks","C4 · Fill in the blanks"),("Idioms & Phrases","C5 · Idioms & phrases"),("Networking & Internet","C6 · Networking & Internet"),("Mathematical Logic","C7 · Mathematical logic"),("Number Theory (HCF/LCM/divisibility)","C8 · Number theory"),("Data Interpretation","C9 · Data interpretation"),("Cubes Dice & Visual","C10 · Venn diagrams, figures, cubes & dice"),("Data Sufficiency","C11 · Data sufficiency"),("Analogy","C12 · Analogy"),("Odd-one-out & Classification","C13 · Odd one out"),("Complex Numbers","C14 · Complex numbers"),("Differential Equations","C15 · Differential equations"),("Programming DS & Algorithms","C16 · Programming"),("Sentence Arrangement","C17 · Sentence arrangement"),("Vectors & 3D Geometry","C18 · Vectors & 3D (off syllabus — reference only)")]}
+# ---- one page per row of the tier table in study-plan-by-tier.md: (file slug, page title, forecast Q, [(topic, heading label), ...])
+PAGES=[
+("S1","S1 · Number systems & Boolean logic","10",[("Number System & Boolean Logic","S1 · Number systems & Boolean logic")]),
+("S2","S2 · Calculus","10",[("Calculus","S2 · Calculus")]),
+("S3","S3 · Arithmetic word problems","9",[("Arithmetic (speed-time-work, ratio, %, mixture)","S3 · Arithmetic word problems")]),
+("S4","S4 · Logical puzzles & conditional grouping","8",[("Logical Deduction & Puzzles","S4 · Logical puzzles & conditional grouping")]),
+("S5","S5 · Trigonometry","8",[("Trigonometry","S5 · Trigonometry")]),
+("A1","A1 · Computer architecture, OS & memory","8",[("Hardware OS & General CS","A1 · Computer architecture, OS & memory")]),
+("A2","A2 · Coordinate & conic geometry","7",[("Coordinate & Conic Geometry","A2 · Coordinate & conic geometry")]),
+("A3","A3 · Algebra & progressions","6",[("Algebra & Progressions","A3 · Algebra & progressions")]),
+("A4","A4 · Probability","5",[("Probability","A4 · Probability")]),
+("A5","A5 · Sets, relations & functions","4",[("Sets Relations & Functions","A5 · Sets, relations & functions")]),
+("A6","A6 · Statistics","4",[("Statistics","A6 · Statistics")]),
+("B1","B1 · Series, coding-decoding, syllogism","10",[("Series & Sequence","B1a · Series"),("Coding-Decoding","B1b · Coding-decoding"),("Syllogism","B1c · Syllogism")]),
+("B2","B2 · Seating, blood relations, clocks, direction","8",[("Seating & Arrangement","B2a · Seating & arrangement"),("Blood Relations","B2b · Blood relations"),("Clocks & Calendars","B2c · Clocks & calendars"),("Direction Sense","B2d · Direction sense")]),
+("B3","B3 · Grammar & vocabulary","6",[("Vocabulary (synonym/antonym)","B3a · Vocabulary"),("Grammar & Error Spotting","B3b · Grammar & error spotting")]),
+("C","Tier C · P&C, matrices, comprehension, networking, small reasoning types","~10",[("Permutation & Combination","C1 · Permutation & combination"),("Matrices & Determinants","C2 · Matrices & determinants"),("Reading Comprehension","C3 · Reading comprehension"),("Fill in the Blanks","C4 · Fill in the blanks"),("Idioms & Phrases","C5 · Idioms & phrases"),("Networking & Internet","C6 · Networking & Internet"),("Mathematical Logic","C7 · Mathematical logic"),("Number Theory (HCF/LCM/divisibility)","C8 · Number theory"),("Data Interpretation","C9 · Data interpretation"),("Cubes Dice & Visual","C10 · Venn diagrams, figures, cubes & dice"),("Data Sufficiency","C11 · Data sufficiency"),("Odd-one-out & Classification","C12 · Odd one out"),("Complex Numbers","C13 · Complex numbers"),("Differential Equations","C14 · Differential equations"),("Programming DS & Algorithms","C15 · Programming")]),
+("Skip","Skip · Vectors & 3D, para jumbles, verbal analogy","0",[("Vectors & 3D Geometry","Skip · Vectors & 3D (off syllabus since 2026 — reference only)"),("Sentence Arrangement","Skip · Sentence arrangement (para jumbles, last seen 2018)"),("Analogy","Skip · Verbal analogy (last seen 2014)")]),
+]
+# rows with topic "Unknown" are pdf/site garbage ("not available on source site") and are not printed anywhere
 def chapter(topic,sub):
     for title,rx in C.get(topic,[]):
         if re.search(rx,sub,flags=re.I): return title
@@ -68,18 +84,23 @@ def fmt(text):
     s=" ".join(stem); s=re.sub(r"\s{2,}"," ",s)
     o="\n\n".join(f"&nbsp;&nbsp;&nbsp;&nbsp;**({n})** {re.sub(r'\s{2,}',' ',t)}" for n,t in opts) if opts else ""
     return s,o
-os.makedirs(f"{R}/analysis/pyq-by-chapter",exist_ok=True)
-index=[]
-for tier,areas in TIERS.items():
-    out=[f"# Tier {tier} — every past question, chapter by chapter\n",
-         "Each question is printed as it appeared in the paper (text as extracted from the PDF; a few fraction-heavy options come out mangled — the paper in `papers/` is the reference). Grouped into the chapters of [`study-plan-by-tier.md`](../study-plan-by-tier.md). No official answer keys exist for most years; the fourteen most-recycled sets are solved in [`recycled-questions-solved.md`](../recycled-questions-solved.md).\n"]
+OUT=f"{R}/analysis/pyq-by-chapter"
+os.makedirs(OUT,exist_ok=True)
+for f in os.listdir(OUT):
+    if f.endswith(".md") or f.endswith(".json"): os.remove(f"{OUT}/{f}")
+NOTE="Each question is printed as it appeared in the paper (text as extracted from the PDF; a few fraction-heavy options come out mangled — the paper in `papers/` is the reference). Grouped into the chapters of [`study-plan-by-tier.md`](../study-plan-by-tier.md). No official answer keys exist for most years; the fourteen most-recycled sets are solved in [`recycled-questions-solved.md`](../recycled-questions-solved.md)."
+readme=["# Every past NIMCET question, in full, one page per study-plan row\n",NOTE+"\n","| Page | Area | 2027 Q | Questions on page | Chapters |","|---|---|:---:|:---:|---|"]
+for slug,title,fq,areas in PAGES:
+    out=[f"# {title} — every past question, chapter by chapter\n",NOTE+"\n",
+         "Pages: "+" · ".join(f"[{s}]({s}.md)" if s!=slug else f"**{s}**" for s,_,_,_ in PAGES)+" · [index](README.md)\n"]
+    total=0; chapters=[]
     for topic,label in areas:
         qs=[r for r in rows if r["topic"]==topic]
         if not qs: continue
         chs=collections.OrderedDict((t,[]) for t,_ in C.get(topic,[])); chs["Other forms"]=[]
         for r in qs: chs[chapter(topic,r["subtopic"])].append(r)
+        total+=len(qs); chapters+= [f"{t} ({len(v)})" for t,v in chs.items() if v]
         out.append(f"\n\n---\n\n&nbsp;\n\n# {label}\n\n*{len(qs)} questions across 19 papers · " + " · ".join(f"{t}: {len(v)}" for t,v in chs.items() if v) + "*\n")
-        index.append((tier,label,topic,[(t,len(v)) for t,v in chs.items() if v]))
         n=0
         for t,v in chs.items():
             if not v: continue
@@ -88,6 +109,7 @@ for tier,areas in TIERS.items():
                 n+=1; s,o=fmt(r["text"])
                 out.append(f"\n---\n\n### Question {n} &nbsp;·&nbsp; NIMCET {r['year']}, Q{r['n']}\n\n*{r['subtopic']} · difficulty {dict(E='easy',M='medium',H='hard')[r['difficulty']]}*\n\n{s}\n")
                 if o: out.append("\n"+o+"\n")
-    open(f"{R}/analysis/pyq-by-chapter/tier-{tier}.md","w").write("\n".join(out))
-    print("tier",tier,len("\n".join(out))//1024,"KB")
-json.dump(index,open(f"{R}/analysis/pyq-by-chapter/_index.json","w"))
+    txt="\n".join(out); open(f"{OUT}/{slug}.md","w").write(txt)
+    print(f"{slug}.md {len(txt)//1024} KB {total} q")
+    readme.append(f"| [{slug}.md]({slug}.md) | {title} | {fq} | {total} | {'; '.join(chapters)} |")
+open(f"{OUT}/README.md","w").write("\n".join(readme)+"\n")

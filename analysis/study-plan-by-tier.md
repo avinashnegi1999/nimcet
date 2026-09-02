@@ -1,6 +1,6 @@
 # What to Study, in Order — Chapter by Chapter
 
-**Every past question, printed in full, chapter by chapter:** [Tier S](pyq-by-chapter/tier-S.md) · [Tier A](pyq-by-chapter/tier-A.md) · [Tier B](pyq-by-chapter/tier-B.md) · [Tier C](pyq-by-chapter/tier-C.md). This page is the index: Every tier opened into its chapters. Inside each chapter the question forms are listed one per line, the most-repeated ones first, with the paper years they appeared in. Read a chapter, then solve those exact forms from the PYQ papers.
+**Every past question, printed in full, one page per row of the table below:** [`pyq-by-chapter/`](pyq-by-chapter/) — [S1](pyq-by-chapter/S1.md) · [S2](pyq-by-chapter/S2.md) · [S3](pyq-by-chapter/S3.md) · [S4](pyq-by-chapter/S4.md) · [S5](pyq-by-chapter/S5.md) · [A1](pyq-by-chapter/A1.md) · [A2](pyq-by-chapter/A2.md) · [A3](pyq-by-chapter/A3.md) · [A4](pyq-by-chapter/A4.md) · [A5](pyq-by-chapter/A5.md) · [A6](pyq-by-chapter/A6.md) · [B1](pyq-by-chapter/B1.md) · [B2](pyq-by-chapter/B2.md) · [B3](pyq-by-chapter/B3.md) · [C](pyq-by-chapter/C.md) · [Skip](pyq-by-chapter/Skip.md). This page is the index: Every tier opened into its chapters. Inside each chapter the question forms are listed one per line, the most-repeated ones first, with the paper years they appeared in. Read a chapter, then solve those exact forms from the PYQ papers.
 
 The tier table on the [forecast page](https://avinashnegi1999.github.io/nimcet/forecast.html) says *which areas* matter. This page opens each area into the **chapters and question-types that have actually been asked**, taken from the sub-topic label on every one of the 2,248 classified questions (`data/questions-classified.jsonl`). Counts are over 19 papers; ★ marks the forms that come back nearly every year — do those first inside each chapter.
 
@@ -8,24 +8,24 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 &nbsp;
 
-| Priority | Area | 2027 Q | Marks | Page section |
-|:---:|---|:---:|:---:|---|
-| Tier S | Number systems & Boolean logic | 10 | 120 | [S1](#s1-number-systems--boolean-logic--10-q) |
-| Tier S | Calculus | 10 | 120 | [S2](#s2-calculus--10-q) |
-| Tier S | Arithmetic word problems (Reasoning section) | 9 | 108 | [S3](#s3-arithmetic-word-problems--9-q) |
-| Tier S | Logical puzzles & conditional grouping | 8 | 96 | [S4](#s4-logical-puzzles--conditional-grouping--8-q) |
-| Tier S | Trigonometry | 8 | 96 | [S5](#s5-trigonometry--8-q) |
-| Tier A | Computer architecture, OS & memory | 8 | 96 | [A1](#a1-computer-architecture-os--memory--8-q) |
-| Tier A | Coordinate & conic geometry | 7 | 84 | [A2](#a2-coordinate--conic-geometry--7-q) |
-| Tier A | Algebra & progressions | 6 | 72 | [A3](#a3-algebra--progressions--6-q) |
-| Tier A | Probability | 5 | 60 | [A4](#a4-probability--5-q) |
-| Tier A | Sets, relations & functions | 4 | 48 | [A5](#a5-sets-relations--functions--4-q) |
-| Tier A | Statistics | 4 | 48 | [A6](#a6-statistics--4-q) |
-| Tier B | Series, coding-decoding, syllogism | 10 | 120 | [B1](#b1-series-coding-decoding-syllogism--10-q) |
-| Tier B | Seating, blood relations, clocks, direction | 8 | 96 | [B2](#b2-seating-blood-relations-clocks-direction--8-q) |
-| Tier B | Grammar & vocabulary | 6 | 72 | [B3](#b3-grammar--vocabulary--6-q) |
-| Tier C | P&C, matrices, comprehension, networking, small reasoning types | ~10 | ~120 | [C](#tier-c--bounded-time-10-q) |
-| Skip | Vectors & 3D, para jumbles, verbal analogy, linear programming | 0 | 0 | [Skip](#skip) |
+| Priority | Area | 2027 Q | Marks | Page section | All past questions |
+|:---:|---|:---:|:---:|---|---|
+| Tier S | Number systems & Boolean logic | 10 | 120 | [S1](#s1-number-systems--boolean-logic--10-q) | [S1.md](pyq-by-chapter/S1.md) |
+| Tier S | Calculus | 10 | 120 | [S2](#s2-calculus--10-q) | [S2.md](pyq-by-chapter/S2.md) |
+| Tier S | Arithmetic word problems (Reasoning section) | 9 | 108 | [S3](#s3-arithmetic-word-problems--9-q) | [S3.md](pyq-by-chapter/S3.md) |
+| Tier S | Logical puzzles & conditional grouping | 8 | 96 | [S4](#s4-logical-puzzles--conditional-grouping--8-q) | [S4.md](pyq-by-chapter/S4.md) |
+| Tier S | Trigonometry | 8 | 96 | [S5](#s5-trigonometry--8-q) | [S5.md](pyq-by-chapter/S5.md) |
+| Tier A | Computer architecture, OS & memory | 8 | 96 | [A1](#a1-computer-architecture-os--memory--8-q) | [A1.md](pyq-by-chapter/A1.md) |
+| Tier A | Coordinate & conic geometry | 7 | 84 | [A2](#a2-coordinate--conic-geometry--7-q) | [A2.md](pyq-by-chapter/A2.md) |
+| Tier A | Algebra & progressions | 6 | 72 | [A3](#a3-algebra--progressions--6-q) | [A3.md](pyq-by-chapter/A3.md) |
+| Tier A | Probability | 5 | 60 | [A4](#a4-probability--5-q) | [A4.md](pyq-by-chapter/A4.md) |
+| Tier A | Sets, relations & functions | 4 | 48 | [A5](#a5-sets-relations--functions--4-q) | [A5.md](pyq-by-chapter/A5.md) |
+| Tier A | Statistics | 4 | 48 | [A6](#a6-statistics--4-q) | [A6.md](pyq-by-chapter/A6.md) |
+| Tier B | Series, coding-decoding, syllogism | 10 | 120 | [B1](#b1-series-coding-decoding-syllogism--10-q) | [B1.md](pyq-by-chapter/B1.md) |
+| Tier B | Seating, blood relations, clocks, direction | 8 | 96 | [B2](#b2-seating-blood-relations-clocks-direction--8-q) | [B2.md](pyq-by-chapter/B2.md) |
+| Tier B | Grammar & vocabulary | 6 | 72 | [B3](#b3-grammar--vocabulary--6-q) | [B3.md](pyq-by-chapter/B3.md) |
+| Tier C | P&C, matrices, comprehension, networking, small reasoning types | ~10 | ~120 | [C](#tier-c--bounded-time-10-q) | [C.md](pyq-by-chapter/C.md) |
+| Skip | Vectors & 3D, para jumbles, verbal analogy, linear programming | 0 | 0 | [Skip](#skip) | [Skip.md](pyq-by-chapter/Skip.md) |
 
 &nbsp;
 
