@@ -13,7 +13,7 @@ These questions are newly written to match the concepts, structures and difficul
 
 # SECTION A — MATHEMATICS
 
-*50 questions. Predicted breakdown: Calculus 8 · Algebra & Progressions 8 · Trigonometry 7 · Coordinate & Conic Geometry 6 · Sets, Relations & Functions 5 · Probability 5 · Statistics 3 · Permutation & Combination 3 · Matrices & Determinants 2 · 3D Geometry 1 · Number Theory 1 · Complex Numbers 1.*
+*50 questions in this bank: Calculus 9 · Algebra & Progressions 8 · Trigonometry 7 · Coordinate & Conic Geometry 6 · Sets, Relations & Functions 5 · Probability 5 · Statistics 3 · Permutation & Combination 3 · Matrices & Determinants 2 · Number Theory 1 · Complex Numbers 1. Re-verified 2027 forecast (2026-09-02): Calculus 10 · Trigonometry 8 · Coordinate 7 · Algebra 6 · Probability 5 · Sets 4 · Statistics 4 · P&C 3 · Matrices 2 · Number Theory 1 · Vectors/3D 0 — every block here sits inside its 80% band.*
 
 ---
 
@@ -1376,24 +1376,26 @@ $$1 + 2 - 3 + 0 + 1 + 2 + 0 + 0 + 1 = 4$$
 
 ### Question 48
 
-Find the distance of the point $(1, 2, 3)$ from the plane $2x - y + 2z = 9$.
+Evaluate $\displaystyle \lim_{x\to 0}\frac{\tan x - x}{x - \sin x}$.
 
-**(1)** 1  **(2)** 2  **(3)** 3  **(4)** 1/3
+**(1)** 1  **(2)** 1/2  **(3)** 2  **(4)** 3
 
-**Answer: (1) 1 unit**
+**Answer: (3) 2**
 
 **Solution.**
-For a plane $ax + by + cz + d = 0$ and a point $(x_1, y_1, z_1)$, the perpendicular distance is
+Both numerator and denominator → 0, so expand in series about $x = 0$:
 
-$$D = \frac{\left|ax_1 + by_1 + cz_1 + d\right|}{\sqrt{a^2 + b^2 + c^2}}$$
+$$\tan x = x + \frac{x^3}{3} + \frac{2x^5}{15} + \cdots \qquad \sin x = x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots$$
 
-Rewrite the plane as $2x - y + 2z - 9 = 0$, so $a = 2$, $b = -1$, $c = 2$, $d = -9$.
+$$\tan x - x = \frac{x^3}{3} + O(x^5), \qquad x - \sin x = \frac{x^3}{6} + O(x^5)$$
 
-$$D = \frac{|2(1) - 1(2) + 2(3) - 9|}{\sqrt{4 + 1 + 4}} = \frac{|2 - 2 + 6 - 9|}{\sqrt{9}} = \frac{|-3|}{3} = 1$$
+$$\lim_{x\to 0}\frac{\tan x - x}{x - \sin x} = \frac{1/3}{1/6} = 2$$
 
-> ⚠ **Syllabus warning.** The Vectors & 3D Geometry bucket collapsed from 6 questions in 2025 to 1 in 2026 when the revised syllabus removed vector algebra. Only the *3D coordinate geometry* half plausibly survives, at about one question. **Do not spend time on dot products, cross products, scalar triple products or vector projections.**
+(L'Hôpital three times gives the same: $\dfrac{\sec^2 x - 1}{1 - \cos x} \to \dfrac{2\sec^2 x \tan x}{\sin x} \to 2$.)
 
-**Difficulty:** Easy–Medium · **P = 0.35**
+> This slot previously held a 3D-geometry (point-to-plane distance) question. It was replaced in the 2026-09-02 re-verification: the Vectors & 3D bucket fell from 6 questions in 2025 to **0 in 2026** and does not appear in the 2027 syllabus, while Calculus is forecast at ~10 questions, not 8.
+
+**Difficulty:** Medium · **P = 0.80**
 
 ---
 

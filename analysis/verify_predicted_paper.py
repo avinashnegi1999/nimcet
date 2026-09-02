@@ -152,7 +152,7 @@ B = sp.Matrix([[-1, -1, 2], [0, -1, -1], [0, 0, -1]])
 check("Q47", sum((B**2)), 4, f"B^2 = {(B**2).tolist()}")
 
 # ---- 3D, number theory, complex ------------------------------------------
-check("Q48", abs(2*1 - 2 + 2*3 - 9)/sp.sqrt(4 + 1 + 4), 1)
+check("Q48", sp.limit((sp.tan(x) - x)/(x - sp.sin(x)), x, 0), 2)
 check("Q49", pow(7, 100, 5), 1)
 check("Q50", sp.expand((1 + sp.I)**8), 16)
 
