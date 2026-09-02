@@ -66,7 +66,9 @@
 
 ---
 
-## 3. Priority plan (freq × YOUR weakness = Math)
+## 3. Priority plan
+
+_Chapter-level detail for every tier: [`study-plan-by-tier.md`](study-plan-by-tier.md)._ (freq × YOUR weakness = Math)
 
 ### 🔴 Tier 1 — master first (high freq + your weak section)
 All appear ~every year. This is where your 600→800 jump lives.

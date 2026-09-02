@@ -80,6 +80,8 @@ The fourteen headline repeats are written out in full with worked solutions in [
 
 ## Priority tiers (revised for the 2023 split + 2026 syllabus)
 
+Chapter-by-chapter contents of every tier: [`analysis/study-plan-by-tier.md`](analysis/study-plan-by-tier.md).
+
 - 🔴 **Tier S — do first (~540 marks):** Number Systems & Boolean Logic (10 Q) · Calculus (10 Q) · Arithmetic word problems (9 Q) · Logical Puzzles (8 Q) · Trigonometry (8 Q).
 - 🟠 **Tier A — next:** Computer architecture/OS/memory (8 Q) · Coordinate & Conic Geo (7 Q) · Algebra & Progressions (6 Q) · Probability (5 Q) · Sets & Functions (4 Q) · Statistics (4 Q — the one *rising* Math topic, p = 0.002).
 - 🟡 **Tier B — cheap, don't skip:** Series/Coding/Syllogism (10 Q) · Seating/Blood Relations/Clocks/Direction (8 Q) · Grammar + Vocabulary (6 Q).
