@@ -74,6 +74,8 @@ Method: exponentially-weighted average of topic shares, chosen because it **won 
 
 TF-IDF matching across all 19 papers with every numeral masked found **270 cross-year duplicate pairs, 77 of them near-verbatim**. Whole multi-question puzzle sets get lifted intact — 2009 Q61–65 reappeared as 2012 Q86–88; 2024 Q61–63 reappeared as 2025 Q104.
 
+The fourteen headline repeats are written out in full with worked solutions in [`analysis/recycled-questions-solved.md`](analysis/recycled-questions-solved.md).
+
 **The repeat gap peaks at 2 years and 4 years.** For 2027 that points squarely at **NIMCET 2025 and NIMCET 2023** — solve those two until you recognise a stem in five seconds.
 
 ## Priority tiers (revised for the 2023 split + 2026 syllabus)
