@@ -1,0 +1,301 @@
+# id	code	note  (manual corrections to prelabel.jsonl after reading each question)
+2008#21	M-DEF	definite integral of odd/even combination
+2008#23	X-MATH	pure Euclidean triangle inequality (no coordinates)
+2008#28	M-CPX	cube roots of unity
+2008#29	M-PROG	coefficient = sum of squares 1..20
+2009#3	X-MATH	pure geometry: area common to rotated squares
+2009#6	M-RCS	locus under max metric
+2009#9	M-DET	det(adj A)
+2009#10	M-BIN	sum of binomial coefficients
+2009#18	M-DIFF	derivative of odd function
+2009#22	M-EXP	2^|x+1| exponential equation
+2009#24	M-QUAD	cubic roots in GP (theory of equations)
+2009#40	M-QUAD	reciprocal quartic
+2010#30	M-FUN	counting injections (types of functions)
+2010#35	M-PROB	Poisson distribution
+2010#43	M-RCS	reflection/translation/rotation of a point
+2010#48	M-AOD	angle of intersection of curves
+2011#17	M-DEF	definite integral inequality
+2011#20	M-DEF	derivative of integral (FTC)
+2011#37	M-PROG	sum of squares
+2011#39	M-QUAD	power sum of quadratic roots
+2012#6	M-DEF	limit as a sum (Riemann) -> definite integral
+2012#9	M-DEF	definite integral of log tan x
+2012#13	M-DEF	integrals with variable limits, differentiate
+2012#24	M-PROG	min of x+1/x via AM>=GM (verified from page image)
+2012#38	M-TEQ	sin(pi cos t)=cos(pi sin t) (verified from page image)
+2012#41	M-QUAD	quadratic with trig coefficients, real roots (verified from page image)
+2013#36	M-SL	distance of vertex from base line
+2013#39	M-PROB	variance of a random variable
+2013#41	M-PROG	sum of multiples of 7 (AP)
+2012#117	X-DUP	source repeats 2012 Q26 verbatim (within-paper duplicate)
+2012#118	X-DUP	source repeats 2012 Q27
+2012#119	X-DUP	source repeats 2012 Q28
+2012#120	X-DUP	source repeats 2012 Q29
+2014#78	M-QUAD	roots and their 4th powers, nature of roots
+2014#107	X-MATH	pure Euclidean geometry (median bisected)
+2015#48	M-DEF	definite integral on symmetric interval
+2015#68	M-SL	other diagonal of square (line)
+2015#70	M-CIR	locus of centre of touching circle
+2015#84	M-FUN	counting one-one functions
+2015#85	M-PTRI	cosine rule (bearing problem)
+2016#45	M-PROG	common terms of two APs
+2016#95	M-EXP	exponential equation 3^x = 4^(x-1)
+2016#110	M-AOD	number of real roots via monotonicity
+2016#115	M-AOD	max rectangle inscribed in ellipse
+2017#40	M-PROB	binomial distribution mean/variance
+2017#45	M-CPX	roots alpha^n via De Moivre
+2017#51	M-ITF	principal value
+2017#60	M-FUN	graph transformation (shifts)
+2017#72	M-DIFB	derivative of x^2 sin(1/x) at 0
+2017#73	M-AOD	max area isosceles triangle
+2017#76	M-TRIG	max of trig expression (bounds)
+2017#78	M-DEF	definite integral 0..1 x(1-x)^n
+2018#33	M-TRIG	values of sin^2 18, cos^2 36
+2018#42	M-AOD	related rates (circle area)
+2018#46	M-TEQ	solution sets of trig equations
+2018#49	M-SL	locus of orthocentre of triangle formed by lines
+2018#64	M-DEF	int_0^{pi/2} of odd/even combos (verified from page image p26)
+2018#73	X-MATH	pure geometry BC^2-BD^2 in right triangle (verified from page image p30; not vectors)
+2018#75	M-SL	locus of circumcentre, line through fixed point
+2018#107	M-PROG	tetrahedral number series
+2019#6	M-SET	voters both/neither
+2019#9	M-TEQ	count solutions sin(e^x)=5^x+5^-x
+2019#11	M-FUN	counting onto functions
+2019#22	X-MATH	pure geometry ratio in parallelogram
+2019#23	X-MATH	pure Euclidean geometry (median bisected)
+2019#26	X-MATH	partial fractions (not in 2027 list)
+2020#91	M-QUAD	expression in roots of quadratic
+2020#97	X-MATH	algebraic identity a+b+c=0 (not a listed chapter)
+2020#99	M-AOD	nature of point (minima) of piecewise function
+2020#104	M-IND	reduction formula (text missing in source; old label kept)
+2021#32	M-LOG	logarithmic series coefficients
+2021#40	M-ELL	director circle of ellipse
+2021#65	M-BIN	minimise n!(21-n)! = maximise 21Cn
+2021#75	M-RCS	fourth vertex of parallelogram (midpoints)
+2021#76	M-TRIG	squaring-and-adding identity
+2021#78	M-IND	indefinite integral with +c
+2022#4	M-AOD	max of quadratic form on a circle
+2022#8	M-DE	motion with acceleration x - x^2 (v dv/dx)
+2022#9	M-DEF	definite integral of |x-a|+|x-b|
+2022#15	M-CONT	continuity of (1+2x)^(1/x) at 0
+2022#33	M-AOD	curves cutting at right angles
+2022#34	M-QUAD	power sums of quadratic roots recurrence
+2022#38	M-TRIG	roots tan30, tan15 -> tan45 identity
+2022#40	M-IND	indefinite integral (+C)
+2023#3	M-IND	indefinite integral substitution (+C)
+2023#17	M-FUN	count solutions graphically
+2023#26	M-LOG	logarithmic series coefficient
+2023#57	M-CIR	locus of centre of touching circle
+2023#111	M-DEF	definite integral on symmetric interval
+2024#12	M-FUN	counting one-one functions
+2024#32	M-DEF	properties of definite integrals
+2024#40	M-HYP	intersections of hyperbola and ellipse
+2024#62	M-BIN	sum nPr/r! = sum nCr
+2024#84	M-PSL	general 2nd-degree equation classification (h^2-ab)
+2024#108	M-EXP	exponential series (e)
+2025#36	M-EXP	exponential equation 8^(x-1)=(1/4)^x
+2025#39	M-PROB	normal distribution (random variable)
+2025#43	M-DEF	derivative of integral with variable limits
+2025#59	M-PROB	Poisson distribution
+2025#65	M-CONT	continuity of x^a sin(1/x^b)
+2025#70	M-QUAD	power sums from x+y, x^2+y^2 (symmetric functions)
+2025#72	M-FUN	signum composition, domain/range
+2026#25	M-FUN	counting injective functions
+2026#35	M-PROB	Bernoulli random variables
+2026#42	M-PROG	alternating sums of k and k^2
+2026#47	M-FUN	composition of piecewise functions
+2026#49	M-AOD	angle between intersecting curves
+2026#59	M-TEQ	solutions of 2cos(x/2)+3=4 in interval
+2026#117	M-DEF	definite integral of inverse function
+2008#58	R-MIR	mirror image of a clock
+2008#63	R-PS	largest circle on chessboard
+2008#66	R-NUM	sheep sharing arithmetic
+2008#75	R-PUZ	staff selection set (same set as Q74-77)
+2008#78	R-PS	cryptarithm
+2008#84	R-PS	desert crossing rations
+2008#85	R-NUM	eggs sold arithmetic
+2008#86	R-DED	only one statement true
+2008#89	R-DED	ages product 36 classic deduction
+2009#41	R-NUM	digit replacement sum
+2009#44	R-DED	one true one false statement each
+2009#57	R-SER	letter pairs (alphabet positions)
+2009#60	R-NUM	ages square plus cube
+2009#61	R-PUZ	houses roof/chimney set (Q61-65)
+2009#64	R-PUZ	houses roof/chimney set (Q61-65)
+2009#66	R-CT	weaken the argument
+2009#78	R-PS	question-attempt AP process set (Q78-80)
+2009#79	R-PS	question-attempt AP process set (Q78-80)
+2009#87	R-DED	order from equalities/inequalities
+2010#22	X-MATH	mensuration shaded area (math in reasoning part)
+2010#96	R-CT	business strategy evaluation
+2010#107	R-PS	pipeline flow set (Q107-109)
+2010#108	R-PS	pipeline flow set
+2010#109	R-PS	pipeline flow set
+2010#114	R-CD	binary tree coding set (Q114-117)
+2010#115	R-CD	binary tree coding set
+2010#116	R-CD	binary tree coding set
+2010#117	R-CD	binary tree coding set
+2011#45	R-NUM	mathematical operations (interchange signs)
+2011#76	R-CT	what establishes a fact (critical thinking)
+2011#77	R-PUZ	presentation scheduling set (Q77-80)
+2011#78	R-PUZ	presentation scheduling set
+2011#79	R-PUZ	presentation scheduling set
+2011#80	R-PUZ	presentation scheduling set
+2011#82	R-PS	uniform production capacity set (Q82-84)
+2012#86	R-PUZ	houses roof/chimney set (repeat of 2009 Q61-65)
+2012#87	R-PUZ	houses roof/chimney set
+2012#88	R-PUZ	houses roof/chimney set
+2013#72	R-NUM	weight ratio chain set (Q72-73)
+2013#73	R-NUM	weight ratio chain set
+2013#74	R-IO	rule-based switch state machine set (Q74-76)
+2013#75	R-IO	rule-based switch state machine set
+2013#76	R-IO	rule-based switch state machine set
+2013#81	R-PUZ	height ordering set (Q79-81)
+2015#9	R-PUZ	marriage/profession matching
+2015#10	R-PUZ	vertical stacking order
+2015#11	R-PUZ	height ordering
+2015#23	R-PS	socks pigeonhole
+2015#41	R-SER	letter position in alphabet
+2016#32	R-DED	chain of logical implications
+2016#33	R-PUZ	floor puzzle set (Q33-36)
+2016#34	R-PUZ	floor puzzle set
+2016#35	R-PUZ	floor puzzle set
+2016#36	R-PUZ	floor puzzle set
+2016#40	R-PUZ	team selection set (Q40-42)
+2016#51	R-IO	instruction-sequence state set (Q51-52)
+2016#52	R-IO	instruction-sequence state set
+2016#53	R-SER	letter pairs (alphabet positions)
+2016#65	R-DED	truth-type islanders
+2016#70	R-NUM	digit replacement sum
+2016#101	R-PS	equally spaced points on circle
+2017#85	R-DED	who is lying from statements about ages
+2017#86	R-PS	pigeonhole modulo 10
+2017#87	R-PUZ	ordering by intelligence
+2017#89	R-PUZ	professions/marriages matching
+2017#90	R-PUZ	vertical stacking order
+2017#98	R-PUZ	attribute matching (passengers)
+2018#79	R-SCA	cause and effect
+2018#86	X-MATH	parallelogram area/height figure (verified from page image p35)
+2018#113	R-PUZ	committee assignment set (Q113-115)
+2019#2	R-PUZ	professions/marriages matching set
+2019#3	R-PUZ	professions/marriages matching set
+2019#99	X-MATH	mensuration: spheres into cylinder
+2019#107	R-PUZ	team selection constraints
+2019#111	R-PUZ	weight ordering
+2020#21	R-PUZ	committee assignment set (Q21-22)
+2020#28	R-FIG	missing cell in figure matrix (no numbers in text)
+2022#81	R-PUZ	drama scheduling set (Q81-85)
+2022#82	R-PUZ	drama scheduling set
+2022#83	R-PUZ	drama scheduling set
+2022#84	R-PUZ	drama scheduling set
+2022#85	R-PUZ	drama scheduling set
+2023#43	M-STAT	ranks unchanged when marks shift y=1+x (statistics content; printed in Reasoning part) — changed in audit
+2023#52	R-NUM	digit operations on numbers then ordering
+2023#59	R-PUZ	activity assignment constraints
+2023#60	R-SEAT	queue positions
+2024#33	R-DED	conditional statements
+2024#47	R-SER	dictionary (alphabetical) order
+2025#85	R-CT	apply a definition to examples
+2025#96	R-CT	apply economic definition (dumping)
+2025#117	R-PS	digit counting in concatenated integers
+2025#120	R-CT	infer from experiment design
+2026#69	R-CT	identify circular argument
+2026#82	X-MATH	mensuration: cone/hemisphere/cylinder volumes
+2026#83	M-PROG	AP sum of positive terms (math content in reasoning part)
+2026#90	R-DED	valid conclusion from rule
+2026#91	R-PUZ	rank from top and bottom
+2026#95	R-PUZ	vertical stacking order
+2008#103	C-REP	bits for ASCII character
+2008#110	C-OS	bootstrap loader location
+2008#113	C-BHX	radix equation
+2009#100	C-ORG	data bus width
+2009#104	C-CPU	index register
+2009#105	C-CPU	microprogrammed control unit
+2010#67	C-ORG	data-processing functions of a computer
+2010#70	X-COMP	data hierarchy (field/record/database)
+2010#71	C-ORG	stored-program machine
+2010#74	C-IOB	I/O mapped I/O
+2011#87	C-TWC	overflow condition in signed addition
+2012#107	C-IOB	I/O processor (verified from page image)
+2012#114	C-CPU	control unit
+2013#113	C-MEM	flip-flop as memory element
+2016#92	C-STO	hard disk capacity/addressing
+2016#96	C-BHX	base equation solutions
+2017#30	C-OS	bootstrap loader location
+2017#31	C-BHX	base equation
+2018#3	C-BHX	base equation solutions
+2018#5	C-BHX	radix equations
+2019#57	C-BOOL	logic circuit output
+2020#55	C-CPU	CPU cycle definition
+2020#57	C-BOOL	bitwise XOR of hex numbers
+2021#1	C-CPU	pipelining
+2021#7	C-CPU	MAR register
+2021#9	C-CPU	instructions per second execution time
+2021#10	C-IOB	program-controlled I/O
+2022#94	C-REP	bits vs decimal digits of integers
+2022#95	C-CPU	clock period
+2023#74	C-ORG	Von Neumann architecture
+2023#78	C-OS	FAT32 vs NTFS file systems
+2023#82	C-MEM	buffer
+2023#83	C-CPU	clock period
+2023#84	C-MEM	TLB / virtual memory
+2023#87	C-CPU	program counter register
+2023#88	C-CPU	CPU cycle definition
+2024#77	C-IOB	DMA
+2024#81	C-MEM	TLB / virtual memory
+2024#99	C-BHX	ternary-like number system
+2024#101	C-CPU	instruction format
+2024#105	C-CPU	register linking CPU and peripherals (answer: memory data register) — changed after audit
+2024#109	C-CPU	CPU performance factors
+2025#6	C-REP	binary fraction to decimal
+2025#14	C-CPU	hardwired vs microprogrammed control
+2025#15	C-CPU	instruction encoding
+2025#17	C-STO	secondary storage access speed
+2025#19	C-REP	ASCII vs Unicode
+2025#20	C-CPU	pipeline stages and TLB access
+2026#2	C-MEM	memory/storage types match
+2026#6	C-WEB	cookies in web browsing
+2026#7	C-CPU	fetch-decode-execute cycle
+2026#9	C-SYS	system vs application software
+2026#104	C-MEM	virtual memory benefit
+2026#106	C-SYS	dynamic vs static linking (DLL)
+2026#110	C-MEM	memory hierarchy speed order
+2026#112	C-WEB	DNS
+2026#120	C-CPU	opcode
+2008#118	E-WU	double-blank vocabulary fill
+2009#120	E-WU	one word fitting both sentences
+2010#87	E-WU	double-blank vocabulary fill
+2010#91	E-WU	inappropriate usage of a word
+2011#119	E-WF	adjective form (hard/hardly/hardship)
+2011#120	E-WF	adjective form (parts of speech)
+2013#97	E-WU	phrasal verb usage
+2016#8	E-WU	collective noun usage
+2017#11	E-WU	phrasal verb usage
+2018#15	E-WU	collocation
+2018#19	E-WU	usage of a word in four ways
+2018#27	E-SF	phrase replacement (sentence improvement)
+2019#71	E-WU	usage of a word in four ways
+2019#75	E-WU	phrasal verb usage
+2019#81	E-WU	phrasal verb usage
+2009#85	R-CT	argument passage evaluation (printed in Reasoning part, Q85)
+2018#103	R-CT	which statement supports paragraph (Reasoning part, Q103)
+2020#58	E-TEE	expressions (approval)
+2020#59	E-WF	noun form identification
+2020#71	E-TW	covering letter with CV (professional writing)
+2020#72	E-TW	resume contents (professional writing)
+2021#81	X-ANLR	word classification (printed in Reasoning part)
+2022#57	X-ANLR	word analogy (printed in Reasoning part)
+2022#58	X-ANLR	word analogy (printed in Reasoning part)
+2022#66	X-ANLR	word analogy (printed in Reasoning part)
+2022#103	E-TW	technical writing register
+2022#116	E-SF	phrase replacement (sentence improvement)
+2024#1	E-WF	join word halves (word formation)
+2024#8	X-ANLR	word analogy (printed in Reasoning part)
+2024#45	X-ANLR	word analogy (printed in Reasoning part)
+2024#120	E-TW	elements of a technical report
+2026#14	E-WU	phrasal verb usage
+2026#15	E-TEE	academic/technical verb-noun collocations
+2026#75	R-CT	deduce conclusion from paragraph (Reasoning part, Q75)
+# audit 2026-09-23: 40 random questions re-read in full (seed 2027): 38 clearly right, 2 borderline (2024#105 changed above; 2016#21 kept)
+2018#85	X-DUP	source prints 2018 Q80 twice (Q85 = Q80) — within-paper duplicate, found in audit

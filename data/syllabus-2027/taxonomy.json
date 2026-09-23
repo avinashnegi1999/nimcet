@@ -1,0 +1,174 @@
+{
+  "source": "2027 syllabous/Nimcet 2027 Syllabus.pdf (NIMCET 2027 Complete Syllabus, 120 questions)",
+  "parts": [
+    {
+      "part": "I", "section": "Math", "name": "Mathematics", "questions2027": 50,
+      "units": [
+        {"unit": "Algebra", "chapters": [
+          ["M-LOG", "Logarithmic"],
+          ["M-QUAD", "Quadratic Equations and Inequalities"],
+          ["M-PROG", "Progression"],
+          ["M-EXP", "Exponentials"],
+          ["M-BIN", "Binomial Theorem"],
+          ["M-DET", "Determinant"],
+          ["M-MAT", "Matrix"],
+          ["M-SET", "Set Theory"],
+          ["M-PNC", "Permutation and Combination"],
+          ["M-PROB", "Probability"],
+          ["M-CPX", "Complex Numbers"],
+          ["M-MLOG", "Mathematical Logic (Tautology, Contradiction, Truth Table, Connectives)"]
+        ]},
+        {"unit": "Trigonometry", "chapters": [
+          ["M-ANG", "Measurement of Angles"],
+          ["M-TRIG", "Trigonometric Ratios and Functions"],
+          ["M-TEQ", "Trigonometric Equations"],
+          ["M-PTRI", "Properties of a Triangle"],
+          ["M-ITF", "Inverse Trigonometry Function"],
+          ["M-HD", "Height and Distance"]
+        ]},
+        {"unit": "Calculus", "chapters": [
+          ["M-FUN", "Function"],
+          ["M-LIM", "Limit"],
+          ["M-CONT", "Continuity"],
+          ["M-DIFB", "Differentiability"],
+          ["M-DIFF", "Differentiation"],
+          ["M-AOD", "Application of Derivative"],
+          ["M-IND", "Indefinite Integrals"],
+          ["M-DEF", "Definite Integral"],
+          ["M-AUC", "Area Under Curve"],
+          ["M-DE", "Differential Equation"]
+        ]},
+        {"unit": "Coordinate Geometry", "chapters": [
+          ["M-RCS", "Rectangular Cartesian System"],
+          ["M-SL", "Straight Line"],
+          ["M-PSL", "Pair of Straight Line"],
+          ["M-CIR", "Circle"],
+          ["M-PAR", "Parabola"],
+          ["M-HYP", "Hyperbola"],
+          ["M-ELL", "Ellipse"]
+        ]},
+        {"unit": "Statistics", "chapters": [
+          ["M-STAT", "Statistics"]
+        ]}
+      ]
+    },
+    {
+      "part": "II", "section": "Reasoning", "name": "Analytical Ability & Logical Reasoning", "questions2027": 40,
+      "units": [
+        {"unit": "Verbal Reasoning", "chapters": [
+          ["R-BR", "Blood Relations"],
+          ["R-CD", "Coding-Decoding"],
+          ["R-DIR", "Direction Test"],
+          ["R-SEAT", "Seating Arrangement"],
+          ["R-PUZ", "Puzzles"],
+          ["R-SYL", "Syllogism"],
+          ["R-IO", "Input-Output"],
+          ["R-SER", "Alphanumeric Series"],
+          ["R-SCA", "Statements, Conclusions & Arguments"]
+        ]},
+        {"unit": "Non-Verbal Reasoning", "chapters": [
+          ["R-MIR", "Mirror Images"],
+          ["R-FIG", "Figure-based Reasoning"]
+        ]},
+        {"unit": "Logical & Analytical Reasoning", "chapters": [
+          ["R-DED", "Deductive & Inductive Reasoning"],
+          ["R-PS", "Problem Solving"],
+          ["R-CT", "Critical Thinking"]
+        ]},
+        {"unit": "Data Analysis", "chapters": [
+          ["R-DI", "Data Interpretation"],
+          ["R-NUM", "Numerical Reasoning"],
+          ["R-DS", "Data Sufficiency"],
+          ["R-DV", "Data Visualization"]
+        ]}
+      ]
+    },
+    {
+      "part": "III", "section": "Computer", "name": "Computer Awareness", "questions2027": 20,
+      "units": [
+        {"unit": "Computer Basics", "chapters": [
+          ["C-ORG", "Computer Organization"],
+          ["C-CPU", "CPU & Instructions"],
+          ["C-IOB", "Input/Output Devices"],
+          ["C-MEM", "Computer Memory"],
+          ["C-BKP", "Backup Devices"]
+        ]},
+        {"unit": "Data Representation", "chapters": [
+          ["C-REP", "Character, Integer & Fraction Representation"],
+          ["C-BHX", "Binary & Hexadecimal"],
+          ["C-BAR", "Binary Arithmetic"],
+          ["C-TWC", "Two's Complement"],
+          ["C-FP", "Floating Point Representation"],
+          ["C-BOOL", "Boolean Algebra"]
+        ]},
+        {"unit": "Computer Hardware", "chapters": [
+          ["C-HIN", "Input Devices"],
+          ["C-HOUT", "Output Devices"],
+          ["C-STO", "Storage Devices"],
+          ["C-RRC", "RAM, ROM & Cache"]
+        ]},
+        {"unit": "Computer Software", "chapters": [
+          ["C-OS", "Operating Systems"],
+          ["C-SYS", "System Software"],
+          ["C-UTIL", "Utility Programs & Device Drivers"],
+          ["C-APP", "Application Software"]
+        ]},
+        {"unit": "Internet & Email", "chapters": [
+          ["C-WEB", "Internet & Web Browsing"],
+          ["C-MAIL", "Email"],
+          ["C-SEC", "Online Security"],
+          ["C-CYB", "Basic Cyber Threats & Safety"]
+        ]}
+      ]
+    },
+    {
+      "part": "IV", "section": "English", "name": "General English", "questions2027": 10,
+      "units": [
+        {"unit": "Reading Comprehension", "chapters": [
+          ["E-RC", "Comprehension of Written Text"]
+        ]},
+        {"unit": "Vocabulary", "chapters": [
+          ["E-WPM", "Word & Phrase Meanings"],
+          ["E-WU", "Word Usage"]
+        ]},
+        {"unit": "Grammar", "chapters": [
+          ["E-GP", "Grammatical Patterns"],
+          ["E-SF", "Sentence Forms"],
+          ["E-WF", "Word Formation"],
+          ["E-SND", "Sounds & Pronunciation"]
+        ]},
+        {"unit": "Technical English", "chapters": [
+          ["E-TW", "Technical Writing"],
+          ["E-AF", "Accuracy & Fluency"],
+          ["E-TEE", "English Expressions for Technical Education"]
+        ]}
+      ]
+    }
+  ],
+  "offSyllabus": [
+    ["X-VEC", "Math", "Vectors & 3D Geometry"],
+    ["X-MATH", "Math", "Other Math not in 2027 syllabus (number theory, LPP, pure geometry/mensuration, etc.)"],
+    ["X-ANLR", "Reasoning", "Analogy & Classification (odd-one-out)"],
+    ["X-RSN", "Reasoning", "Other Reasoning not in 2027 syllabus"],
+    ["X-PROG", "Computer", "Programming, Data Structures & Algorithms"],
+    ["X-COMP", "Computer", "Other Computer topics not in 2027 syllabus"],
+    ["X-ANLE", "English", "Verbal Analogy"],
+    ["X-PARA", "English", "Sentence / Paragraph Arrangement"],
+    ["X-ENG", "English", "Other English not in 2027 syllabus"],
+    ["X-UNK", "Unknown", "Question text not available in source"]
+  ],
+  "mappingRules": [
+    "Arithmetic word problems (ratio, %, profit-loss, ages, time-speed-work, mixtures, averages, interest) -> R-NUM Numerical Reasoning, because NIMCET places them in the Reasoning section.",
+    "Clocks & Calendars -> R-NUM Numerical Reasoning (calculation-based).",
+    "Cubes, dice, paper folding, counting figures, embedded figures, figure series -> R-FIG Figure-based Reasoning; water images -> R-MIR.",
+    "Number/letter series and odd-one-out inside a series -> R-SER.",
+    "Grid/ordering/selection/scheduling puzzles -> R-PUZ; linear/circular seating -> R-SEAT.",
+    "Truth-teller, implication, 'which must be true' logic -> R-DED; course-of-action / assumption / cause-effect -> R-SCA; strengthen/weaken/inference from passage -> R-CT; multi-step optimisation, weighing, counting logic -> R-PS.",
+    "Relations and functions: counting relations, relation properties -> M-SET; domain/range/inverse/composite/periodic/even-odd functions -> M-FUN.",
+    "Trig identities and values -> M-TRIG; radian/degree conversion -> M-ANG.",
+    "Networking and protocols -> C-WEB (syllabus: 'understanding how the internet works').",
+    "Logic gates, K-maps, flip-flop logic -> C-BOOL; number base conversion -> C-BHX; signed number / complement arithmetic -> C-TWC.",
+    "Compilers, assemblers, loaders, linkers -> C-SYS; memory hierarchy, addressing, virtual memory, memory units -> C-MEM; specific RAM/ROM/cache types and cache mapping -> C-RRC.",
+    "Synonyms, antonyms, idioms, one-word substitution -> E-WPM; fill in the blanks -> E-WU; error spotting/tense/preposition/agreement -> E-GP; sentence improvement, voice, narration -> E-SF; spelling, prefixes/suffixes -> E-WF."
+  ]
+}

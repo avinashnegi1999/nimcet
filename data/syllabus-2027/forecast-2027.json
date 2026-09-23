@@ -1,0 +1,8296 @@
+{
+ "generated": "2026-09-23",
+ "source": "19 NIMCET papers 2008-2026 (papers/), labels in data/syllabus-2027/labels.jsonl",
+ "partSizes2027": {
+  "Math": 50,
+  "Reasoning": 40,
+  "Computer": 20,
+  "English": 10
+ },
+ "model": {
+  "halfLife": 6,
+  "calibration": {
+   "a": 0.718,
+   "b": -0.043,
+   "fittedOn": "1272 chapter-year predictions (targets 2012-2026)"
+  },
+  "recencyVariant": {
+   "halfLife": 2,
+   "a": 0.652,
+   "b": 0.025
+  }
+ },
+ "chapters": [
+  {
+   "code": "M-LOG",
+   "chapter": "Logarithmic",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 2,
+    "2009": 1,
+    "2010": 0,
+    "2011": 2,
+    "2012": 2,
+    "2013": 1,
+    "2014": 2,
+    "2015": 2,
+    "2016": 1,
+    "2017": 0,
+    "2018": 2,
+    "2019": 3,
+    "2020": 0,
+    "2021": 1,
+    "2022": 1,
+    "2023": 1,
+    "2024": 0,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 22,
+   "yearsAsked": 14,
+   "yearsAvailable": 19,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 1,
+   "expected2027": 1.07,
+   "pAtLeast1": 0.604,
+   "pAtLeast2Raw": 0.29,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.66,
+    "pAtLeast1": 0.495
+   },
+   "trend": {
+    "rho": -0.523,
+    "p": 0.02024493876530867,
+    "q": 0.2
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "log inequality",
+     2
+    ],
+    [
+     "log infinite GP",
+     1
+    ],
+    [
+     "logarithm equation",
+     1
+    ],
+    [
+     "log infinite product",
+     1
+    ],
+    [
+     "HP log identity",
+     1
+    ],
+    [
+     "log identity sum",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#26",
+     "text": "1+x Which of the following number is the coefficient of x100 in the expansion of loge ( 2 ), |x|<1 ? 1+x 1 0.01 2 0.02 3 -0.03 4 -0.01"
+    },
+    {
+     "id": "2025#81",
+     "text": "Let x be a positive real number such that x(8 log x−24) = 5−4 . Then the product of all possible 5 values of x is = 1 5 2 125 3 165 4 25"
+    }
+   ]
+  },
+  {
+   "code": "M-QUAD",
+   "chapter": "Quadratic Equations and Inequalities",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 2,
+    "2009": 2,
+    "2010": 0,
+    "2011": 2,
+    "2012": 2,
+    "2013": 0,
+    "2014": 3,
+    "2015": 2,
+    "2016": 2,
+    "2017": 1,
+    "2018": 1,
+    "2019": 0,
+    "2020": 1,
+    "2021": 2,
+    "2022": 2,
+    "2023": 3,
+    "2024": 0,
+    "2025": 2,
+    "2026": 2
+   },
+   "total": 29,
+   "yearsAsked": 15,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 1.73,
+   "pAtLeast1": 0.743,
+   "pAtLeast2Raw": 0.517,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.79,
+    "pAtLeast1": 0.745
+   },
+   "trend": {
+    "rho": -0.256,
+    "p": 0.2931767058235441,
+    "q": 0.843
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "quadratic always positive",
+     2
+    ],
+    [
+     "quadratic roots symmetric",
+     1
+    ],
+    [
+     "modulus equation roots",
+     1
+    ],
+    [
+     "cubic roots in GP",
+     1
+    ],
+    [
+     "reciprocal quartic",
+     1
+    ],
+    [
+     "roots power sum",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#12",
+     "text": "If f(x) is a polynomial of degree 4, f(n) = n + 1 & f(0) = 25, then find f(5) = ? 1 30 2 20 3 25 4 None of these"
+    },
+    {
+     "id": "2023#24",
+     "text": "If |x − 6| = |x − 4x| − |x2 − 5x + 6| , where x is a real variable 1 x = (2, 5) 2 x = [2, 5] ∪ [6, ∞) 3 R − [2, 6] 4 None of these"
+    },
+    {
+     "id": "2025#63",
+     "text": "If α and β are the two roots of the quadratic equation x2 + ax + b = 0, (ab ≠ 0) then the 1 1 quadratic roots whose roots 3 and 3 is α +α β +β 1 b(b 2 + 1 + a 2 + 2b)x 2 − (a 3 + a − 3ab)x + 1 = 0 2 b(b 2 + 1 + a 2 − 2b)"
+    },
+    {
+     "id": "2025#70",
+     "text": "Given the equation x + y = 1, x2 + y 2 = 2 , x5 + y 5 = A. Let N be the number of solution pairs (x,y) to this system of equations. Then AN is equal to 7 1 2 2 3 19 3 2 4 2"
+    },
+    {
+     "id": "2026#40",
+     "text": "Let a, b, c be nonzero real numbers such that a + b + c ≠ 0 and 4a − 2b + c ≠ 0. If α and β are the roots of the quadratic equation α+2 β+2 ax 2 + bx + c = 0 , then which of the following equations has the roots α−1 and "
+    },
+    {
+     "id": "2026#41",
+     "text": "−−−−−−−−−− −−−− −−−− 20x+38y+18z+1 Let x, y, z be positive real numbers such that 2√x + y − 3√y + z = 2 and 4x − 5y − 9z = 8 . Then the value of √ 9y+9z+2 is: 1 3 2 4 3 5 4 6"
+    }
+   ]
+  },
+  {
+   "code": "M-PROG",
+   "chapter": "Progression",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 4,
+    "2009": 1,
+    "2010": 1,
+    "2011": 2,
+    "2012": 2,
+    "2013": 6,
+    "2014": 1,
+    "2015": 1,
+    "2016": 3,
+    "2017": 2,
+    "2018": 4,
+    "2019": 2,
+    "2020": 1,
+    "2021": 2,
+    "2022": 2,
+    "2023": 2,
+    "2024": 2,
+    "2025": 1,
+    "2026": 4
+   },
+   "total": 43,
+   "yearsAsked": 19,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 2.47,
+   "pAtLeast1": 0.841,
+   "pAtLeast2Raw": 0.706,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 2.49,
+    "pAtLeast1": 0.831
+   },
+   "trend": {
+    "rho": -0.132,
+    "p": 0.5788552861784554,
+    "q": 0.907
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "harmonic means",
+     2
+    ],
+    [
+     "AP common difference",
+     2
+    ],
+    [
+     "telescoping sqrt sum",
+     2
+    ],
+    [
+     "GP from max of cubic",
+     2
+    ],
+    [
+     "AP GP HP",
+     1
+    ],
+    [
+     "coefficient product AP sum",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#82",
+     "text": "If one AM (Arithmetic mean) 'a' and two GM's (Geometric means) p and q be inserted between any two positive numbers, the value of p^3+q^3 is 1 2apq 2 pq/a 3 2pq/a 4 p+q+a"
+    },
+    {
+     "id": "2025#74",
+     "text": "18 Suppose t1 , t2 , . . . t5 are in AP such that ∑l=0 t3l+1 = 1197 and t7 + 3t22 = 174. If 9 ∑ l=1 tl 2 = 947b , then the value of b is 1 1 2 2 3 3 4 5"
+    },
+    {
+     "id": "2026#37",
+     "text": "The roots of the quadratic equation 3x2 − px + q = 0 are the 10th and 11th terms of an arithmetic progression with common difference 3 . If the sum of 2 the first 11 terms of this arithmetic progression is 88, then q − 2"
+    },
+    {
+     "id": "2026#42",
+     "text": "n 2 n Which of the following is a value of n if(∑k=1 (−1)k−1 k) − ∑ k=1 (−1) k−1 k 2 + 2450 = 0? 1 98 2 99 3 100 4 101"
+    },
+    {
+     "id": "2026#83",
+     "text": "Consider the sequence: 72, 69, 66, … The numbers continue in the same pattern as long as they remain positive. What will be the maximum possible sum of the terms of this sequence? 1 900 2 897 3 882 4 903"
+    },
+    {
+     "id": "2026#103",
+     "text": "The arithmetic mean of two numbers a and b is 5, and the harmonic mean is 3.2. Find the numbers a and b. 1 a=3, b=7 2 a=4, b=6 3 a=1, b=9 4 a=2, b=8"
+    }
+   ]
+  },
+  {
+   "code": "M-EXP",
+   "chapter": "Exponentials",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 0,
+    "2009": 2,
+    "2010": 0,
+    "2011": 1,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 2,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 9,
+   "yearsAsked": 7,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 7,
+   "expected2027": 0.53,
+   "pAtLeast1": 0.426,
+   "pAtLeast2Raw": 0.1,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.7,
+    "pAtLeast1": 0.509
+   },
+   "trend": {
+    "rho": -0.088,
+    "p": 0.7280679830042489,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "exponential equation logs",
+     2
+    ],
+    [
+     "modulus equation",
+     1
+    ],
+    [
+     "exponential equation",
+     1
+    ],
+    [
+     "compare powers",
+     1
+    ],
+    [
+     "2^a=3^b=6^-c",
+     1
+    ],
+    [
+     "exponential quadratic roots sum",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#108",
+     "text": "2 4 6 The value of the series + + + ⋯ is 3! 5! 7! 1 2e −2 2 e −2 3 e −1 4 2e −1"
+    },
+    {
+     "id": "2025#36",
+     "text": "1 1 If 8x−1 = (1/4)x , then the value of + is log x+1 4−log x+1 5 log 1−x 4−log 1−x 5 1 1 2 5/4 3 4/5 4 2"
+    },
+    {
+     "id": "2026#3",
+     "text": "1 5 1 1 x+ y− x− y− If x, y are real numbers such that 2 2 × 4 6 = 3 2 × 9 3 then which of the following is true? 1 6x-12y-7=0 2 6x+12y-7=0 3 6x+12y+7=0 4 6x-12y+7=0"
+    }
+   ]
+  },
+  {
+   "code": "M-BIN",
+   "chapter": "Binomial Theorem",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 0,
+    "2009": 2,
+    "2010": 1,
+    "2011": 1,
+    "2012": 1,
+    "2013": 0,
+    "2014": 1,
+    "2015": 0,
+    "2016": 0,
+    "2017": 1,
+    "2018": 1,
+    "2019": 1,
+    "2020": 0,
+    "2021": 1,
+    "2022": 0,
+    "2023": 1,
+    "2024": 1,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 13,
+   "yearsAsked": 12,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 0.72,
+   "pAtLeast1": 0.498,
+   "pAtLeast2Raw": 0.162,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.7,
+    "pAtLeast1": 0.507
+   },
+   "trend": {
+    "rho": -0.321,
+    "p": 0.17945513621594603,
+    "q": 0.717
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "binomial coefficients sum",
+     2
+    ],
+    [
+     "subsets at most n",
+     1
+    ],
+    [
+     "binomial coefficients product",
+     1
+    ],
+    [
+     "binomial alternating sum",
+     1
+    ],
+    [
+     "binomial coefficient sum",
+     1
+    ],
+    [
+     "binomial approximation",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#14",
+     "text": "The coefficient of x50 in the expression of 1000 999 2 998 1000 (1 + x) + 2x(1 + x) + 3x (1 + x) +. . . . . . +1001x 1 1005 C50 2 1005 C48 3 1002 C50 4 1002 C51"
+    },
+    {
+     "id": "2024#62",
+     "text": "n n Pr The value of ∑r=1 is: r! 1 2 n 2 1 − 2 −n 3 2 n 1 3 2 n − 1 4 2 2n − 1"
+    },
+    {
+     "id": "2026#60",
+     "text": "12 1 12 1 The coefficient of x10 in the expansion of (x2 + x ) + (x + 2 ) is: x 1 0 2 12 3 66 4 112"
+    }
+   ]
+  },
+  {
+   "code": "M-DET",
+   "chapter": "Determinant",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 0,
+    "2009": 2,
+    "2010": 3,
+    "2011": 0,
+    "2012": 3,
+    "2013": 1,
+    "2014": 1,
+    "2015": 2,
+    "2016": 1,
+    "2017": 0,
+    "2018": 1,
+    "2019": 1,
+    "2020": 3,
+    "2021": 1,
+    "2022": 1,
+    "2023": 0,
+    "2024": 2,
+    "2025": 1,
+    "2026": 3
+   },
+   "total": 26,
+   "yearsAsked": 15,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 1.59,
+   "pAtLeast1": 0.719,
+   "pAtLeast2Raw": 0.473,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.78,
+    "pAtLeast1": 0.744
+   },
+   "trend": {
+    "rho": -0.021,
+    "p": 0.9317670582354411,
+    "q": 0.948
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "determinant cube root unity",
+     2
+    ],
+    [
+     "det of adjoint",
+     1
+    ],
+    [
+     "system of equations consistency",
+     1
+    ],
+    [
+     "homogeneous system determinant",
+     1
+    ],
+    [
+     "determinant zero relation",
+     1
+    ],
+    [
+     "infinitely many solutions k",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#30",
+     "text": "The system of equations x + 2y + 2z = 5, x + 2y + 3z = 6, x + 2y + λz = μ has infinitely many solutions if 1 λ ≠ 2 2 λ ≠ 2, μ ≠ 5 3 λ = 2, μ = 5 4 μ ≠ 5"
+    },
+    {
+     "id": "2024#50",
+     "text": "For an invertible matrix A, which of the following is not always true: 1 |adj(A)| ≠ 0 2 |A| ≠ 0 3 |AA −1 | = 1 4 |A(adj(A))| ≠ 1"
+    },
+    {
+     "id": "2025#48",
+     "text": "x y z ⎡ ⎤ If x, y and z are three cube roots of 27, then the determinant of the matrix ⎢ y z x⎥ is ⎣ ⎦ z x y 1 1 2 0 3 (x-y)(x-z)(y-z) 4 -1"
+    },
+    {
+     "id": "2026#38",
+     "text": "∣ x x + 1 x + 3 ∣ ∣ ∣ The value of the determinant of the following matrix at x = 2026 is: x + 1 x + 3 x + 6 ∣ ∣ ∣x + 3 x + 6 x + 10 ∣ 1 -1 2 0 3 1 4 2026"
+    },
+    {
+     "id": "2026#39",
+     "text": "The number of values of θ in the interval [0, 2π] for which the following homogeneous system of equations has a non-trivial solution is: x + (sin θ)y + (cos θ)z = 0x + (cos θ)y + (sin θ)z = 0x − (sin θ)y − (cos θ)z = 0 1"
+    },
+    {
+     "id": "2026#43",
+     "text": "If x, y, z satisfy the equations: x + y + z = 1 4x + 9y + 16z = 25 16x + 81y + 256z = 625 simultaneously, then which of the following is true? 36 1 x = − 15 2 x = − 15 36 15 3 x = 36 36 4 x = 15"
+    }
+   ]
+  },
+  {
+   "code": "M-MAT",
+   "chapter": "Matrix",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 0,
+    "2011": 1,
+    "2012": 1,
+    "2013": 1,
+    "2014": 1,
+    "2015": 1,
+    "2016": 1,
+    "2017": 1,
+    "2018": 2,
+    "2019": 0,
+    "2020": 1,
+    "2021": 1,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 2,
+    "2026": 0
+   },
+   "total": 15,
+   "yearsAsked": 13,
+   "yearsAvailable": 19,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 1,
+   "expected2027": 0.86,
+   "pAtLeast1": 0.545,
+   "pAtLeast2Raw": 0.213,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.75,
+    "pAtLeast1": 0.525
+   },
+   "trend": {
+    "rho": -0.072,
+    "p": 0.7490627343164209,
+    "q": 0.907
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "matrix identity square",
+     2
+    ],
+    [
+     "matrix series",
+     1
+    ],
+    [
+     "matrix power",
+     1
+    ],
+    [
+     "inverse via Cayley Hamilton",
+     1
+    ],
+    [
+     "invertible condition",
+     1
+    ],
+    [
+     "orthogonal matrix abc",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#9",
+     "text": "If A and B are square matrices such that B = −A−1 BA, then (A + B)2 is 1 0 2 A 2 + B 2 3 A 2 + 2AB + B 2 4 A + B"
+    },
+    {
+     "id": "2025#37",
+     "text": "Consider the matrix −1 −1 2 ⎛ ⎞ B = ⎜ 0 −1 −1 ⎟ ⎝ ⎠ 0 0 −1 . The sum of all the entries of the matrix B19 is 1 -163 2 -171 3 -192 4 -174"
+    },
+    {
+     "id": "2025#41",
+     "text": "Let A and B be two square matrices of same order satisfying A2 + 5A + 5I = 0 and B + 3B + I = 0 repectively. Where I is the identity matrix. Then the inverse of the matrix 2 C = BA + 2B + 2A + 4I is 1 BA-3B+A-3I 2 AB+A+3"
+    }
+   ]
+  },
+  {
+   "code": "M-SET",
+   "chapter": "Set Theory",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 1,
+    "2009": 4,
+    "2010": 3,
+    "2011": 2,
+    "2012": 1,
+    "2013": 1,
+    "2014": 1,
+    "2015": 2,
+    "2016": 3,
+    "2017": 2,
+    "2018": 3,
+    "2019": 2,
+    "2020": 4,
+    "2021": 3,
+    "2022": 2,
+    "2023": 3,
+    "2024": 4,
+    "2025": 3,
+    "2026": 5
+   },
+   "total": 49,
+   "yearsAsked": 19,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 3.3,
+   "pAtLeast1": 0.909,
+   "pAtLeast2Raw": 0.842,
+   "likelyRange": [
+    1,
+    6
+   ],
+   "recency": {
+    "expected2027": 3.83,
+    "pAtLeast1": 0.925
+   },
+   "trend": {
+    "rho": 0.379,
+    "p": 0.10322419395151212,
+    "q": 0.614
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "union of sets counting",
+     3
+    ],
+    [
+     "set union induction",
+     3
+    ],
+    [
+     "inclusion exclusion four sets",
+     2
+    ],
+    [
+     "max intersection three sets",
+     2
+    ],
+    [
+     "survey both range",
+     2
+    ],
+    [
+     "set identity",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#49",
+     "text": "Let A = {5n − 4n − 1: n ∈ N } and B = {16(n − 1): n ∈ N } be sets. Then 1 Neither A ⊂ B and B ⊂ A 2 A ∩ B is a finite set 3 A ⊂ B 4 B ⊂ A"
+    },
+    {
+     "id": "2026#23",
+     "text": "The set (AΔB) ∩ C is not equal to: (A 1 ∩ C )Δ (B ∩ C ) c ((A ∩ B ) ∩ C) 2 ∪ ((B c ∩ A ) ∩ C) c (A ∩ B) 3 ∩ C (A ∩ B c ∩ C) 4 ∩ ((A ∪ B) ∩ C)"
+    },
+    {
+     "id": "2026#24",
+     "text": "Define a relation ∼ on the set 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 by a ∼ b if a − 2b is divisible by 3. Then: 1 ∼ is not symmetric, not reflexive and not transitive 2 ∼ is reflexive but neither symmetric nor transitive 3 ∼ is"
+    },
+    {
+     "id": "2026#26",
+     "text": "If there are 5 sets represented via a Venn diagram, the number of regions that arise in the Venn diagram equals: 1 22 2 20 3 28 4 32"
+    },
+    {
+     "id": "2026#27",
+     "text": "Let R ⊂ N × N. Which of the following statement is necessarily true? 1 If for each a ∈ N the set Ra := b ∈ N : (a, b) ∈ R has cardinality at most 1 , then R represents a function f : N → N 2 If for each b ∈ N the set Rb "
+    },
+    {
+     "id": "2026#28",
+     "text": "The number of triples of sets (A, B, C ) with A, B, C ⊆ 1, … , n such that (A ∩ B) ⊆ C ⊆ (A ∪ B) is: 1 5 n 2 6 n 3 7 n 4 8 n"
+    }
+   ]
+  },
+  {
+   "code": "M-PNC",
+   "chapter": "Permutation and Combination",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 4,
+    "2009": 6,
+    "2010": 2,
+    "2011": 3,
+    "2012": 3,
+    "2013": 4,
+    "2014": 7,
+    "2015": 3,
+    "2016": 4,
+    "2017": 2,
+    "2018": 4,
+    "2019": 5,
+    "2020": 4,
+    "2021": 3,
+    "2022": 0,
+    "2023": 1,
+    "2024": 2,
+    "2025": 3,
+    "2026": 0
+   },
+   "total": 60,
+   "yearsAsked": 17,
+   "yearsAvailable": 19,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 1,
+   "expected2027": 2.92,
+   "pAtLeast1": 0.882,
+   "pAtLeast2Raw": 0.788,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 1.87,
+    "pAtLeast1": 0.757
+   },
+   "trend": {
+    "rho": -0.572,
+    "p": 0.0094976255936016,
+    "q": 0.164
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "polygon diagonals",
+     2
+    ],
+    [
+     "monotone functions counting",
+     1
+    ],
+    [
+     "digits divisible by 9",
+     1
+    ],
+    [
+     "ways to answer paper",
+     1
+    ],
+    [
+     "handshakes",
+     1
+    ],
+    [
+     "lattice paths",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#106",
+     "text": "In an examination of nine papers, a candidate has to pass in more papers than the number of papers in which he fails in order to be successful. The number of ways in which he can be unsuccessful is 1 255 2 256 3 128 4 9 "
+    },
+    {
+     "id": "2024#20",
+     "text": "There are 9 bottle labelled 1, 2, 3, ... , 9 and 9 boxes labelled 1, 2, 3,....9. The number of ways one can put these bottles in the boxes so that each box gets one bottle and exactly 5 bottles go in their corresponding "
+    },
+    {
+     "id": "2024#94",
+     "text": "Lines L1 , L2 , . . , L1 0 are distinct among which the lines L2 , L4 , L6 , L8 , L10 are parallel to each other and the lines L1 , L3 , L5 , L7 , L9 pass through a given point C. The number of point of intersection of p"
+    },
+    {
+     "id": "2025#40",
+     "text": "Number of permutations of the letters of the word BANGLORE such that the string ANGLE appears together in all permutations, is 1 120 2 24 3 720 4 1228"
+    },
+    {
+     "id": "2025#66",
+     "text": "The number of 3-digit integers that are multiple of 6 which can be formed by using the digits 1,2,3,4,5,6 without repetition is 1 22 2 20 3 26 4 24"
+    },
+    {
+     "id": "2025#71",
+     "text": "Number of three digit numbers that can be formed using 0, 1, 2, 3 and 5 where these digits are allowed to repeat any number of times, is equal to 1 115 2 100 3 125 4 140"
+    }
+   ]
+  },
+  {
+   "code": "M-PROB",
+   "chapter": "Probability",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 6,
+    "2009": 6,
+    "2010": 4,
+    "2011": 3,
+    "2012": 6,
+    "2013": 7,
+    "2014": 4,
+    "2015": 4,
+    "2016": 6,
+    "2017": 6,
+    "2018": 4,
+    "2019": 5,
+    "2020": 2,
+    "2021": 4,
+    "2022": 3,
+    "2023": 5,
+    "2024": 7,
+    "2025": 7,
+    "2026": 4
+   },
+   "total": 93,
+   "yearsAsked": 19,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 5.46,
+   "pAtLeast1": 0.963,
+   "pAtLeast2Raw": 0.972,
+   "likelyRange": [
+    3,
+    9
+   ],
+   "recency": {
+    "expected2027": 5.48,
+    "pAtLeast1": 0.953
+   },
+   "trend": {
+    "rho": -0.25,
+    "p": 0.30542364408897776,
+    "q": 0.843
+   },
+   "recycled": 9,
+   "topSubtopics": [
+    [
+     "contradict each other",
+     4
+    ],
+    [
+     "conditional probability",
+     2
+    ],
+    [
+     "biased die sum even",
+     2
+    ],
+    [
+     "witnesses truth",
+     2
+    ],
+    [
+     "first to die probability",
+     2
+    ],
+    [
+     "independent events",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#75",
+     "text": "Let E and F be two events such that P(E) > 0 and P(F) > 0. Which one of the following is NOT equivalent to the condition that P (E) = P (E|F )? 1 E and F are independent c 2P (E )P c (F ) 2 ≠ P (E c ∩ F ) P (F ) 3 = P (F"
+    },
+    {
+     "id": "2025#105",
+     "text": "In a box, there are 8 red, 7 blue and 6 green balls. One ball is picked up randomly. What is the probability that it is neither red nor green? 1 7/19 2 1/3 3 8/21 4 3/4"
+    },
+    {
+     "id": "2026#30",
+     "text": "2 3 In a tuition batch of two students, the probability that X will pass the exam is 5 and that of Y is 4 . What is the probability that neither of X and Y will pass the exam? Assume that the outcomes of exams for X and "
+    },
+    {
+     "id": "2026#31",
+     "text": "Let A1 , A2 , A3 are three events in a sample space with the condition A1 ∩ A2 ≠ ϕ, then always: P (A1 ∩ A2 ∩ A3 ) = P (A1 1 )P (A2 /A1 )P (A3 /(A1 ∩ A2 )) P (A1 ∩ A2 ∩ A3 ) 2 = P (A1 )P (A3 /A 2 ) P (A1 ∩ A2 ∩ A3 ) 3 = "
+    },
+    {
+     "id": "2026#35",
+     "text": "1 Let X and Y be two independent identically distributed Bernoulli random variables with common probability mass function: P (X = 1) = 2 and 1 P (X = 0) = 2 . If Z = XY , then the distribution of Z is: 1 1 1 Bernoulli wi"
+    },
+    {
+     "id": "2026#115",
+     "text": "A die is rolled twice independently. What is the probability that either the first die shows a number no less than 4 or the second die shows at least 4? 1 1 2 2 5 6 3 2 3 3 4 4"
+    }
+   ]
+  },
+  {
+   "code": "M-CPX",
+   "chapter": "Complex Numbers",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 1,
+    "2018": 0,
+    "2019": 2,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 6,
+   "yearsAsked": 5,
+   "yearsAvailable": 19,
+   "lastAsked": 2023,
+   "yearsSinceLast": 3,
+   "longestGap": 6,
+   "expected2027": 0.32,
+   "pAtLeast1": 0.323,
+   "pAtLeast2Raw": 0.042,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.19,
+    "pAtLeast1": 0.271
+   },
+   "trend": {
+    "rho": -0.21,
+    "p": 0.39615096225943514,
+    "q": 0.849
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "roots of unity quadratic",
+     1
+    ],
+    [
+     "polynomial complex value",
+     1
+    ],
+    [
+     "roots powers cos",
+     1
+    ],
+    [
+     "modulus bound",
+     1
+    ],
+    [
+     "complex plane movement rotation",
+     1
+    ],
+    [
+     "roots of unity sum",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#15",
+     "text": "n If xk = cos ( 2πk n ) + i sin ( 2πk n ) , then ∑ k=1 (xk ) =? 1 1 2 -1 3 0 4 None of these"
+    }
+   ]
+  },
+  {
+   "code": "M-MLOG",
+   "chapter": "Mathematical Logic (Tautology, Contradiction, Truth Table, Connectives)",
+   "part": "Math",
+   "unit": "Algebra",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 2,
+   "yearsAsked": 2,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 15,
+   "expected2027": 0.21,
+   "pAtLeast1": 0.256,
+   "pAtLeast2Raw": 0.02,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.4,
+    "pAtLeast1": 0.392
+   },
+   "trend": {
+    "rho": 0.464,
+    "p": 0.04423894026493377
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "negation logical statement",
+     1
+    ],
+    [
+     "truth table implication count",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#18",
+     "text": "The negation of ∼ S ∨ (∼ R ∧ S ) is equivalent to 1 S ∨ (R∨ ∼ S ) 2 S∧ ∼ R 3 S ∧ R 4 S ∧ (R∧ ∼ S )"
+    },
+    {
+     "id": "2026#29",
+     "text": "The number of ordered tuples (p, q, r) in the truth table for which the statement (¬p ∨ q) ⇒ r is true is: 1 2 2 3 3 4 4 5"
+    }
+   ]
+  },
+  {
+   "code": "M-ANG",
+   "chapter": "Measurement of Angles",
+   "part": "Math",
+   "unit": "Trigonometry",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 1,
+   "yearsAsked": 1,
+   "yearsAvailable": 19,
+   "lastAsked": 2012,
+   "yearsSinceLast": 14,
+   "longestGap": 14,
+   "expected2027": 0.03,
+   "pAtLeast1": 0.069,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": -0.215,
+    "p": 0.5396150962259435
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "sin1 degree vs radian",
+     1
+    ]
+   ],
+   "examples": []
+  },
+  {
+   "code": "M-TRIG",
+   "chapter": "Trigonometric Ratios and Functions",
+   "part": "Math",
+   "unit": "Trigonometry",
+   "hist": {
+    "2008": 4,
+    "2009": 1,
+    "2010": 1,
+    "2011": 4,
+    "2012": 3,
+    "2013": 4,
+    "2014": 4,
+    "2015": 3,
+    "2016": 2,
+    "2017": 5,
+    "2018": 3,
+    "2019": 1,
+    "2020": 7,
+    "2021": 2,
+    "2022": 3,
+    "2023": 2,
+    "2024": 3,
+    "2025": 3,
+    "2026": 2
+   },
+   "total": 57,
+   "yearsAsked": 19,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 3.31,
+   "pAtLeast1": 0.909,
+   "pAtLeast2Raw": 0.842,
+   "likelyRange": [
+    1,
+    6
+   ],
+   "recency": {
+    "expected2027": 2.9,
+    "pAtLeast1": 0.867
+   },
+   "trend": {
+    "rho": -0.217,
+    "p": 0.38015496125968506,
+    "q": 0.849
+   },
+   "recycled": 4,
+   "topSubtopics": [
+    [
+     "product of sines",
+     3
+    ],
+    [
+     "sin cos identity powers",
+     2
+    ],
+    [
+     "sinx+acosx=b",
+     2
+    ],
+    [
+     "max trig expression",
+     2
+    ],
+    [
+     "tan ratio sum pi",
+     2
+    ],
+    [
+     "max product of cosines",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#102",
+     "text": "If f(x)=cos[π^2]x+cos[-π^2]x, where [.] stands for greatest integer function, then f (π/2)= 1 -1 2 0 3 1 4 2"
+    },
+    {
+     "id": "2025#60",
+     "text": "If B = sin2 y + cos 4 y, then for all real y 13 1 ≤ B ≤ 1 16 2 1 ≤ B ≤ 2 3 3 ≤ B ≤ 1 4 3 13 4 ≤ B ≤ 4 16"
+    },
+    {
+     "id": "2025#64",
+     "text": "The maximum value of sin x + sin(x + 1) is k cos 1 . Then the value of k is 2 1 1 2 2 3 3 4 None of these"
+    },
+    {
+     "id": "2025#77",
+     "text": "√3 If cos2 (10°) cos(20°) cos(40°) cos(50°) cos(70°) = α + 16 cos(10°), then 3α−1 is equal to 1 9 32 2 64 3 16 4 9 16"
+    },
+    {
+     "id": "2026#54",
+     "text": "Let x − y tan 35∘ = tan 25∘ (y + x tan 35∘ ) for some x, y ∈ R. Then, which one of the following is true? 1 x > y x 2 x = y 3 4 No such x, y exist."
+    },
+    {
+     "id": "2026#109",
+     "text": "Given that cos 6x = a cos6 x + b cos4 x + c cos2 x + d for any real number x, find the value of a + b + c . 1 49 2 2 3 7 4 13"
+    }
+   ]
+  },
+  {
+   "code": "M-TEQ",
+   "chapter": "Trigonometric Equations",
+   "part": "Math",
+   "unit": "Trigonometry",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 0,
+    "2011": 2,
+    "2012": 1,
+    "2013": 1,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 1,
+    "2018": 2,
+    "2019": 3,
+    "2020": 1,
+    "2021": 3,
+    "2022": 1,
+    "2023": 0,
+    "2024": 2,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 20,
+   "yearsAsked": 13,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 1.33,
+   "pAtLeast1": 0.666,
+   "pAtLeast2Raw": 0.383,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.29,
+    "pAtLeast1": 0.659
+   },
+   "trend": {
+    "rho": 0.157,
+    "p": 0.5081229692576856,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "trig equation solvable range",
+     1
+    ],
+    [
+     "general solution",
+     1
+    ],
+    [
+     "trig quadratic solution",
+     1
+    ],
+    [
+     "sin(pi cos)=cos(pi sin)",
+     1
+    ],
+    [
+     "sin x + 1 = cos x",
+     1
+    ],
+    [
+     "asinA+bcosA=c",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#28",
+     "text": "2 The number of solutions of 51+| sin x|+| sin x| +… = 25 for x ∈ (−π, π) is 1 2 2 0 3 4 4 ∞"
+    },
+    {
+     "id": "2024#38",
+     "text": "1 Find the cardinality of the set C which is defined as C = {x| sin 4x = 2 f orx ∈ (−9π, 3π)}. 1 24 2 48 3 36 4 12"
+    },
+    {
+     "id": "2025#76",
+     "text": "What is the general solution of the equation tan θ + cot θ = 2 ? θ = nπ 1 π + 4 nπ θ = 2 2 π + 8 nπ θ = 3 2 π + 6 nπ θ = 4 2 π + 4"
+    },
+    {
+     "id": "2026#59",
+     "text": "x Consider the graphs of the functions f (x) = 2 cos( 2 ) + 3 and g(x) = 4. The number of points of intersection of the two graphs in the interval $[0,4\\pi]$ is: 1 4 2 3 3 1 4 2"
+    }
+   ]
+  },
+  {
+   "code": "M-PTRI",
+   "chapter": "Properties of a Triangle",
+   "part": "Math",
+   "unit": "Trigonometry",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 2,
+    "2012": 0,
+    "2013": 2,
+    "2014": 2,
+    "2015": 3,
+    "2016": 2,
+    "2017": 2,
+    "2018": 1,
+    "2019": 1,
+    "2020": 0,
+    "2021": 3,
+    "2022": 1,
+    "2023": 1,
+    "2024": 0,
+    "2025": 0,
+    "2026": 2
+   },
+   "total": 23,
+   "yearsAsked": 13,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 1.29,
+   "pAtLeast1": 0.658,
+   "pAtLeast2Raw": 0.371,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.1,
+    "pAtLeast1": 0.616
+   },
+   "trend": {
+    "rho": -0.079,
+    "p": 0.7485628592851787,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "triangle circumradius type",
+     1
+    ],
+    [
+     "triangle solve sides",
+     1
+    ],
+    [
+     "largest angle sides",
+     1
+    ],
+    [
+     "triangle area angle",
+     1
+    ],
+    [
+     "triangle angle from sides",
+     1
+    ],
+    [
+     "Herons formula product",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#105",
+     "text": "The perimeter of a ΔABC is 6 times the arithmetic mean of the sines of its angles. If the side a is 1, then the angle A is π 1 6 π 2 3 π 3 2 4 π"
+    },
+    {
+     "id": "2026#55",
+     "text": "π If BC = a, AC = b , and AB = c are the sides of a triangle ABC , and ∠C ≠ 2 , then which one of the following is not correct? a sin A 1 = b sin B c = sin C a−b a+b 2 sin A−sin B = sin A+sin B a−b a+b = cot 3 A+B ( ) ta"
+    },
+    {
+     "id": "2026#56",
+     "text": "An engineer standing at a point P wishes to determine the width of a new rectangular pond. She finds the distance to the western-most point A of the pond from P to be 60 m, while the distance to the northern-most point B"
+    }
+   ]
+  },
+  {
+   "code": "M-ITF",
+   "chapter": "Inverse Trigonometry Function",
+   "part": "Math",
+   "unit": "Trigonometry",
+   "hist": {
+    "2008": 0,
+    "2009": 4,
+    "2010": 1,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": 1,
+    "2016": 0,
+    "2017": 2,
+    "2018": 1,
+    "2019": 0,
+    "2020": 1,
+    "2021": 0,
+    "2022": 4,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 2
+   },
+   "total": 17,
+   "yearsAsked": 9,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 0.98,
+   "pAtLeast1": 0.581,
+   "pAtLeast2Raw": 0.258,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 1.01,
+    "pAtLeast1": 0.596
+   },
+   "trend": {
+    "rho": -0.064,
+    "p": 0.7978005498625343,
+    "q": 0.917
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "inverse trig solutions",
+     2
+    ],
+    [
+     "inverse trig cot",
+     2
+    ],
+    [
+     "inverse tan telescoping",
+     1
+    ],
+    [
+     "inverse trig equation",
+     1
+    ],
+    [
+     "inverse tan equation",
+     1
+    ],
+    [
+     "inverse trig sum",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#57",
+     "text": "π 5π The value of cos−1 (cos(− 6 )) + sin−1 (sin 6 ) is: 2π 1 3 π 2 3 3 5π 3 4 Not defined 4 Not defined"
+    },
+    {
+     "id": "2026#58",
+     "text": "π The number of solutions of the equation tan−1 (3x) + tan−1 (2x) = 4 is: 1 0 2 2 3 1 4 Infinitely many"
+    }
+   ]
+  },
+  {
+   "code": "M-HD",
+   "chapter": "Height and Distance",
+   "part": "Math",
+   "unit": "Trigonometry",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 0,
+    "2012": 1,
+    "2013": 1,
+    "2014": 1,
+    "2015": 1,
+    "2016": 1,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 1,
+    "2021": 0,
+    "2022": 2,
+    "2023": 1,
+    "2024": 0,
+    "2025": 5,
+    "2026": 1
+   },
+   "total": 16,
+   "yearsAsked": 11,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 1.26,
+   "pAtLeast1": 0.651,
+   "pAtLeast2Raw": 0.36,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.77,
+    "pAtLeast1": 0.742
+   },
+   "trend": {
+    "rho": 0.151,
+    "p": 0.5361159710072482,
+    "q": 0.907
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "heights and distances",
+     5
+    ],
+    [
+     "heights depression angles",
+     2
+    ],
+    [
+     "towers heights ratio",
+     1
+    ],
+    [
+     "rope pole height",
+     1
+    ],
+    [
+     "hill height triangle",
+     1
+    ],
+    [
+     "pillar subtended angles",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#51",
+     "text": "A tower subtends angles α, 2α and 3α respectively at points A, B and C which are lying on a AB horizontal line through the foot of the tower. Then is equal to BC 1 2+cos3α 2 1+2cos2α 3 2+3cos3α 4 None of these"
+    },
+    {
+     "id": "2025#58",
+     "text": "The angles of depression of the top and bottom of an 8m tall building from the top of a multi storied building are 30° and 45°, respectively. What is the height of the multistoried building and the distance between the t"
+    },
+    {
+     "id": "2025#73",
+     "text": "An airplane, when 4000m high from the ground, passes vertically above another airplane at an instant when the angles of elevation of the two airplanes from the same point on the ground are 60° and 30°, respectively. Find"
+    },
+    {
+     "id": "2025#79",
+     "text": "A tower subtends an angle of 30° at a point on the same level as the foot of the tower. At a second point h meters above the first, the depression of the foot of the tower is 60°. What is the horizontal po t ete s abo e "
+    },
+    {
+     "id": "2025#119",
+     "text": "Two ships are sailing in the sea on the two sides of a lighthouse. The angle of elevation of the top of the lighthouse is observed from the ships are 30° degree and 45° repectively. If the lighthouse is 100 m high, the d"
+    },
+    {
+     "id": "2026#5",
+     "text": "From the top of a viewpoint at a height of 80 m, the angles of depression of the top and bottom of a flag standing on the same plane are 30∘ and 45∘ . Find the height of the flag. – 1 40√3 80 2 √3 80 (1 3 1 − ) √3 – 80(√"
+    }
+   ]
+  },
+  {
+   "code": "M-FUN",
+   "chapter": "Function",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 2,
+    "2009": 0,
+    "2010": 1,
+    "2011": 1,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 1,
+    "2016": 0,
+    "2017": 1,
+    "2018": 2,
+    "2019": 1,
+    "2020": 0,
+    "2021": 0,
+    "2022": 3,
+    "2023": 3,
+    "2024": 2,
+    "2025": 1,
+    "2026": 2
+   },
+   "total": 20,
+   "yearsAsked": 12,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 1.46,
+   "pAtLeast1": 0.693,
+   "pAtLeast2Raw": 0.428,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.8,
+    "pAtLeast1": 0.746
+   },
+   "trend": {
+    "rho": 0.27,
+    "p": 0.2616845788552862,
+    "q": 0.785
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "inverse function",
+     2
+    ],
+    [
+     "one to one functions",
+     2
+    ],
+    [
+     "odd even function log",
+     2
+    ],
+    [
+     "functional equation polynomial",
+     1
+    ],
+    [
+     "functional equation sum",
+     1
+    ],
+    [
+     "number of injections",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#27",
+     "text": "−1 −2 ≤ x ≤ 0 A real valued function f is defined as f (x) = { . Which of the following x − 1 0 ≤ x ≤ 2 statement is FALSE? 1 f (|x|) = |x| − 1, if 0 ≤ x ≤ 2 f (|x|) = x − 1, if 1 ≤ x ≤ 2 3 f (|x|) + |f (x)| = 1, if 0 ≤ "
+    },
+    {
+     "id": "2024#12",
+     "text": "The number of one - one functions f: {1,2,3} → {a,b,c,d,e} is 1 125 2 60 3 243 4 None of these"
+    },
+    {
+     "id": "2024#68",
+     "text": "1−x The value of f (1) for f ( 1+x ) = x + 2 is 1 1 2 2 3 3 4 4"
+    },
+    {
+     "id": "2025#72",
+     "text": "Let g : R → R and h : R → R , be two functions such that h(x) = sgn(g(x)) . Then select which of the following is not true?( R denotes the set of all real numbers, sgn stands for signum function) The domain of h(x) is th"
+    },
+    {
+     "id": "2026#25",
+     "text": "L t b th b fi j ti f ti f 1 2 3 4 → 1 2 3 4 5 6 7 8 di b t b If a 2 3 5 b c th + b + Let n be the number of injective functions f : 1, 2, 3, 4 → 1, 2, 3, 4, 5, 6, 7, 8 sending an even number to an even number. If n = 2a "
+    },
+    {
+     "id": "2026#47",
+     "text": "f (x) = { 1 if |x| ≤ 1 , g(x) = { 2 2 − x if |x| ≤ 2 0 if |x| > 1 2 if |x| > 2 If h(x) = f [g(x)], then an interval in which h(x) = 1 for all values of x in that interval is: 1 ≤ |x| 1 2 – ≤ √3 – 2 |x| ≤ √2 1 ≤ |x| 3 – ≤"
+    }
+   ]
+  },
+  {
+   "code": "M-LIM",
+   "chapter": "Limit",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 0,
+    "2011": 1,
+    "2012": 0,
+    "2013": 1,
+    "2014": 1,
+    "2015": 1,
+    "2016": 0,
+    "2017": 2,
+    "2018": 1,
+    "2019": 2,
+    "2020": 1,
+    "2021": 1,
+    "2022": 2,
+    "2023": 3,
+    "2024": 2,
+    "2025": 1,
+    "2026": 3
+   },
+   "total": 23,
+   "yearsAsked": 15,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 1.73,
+   "pAtLeast1": 0.743,
+   "pAtLeast2Raw": 0.517,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 2.14,
+    "pAtLeast1": 0.792
+   },
+   "trend": {
+    "rho": 0.53,
+    "p": 0.019245188702824295,
+    "q": 0.2
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "limit",
+     2
+    ],
+    [
+     "limit e form",
+     2
+    ],
+    [
+     "limit order",
+     1
+    ],
+    [
+     "limit tanx-x",
+     1
+    ],
+    [
+     "limit greatest integer",
+     1
+    ],
+    [
+     "limit sqrt rationalise",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#14",
+     "text": "The value of the limit 1/x x x x x 1 + 2 + 3 + 4 lim ( ) x→0 4 is 1 1 2 3! 1/3! 3 3! 1/4 4 4! 1/4"
+    },
+    {
+     "id": "2024#78",
+     "text": "x −x e −e −2x The value of Ltx→0 1−cos x is equal to 1 2 2 1 3 0 4 1 4 -1"
+    },
+    {
+     "id": "2025#83",
+     "text": "1 What is the value of limx→∞ −(x + 1)(e x+1 − 1) ? 1 -1 2 1 3 0 4 Does not exist"
+    },
+    {
+     "id": "2026#48",
+     "text": "Find the value of √x limx→∞ ( ) √x+√x+√ x 1 0 – 2 √2 3 1 – 4 √3"
+    },
+    {
+     "id": "2026#50",
+     "text": "The value of the limit: |x| log e (1+| sin 2x|) limx→0 2 x (|x|+3) is: 2 1 exists and is equal to 3 1 2 exists and is equal to 3 3 does not exist 4 exists and is equal to 0"
+    },
+    {
+     "id": "2026#107",
+     "text": "2 x +2 cos x−2 limx→0 3 x sin x 1 1/2 2 1/3 3 1/6 4 1/12"
+    }
+   ]
+  },
+  {
+   "code": "M-CONT",
+   "chapter": "Continuity",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 0,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 1,
+    "2017": 0,
+    "2018": 1,
+    "2019": 0,
+    "2020": 2,
+    "2021": 1,
+    "2022": 2,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 10,
+   "yearsAsked": 8,
+   "yearsAvailable": 19,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 3,
+   "expected2027": 0.67,
+   "pAtLeast1": 0.48,
+   "pAtLeast2Raw": 0.144,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.57,
+    "pAtLeast1": 0.464
+   },
+   "trend": {
+    "rho": 0.12,
+    "p": 0.6300924768807799,
+    "q": 0.907
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "continuity parameter",
+     2
+    ],
+    [
+     "continuity modulus",
+     2
+    ],
+    [
+     "greatest integer discontinuity",
+     1
+    ],
+    [
+     "continuity piecewise",
+     1
+    ],
+    [
+     "continuity k",
+     1
+    ],
+    [
+     "continuity rational",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#65",
+     "text": "α 1 x sin ,x ≠ 0 Let R → R be any function defined as f (x) = { β x , α, β ∈ R . Which of the 0 ,x = 0 following is true? (R denotes the set of all real numbers) 1 f (x) is continuous at x = 0 for all α>0 and β ∈ R 2 f ("
+    }
+   ]
+  },
+  {
+   "code": "M-DIFB",
+   "chapter": "Differentiability",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 1,
+    "2018": 1,
+    "2019": 1,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 2,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 8,
+   "yearsAsked": 7,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 6,
+   "expected2027": 0.61,
+   "pAtLeast1": 0.46,
+   "pAtLeast2Raw": 0.127,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.78,
+    "pAtLeast1": 0.535
+   },
+   "trend": {
+    "rho": 0.294,
+    "p": 0.22819295176205948,
+    "q": 0.762
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "continuity differentiability",
+     1
+    ],
+    [
+     "derivative x^2 sin(1/x)",
+     1
+    ],
+    [
+     "differentiability modulus",
+     1
+    ],
+    [
+     "continuity differentiability x sin",
+     1
+    ],
+    [
+     "non differentiable points modulus",
+     1
+    ],
+    [
+     "x^2 sin(1/x) derivative continuity",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#16",
+     "text": "Number of point of which f(x) is not differentiable f (x) = |cosx| + 3 in [−π, π] 1 2 2 3 3 4 4 None of these"
+    },
+    {
+     "id": "2024#72",
+     "text": "2 1 x sin , x ≠ 0 Let f (x) = { x 0 ,x = 0 Then which of the follwoing is true 1 f(x) is not continuous at x=0 2 f(x) is not differentiable at x=0 3 f'(x) is not continuous at x=0 4 f'(x) is continuous at x=0"
+    },
+    {
+     "id": "2024#100",
+     "text": "1 x Let f : R → R be a function such that f (0) = π and f (x) = e πx −1 for x ≠ 0, then 1 f (x) is not continuous at x = 0 2 f (x) is continuous but not differentiable at x = 0 3 f (x) is differentiable at x = 0 and f ′ "
+    },
+    {
+     "id": "2026#52",
+     "text": "For a ∈ R, consider the real valued function defined on (−1, 1) as follows: For x ≠ 0, 1 1 (1+x) 3 −(1+2x) 4 f (x) = x and for x = 0, f (x) = a If f is differentiable at x = 0, then the value of a + f ′ (0) is equal to: "
+    }
+   ]
+  },
+  {
+   "code": "M-DIFF",
+   "chapter": "Differentiation",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 1,
+    "2009": 1,
+    "2010": 0,
+    "2011": 1,
+    "2012": 1,
+    "2013": 3,
+    "2014": 0,
+    "2015": 1,
+    "2016": 0,
+    "2017": 3,
+    "2018": 2,
+    "2019": 0,
+    "2020": 0,
+    "2021": 2,
+    "2022": 1,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 17,
+   "yearsAsked": 11,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 0.84,
+   "pAtLeast1": 0.538,
+   "pAtLeast2Raw": 0.205,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.59,
+    "pAtLeast1": 0.472
+   },
+   "trend": {
+    "rho": -0.356,
+    "p": 0.13821544613846537,
+    "q": 0.666
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "second derivative inverse",
+     2
+    ],
+    [
+     "differentiation inverse trig",
+     1
+    ],
+    [
+     "odd function derivative",
+     1
+    ],
+    [
+     "differentiation sqrt",
+     1
+    ],
+    [
+     "functional equation derivative",
+     1
+    ],
+    [
+     "derivative inverse tan half angle",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#53",
+     "text": "Let f : [0, ∞) → R be a function defined by 2 3x +4x+1 f (x) = 2 x +3x+2 Then the value of (f −1 )′ (2) is equal to: 1 5 2 25 3 15 4 0"
+    }
+   ]
+  },
+  {
+   "code": "M-AOD",
+   "chapter": "Application of Derivative",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 1,
+    "2009": 2,
+    "2010": 3,
+    "2011": 0,
+    "2012": 3,
+    "2013": 2,
+    "2014": 2,
+    "2015": 2,
+    "2016": 2,
+    "2017": 3,
+    "2018": 1,
+    "2019": 1,
+    "2020": 2,
+    "2021": 1,
+    "2022": 2,
+    "2023": 3,
+    "2024": 3,
+    "2025": 2,
+    "2026": 2
+   },
+   "total": 37,
+   "yearsAsked": 18,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 2.27,
+   "pAtLeast1": 0.819,
+   "pAtLeast2Raw": 0.662,
+   "likelyRange": [
+    0,
+    4
+   ],
+   "recency": {
+    "expected2027": 2.32,
+    "pAtLeast1": 0.813
+   },
+   "trend": {
+    "rho": -0.105,
+    "p": 0.670082479380155,
+    "q": 0.907
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "tangent parametric curve",
+     2
+    ],
+    [
+     "maximum x/(1+x tanx)",
+     2
+    ],
+    [
+     "maxima minima",
+     1
+    ],
+    [
+     "related rates cone",
+     1
+    ],
+    [
+     "maxima box volume",
+     1
+    ],
+    [
+     "extremum parameters",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#80",
+     "text": "Consider the function 3 2 ⎧ −x + 3x + 1, if x ≤ 2 f (x) = ⎨ cos x, if 2<x ≤ 4 ⎩ −x e , if x>4 Which of the following statements about f(x) is true: 1 f(x) has a local maximum at x =1, which is also the global maximum 2 f"
+    },
+    {
+     "id": "2024#96",
+     "text": "If the line a2 x + ay + 1 = 0, for some real number a , is normal to the curve xy = 1 then 1 a < 0 2 0 < a < 1 3 a > 0 4 −1 < a < 1"
+    },
+    {
+     "id": "2025#38",
+     "text": "x The curve y = 1+x tan x attains maxima for some x 1 ∈ [−2π, π] at x = 2 −cosx 3 at x = cosx and for some x ∈ [−2π, π] 4 t 4 at x = cosx"
+    },
+    {
+     "id": "2025#78",
+     "text": "The slope of the normal line to the curve x = t2 + 3t − 8 and y = 2t2 − 2t − 5 at the point (2,-1) is 1 22 7 −7 2 6 3 -5 −6 4 7"
+    },
+    {
+     "id": "2026#49",
+     "text": "Find the acute angle at which the curves y = (x − 2)2 and y = −4 + 6x − x2 intersect. 4 1 tan −1 ( ) 7 2 tan −1 ( 5 ) 7 3 tan −1 ( 6 ) 7 π 4 4"
+    },
+    {
+     "id": "2026#51",
+     "text": "2 Let f : R → R be a function defined by f (x) = |x + 1|e −x . Then which of the following statement is true? 1 f has a point of global maxima in (1, 2) 2 f has a point of maxima in (−2, −1) 3 f has a point of global min"
+    }
+   ]
+  },
+  {
+   "code": "M-IND",
+   "chapter": "Indefinite Integrals",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 3,
+    "2015": 1,
+    "2016": 2,
+    "2017": 0,
+    "2018": 0,
+    "2019": 1,
+    "2020": 3,
+    "2021": 2,
+    "2022": 1,
+    "2023": 2,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 16,
+   "yearsAsked": 9,
+   "yearsAvailable": 19,
+   "lastAsked": 2023,
+   "yearsSinceLast": 3,
+   "longestGap": 3,
+   "expected2027": 0.99,
+   "pAtLeast1": 0.583,
+   "pAtLeast2Raw": 0.26,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.64,
+    "pAtLeast1": 0.489
+   },
+   "trend": {
+    "rho": 0.12,
+    "p": 0.6178455386153462,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "integral substitution radical",
+     2
+    ],
+    [
+     "integral log10",
+     1
+    ],
+    [
+     "integral e^sqrt x",
+     1
+    ],
+    [
+     "integral xe^x rational",
+     1
+    ],
+    [
+     "integral e^x sqrt",
+     1
+    ],
+    [
+     "integral e^x f-f'",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#3",
+     "text": "∫ f (x)dx = g(x) , then ∫ x5 f (x3 )dx 1 1 3 3 x g(x ) − 3 ∫ 4 3 x g(x )dx + C 3 1 2 3 3 x g(x ) − ∫ 2 3 x g(x )dx + C 3 1 3 3 3 x g(x ) − ∫ 3 3 x g(x )dx + C 3 4 None of these"
+    },
+    {
+     "id": "2023#20",
+     "text": "1 tan x If ∫ x sin x sec3 x dx = 2 [f (x)sec2 x + g(x)( x )] + C , then which of the following is true? 1 f (x) − g(x) = 0 2 f (x). g(x) = 0 3 f (x) + g(x) = 0 4 f (x) + g(x) = 1"
+    }
+   ]
+  },
+  {
+   "code": "M-DEF",
+   "chapter": "Definite Integral",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 2,
+    "2009": 1,
+    "2010": 3,
+    "2011": 3,
+    "2012": 4,
+    "2013": 2,
+    "2014": 2,
+    "2015": 2,
+    "2016": 0,
+    "2017": 2,
+    "2018": 3,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1,
+    "2023": 1,
+    "2024": 2,
+    "2025": 2,
+    "2026": 2
+   },
+   "total": 32,
+   "yearsAsked": 15,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 1.66,
+   "pAtLeast1": 0.73,
+   "pAtLeast2Raw": 0.493,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.68,
+    "pAtLeast1": 0.728
+   },
+   "trend": {
+    "rho": -0.561,
+    "p": 0.017745563609097726,
+    "q": 0.2
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "compare definite integrals",
+     2
+    ],
+    [
+     "integral x sinx sec^2",
+     2
+    ],
+    [
+     "definite integral property",
+     1
+    ],
+    [
+     "definite integral odd-even",
+     1
+    ],
+    [
+     "definite integral x sinx",
+     1
+    ],
+    [
+     "definite integral symmetry",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#32",
+     "text": "Which of the following is TRUE? b b A. If f is continuous on [a, b], then ∫a xf (x)dx = x ∫a f (x)dx 2 3 2 5 2 5 x B. ∫0 e x dx = ∫0 e x dx + ∫3 e dx b C. If f is continuous on [a, b], then d (∫ a f (x)dx) = f (x) dx D. "
+    },
+    {
+     "id": "2024#42",
+     "text": "1 e If for non-zero x, cf (x) + df ( x ) = | log |x|| + 3, where c ≠ 0, then ∫1 f (x)dx = (c−d)(2e−1) 1 2 c2 −d (c − d)(3e − 2) 2 2 2 c − d (c − d)(3e + 2) 3 3 2 2 c − d (c − d)(2e + 1) 4 2 2 c − d"
+    },
+    {
+     "id": "2025#43",
+     "text": "2 sin x 2 d The value of dx ∫sin x 2 e t dt at x = π 1 2 2 -1 3 -2 4 1"
+    },
+    {
+     "id": "2025#84",
+     "text": "π (1+2 cos x) The value of ∫0 2 2 dx lies in the interval (2+cos x) 1 (-1,0) 2 (-2,-1) 3 (0,1) 4 (1,2)"
+    },
+    {
+     "id": "2026#113",
+     "text": "π dx Evaluate the following definite integral:∫0 4 4 cos x 1 1 2 4 3 3 1 3 4 2 3"
+    },
+    {
+     "id": "2026#117",
+     "text": "2 x −1 1 If f : [0, ∞) → R is defined by f (x) = 2 , find the value of: ∫−1 f −1 (y)dy x +1 1 π 2 2π 3 0 pi 4 2"
+    }
+   ]
+  },
+  {
+   "code": "M-AUC",
+   "chapter": "Area Under Curve",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 1,
+    "2009": 1,
+    "2010": 1,
+    "2011": 1,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 1,
+    "2017": 0,
+    "2018": 1,
+    "2019": 0,
+    "2020": 2,
+    "2021": 1,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 10,
+   "yearsAsked": 9,
+   "yearsAvailable": 19,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 4,
+   "expected2027": 0.54,
+   "pAtLeast1": 0.43,
+   "pAtLeast2Raw": 0.103,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.41,
+    "pAtLeast1": 0.398
+   },
+   "trend": {
+    "rho": -0.399,
+    "p": 0.09247688077980505,
+    "q": 0.614
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "area parabola modulus",
+     2
+    ],
+    [
+     "area under curves",
+     1
+    ],
+    [
+     "area line circle",
+     1
+    ],
+    [
+     "area between parabolas",
+     1
+    ],
+    [
+     "area relation",
+     1
+    ],
+    [
+     "area between modulus lines",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#69",
+     "text": "π The area enclosed between the curve y = sin x, y = cosx, 0 ≤ x ≤ 2 is – 1 (√2 + 1) – 2 2(√2 − 1) – 3 (√2 − 1) – 4 2(√2 + 1)"
+    }
+   ]
+  },
+  {
+   "code": "M-DE",
+   "chapter": "Differential Equation",
+   "part": "Math",
+   "unit": "Calculus",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 2,
+    "2018": 1,
+    "2019": 1,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 5,
+   "yearsAsked": 4,
+   "yearsAvailable": 19,
+   "lastAsked": 2022,
+   "yearsSinceLast": 4,
+   "longestGap": 9,
+   "expected2027": 0.3,
+   "pAtLeast1": 0.309,
+   "pAtLeast2Raw": 0.036,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.16,
+    "pAtLeast1": 0.246
+   },
+   "trend": {
+    "rho": 0.18,
+    "p": 0.46988252936765806,
+    "q": 0.901
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "separable ODE",
+     1
+    ],
+    [
+     "separable ODE exponential",
+     1
+    ],
+    [
+     "area ratio curve family",
+     1
+    ],
+    [
+     "linear ODE curve",
+     1
+    ],
+    [
+     "acceleration distance rest",
+     1
+    ]
+   ],
+   "examples": []
+  },
+  {
+   "code": "M-RCS",
+   "chapter": "Rectangular Cartesian System",
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "hist": {
+    "2008": 1,
+    "2009": 1,
+    "2010": 1,
+    "2011": 1,
+    "2012": 1,
+    "2013": 1,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 1,
+    "2022": 1,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 9,
+   "yearsAsked": 9,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 7,
+   "expected2027": 0.44,
+   "pAtLeast1": 0.385,
+   "pAtLeast2Raw": 0.073,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.44,
+    "pAtLeast1": 0.411
+   },
+   "trend": {
+    "rho": -0.596,
+    "p": 0.008247938015496127,
+    "q": 0.164
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "area |x|+|y|=1",
+     2
+    ],
+    [
+     "centroid cubic roots",
+     1
+    ],
+    [
+     "locus max metric",
+     1
+    ],
+    [
+     "transformations of point",
+     1
+    ],
+    [
+     "triangle area centroid",
+     1
+    ],
+    [
+     "parallelogram fourth vertex",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#119",
+     "text": "A triangle has a vertex at (1, 2) and the mid points of the two sides through it are (-1, 1) and (2, 3). Then the area of this triangle is 1 1 2 2 3 3 4 4"
+    }
+   ]
+  },
+  {
+   "code": "M-SL",
+   "chapter": "Straight Line",
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "hist": {
+    "2008": 1,
+    "2009": 1,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 2,
+    "2014": 0,
+    "2015": 3,
+    "2016": 0,
+    "2017": 2,
+    "2018": 3,
+    "2019": 1,
+    "2020": 0,
+    "2021": 1,
+    "2022": 3,
+    "2023": 2,
+    "2024": 2,
+    "2025": 2,
+    "2026": 1
+   },
+   "total": 25,
+   "yearsAsked": 14,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 1.65,
+   "pAtLeast1": 0.73,
+   "pAtLeast2Raw": 0.493,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.74,
+    "pAtLeast1": 0.737
+   },
+   "trend": {
+    "rho": 0.184,
+    "p": 0.43914021494626343,
+    "q": 0.891
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "rotation of axes intercepts",
+     1
+    ],
+    [
+     "isosceles medians slopes",
+     1
+    ],
+    [
+     "distance parallel lines",
+     1
+    ],
+    [
+     "parallel line midpoint",
+     1
+    ],
+    [
+     "equilateral triangle side",
+     1
+    ],
+    [
+     "foot of perpendicular",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#25",
+     "text": "The range of values of θ in the interval (0, π) such that the points (3,5) and (sinθ, cosθ) lie on the same side of the line x + y − 1 = 0, is 3π 1 (0, ) 4 π 2 (0, ) 2 π 3 (0, ) 3 π 4 (0, ) 4"
+    },
+    {
+     "id": "2024#22",
+     "text": "If the perpendicular bisector of the line segment joining p(1,4) and q(k,3) has yintercept -4, then the possible values of k are 1 -3 and 3 2 -1 and 1 3 -2 and 2 4 -4 and 4"
+    },
+    {
+     "id": "2024#86",
+     "text": "The points (1,1/2) and (3,-1/2) are 1 In between the lines 2x+3y=6 and 2x+3y = -6 2 On the same side of the line 2x+3y = 6 3 On the same side of the line 2x+3y = -6 4 On the opposite side of the line 2x+3y = -6"
+    },
+    {
+     "id": "2025#55",
+     "text": "x y Let the line 4 + 2 = 1 meets the x-axis and y-axis at A and B, respectively. M is the midpoint of side AB, and M' is the image of the point M across the line x + y = 1. Let the point P lie on the line x + y = 1 such "
+    },
+    {
+     "id": "2025#82",
+     "text": "The obtuse angle between lines 2y = x + 1 and y = 3x + 2 is 1 4π 5 2π 2 3 5π 3 6 4 3π 4"
+    },
+    {
+     "id": "2026#44",
+     "text": "2 Let (x0 , y0 ) ∈ Z be a point on the straight line 8x − 3y = 11 which is equidistant from the coordinate axes. Then, the point (x0 , y0 ) will lie only in: 1 I quadrant 2 II quadrant 3 III quadrant 4 IV quadrant"
+    }
+   ]
+  },
+  {
+   "code": "M-PSL",
+   "chapter": "Pair of Straight Line",
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 2,
+    "2017": 1,
+    "2018": 1,
+    "2019": 0,
+    "2020": 0,
+    "2021": 1,
+    "2022": 0,
+    "2023": 0,
+    "2024": 2,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 9,
+   "yearsAsked": 7,
+   "yearsAvailable": 19,
+   "lastAsked": 2024,
+   "yearsSinceLast": 2,
+   "longestGap": 5,
+   "expected2027": 0.53,
+   "pAtLeast1": 0.424,
+   "pAtLeast2Raw": 0.098,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.44,
+    "pAtLeast1": 0.409
+   },
+   "trend": {
+    "rho": -0.106,
+    "p": 0.6695826043489128,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "pair of lines angle bisector",
+     1
+    ],
+    [
+     "pair of lines bisectors",
+     1
+    ],
+    [
+     "pair of lines lambda",
+     1
+    ],
+    [
+     "pair of lines slopes",
+     1
+    ],
+    [
+     "pair of lines intersection",
+     1
+    ],
+    [
+     "pair of lines slopes differ",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#52",
+     "text": "For what values of λ does the equation 6x2 − xy + λy 2 = 0 represents two perpendicular lines and two lines inclined at an angle of π/4 . 1 -6 and -2 2 6 and 1 3 -6 and -35 4 -6 and 1"
+    },
+    {
+     "id": "2024#84",
+     "text": "The equation 3x2 + 10xy + 11y 2 + 14x + 12y + 5 = 0 represents 1 a circle 2 an ellipse 3 a hyperbola 4 a parabola"
+    }
+   ]
+  },
+  {
+   "code": "M-CIR",
+   "chapter": "Circle",
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 2,
+    "2012": 1,
+    "2013": 2,
+    "2014": 0,
+    "2015": 2,
+    "2016": 1,
+    "2017": 0,
+    "2018": 2,
+    "2019": 2,
+    "2020": 0,
+    "2021": 1,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 2,
+    "2026": 1
+   },
+   "total": 18,
+   "yearsAsked": 12,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 1.06,
+   "pAtLeast1": 0.601,
+   "pAtLeast2Raw": 0.285,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 1.05,
+    "pAtLeast1": 0.606
+   },
+   "trend": {
+    "rho": -0.076,
+    "p": 0.7430642339415147,
+    "q": 0.907
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "circle touching locus",
+     2
+    ],
+    [
+     "circle from diameters area",
+     2
+    ],
+    [
+     "common tangents circles",
+     2
+    ],
+    [
+     "circle contained in circle",
+     1
+    ],
+    [
+     "concyclic intercepts circle",
+     1
+    ],
+    [
+     "circle lines intersections",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#57",
+     "text": "A circle touches the x–axis and also touches the circle with centre (0, 3) and radius 2. The locus of the centre of the circle is 1 a circle 2 an ellipse 3 a parabola 4 a hyperbola"
+    },
+    {
+     "id": "2025#62",
+     "text": "A circle with its center in the first quadrant touches both the coordinate axes and the line x-y-2=0. Then the area of the circle is π 1 2 2 4π 3 π 4 2π"
+    },
+    {
+     "id": "2025#67",
+     "text": "The circle x2 + y 2 + αx + βy + γ = 0 is the image of the circle x 2 + y 2 − 6x − 10y + 30 = 0 across the line 3x + y = 2. The value of [α + β + γ] is (where [.] represents the floor function.) 1 20 2 22 3 23 4 21"
+    },
+    {
+     "id": "2026#45",
+     "text": "Segments of the lines 2x + 3y = 1 and 4x − 3y = 11 are diameters of a circle of area 153.94 square units. Then, the equation of this circle with integer radius is: 2 2 x + y + 4x 1 − 2y − 44 = 0 2 2 x + y + 4x 2 − 2y + 4"
+    }
+   ]
+  },
+  {
+   "code": "M-PAR",
+   "chapter": "Parabola",
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 1,
+    "2011": 1,
+    "2012": 1,
+    "2013": 0,
+    "2014": 3,
+    "2015": 1,
+    "2016": 2,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1,
+    "2023": 2,
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 16,
+   "yearsAsked": 12,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 5,
+   "expected2027": 0.95,
+   "pAtLeast1": 0.573,
+   "pAtLeast2Raw": 0.247,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 1.03,
+    "pAtLeast1": 0.601
+   },
+   "trend": {
+    "rho": -0.235,
+    "p": 0.32941764558860287,
+    "q": 0.849
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "locus midpoints chords parabola",
+     2
+    ],
+    [
+     "common tangent circle parabola",
+     1
+    ],
+    [
+     "parabola focal chord tangents",
+     1
+    ],
+    [
+     "parabola vertex",
+     1
+    ],
+    [
+     "parabola rotated focus",
+     1
+    ],
+    [
+     "equilateral triangle in parabola",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#19",
+     "text": "A point P in the first quadrant, lies on y 2 = 4ax , a > 0, and keeps a distance of 5a units from its focus. Which of the following points lies on the locus of P? 1 (1,0) 2 (1,1) 3 (0,2) 4 (2,0)"
+    },
+    {
+     "id": "2023#120",
+     "text": "The locus of the mid-point of all chords of the parabola y 2 = 4x which are drawn through its vertex is 1 y 2 = 8x 2 y 2 = 2x 3 x 2 + 4y 2 = 16 4 x 2 = 2y"
+    },
+    {
+     "id": "2024#56",
+     "text": "The two parabolas y 2 = 4a(x + c) and y 2 = 4bx, a > b > 0 cannot have a common normal unless 1 c > 2(a + b) 2 c > (a − b) 3 c < 2(a − b) 2 4 c < a − b"
+    },
+    {
+     "id": "2025#57",
+     "text": "An equilateral triangle is inscribed in the parabola y 2 = x . One vertex of the triangle is at the vertex of the parabola. The centroid of triangle is 1 (1,0) – 2 (√2 , 0) – 3 (√3 , 0) 4 (2, 0)"
+    },
+    {
+     "id": "2026#46",
+     "text": "Which of the following equation can represent a common tangent to the parabolas y = −x2 and y = (x − 2)2 ? y = 4x 1 + 4 y = 5x 2 25 + 4 y = −4x 3 + 4 y = −5x 4 25 + 4"
+    }
+   ]
+  },
+  {
+   "code": "M-HYP",
+   "chapter": "Hyperbola",
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 1,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 3,
+    "2015": 2,
+    "2016": 1,
+    "2017": 1,
+    "2018": 1,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1,
+    "2023": 1,
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 16,
+   "yearsAsked": 13,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 0.92,
+   "pAtLeast1": 0.564,
+   "pAtLeast2Raw": 0.236,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.95,
+    "pAtLeast1": 0.579
+   },
+   "trend": {
+    "rho": -0.208,
+    "p": 0.385153711572107,
+    "q": 0.849
+   },
+   "recycled": 3,
+   "topSubtopics": [
+    [
+     "ellipse hyperbola foci coincide",
+     4
+    ],
+    [
+     "lines meet locus",
+     1
+    ],
+    [
+     "hyperbola asymptotes angle",
+     1
+    ],
+    [
+     "hyperbola conjugate eccentricities",
+     1
+    ],
+    [
+     "hyperbola locus eccentricity",
+     1
+    ],
+    [
+     "hyperbola equilateral double ordinate",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#119",
+     "text": "Find foci of the equation x2 + 2x– 4y 2 + 8y– 7 = 0 – 1 (√5 ± 1, 1) – 2 (−1 ± √5 , 1) – 3 (−1, √5 ± 1) – 4 (1, −1 ± √5 )"
+    },
+    {
+     "id": "2024#40",
+     "text": "2 2 2 2 y (y−4) At how many points the following curves intersect 9 − x 16 = 1 and x4 + 16 = 1 1 0 2 1 3 2 4 4"
+    },
+    {
+     "id": "2025#61",
+     "text": "2 2 y Let F1 , F2 be foci of hyperbola x 2 − 2 = 1 , a>0, b>0, and let O be the origin. Let M be an a b arbitrary point on curve C and above X axis and H be a point on M F such that M F ⊥ F F arbitrary point on curve C a"
+    },
+    {
+     "id": "2026#111",
+     "text": "Find the area of the triangle formed in the right half-plane by the lines x − y = 0 and x + y = 0, and a tangent to the hyperbola x2 − y 2 = a2 , where a is a non-zero number. 1 a 2 2 2 a 2 3 2a 2 4 4a 2"
+    }
+   ]
+  },
+  {
+   "code": "M-ELL",
+   "chapter": "Ellipse",
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 1,
+    "2012": 1,
+    "2013": 1,
+    "2014": 1,
+    "2015": 1,
+    "2016": 1,
+    "2017": 0,
+    "2018": 0,
+    "2019": 2,
+    "2020": 2,
+    "2021": 2,
+    "2022": 1,
+    "2023": 0,
+    "2024": 1,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 16,
+   "yearsAsked": 13,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 0.99,
+   "pAtLeast1": 0.582,
+   "pAtLeast2Raw": 0.26,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.84,
+    "pAtLeast1": 0.55
+   },
+   "trend": {
+    "rho": -0.096,
+    "p": 0.691327168207948,
+    "q": 0.907
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "ellipse tangent equal intercepts",
+     1
+    ],
+    [
+     "ellipse eccentricity",
+     1
+    ],
+    [
+     "ellipse through points",
+     1
+    ],
+    [
+     "focal distances sum",
+     1
+    ],
+    [
+     "tangent condition ellipse",
+     1
+    ],
+    [
+     "circle through foci",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#10",
+     "text": "If (4, 3) and (12, 5) are the two foci of an ellipse passing through the origin, then the eccentricity of the ellipse is −− √13 1 9 −− √13 2 18 −− √17 3 18 −− √17 4 9"
+    },
+    {
+     "id": "2026#1",
+     "text": "1 The eccentricity of an ellipse whose center is at the origin is 2 . If one of its directrices is x = −4, find the equation of the normal to the ellipse at the point 3 (1, 2 ) . 1 4x+2y=7 3 2 6x-3y= 2 3 6x+3y= 21 2 4 4x"
+    }
+   ]
+  },
+  {
+   "code": "M-STAT",
+   "chapter": "Statistics",
+   "part": "Math",
+   "unit": "Statistics",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 3,
+    "2012": 1,
+    "2013": 1,
+    "2014": 2,
+    "2015": 1,
+    "2016": 2,
+    "2017": 1,
+    "2018": 1,
+    "2019": 4,
+    "2020": 2,
+    "2021": 3,
+    "2022": 3,
+    "2023": 4,
+    "2024": 4,
+    "2025": 2,
+    "2026": 5
+   },
+   "total": 40,
+   "yearsAsked": 17,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 3.01,
+   "pAtLeast1": 0.889,
+   "pAtLeast2Raw": 0.803,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 3.7,
+    "pAtLeast1": 0.918
+   },
+   "trend": {
+    "rho": 0.663,
+    "p": 0.001999500124968758,
+    "q": 0.078
+   },
+   "recycled": 7,
+   "topSubtopics": [
+    [
+     "mean deviation AP",
+     3
+    ],
+    [
+     "mean of squares",
+     2
+    ],
+    [
+     "corrected mean",
+     2
+    ],
+    [
+     "sum of squares constraint",
+     2
+    ],
+    [
+     "mean deviation from variance",
+     2
+    ],
+    [
+     "median frequency unknowns",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#80",
+     "text": "There are 40 female and 20 male students in a class. If the average heights of female and male students are 5.15 feet and 5.66 feet, respectively, then the average height (in feet) of all the students in the class equals"
+    },
+    {
+     "id": "2026#32",
+     "text": "The distances in meters for seven throws of a shotputter are: 14.5, 15.2, 16.8, 17.1, 15.9, 16.3, 14.7. Calculate the sample mean and sample standard deviation. Round to two decimals. 15.79, 1 1.02 15.79, 2 0.96 14.79, 3"
+    },
+    {
+     "id": "2026#33",
+     "text": "consider the following grouped data: Class Interval Number of students 20-25 8 25-30 14 30-35 20 35-40 18 40-45 10 45-50 6 1 32.14 2 31.67 3 33.75 4 34.12"
+    },
+    {
+     "id": "2026#34",
+     "text": "An investigator has missed a value while collecting data in an experiment. Denoting the missing value by x, the observations are: 10, 4, 11, 6, 17, 15, 9, 8, x. What should be the value of x, if he wants mean = median = "
+    },
+    {
+     "id": "2026#36",
+     "text": "For a given sample, the computed values of the variance and fourth central moment are 3 and 63 respectively. Then the underlying frequency distribution is classified as: 1 Normal 2 Mesokurtic 3 Platykurtic 4 Leptokurtic"
+    },
+    {
+     "id": "2026#105",
+     "text": "n Let Ak be the arithmetic mean of squares of k natural numbers. If ∑k=1 (6Ak − 3k) = 31, find the value of n . 1 3 2 2 3 4 4 1"
+    }
+   ]
+  },
+  {
+   "code": "R-BR",
+   "chapter": "Blood Relations",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 5,
+    "2009": 0,
+    "2010": 0,
+    "2011": 5,
+    "2012": 5,
+    "2013": 4,
+    "2014": 5,
+    "2015": 8,
+    "2016": 4,
+    "2017": 4,
+    "2018": 0,
+    "2019": 1,
+    "2020": 1,
+    "2021": 8,
+    "2022": 2,
+    "2023": 1,
+    "2024": 1,
+    "2025": 2,
+    "2026": 3
+   },
+   "total": 59,
+   "yearsAsked": 16,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 3.13,
+   "pAtLeast1": 0.898,
+   "pAtLeast2Raw": 0.819,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 2.7,
+    "pAtLeast1": 0.85
+   },
+   "trend": {
+    "rho": -0.179,
+    "p": 0.4633841539615096,
+    "q": 0.901
+   },
+   "recycled": 13,
+   "topSubtopics": [
+    [
+     "family professions",
+     12
+    ],
+    [
+     "family six persons",
+     11
+    ],
+    [
+     "coded relations",
+     8
+    ],
+    [
+     "relation statement",
+     8
+    ],
+    [
+     "family colours",
+     4
+    ],
+    [
+     "family weights",
+     3
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#4",
+     "text": "Looking at the portrait of a man, Lucky (male) said, “This person is the only child of my paternal grandmother’s daughter. “ Whose portrait was Lucky looking at? 1 His brother 2 His cousin 3 His uncle 4 Himself"
+    },
+    {
+     "id": "2025#113",
+     "text": "If John's mother's father's granddaughter is Maria, what is Maria's relation to John? 1 Aunt 2 Niece 3 Cousin 4 Sister"
+    },
+    {
+     "id": "2025#115",
+     "text": "Mohan introduced Sarita as the mother of his sister's brother. How is Sarita related to Mohan? 1 Mother 2 Niece 3 Sister 4 Aunt"
+    },
+    {
+     "id": "2026#61",
+     "text": "Mira's mother-in-law's mother is my grandmother. All my mother's offsprings are unmarried till date. Based on this, which of the following is true? 1 Mira is the wife of my uncle's son 2 Mira is the wife of my aunt's gra"
+    },
+    {
+     "id": "2026#94",
+     "text": "Seven people of a family P 1, P 2, P 3, P 4, P 5, P 6 and P 7 go on a picnic in a sports utility vehicle. P 4 is the sister of P 7, P 2 is the mother of P 6's wife. P 6 is the son-in-law of P 3. P 5 and P 7 are the grand"
+    },
+    {
+     "id": "2026#96",
+     "text": "Pointing to a woman, Arun says: She is the daughter of my father's only son. How is the woman related to Arun? 1 Sister 2 Daughter 3 Mother 4 Cousin"
+    }
+   ]
+  },
+  {
+   "code": "R-CD",
+   "chapter": "Coding-Decoding",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 8,
+    "2011": 1,
+    "2012": 4,
+    "2013": 2,
+    "2014": 1,
+    "2015": 3,
+    "2016": 2,
+    "2017": 1,
+    "2018": 1,
+    "2019": 3,
+    "2020": 5,
+    "2021": 5,
+    "2022": 1,
+    "2023": 9,
+    "2024": 2,
+    "2025": 2,
+    "2026": 2
+   },
+   "total": 53,
+   "yearsAsked": 18,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 3.35,
+   "pAtLeast1": 0.912,
+   "pAtLeast2Raw": 0.847,
+   "likelyRange": [
+    1,
+    6
+   ],
+   "recency": {
+    "expected2027": 3.3,
+    "pAtLeast1": 0.896
+   },
+   "trend": {
+    "rho": 0.389,
+    "p": 0.10047488127968009,
+    "q": 0.614
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "letter shift code",
+     10
+    ],
+    [
+     "letter number code",
+     7
+    ],
+    [
+     "code language",
+     4
+    ],
+    [
+     "binary tree code",
+     4
+    ],
+    [
+     "symbol substitution arithmetic",
+     3
+    ],
+    [
+     "symbol age relation",
+     3
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#29",
+     "text": "In certain language, HEART is written as 2018010508, and LUNGS is written as 1907142112. If Brain is written in that language, what will be the last number? 1 2 2 5 3 4 4 9"
+    },
+    {
+     "id": "2024#35",
+     "text": "Qus 35 Q ( p p y y pyq y y ) If by rearranging the letters of the word NABMODINT, a name of a game is formed. What would be the first and last letter of the mirror image of the name of the game? 1 T, B 2 B, N 3 B, T 4 N,"
+    },
+    {
+     "id": "2025#86",
+     "text": "In a certain code language, the word \"REASON\" is encoded as TDDQSK. Using the same rule, how is the word PRAYER coded? 1 SSAYDU 2 RTBXCT 3 RQDWIO 4 RQDZCU"
+    },
+    {
+     "id": "2025#92",
+     "text": "In a certain code language, 'SUN' is written as 'RWK' and 'MOON' is written as 'LQLR'. Following the same pattern, how will 'STAR' be written? 1 RVXV 2 RUDY 3 RUXV 4 SVXU"
+    },
+    {
+     "id": "2026#70",
+     "text": "In a specific code, \"TRUTH\" is coded as \"7-18-21-20-8\" and \"FALSE\" is coded as \"6-1-12-19-5\". How would \"LOGIC\" be coded if the rule changes such that every vowel is shifted by +2 in the alphabet before being converted t"
+    },
+    {
+     "id": "2026#78",
+     "text": "If India is coded as J LGEF , then Rome be coded as: 1 S QP A 2 SMP A 3 QM P A 4 QQP A"
+    }
+   ]
+  },
+  {
+   "code": "R-DIR",
+   "chapter": "Direction Test",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 3,
+    "2011": 0,
+    "2012": 1,
+    "2013": 1,
+    "2014": 6,
+    "2015": 1,
+    "2016": 0,
+    "2017": 1,
+    "2018": 1,
+    "2019": 0,
+    "2020": 1,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 18,
+   "yearsAsked": 11,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 0.84,
+   "pAtLeast1": 0.539,
+   "pAtLeast2Raw": 0.206,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.77,
+    "pAtLeast1": 0.529
+   },
+   "trend": {
+    "rho": 0.003,
+    "p": 0.9937515621094727,
+    "q": 0.994
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "roads grid",
+     5
+    ],
+    [
+     "distance from start",
+     3
+    ],
+    [
+     "turns final direction",
+     3
+    ],
+    [
+     "turns direction",
+     2
+    ],
+    [
+     "direction rotation",
+     1
+    ],
+    [
+     "shortest distance",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#61",
+     "text": "Deepa moved a distance of 75 metres towards the north. She then turned to the left and after walking for about 25 metres, turned left again and walked 80 metres. Finally, she turned to the right at an angle of 45°. In wh"
+    },
+    {
+     "id": "2025#114",
+     "text": "A person walks 8 km north, turns right, walks 4 km, turns right again and walks 6 km. Finally, he turns left and walks 3 km. How far is he from the starting point? 1 8.92 km 2 6.45 km 3 5.89 km 5 89 4 7.28 km"
+    },
+    {
+     "id": "2026#85",
+     "text": "Vikram starts from a point and walks 18 metres towards the West. He then turns left and walks 14 metres. After that, he turns right and walks 11 metres. He again turns right and walks 7 metres. Then he turns left and wal"
+    }
+   ]
+  },
+  {
+   "code": "R-SEAT",
+   "chapter": "Seating Arrangement",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 5,
+    "2011": 0,
+    "2012": 6,
+    "2013": 7,
+    "2014": 10,
+    "2015": 0,
+    "2016": 10,
+    "2017": 6,
+    "2018": 0,
+    "2019": 3,
+    "2020": 2,
+    "2021": 0,
+    "2022": 1,
+    "2023": 2,
+    "2024": 1,
+    "2025": 2,
+    "2026": 2
+   },
+   "total": 58,
+   "yearsAsked": 14,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 2.65,
+   "pAtLeast1": 0.859,
+   "pAtLeast2Raw": 0.742,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 2,
+    "pAtLeast1": 0.774
+   },
+   "trend": {
+    "rho": -0.023,
+    "p": 0.9297675581104724,
+    "q": 0.948
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "two rows facing",
+     9
+    ],
+    [
+     "hexagonal table",
+     6
+    ],
+    [
+     "circular professions",
+     5
+    ],
+    [
+     "office layout",
+     4
+    ],
+    [
+     "marching heights",
+     3
+    ],
+    [
+     "office allotment",
+     3
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#60",
+     "text": "Three persons A, B and C are standing in a queue. There are five persons between A and B and eight persons between B and C. If there are three persons ahead of C and 21 behind A, then what could be the minimum number of "
+    },
+    {
+     "id": "2024#6",
+     "text": "Study the following information carefully and answer the given question: Eight friends A, B, C, D, E, F, G and H are sitting on a round table facing the centre. A sits second to the left of D, who sits third to the left "
+    },
+    {
+     "id": "2025#87",
+     "text": "Four people (P,Q,R & S) are standing in a queue. Q is ahead of P. R is between P and S. If S is at the end of the queue, who is at the front of the queue? 1 P 2 S 3 Q 4 R"
+    },
+    {
+     "id": "2025#106",
+     "text": "Five friends A,B,C,D and E are sitting in a row. The following conditions hold: A is sitting next to B. C is sitting at one of the ends. D is sitting between A and E. E is sitting to the right of D. Who is sitting at the"
+    },
+    {
+     "id": "2026#71",
+     "text": "Six people U , V , W , X, Y , and Z stand in a line. Y is between V and Z . W is to the immediate left of V . X is not at either end. U is to the immediate right of Z . If W is at the far left, who is in the 4th position"
+    },
+    {
+     "id": "2026#86",
+     "text": "Six senior analysts Arjun, Bhavesh, Charu, Devika, Eshan, and Farah are seated around a circular conference table facing the centre. Each works in a different domain: Finance, Marketing, Operations, Analytics, HR, and St"
+    }
+   ]
+  },
+  {
+   "code": "R-PUZ",
+   "chapter": "Puzzles",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 12,
+    "2009": 9,
+    "2010": 6,
+    "2011": 5,
+    "2012": 5,
+    "2013": 5,
+    "2014": 8,
+    "2015": 11,
+    "2016": 7,
+    "2017": 11,
+    "2018": 3,
+    "2019": 5,
+    "2020": 6,
+    "2021": 1,
+    "2022": 6,
+    "2023": 2,
+    "2024": 8,
+    "2025": 1,
+    "2026": 4
+   },
+   "total": 115,
+   "yearsAsked": 19,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 5.57,
+   "pAtLeast1": 0.963,
+   "pAtLeast2Raw": 0.975,
+   "likelyRange": [
+    3,
+    9
+   ],
+   "recency": {
+    "expected2027": 4.59,
+    "pAtLeast1": 0.953
+   },
+   "trend": {
+    "rho": -0.38,
+    "p": 0.10672331917020744,
+    "q": 0.614
+   },
+   "recycled": 14,
+   "topSubtopics": [
+    [
+     "houses roof chimney",
+     8
+    ],
+    [
+     "height ordering",
+     5
+    ],
+    [
+     "integers ordering",
+     5
+    ],
+    [
+     "committees constraints",
+     5
+    ],
+    [
+     "drama scheduling",
+     5
+    ],
+    [
+     "staff selection constraints",
+     4
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#71",
+     "text": "A, B, C, D and E are five different integers. When written in the ascending order of values, the difference between any two adjacent integers is 8. D is the greatest and A the least. B is greater than E but less than C. "
+    },
+    {
+     "id": "2025#104",
+     "text": "A, B, C, D, E, F and G are travelling in three different vehicles: Swift, Creta, and Nexon. There are at least two passengers in each vehicle. Among them, only two are male. There are two engineers, two doctors and three"
+    },
+    {
+     "id": "2026#62",
+     "text": "Youtube is organizing an event with seven content creators A, B, C , D, E, F and G, by grouping them into three teams based on Travel, Beauty and Tech. Each team needs at least 2 content creators, and a creator can be on"
+    },
+    {
+     "id": "2026#80",
+     "text": "Six files in a directory are labelled P , Q, R, S , T , and U . You are tasked with identifying specific files based on their system attributes: (i) Files P , Q, and R are Word Documents (docx), while S , T , and U are E"
+    },
+    {
+     "id": "2026#91",
+     "text": "In a class a student ranked 35th from top and 32nd from bottom. How many students are there in the class? 1 66 2 67 3 78 4 23"
+    },
+    {
+     "id": "2026#95",
+     "text": "Five boxes P , Q, R, S , T are stacked one above the other. R is above S but below Q. T is at the bottom. P is just above T . Which box is at the top? 1 R 2 Q 3 S 4 P"
+    }
+   ]
+  },
+  {
+   "code": "R-SYL",
+   "chapter": "Syllogism",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 0,
+    "2009": 4,
+    "2010": 2,
+    "2011": 5,
+    "2012": 0,
+    "2013": 4,
+    "2014": 0,
+    "2015": 2,
+    "2016": 1,
+    "2017": 0,
+    "2018": 5,
+    "2019": 2,
+    "2020": 1,
+    "2021": 0,
+    "2022": 3,
+    "2023": 2,
+    "2024": 3,
+    "2025": 5,
+    "2026": 3
+   },
+   "total": 42,
+   "yearsAsked": 14,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 2.78,
+   "pAtLeast1": 0.871,
+   "pAtLeast2Raw": 0.766,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 3.37,
+    "pAtLeast1": 0.9
+   },
+   "trend": {
+    "rho": 0.276,
+    "p": 0.24868782804298925,
+    "q": 0.78
+   },
+   "recycled": 4,
+   "topSubtopics": [
+    [
+     "syllogism",
+     25
+    ],
+    [
+     "facts must follow",
+     3
+    ],
+    [
+     "implied statement",
+     2
+    ],
+    [
+     "set inclusion logic",
+     2
+    ],
+    [
+     "statement combinations",
+     2
+    ],
+    [
+     "logical consequences",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#107",
+     "text": "Statements: I. All cakes are ice cream II. No ice cream is chocolate Conclusions: I. Some cakes are chocolate II. No cake is chocolateChoose the correct option: 1 Both conclusion I and conclusion II follows 2 Only conclu"
+    },
+    {
+     "id": "2025#111",
+     "text": "Statements: All apples are fruits. All fruits are tasty. Conclusions: I. All apples are tasty. II. Some tasty things are apples. 1 Neither follows 2 Only I follows 3 Both follow 4 Only II follows"
+    },
+    {
+     "id": "2025#118",
+     "text": "Statement : All engineers are good at math. Conclusion 1: Some people good at math are engineers. Conclusion 2: All people good at math are engineers. 1 Both Conclusions follow 2 Only Conclusion 1 follows 3 Only Conclusi"
+    },
+    {
+     "id": "2026#72",
+     "text": "Statement 1: All polymers are compounds. Statement 2: Some compounds are not plastics. Statement 3: All plastics are synthetic. Which of the following must be false? 1 Some polymers are synthetic. 2 Some synthetic materi"
+    },
+    {
+     "id": "2026#74",
+     "text": "Two statements are given below followed by two conclusions numbered (1) and (2). Which of the given conclusions logically follows from the two given statements? Please disregard commonly known facts. Statements: Some pro"
+    },
+    {
+     "id": "2026#81",
+     "text": "Let W , X, Y , Z be some entities. Statements: State e ts a) All Z s are Y s. b) No Y is a X . c) Every X is a W . Conclusions: I. Some W s are Z s. II. Z s are not X s. Then: 1 Neither conclusion I nor II follows 2 Only"
+    }
+   ]
+  },
+  {
+   "code": "R-IO",
+   "chapter": "Input-Output",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 3,
+    "2014": 0,
+    "2015": 0,
+    "2016": 2,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 6,
+   "yearsAsked": 3,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 9,
+   "expected2027": 0.29,
+   "pAtLeast1": 0.305,
+   "pAtLeast2Raw": 0.035,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.34,
+    "pAtLeast1": 0.361
+   },
+   "trend": {
+    "rho": 0.069,
+    "p": 0.7773056735816046,
+    "q": 0.917
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "switch rules",
+     3
+    ],
+    [
+     "basket order sequence",
+     2
+    ],
+    [
+     "iteration game values",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#92",
+     "text": "A hand-held gaming device takes X and Y as two input values. These values get updated as X = XY /2 and Y = Y + 1 at each iteration and the game stops when X is greater than or equal to N . For X = 2 , Y = 4 and N = 3000,"
+    }
+   ]
+  },
+  {
+   "code": "R-SER",
+   "chapter": "Alphanumeric Series",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 3,
+    "2009": 5,
+    "2010": 8,
+    "2011": 2,
+    "2012": 3,
+    "2013": 2,
+    "2014": 2,
+    "2015": 7,
+    "2016": 2,
+    "2017": 6,
+    "2018": 3,
+    "2019": 3,
+    "2020": 6,
+    "2021": 5,
+    "2022": 7,
+    "2023": 3,
+    "2024": 1,
+    "2025": 5,
+    "2026": 2
+   },
+   "total": 75,
+   "yearsAsked": 19,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 4.26,
+   "pAtLeast1": 0.953,
+   "pAtLeast2Raw": 0.925,
+   "likelyRange": [
+    2,
+    7
+   ],
+   "recency": {
+    "expected2027": 3.82,
+    "pAtLeast1": 0.924
+   },
+   "trend": {
+    "rho": 0.04,
+    "p": 0.8682829292676831,
+    "q": 0.948
+   },
+   "recycled": 3,
+   "topSubtopics": [
+    [
+     "number series",
+     22
+    ],
+    [
+     "letter series",
+     9
+    ],
+    [
+     "wrong number series",
+     5
+    ],
+    [
+     "missing number figure",
+     4
+    ],
+    [
+     "number series pairs",
+     4
+    ],
+    [
+     "interleaved series",
+     3
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#98",
+     "text": "Which number replaces the question mark? 3, 6, 18, 72, ?, 432 1 360 2 288 3 216 4 144"
+    },
+    {
+     "id": "2025#102",
+     "text": "Complete the next series: 2 8 12 8 40 45 40 240 246 .... .... .... 1 160, 960, 967 2 48, 288, 295 3 200, 1000, 1005 4 240, 1680, 1687"
+    },
+    {
+     "id": "2025#110",
+     "text": "What comes next in the sequence? 2, 6, 12, 20, 30, 1 56 56 2 50 3 36 4 42"
+    },
+    {
+     "id": "2025#116",
+     "text": "Which number replaces the question mark? 4, 9, 16, 25, ?, 49 1 32 2 30 3 36 4 40"
+    },
+    {
+     "id": "2026#77",
+     "text": "Which is the next number in the sequence: 28, 327, 464, 5125, −? 1 6216 2 6126 3 6621 4 6612"
+    },
+    {
+     "id": "2026#84",
+     "text": "Find the missing Number in the following table 1 34 2 42 3 44 4 45"
+    }
+   ]
+  },
+  {
+   "code": "R-SCA",
+   "chapter": "Statements, Conclusions & Arguments",
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 1,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 2,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 2,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 7,
+   "yearsAsked": 5,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 6,
+   "expected2027": 0.59,
+   "pAtLeast1": 0.451,
+   "pAtLeast2Raw": 0.119,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.76,
+    "pAtLeast1": 0.528
+   },
+   "trend": {
+    "rho": 0.371,
+    "p": 0.11772056985753562,
+    "q": 0.625
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "course of action",
+     3
+    ],
+    [
+     "statement conclusion",
+     1
+    ],
+    [
+     "cause effect",
+     1
+    ],
+    [
+     "implicit assumptions",
+     1
+    ],
+    [
+     "cause effect statements",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#88",
+     "text": "Statements: I. The meteorological department predicts deficient rainfall during monsoon season. II. The GDP growth estimates have been revised downwards by the government. Choose the correct option: 1 Both the statements"
+    },
+    {
+     "id": "2026#63",
+     "text": "Here you are given one statement and two courses of action I and II. Assuming the statements to be true, decide which of the two courses of action most logically follows? Statement: Indian children are very talented but "
+    }
+   ]
+  },
+  {
+   "code": "R-MIR",
+   "chapter": "Mirror Images",
+   "part": "Reasoning",
+   "unit": "Non-Verbal Reasoning",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 1,
+   "yearsAsked": 1,
+   "yearsAvailable": 19,
+   "lastAsked": 2008,
+   "yearsSinceLast": 18,
+   "longestGap": 18,
+   "expected2027": 0.01,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": -0.387,
+    "p": 0.1089727568107973
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "mirror clock",
+     1
+    ]
+   ],
+   "examples": []
+  },
+  {
+   "code": "R-FIG",
+   "chapter": "Figure-based Reasoning",
+   "part": "Reasoning",
+   "unit": "Non-Verbal Reasoning",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 0,
+    "2011": 4,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 3,
+    "2018": 3,
+    "2019": 0,
+    "2020": 2,
+    "2021": 0,
+    "2022": 3,
+    "2023": 1,
+    "2024": 2,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 22,
+   "yearsAsked": 11,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 4,
+   "expected2027": 1.46,
+   "pAtLeast1": 0.693,
+   "pAtLeast2Raw": 0.428,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.48,
+    "pAtLeast1": 0.694
+   },
+   "trend": {
+    "rho": 0.29,
+    "p": 0.23194201449637591,
+    "q": 0.762
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "venn diagram regions",
+     5
+    ],
+    [
+     "count triangles figure",
+     3
+    ],
+    [
+     "figure analogy",
+     2
+    ],
+    [
+     "cube colours",
+     2
+    ],
+    [
+     "dice positions",
+     1
+    ],
+    [
+     "count squares grid",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#68",
+     "text": "Study the diagram and answer the question that follows. How many players are there who are girls but not a coach. 1 61 2 31 3 16 4 15"
+    },
+    {
+     "id": "2024#5",
+     "text": "Study the following diagram and answer the following question. By which letter, the married teachers who do not live in joint family are represented? 1 Q 2 P 3 R 4 S"
+    },
+    {
+     "id": "2024#107",
+     "text": "In the figure, the circle stands for employed, the square stands for a social worker, the triangle stands for illiterate, and the rectangle stands for truthful. Study the figure with its regions and find the number of ne"
+    },
+    {
+     "id": "2025#3",
+     "text": "How many triangles are there in the figure given below? 1 21 2 32 3 13 4 24"
+    },
+    {
+     "id": "2026#76",
+     "text": "1 2 3 4"
+    }
+   ]
+  },
+  {
+   "code": "R-DED",
+   "chapter": "Deductive & Inductive Reasoning",
+   "part": "Reasoning",
+   "unit": "Logical & Analytical Reasoning",
+   "hist": {
+    "2008": 3,
+    "2009": 4,
+    "2010": 0,
+    "2011": 0,
+    "2012": 3,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 2,
+    "2017": 1,
+    "2018": 0,
+    "2019": 2,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 4,
+    "2025": 2,
+    "2026": 1
+   },
+   "total": 23,
+   "yearsAsked": 10,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 1.39,
+   "pAtLeast1": 0.68,
+   "pAtLeast2Raw": 0.406,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.71,
+    "pAtLeast1": 0.734
+   },
+   "trend": {
+    "rho": 0.028,
+    "p": 0.9105223694076481,
+    "q": 0.948
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "causal chain",
+     3
+    ],
+    [
+     "truth liar",
+     2
+    ],
+    [
+     "logical implication",
+     2
+    ],
+    [
+     "logical sequence words",
+     2
+    ],
+    [
+     "truth statements",
+     1
+    ],
+    [
+     "ages product 36",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#11",
+     "text": "Arrange the words given below in a meaningful sequence (1) Software (2) Code (3) Data (4) Analysis (5) Report 1 5,4,3,1,2 2 2,1,5,3,4 3 3,1,2,5,4 4 3,1,2,4,5"
+    },
+    {
+     "id": "2024#25",
+     "text": "You are on an island with two tribes. One tribe always tells the truth, and the other tribe always lies. You meet three individuals from the island A, B and C. Each individual belongs to one of the tribes. You ask each o"
+    },
+    {
+     "id": "2024#33",
+     "text": "In a tournament, how many teams participated. All teams in the tournament have 5 to 15 players. If a team has more than 10 players, then they have reversible t-shirts? 1 Teams with 8 players do not have reversible t-shir"
+    },
+    {
+     "id": "2025#90",
+     "text": "In a remote research outpost, five scientists (Dr. Anand, Dr. Beena, Dr. Chirag, Dr. Dinesh, and Dr. Elango) are studying a rare phenomenon. They communicate through a secure, text-based system. Over the course of an hou"
+    },
+    {
+     "id": "2025#99",
+     "text": "A remote island has a unique social structure. Individuals are either 'Truth-tellers' (who always speak the truth) or 'Tricksters' (who always lie). You encounter three inhabitants: X, Y, and Z. X says: \"Y is a Trickster"
+    },
+    {
+     "id": "2026#90",
+     "text": "Crossroads, a wellness centre allows a member to spend a maximum of one hour in a meditation hall. Shailaja has been in a meditation hall for at least one and a half hours. Which of the following is a valid conclusion if"
+    }
+   ]
+  },
+  {
+   "code": "R-PS",
+   "chapter": "Problem Solving",
+   "part": "Reasoning",
+   "unit": "Logical & Analytical Reasoning",
+   "hist": {
+    "2008": 6,
+    "2009": 5,
+    "2010": 8,
+    "2011": 3,
+    "2012": 0,
+    "2013": 3,
+    "2014": 1,
+    "2015": 3,
+    "2016": 2,
+    "2017": 1,
+    "2018": 0,
+    "2019": 2,
+    "2020": 1,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 37,
+   "yearsAsked": 13,
+   "yearsAvailable": 19,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 2,
+   "expected2027": 1.12,
+   "pAtLeast1": 0.617,
+   "pAtLeast2Raw": 0.308,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 0.53,
+    "pAtLeast1": 0.447
+   },
+   "trend": {
+    "rho": -0.678,
+    "p": 0.0022494376405898524,
+    "q": 0.078
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "question attempt AP",
+     3
+    ],
+    [
+     "bus cost optimisation",
+     3
+    ],
+    [
+     "pipeline flow",
+     3
+    ],
+    [
+     "uniforms scheduling",
+     3
+    ],
+    [
+     "weighings heavy ball",
+     2
+    ],
+    [
+     "brothers sisters count",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#38",
+     "text": "hi i hi l k di ki l i i l f h fi h i Thirty-six vehicles are parked in a parking lot in a single row. After the first car, there is one scooter. After the second car, there are two scooters. After the third car, there ar"
+    },
+    {
+     "id": "2025#117",
+     "text": "Consider a sequence formed by concatenating the positive integers in increasing order: 12345678910111213 ... Which among the following is the closest to the 2028th digit in this infinite sequence? 1 7 2 1 3 4 4 2"
+    }
+   ]
+  },
+  {
+   "code": "R-CT",
+   "chapter": "Critical Thinking",
+   "part": "Reasoning",
+   "unit": "Logical & Analytical Reasoning",
+   "hist": {
+    "2008": 0,
+    "2009": 2,
+    "2010": 1,
+    "2011": 1,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 1,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 3,
+    "2026": 2
+   },
+   "total": 10,
+   "yearsAsked": 6,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 6,
+   "expected2027": 0.75,
+   "pAtLeast1": 0.509,
+   "pAtLeast2Raw": 0.174,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 1.32,
+    "pAtLeast1": 0.664
+   },
+   "trend": {
+    "rho": 0.057,
+    "p": 0.815296175956011,
+    "q": 0.922
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "weaken argument",
+     1
+    ],
+    [
+     "argument passage",
+     1
+    ],
+    [
+     "business strategy",
+     1
+    ],
+    [
+     "establishing fact",
+     1
+    ],
+    [
+     "paragraph supports",
+     1
+    ],
+    [
+     "definition best example",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#85",
+     "text": "Read definition and all four choices carefully, and find the answer that provides the best example of the given definition. Answer the question solely on the basis of the definition given. Definition: An informal gatheri"
+    },
+    {
+     "id": "2025#96",
+     "text": "Average Cost (AC) is defined as the sum of Average Fixed Cost (AFC) and Average Variable Cost (AVC), and dumping is defined as selling a product at a price less than AC but more than AVC. A company in India, suddenly, fo"
+    },
+    {
+     "id": "2025#120",
+     "text": "A research team is studying the effects of three different fertilizers (X, Y, and Z) on the growth of a specific plant species. They have four experimental plots with different fertilizer combinations: Plot 1: Fertilizer"
+    },
+    {
+     "id": "2026#69",
+     "text": "Which of the following arguments is a \"circular argument\"? 1 If it rains, the grass gets wet. The grass is wet, so it must have rained 2 Free speech is important because people should be able to say what they want 3 Most"
+    },
+    {
+     "id": "2026#75",
+     "text": "Read the given paragraph. Select a conclusion which can be closely deduced. Gig and platform workers need to work for at least 90 days annually with an aggregator to avail of social security benefits, said the final set "
+    }
+   ]
+  },
+  {
+   "code": "R-DI",
+   "chapter": "Data Interpretation",
+   "part": "Reasoning",
+   "unit": "Data Analysis",
+   "hist": {
+    "2008": 0,
+    "2009": 5,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 7,
+    "2022": 3,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 2
+   },
+   "total": 17,
+   "yearsAsked": 4,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 11,
+   "expected2027": 1.28,
+   "pAtLeast1": 0.656,
+   "pAtLeast2Raw": 0.367,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.39,
+    "pAtLeast1": 0.678
+   },
+   "trend": {
+    "rho": 0.199,
+    "p": 0.4061484628842789,
+    "q": 0.849
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "pie chart",
+     5
+    ],
+    [
+     "table cumulative marks",
+     4
+    ],
+    [
+     "bar graph",
+     3
+    ],
+    [
+     "pie charts",
+     3
+    ],
+    [
+     "chart profit growth",
+     1
+    ],
+    [
+     "nutrients table diet",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#79",
+     "text": "The following chart presents data of two companies A and B on following three parameters: Revenue, Costs, and Customer Satisfaction (C S ) score. Which of the two companies has higher profit growth rate? 1 Company A 2 Co"
+    },
+    {
+     "id": "2026#89",
+     "text": "There are three products A, B and C and its composition of micronutrients are given below. Products Protein% Carbohydrates % Fat % A 20 10 40 B 10 20 30 C 20 15 10 Ranveer is very health conscious and wants to pick a die"
+    }
+   ]
+  },
+  {
+   "code": "R-NUM",
+   "chapter": "Numerical Reasoning",
+   "part": "Reasoning",
+   "unit": "Data Analysis",
+   "hist": {
+    "2008": 13,
+    "2009": 9,
+    "2010": 5,
+    "2011": 11,
+    "2012": 7,
+    "2013": 8,
+    "2014": 6,
+    "2015": 2,
+    "2016": 8,
+    "2017": 5,
+    "2018": 9,
+    "2019": 8,
+    "2020": 16,
+    "2021": 3,
+    "2022": 4,
+    "2023": 13,
+    "2024": 9,
+    "2025": 11,
+    "2026": 13
+   },
+   "total": 160,
+   "yearsAsked": 19,
+   "yearsAvailable": 19,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 9.96,
+   "pAtLeast1": 0.963,
+   "pAtLeast2Raw": 0.999,
+   "likelyRange": [
+    6,
+    14
+   ],
+   "recency": {
+    "expected2027": 11.52,
+    "pAtLeast1": 0.953
+   },
+   "trend": {
+    "rho": 0.336,
+    "p": 0.15446138465383655,
+    "q": 0.666
+   },
+   "recycled": 18,
+   "topSubtopics": [
+    [
+     "ages",
+     4
+    ],
+    [
+     "speed distance train",
+     3
+    ],
+    [
+     "rows arithmetic",
+     3
+    ],
+    [
+     "money sharing",
+     3
+    ],
+    [
+     "calendar day",
+     3
+    ],
+    [
+     "gaining watch",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#88",
+     "text": "Suppose the price of liquefied petroleum gas (LP G) increases by 16, by how much percentage of the consumption of LP G be reduced by the household in order to keep the expenditure on LP G at the same level? Rounded to tw"
+    },
+    {
+     "id": "2026#93",
+     "text": "Rajan invests an amount of INR 15860 in the names of his three sons Rohan, Sohan and Mohan in such a way that they get the same interest amount after two, three and four years respectively. If the rate of simple interest"
+    },
+    {
+     "id": "2026#97",
+     "text": "Five years ago, A was three times as old as B. Now, A is twice as old as B. What is A's current age in years? 1 20 2 15 3 25 4 30"
+    },
+    {
+     "id": "2026#98",
+     "text": "A train crosses Park Street every forty-five minutes. About 15 minutes ago, one train has crossed Park Street, and the next train will be crossing Park Street by 9 : 45 am. What is the time now? 1 8 : 45 am 2 9 : 00 am 3"
+    },
+    {
+     "id": "2026#99",
+     "text": "10 people went to a restaurant to have a meal as a group. Of these, 9 had already contributed Rs 400 each, while the 10th person had to give the entire additional amount required to honour the restaurant's bill. How much"
+    },
+    {
+     "id": "2026#100",
+     "text": "The ratio of alcohol to water in two containers, A and B, is 5 : 3 and 1 : 3, respectively, with both containers having infinite capacity. Suppose that the aim is to obtain 2.1 litres of liquid, which is composed of equa"
+    }
+   ]
+  },
+  {
+   "code": "R-DS",
+   "chapter": "Data Sufficiency",
+   "part": "Reasoning",
+   "unit": "Data Analysis",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 1,
+    "2015": 1,
+    "2016": 0,
+    "2017": 0,
+    "2018": 1,
+    "2019": 3,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1,
+    "2023": 0,
+    "2024": 1,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 8,
+   "yearsAsked": 6,
+   "yearsAvailable": 19,
+   "lastAsked": 2024,
+   "yearsSinceLast": 2,
+   "longestGap": 6,
+   "expected2027": 0.55,
+   "pAtLeast1": 0.436,
+   "pAtLeast2Raw": 0.107,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.41,
+    "pAtLeast1": 0.395
+   },
+   "trend": {
+    "rho": 0.24,
+    "p": 0.33266683329167707,
+    "q": 0.849
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "data sufficiency",
+     2
+    ],
+    [
+     "data sufficiency ages",
+     1
+    ],
+    [
+     "data sufficiency seating",
+     1
+    ],
+    [
+     "data sufficiency profit",
+     1
+    ],
+    [
+     "data sufficiency readers",
+     1
+    ],
+    [
+     "data sufficiency heaviest",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#37",
+     "text": "What is the value of x2 + y 2 = Statement I : xy=5 Statement II: x+y=10 A. A. Choose this option if the question can be answered by using one of the statements alone, but cannot be answered using the other statement. B. "
+    }
+   ]
+  },
+  {
+   "code": "R-DV",
+   "chapter": "Data Visualization",
+   "part": "Reasoning",
+   "unit": "Data Analysis",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 19,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 19,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "C-ORG",
+   "chapter": "Computer Organization",
+   "part": "Computer",
+   "unit": "Computer Basics",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 2,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 4,
+   "yearsAsked": 3,
+   "yearsAvailable": 18,
+   "lastAsked": 2023,
+   "yearsSinceLast": 3,
+   "longestGap": 11,
+   "expected2027": 0.23,
+   "pAtLeast1": 0.263,
+   "pAtLeast2Raw": 0.022,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.11,
+    "pAtLeast1": 0.205
+   },
+   "trend": {
+    "rho": -0.281,
+    "p": 0.2661834541364659
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "data bus width",
+     1
+    ],
+    [
+     "data processing functions",
+     1
+    ],
+    [
+     "stored program machine",
+     1
+    ],
+    [
+     "Von Neumann",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#74",
+     "text": "Which of the following is true about Von Neumann architecture? 1 It has separate memory for data and instructions 2 It has separate storage for input/output operations 3 It has a separate processing unit for data and ins"
+    }
+   ]
+  },
+  {
+   "code": "C-CPU",
+   "chapter": "CPU & Instructions",
+   "part": "Computer",
+   "unit": "Computer Basics",
+   "hist": {
+    "2008": 0,
+    "2009": 2,
+    "2010": 0,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 1,
+    "2021": 4,
+    "2022": 1,
+    "2023": 3,
+    "2024": 3,
+    "2025": 3,
+    "2026": 2
+   },
+   "total": 20,
+   "yearsAsked": 9,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 6,
+   "expected2027": 2.19,
+   "pAtLeast1": 0.809,
+   "pAtLeast2Raw": 0.643,
+   "likelyRange": [
+    0,
+    4
+   ],
+   "recency": {
+    "expected2027": 2.73,
+    "pAtLeast1": 0.853
+   },
+   "trend": {
+    "rho": 0.496,
+    "p": 0.0427393151712072,
+    "q": 0.369
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "CPU cycle",
+     2
+    ],
+    [
+     "clock period",
+     2
+    ],
+    [
+     "index register",
+     1
+    ],
+    [
+     "microprogrammed control",
+     1
+    ],
+    [
+     "control unit",
+     1
+    ],
+    [
+     "pipelining",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#109",
+     "text": "Which of the following do not affects CPU performance? 1 number of cores 2 Cache size 2 Cache size 3 Amount of RAM 4 Clock speed"
+    },
+    {
+     "id": "2025#14",
+     "text": "In the design of a control unit of a processor, two common approaches are used: hardware control and microprogrammed control. Consider the following statements: 1. Hardware control units are generally faster but more dif"
+    },
+    {
+     "id": "2025#15",
+     "text": "Consider a system with a CPU having 6 registers and 32-bit instructions. The maximum possible size of the main memory is 512 KB (1K = 210) Each instruction takes two registers and one memory of the main memory is 512 KB "
+    },
+    {
+     "id": "2025#20",
+     "text": "In an instruction execution pipeline, the earliest that the instruction TLB and data TLB can be accessed are 1 Fetch stage and memory stage respectively 2 Memory stage and memory stage respectively 3 Memory stage and exe"
+    },
+    {
+     "id": "2026#7",
+     "text": "Which of the following statements about the fetch-decode-execute cycle in a CPU are correct? I. The Program Counter is incremented after each instruction is fetched so the CPU moves to the next instruction. II. The Contr"
+    },
+    {
+     "id": "2026#120",
+     "text": "In a standard machine language instruction, which component identifies the specific operation to be performed, such as addition or data movement? 1 Operand 2 Opcode 3 Register 4 Immediate Address"
+    }
+   ]
+  },
+  {
+   "code": "C-IOB",
+   "chapter": "Input/Output Devices",
+   "part": "Computer",
+   "unit": "Computer Basics",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 1,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 1,
+    "2022": 0,
+    "2023": 0,
+    "2024": 1,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 6,
+   "yearsAsked": 6,
+   "yearsAvailable": 18,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 7,
+   "expected2027": 0.52,
+   "pAtLeast1": 0.42,
+   "pAtLeast2Raw": 0.095,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.51,
+    "pAtLeast1": 0.44
+   },
+   "trend": {
+    "rho": -0.142,
+    "p": 0.5818545363659086,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "interrupt handling",
+     1
+    ],
+    [
+     "IO mapped IO",
+     1
+    ],
+    [
+     "IO processor",
+     1
+    ],
+    [
+     "program controlled IO",
+     1
+    ],
+    [
+     "DMA",
+     1
+    ],
+    [
+     "interrupt vs programmed IO",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#77",
+     "text": "Which of the following interfaces perform the transfer of data between the memory and the I/O peripheral without involving the CPU? 1 DMA 2 Serial Interface 3 branch interface 4 DDA"
+    },
+    {
+     "id": "2025#22",
+     "text": "Consider a system running under two types of workloads: (a) CPU-intensive jobs, (b) I/O-intensive jobs. Which of the following statements about the relative performance of Interrupt- driven I/O and Programmed I/O is corr"
+    }
+   ]
+  },
+  {
+   "code": "C-MEM",
+   "chapter": "Computer Memory",
+   "part": "Computer",
+   "unit": "Computer Basics",
+   "hist": {
+    "2008": 2,
+    "2009": 1,
+    "2010": 2,
+    "2011": 1,
+    "2012": 1,
+    "2013": 1,
+    "2014": 1,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 2,
+    "2021": 1,
+    "2022": 1,
+    "2023": 2,
+    "2024": 2,
+    "2025": 0,
+    "2026": 4
+   },
+   "total": 21,
+   "yearsAsked": 13,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 4,
+   "expected2027": 1.87,
+   "pAtLeast1": 0.765,
+   "pAtLeast2Raw": 0.559,
+   "likelyRange": [
+    0,
+    4
+   ],
+   "recency": {
+    "expected2027": 2.15,
+    "pAtLeast1": 0.793
+   },
+   "trend": {
+    "rho": -0.116,
+    "p": 0.6523369157710572,
+    "q": 0.907
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "TLB tag size",
+     2
+    ],
+    [
+     "virtual memory",
+     1
+    ],
+    [
+     "memory address lines",
+     1
+    ],
+    [
+     "virtual memory address",
+     1
+    ],
+    [
+     "memory bandwidth",
+     1
+    ],
+    [
+     "address bus word length",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#81",
+     "text": "A CPU generates 32 bits virtual addresses. The page size is 4 KB. The processor has a translation look-aside buffer (TLB) which can hold a total of 128-page table entries and is 4- way set associate. The minimum size of "
+    },
+    {
+     "id": "2024#89",
+     "text": "Which of the following is the smallest unit of data in a computer ? 1 Bit 2 Byte 3 KB 4 Nibble"
+    },
+    {
+     "id": "2026#2",
+     "text": "Consider the following table. Entry Description I. Solid State A. Volatile main memory that holds Drive data currently in use by the OS and applications II. Cache B. Long-term, non-volatile storage Memory used for the op"
+    },
+    {
+     "id": "2026#104",
+     "text": "A computer has 16GB of RAM. It typically needs to support 100 processes, each of which require an average of 100M B . Will this computer benefit from a Virtual Memory system? Choose the correct option and reasoning below"
+    },
+    {
+     "id": "2026#110",
+     "text": "Which one of the following is correct order of memory types in increasing access speed, from slowest to fastest? 1 Hard Drive → RAM → Cache → CPU Registers 2 RAM → Hard Drive → Cache → CPU Registers 3 Cache → RAM → CPU R"
+    },
+    {
+     "id": "2026#118",
+     "text": "A CPU uses a 16-bit instruction format. If 4 bits are used for the opcode and the remaining bits specify a single memory address, what is the maximum addressable memory space for this instruction format? 1 4096 locations"
+    }
+   ]
+  },
+  {
+   "code": "C-BKP",
+   "chapter": "Backup Devices",
+   "part": "Computer",
+   "unit": "Computer Basics",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 1,
+   "yearsAsked": 1,
+   "yearsAvailable": 18,
+   "lastAsked": 2012,
+   "yearsSinceLast": 14,
+   "longestGap": 13,
+   "expected2027": 0.06,
+   "pAtLeast1": 0.109,
+   "pAtLeast2Raw": 0.001,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0.01,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": -0.21,
+    "p": 0.5503624093976506
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "backup device speed",
+     1
+    ]
+   ],
+   "examples": []
+  },
+  {
+   "code": "C-REP",
+   "chapter": "Character, Integer & Fraction Representation",
+   "part": "Computer",
+   "unit": "Data Representation",
+   "hist": {
+    "2008": 1,
+    "2009": 1,
+    "2010": 0,
+    "2011": 2,
+    "2012": 0,
+    "2013": 1,
+    "2014": 1,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 1,
+    "2021": 0,
+    "2022": 1,
+    "2023": 1,
+    "2024": 0,
+    "2025": 2,
+    "2026": 0
+   },
+   "total": 11,
+   "yearsAsked": 9,
+   "yearsAvailable": 18,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 4,
+   "expected2027": 0.92,
+   "pAtLeast1": 0.563,
+   "pAtLeast2Raw": 0.235,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.82,
+    "pAtLeast1": 0.545
+   },
+   "trend": {
+    "rho": -0.159,
+    "p": 0.5228692826793302,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "decimal fraction to binary",
+     3
+    ],
+    [
+     "ASCII bits",
+     2
+    ],
+    [
+     "ASCII case mask",
+     1
+    ],
+    [
+     "ASCII of A",
+     1
+    ],
+    [
+     "8 bit characters",
+     1
+    ],
+    [
+     "bits vs decimal digits",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#75",
+     "text": "Equivalent of the decimal number (25.375)10 in binary form 1 (11001.011)2 2 (11101.011)2 3 (11011.111)2 4 (11001.101)2"
+    },
+    {
+     "id": "2025#6",
+     "text": "What is the equivalent decimal value of the unsigned binary number 10101.10101? 1 125.25 2 51.125 3 25.375 4 21.65625"
+    },
+    {
+     "id": "2025#19",
+     "text": "Which of the following statements about ASCII and Unicode is correct? Unicode is backward compatible 1 with ASCII and includes all ASCII characters in its encoding. ASCII uses 16 bits per 2 character, while Unicode uses "
+    }
+   ]
+  },
+  {
+   "code": "C-BHX",
+   "chapter": "Binary & Hexadecimal",
+   "part": "Computer",
+   "unit": "Data Representation",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 1,
+    "2011": 1,
+    "2012": 2,
+    "2013": 1,
+    "2014": 0,
+    "2015": null,
+    "2016": 1,
+    "2017": 1,
+    "2018": 3,
+    "2019": 1,
+    "2020": 1,
+    "2021": 1,
+    "2022": 0,
+    "2023": 0,
+    "2024": 1,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 16,
+   "yearsAsked": 13,
+   "yearsAvailable": 18,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 2,
+   "expected2027": 1.38,
+   "pAtLeast1": 0.677,
+   "pAtLeast2Raw": 0.401,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 0.81,
+    "pAtLeast1": 0.542
+   },
+   "trend": {
+    "rho": -0.353,
+    "p": 0.14821294676330918,
+    "q": 0.666
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "radix equation",
+     4
+    ],
+    [
+     "base equation solutions",
+     2
+    ],
+    [
+     "LSB odd",
+     1
+    ],
+    [
+     "hex conversion",
+     1
+    ],
+    [
+     "octal to decimal",
+     1
+    ],
+    [
+     "hex to octal",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#99",
+     "text": "Consider an arbitrary number system with independent digits as 0,1 and A. If we generate first few numbers in sequence as 00, 01, 0A, 10, 11, 1A and if this process is continued to generate the numbers, then the position"
+    },
+    {
+     "id": "2025#24",
+     "text": "What is the hexadecimal representation of the decimal number 265? 1 0x100001001 2 0x109 3 0x411 4 0x190"
+    }
+   ]
+  },
+  {
+   "code": "C-BAR",
+   "chapter": "Binary Arithmetic",
+   "part": "Computer",
+   "unit": "Data Representation",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 0,
+    "2011": 1,
+    "2012": 0,
+    "2013": 1,
+    "2014": 3,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 1,
+    "2020": 0,
+    "2021": 1,
+    "2022": 0,
+    "2023": 0,
+    "2024": 1,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 10,
+   "yearsAsked": 8,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 3,
+   "expected2027": 0.86,
+   "pAtLeast1": 0.544,
+   "pAtLeast2Raw": 0.211,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.67,
+    "pAtLeast1": 0.499
+   },
+   "trend": {
+    "rho": -0.105,
+    "p": 0.675581104723819,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "binary multiplication",
+     3
+    ],
+    [
+     "binary multiply hex",
+     2
+    ],
+    [
+     "flags after addition",
+     1
+    ],
+    [
+     "binary addition",
+     1
+    ],
+    [
+     "hex addition to decimal",
+     1
+    ],
+    [
+     "hex subtraction",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#73",
+     "text": "The quotient, if the binary number 11010111 is divided by 101, is___ 1 101101 2 101010 3 111001 4 101011"
+    },
+    {
+     "id": "2026#11",
+     "text": "The multiplication of the following two binary numbers 1100 and 1011 in binary notation is: 1 10111 2 10000100 3 1000100 4 1000010"
+    }
+   ]
+  },
+  {
+   "code": "C-TWC",
+   "chapter": "Two's Complement",
+   "part": "Computer",
+   "unit": "Data Representation",
+   "hist": {
+    "2008": 2,
+    "2009": 2,
+    "2010": 0,
+    "2011": 1,
+    "2012": 2,
+    "2013": 0,
+    "2014": 2,
+    "2015": null,
+    "2016": 3,
+    "2017": 2,
+    "2018": 0,
+    "2019": 4,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1,
+    "2023": 3,
+    "2024": 3,
+    "2025": 2,
+    "2026": 3
+   },
+   "total": 30,
+   "yearsAsked": 13,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 2.7,
+   "pAtLeast1": 0.864,
+   "pAtLeast2Raw": 0.751,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 2.66,
+    "pAtLeast1": 0.847
+   },
+   "trend": {
+    "rho": -0.046,
+    "p": 0.8582854286428393,
+    "q": 0.948
+   },
+   "recycled": 3,
+   "topSubtopics": [
+    [
+     "2s complement addition",
+     2
+    ],
+    [
+     "2s complement product",
+     2
+    ],
+    [
+     "2s complement negative",
+     2
+    ],
+    [
+     "8 bit 2s complement min",
+     2
+    ],
+    [
+     "16 bit 2s complement range",
+     2
+    ],
+    [
+     "2s complement addition overflow",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#110",
+     "text": "Let the given number 11001, 1001 and 111001 be correspond to the 2’s complement representation. Then with which one of the following decimal number, the given numbers match 1 -6, -6 and -6, respectively 2 -7, -7 and -7 r"
+    },
+    {
+     "id": "2025#13",
+     "text": "In 8-bit two's complement arithmetic, compute the result of the following addition: A = 10011001, B = 11010111. What is the resulting 8-bit binary value? 1 111100100 2 01110000 3 Result is invalid 4 01110001"
+    },
+    {
+     "id": "2025#18",
+     "text": "Consider a 9-bit representation. Which of the following correctly gives the smallest number that can be represented in: (i) 1's complement, (ii) 2's complement 1 (i) -256, (ii) -255 2 (i) -255, (ii)-255 3 (i) -255, (ii) "
+    },
+    {
+     "id": "2026#10",
+     "text": "Consider the following statements about the range of numbers in a 9-bit 1's complement and 2's complement system. I. In 9-bit 1's complement, the range is −255 to +255 , and there exist two representations of zero. II. I"
+    },
+    {
+     "id": "2026#101",
+     "text": "An embedded computer uses 8-bit 2's complement representation for signed integers. What is the minimum negative integer value which can be represented in this computer? 1 0 i.e. no negative integers can be represented 2 "
+    },
+    {
+     "id": "2026#116",
+     "text": "Which one of the following is decimal equivalent of 8-bit two's complement number 11010011? 1 -45 2 -44 3 -211 4 +211"
+    }
+   ]
+  },
+  {
+   "code": "C-FP",
+   "chapter": "Floating Point Representation",
+   "part": "Computer",
+   "unit": "Data Representation",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 1,
+    "2015": null,
+    "2016": 0,
+    "2017": 1,
+    "2018": 1,
+    "2019": 1,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1,
+    "2023": 1,
+    "2024": 1,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 8,
+   "yearsAsked": 8,
+   "yearsAvailable": 18,
+   "lastAsked": 2024,
+   "yearsSinceLast": 2,
+   "longestGap": 5,
+   "expected2027": 0.76,
+   "pAtLeast1": 0.511,
+   "pAtLeast2Raw": 0.176,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 0.54,
+    "pAtLeast1": 0.453
+   },
+   "trend": {
+    "rho": 0.086,
+    "p": 0.7358160459885029,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "floating point max",
+     1
+    ],
+    [
+     "floating point associativity",
+     1
+    ],
+    [
+     "floating point format",
+     1
+    ],
+    [
+     "IEEE single precision bits",
+     1
+    ],
+    [
+     "IEEE biased exponent",
+     1
+    ],
+    [
+     "floating point represents",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#80",
+     "text": "Suppose we have a 10-bit computer that uses 10-bit floating point computational unit (Float number uses IEEE floating-point arithmetic where a floating point number has 1 sign bit, 5 exponent bits, and 4 fraction bits). "
+    },
+    {
+     "id": "2024#103",
+     "text": "The range of the exponent E in the IEEE754 double precision (Binary 64) format is _____ 1 −1023 ≤ E ≤ 1022 2 −1022 ≤ E ≤ 1022 3 −1022 ≤ E ≤ 1023 4 −1023 ≤ E ≤ 1023"
+    }
+   ]
+  },
+  {
+   "code": "C-BOOL",
+   "chapter": "Boolean Algebra",
+   "part": "Computer",
+   "unit": "Data Representation",
+   "hist": {
+    "2008": 3,
+    "2009": 2,
+    "2010": 2,
+    "2011": 3,
+    "2012": 0,
+    "2013": 3,
+    "2014": 1,
+    "2015": null,
+    "2016": 3,
+    "2017": 4,
+    "2018": 4,
+    "2019": 3,
+    "2020": 4,
+    "2021": 0,
+    "2022": 5,
+    "2023": 7,
+    "2024": 3,
+    "2025": 4,
+    "2026": 1
+   },
+   "total": 52,
+   "yearsAsked": 16,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 4.86,
+   "pAtLeast1": 0.963,
+   "pAtLeast2Raw": 0.955,
+   "likelyRange": [
+    2,
+    8
+   ],
+   "recency": {
+    "expected2027": 4,
+    "pAtLeast1": 0.932
+   },
+   "trend": {
+    "rho": 0.096,
+    "p": 0.6983254186453387,
+    "q": 0.907
+   },
+   "recycled": 2,
+   "topSubtopics": [
+    [
+     "boolean simplification",
+     6
+    ],
+    [
+     "absorption law",
+     3
+    ],
+    [
+     "K-map dont care",
+     3
+    ],
+    [
+     "boolean rules",
+     2
+    ],
+    [
+     "venn boolean expression",
+     2
+    ],
+    [
+     "boolean functions count",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#97",
+     "text": "The Boolean expression for the following truth table is _________ x y z f 0 0 0 0 0 0 1 0 0 1 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1 1 0 0 1 1 1 1 1 F=x'yz'+xy'z+x'y'z' 2 F=x'y'z'+xy'z+xyz' 3 F=x'yz'+xy'z+xyz 4 None of these"
+    },
+    {
+     "id": "2025#7",
+     "text": "¯ ¯¯¯ ¯¯¯ ¯¯¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯¯¯ ¯ Consider the Boolean expression X = (A + B) ⋅ C over two Boolean variables A and B. Which one of the following Boolean expressions is equivalent to the given Boolean expression X ? 1 ¯ ¯"
+    },
+    {
+     "id": "2025#8",
+     "text": "Which of the following is the CORRECT truth table for the XOR Gate with two binary inputs A and B? A B A XOR B 0 0 1 0 1 0 1 1 0 0 1 1 1 A B A XOR B 0 0 0 0 1 1 2 1 0 1 1 1 0 A B A XOR B 0 0 0 0 1 0 3 1 0 1 1 1 1 A B A X"
+    },
+    {
+     "id": "2025#11",
+     "text": "Consider the Boolean function in a CPU control unit: ¯ ¯¯¯ ¯ ¯¯¯ Y = (A + B ⋅ C ) ⋅ (A ⋅ B + C ) 1 ¯ ¯¯¯ A ⋅ C + A ⋅ B + B ⋅ C ¯ ¯¯¯ 2 A ⋅ C + B ⋅ C ¯ ¯¯¯ 3 ¯ ¯¯¯ A ⋅ C + A ⋅ B ⋅ C ¯ ¯¯¯ 4 A ⋅ B + C"
+    },
+    {
+     "id": "2025#21",
+     "text": "Given the Boolean expression (A ⊕ B) ∧ (B → C ), which of the following rows in the truth table would have an output of 1 (True)? 1 A = 0, B = 0, C = 0 2 A = 0, B = 1, C = 0 3 A = 1, B = 1, C = 1 4 A = 1, B = 0, C = 1"
+    },
+    {
+     "id": "2026#12",
+     "text": "The simplified Boolean value of the expression (x + y ′ + z ′ )(x + y ′ + z)(x + y + z ′ ) is: 1 ′ x ⋅ y + z ′ 2 x + y z ′ ′ 3 ′ x y + z 4 x ⋅ y + z"
+    }
+   ]
+  },
+  {
+   "code": "C-HIN",
+   "chapter": "Input Devices",
+   "part": "Computer",
+   "unit": "Computer Hardware",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "C-HOUT",
+   "chapter": "Output Devices",
+   "part": "Computer",
+   "unit": "Computer Hardware",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "C-STO",
+   "chapter": "Storage Devices",
+   "part": "Computer",
+   "unit": "Computer Hardware",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 1,
+    "2014": 0,
+    "2015": null,
+    "2016": 2,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 5,
+   "yearsAsked": 4,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 8,
+   "expected2027": 0.49,
+   "pAtLeast1": 0.406,
+   "pAtLeast2Raw": 0.086,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.57,
+    "pAtLeast1": 0.465
+   },
+   "trend": {
+    "rho": 0.222,
+    "p": 0.3924018995251187,
+    "q": 0.849
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "CD laser",
+     1
+    ],
+    [
+     "disk addressing",
+     1
+    ],
+    [
+     "disk latency",
+     1
+    ],
+    [
+     "secondary storage speed",
+     1
+    ],
+    [
+     "disk sectors cylinder",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#17",
+     "text": "Which of the following secondary storage devices has the fastest access time: Optical Drive, Magnetic Tape Drive, Hard Disk Drive (HDD), Solid State Drive (SDD)? 1 Solid State Drive (SDD) 2 Optical Drive 3 Magnetic Tape "
+    },
+    {
+     "id": "2026#102",
+     "text": "A hard drive system has 2 circular disks with a total of 4 surfaces. The disk has 5000 tracks, each with 2000 sectors. How many sectors can be read without the reading head having to make a mechanical movement? 1 10000 2"
+    }
+   ]
+  },
+  {
+   "code": "C-RRC",
+   "chapter": "RAM, ROM & Cache",
+   "part": "Computer",
+   "unit": "Computer Hardware",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 1,
+    "2013": 1,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 1,
+    "2018": 1,
+    "2019": 0,
+    "2020": 1,
+    "2021": 2,
+    "2022": 0,
+    "2023": 1,
+    "2024": 3,
+    "2025": 2,
+    "2026": 0
+   },
+   "total": 14,
+   "yearsAsked": 10,
+   "yearsAvailable": 18,
+   "lastAsked": 2025,
+   "yearsSinceLast": 1,
+   "longestGap": 3,
+   "expected2027": 1.4,
+   "pAtLeast1": 0.681,
+   "pAtLeast2Raw": 0.408,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.41,
+    "pAtLeast1": 0.682
+   },
+   "trend": {
+    "rho": 0.319,
+    "p": 0.21019745063734066,
+    "q": 0.762
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "effective access time",
+     2
+    ],
+    [
+     "RAM chips count",
+     2
+    ],
+    [
+     "direct mapped cache",
+     1
+    ],
+    [
+     "ROM type",
+     1
+    ],
+    [
+     "EEPROM acronym",
+     1
+    ],
+    [
+     "DRAM vs SRAM",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#90",
+     "text": "How many 32K × 1 RAM chips are needed to provide a memory capacity of 256K bytes? 1 64 2 32 3 8 4 128"
+    },
+    {
+     "id": "2024#79",
+     "text": "Cache memory functions as an intermediary between 1 CPU and Hard Disk 2 None of these 3 CPU and RAM 4 RAM and ROM"
+    },
+    {
+     "id": "2024#85",
+     "text": "The primary purpose of cache memory in a computer system is 1 to temporarily store frequently accessed data and instruction for faster access by the CPU. 2 To permanently store data and programs 3 to provide additional s"
+    },
+    {
+     "id": "2024#93",
+     "text": "A computer system has 16-bit wide address/ data bus that uses RAM chips of 4K × 8-bit capacity. The number of RAM chips are needed to provide a memory capacity of 64 Kbytes memory is 1 32 2 16 3 64 4 8"
+    },
+    {
+     "id": "2025#12",
+     "text": "Dynamic RAM (DRAM) stores each bit of data in a separate capacitor. Due to leakage, the stored charge tends to dissipate over time and needs to be refreshed periodically. Consider the following statements: P: DRAM requir"
+    },
+    {
+     "id": "2025#23",
+     "text": "In computer architecture, which of the following correctly matches the fundamental unit used in the CPU, cache, and main memory respectively? 1 CPU → Block, Cache → Page, Memory → Word 2 CPU → Block, Cache → Word, Memory"
+    }
+   ]
+  },
+  {
+   "code": "C-OS",
+   "chapter": "Operating Systems",
+   "part": "Computer",
+   "unit": "Computer Software",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 1,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 4,
+   "yearsAsked": 4,
+   "yearsAvailable": 18,
+   "lastAsked": 2023,
+   "yearsSinceLast": 3,
+   "longestGap": 5,
+   "expected2027": 0.25,
+   "pAtLeast1": 0.28,
+   "pAtLeast2Raw": 0.027,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.13,
+    "pAtLeast1": 0.225
+   },
+   "trend": {
+    "rho": -0.295,
+    "p": 0.22844288927768058
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "bootstrap loader",
+     2
+    ],
+    [
+     "OS bootstrap",
+     1
+    ],
+    [
+     "FAT32 NTFS",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#78",
+     "text": "A wrong sentence related to FAT 32 and NTFS file systems is 1 Read and write speeds of NTFS are faster than that of FAT 32 2 FAT 32 has lower disk utilisation compared to NTFS 3 NTFS stands for New Technology File System"
+    }
+   ]
+  },
+  {
+   "code": "C-SYS",
+   "chapter": "System Software",
+   "part": "Computer",
+   "unit": "Computer Software",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 1,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 1,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 2,
+    "2026": 2
+   },
+   "total": 7,
+   "yearsAsked": 5,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 6,
+   "expected2027": 0.68,
+   "pAtLeast1": 0.483,
+   "pAtLeast2Raw": 0.147,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 1.09,
+    "pAtLeast1": 0.615
+   },
+   "trend": {
+    "rho": 0.166,
+    "p": 0.4971257185703574,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "compiler vs interpreter",
+     1
+    ],
+    [
+     "compiler errors",
+     1
+    ],
+    [
+     "assembler errors",
+     1
+    ],
+    [
+     "debugger",
+     1
+    ],
+    [
+     "compiler phases match",
+     1
+    ],
+    [
+     "system vs application software",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#10",
+     "text": "Debugger is a program that does not allow step 1 by step execution of a segment of program links object code 2 to produce an executable allows to set breakpoints, execute a segment of 3 program and display contents of Re"
+    },
+    {
+     "id": "2025#16",
+     "text": "Match all items in Group 1 with correct options from those given in Group 2. GROUP 1 GROUP 2 P. Intermediate representation 1. Activation records Q. Top-down parsing 2. Code generation R. Runtime environments 3. Leftmost"
+    },
+    {
+     "id": "2026#9",
+     "text": "A system administrator is analysing the software layers of a corporate computer. Which of the following statements correctly distinguish system software from application software? I. Device drivers are classified as appl"
+    },
+    {
+     "id": "2026#106",
+     "text": "Which one of the following is a disadvantage of using dynamically linked library DLL, compared to using statically linked library? 1 Executable file size is larger with DLL 2 RAM usage is larger with DLL 3 A program cann"
+    }
+   ]
+  },
+  {
+   "code": "C-UTIL",
+   "chapter": "Utility Programs & Device Drivers",
+   "part": "Computer",
+   "unit": "Computer Software",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "C-APP",
+   "chapter": "Application Software",
+   "part": "Computer",
+   "unit": "Computer Software",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "C-WEB",
+   "chapter": "Internet & Web Browsing",
+   "part": "Computer",
+   "unit": "Internet & Email",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 1,
+    "2012": 0,
+    "2013": 1,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 4
+   },
+   "total": 6,
+   "yearsAsked": 3,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 11,
+   "expected2027": 0.61,
+   "pAtLeast1": 0.459,
+   "pAtLeast2Raw": 0.125,
+   "likelyRange": [
+    0,
+    2
+   ],
+   "recency": {
+    "expected2027": 1.19,
+    "pAtLeast1": 0.637
+   },
+   "trend": {
+    "rho": 0.027,
+    "p": 0.9167708072981755,
+    "q": 0.948
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "TCP IP",
+     1
+    ],
+    [
+     "www",
+     1
+    ],
+    [
+     "browser rendering engine",
+     1
+    ],
+    [
+     "cookies",
+     1
+    ],
+    [
+     "web terms match",
+     1
+    ],
+    [
+     "DNS",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#4",
+     "text": "Which component of a web browser is responsible for taking HTML, CSS, and JavaScript code and turning it into the visual page you interact with? 1 Javascript Engine 2 Rendering Engine 3 Network Protocol Stack 4 Transport"
+    },
+    {
+     "id": "2026#6",
+     "text": "What are \"Cookies\" in the context of web browsing? 1 The list of all websites that the user has visited in the current browsing session 2 Small text files stored on the user's computer to save site preferences and other "
+    },
+    {
+     "id": "2026#8",
+     "text": "Match the following web-browsing terms with their correct meanings. Column A: Column B: Meaning Term 1. Web a. Converts a human-readable website Browser name into a numerical network address 2. URL b. Program used to req"
+    },
+    {
+     "id": "2026#112",
+     "text": "When navigating to a website (Web Browsing), your computer sends a request to a server. If the server's IP address is not known, which system is responsible for \"translating\" the human-readable URL (e.g., www.google.com)"
+    }
+   ]
+  },
+  {
+   "code": "C-MAIL",
+   "chapter": "Email",
+   "part": "Computer",
+   "unit": "Internet & Email",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 2
+   },
+   "total": 2,
+   "yearsAsked": 1,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 17,
+   "expected2027": 0.25,
+   "pAtLeast1": 0.279,
+   "pAtLeast2Raw": 0.026,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.59,
+    "pAtLeast1": 0.47
+   },
+   "trend": {
+    "rho": 0.397,
+    "p": 0.11547113221694576
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "IMAP",
+     1
+    ],
+    [
+     "POP3 vs IMAP",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#108",
+     "text": "Which one of the following protocols is used specifically by an email client to read emails from an email server? 1 DNS - Domain Name System 2 ICMP - Internet Control Message Protocol 3 IMAP - Internet Message Access Pro"
+    },
+    {
+     "id": "2026#114",
+     "text": "In the context of \"Sending, receiving, and managing emails\", what is the primary difference between the POP3 and IMAP protocols? 1 POP3 is used for security, while IMAP is used for browsing. 2 POP3 downloads and usually "
+    }
+   ]
+  },
+  {
+   "code": "C-SEC",
+   "chapter": "Online Security",
+   "part": "Computer",
+   "unit": "Internet & Email",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "C-CYB",
+   "chapter": "Basic Cyber Threats & Safety",
+   "part": "Computer",
+   "unit": "Internet & Email",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "E-RC",
+   "chapter": "Comprehension of Written Text",
+   "part": "English",
+   "unit": "Reading Comprehension",
+   "hist": {
+    "2008": 3,
+    "2009": 2,
+    "2010": 2,
+    "2011": 4,
+    "2012": 0,
+    "2013": 0,
+    "2014": 2,
+    "2015": null,
+    "2016": 4,
+    "2017": 5,
+    "2018": 3,
+    "2019": 3,
+    "2020": 4,
+    "2021": 8,
+    "2022": 2,
+    "2023": 2,
+    "2024": 0,
+    "2025": 0,
+    "2026": 3
+   },
+   "total": 47,
+   "yearsAsked": 14,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 2,
+   "expected2027": 1.56,
+   "pAtLeast1": 0.712,
+   "pAtLeast2Raw": 0.461,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.56,
+    "pAtLeast1": 0.708
+   },
+   "trend": {
+    "rho": 0.021,
+    "p": 0.934016495876031,
+    "q": 0.948
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "passage university",
+     8
+    ],
+    [
+     "passage handedness",
+     5
+    ],
+    [
+     "passage air pollution",
+     4
+    ],
+    [
+     "passage white cement",
+     4
+    ],
+    [
+     "passage lichen",
+     4
+    ],
+    [
+     "passage inference",
+     3
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#93",
+     "text": "Read the following passage carefully and answer the questions: Science and religion - the two terms have come to signify a mutual antagonism. The two, it is commonly declared, are poles apart; their spheres of activity a"
+    },
+    {
+     "id": "2023#94",
+     "text": "Read the following passage carefully and answer the questions: Science and religion - the two terms have come to signify a mutual antagonism. The two, it is commonly declared, are poles apart; their spheres of activity a"
+    },
+    {
+     "id": "2026#16",
+     "text": "Select the sentence that logically completes the following passage: “Qualitative research often prioritises depth over breadth. Unlike large-scale surveys that aim for statistical generalisability, ethnographic studies t"
+    },
+    {
+     "id": "2026#20",
+     "text": "The term \"Climate change\" denotes significant, long-term changes in global temperatures and meteorological patterns. Such changes can occur due to natural factors such as changes in the sun's activity and large volcanic "
+    },
+    {
+     "id": "2026#21",
+     "text": "According to a recent newspaper report, an international team of astronomers studying nearly 446000 galaxies via the Hubble Space Telescope has confirmed that the expansion of the universe is accelerating. By utilising a"
+    }
+   ]
+  },
+  {
+   "code": "E-WPM",
+   "chapter": "Word & Phrase Meanings",
+   "part": "English",
+   "unit": "Vocabulary",
+   "hist": {
+    "2008": 5,
+    "2009": 5,
+    "2010": 5,
+    "2011": 8,
+    "2012": 7,
+    "2013": 5,
+    "2014": 7,
+    "2015": null,
+    "2016": 6,
+    "2017": 5,
+    "2018": 5,
+    "2019": 9,
+    "2020": 7,
+    "2021": 7,
+    "2022": 9,
+    "2023": 4,
+    "2024": 5,
+    "2025": 4,
+    "2026": 1
+   },
+   "total": 104,
+   "yearsAsked": 18,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 0,
+   "expected2027": 3.4,
+   "pAtLeast1": 0.915,
+   "pAtLeast2Raw": 0.854,
+   "likelyRange": [
+    1,
+    6
+   ],
+   "recency": {
+    "expected2027": 3.08,
+    "pAtLeast1": 0.881
+   },
+   "trend": {
+    "rho": -0.065,
+    "p": 0.7930517370657336,
+    "q": 0.917
+   },
+   "recycled": 3,
+   "topSubtopics": [
+    [
+     "one word substitution",
+     4
+    ],
+    [
+     "antonym",
+     2
+    ],
+    [
+     "synonym",
+     2
+    ],
+    [
+     "egress meaning",
+     2
+    ],
+    [
+     "synonym polemic",
+     2
+    ],
+    [
+     "synonym debacle",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#119",
+     "text": "What does the idiom “jump on the bandwagon” mean? 1 To start a business 2 To repair a vehicle 3 To criticize something unfairly 4 To join a popular trend or activity"
+    },
+    {
+     "id": "2025#26",
+     "text": "\"The new iPhone seems to cost everyone not just an arm and a leg, but also a kidney.\" What does \"to cost an arm and a leg\" mean? 1 To be afraid of surgery 2 To be very short-lived 3 To be very expensive 4 To be very chea"
+    },
+    {
+     "id": "2025#31",
+     "text": "What is the synonym of \"belligerent\"? 1 Equanimity 2 Bellyful 3 Peaceful 4 Hostile"
+    },
+    {
+     "id": "2025#32",
+     "text": "After running around the city all day delivering invitations for the wedding, I desperately needed to hit the sack. (Identify the meaning of the underlined phrase): 1 To pack one's bags 2 To watch television 3 To go to b"
+    },
+    {
+     "id": "2025#34",
+     "text": "Even though in official statements, the Presidential office has warned against violating the 25th protocol, the government's inaction against the Market group shows the government's tacit approval of the movement.(Choose"
+    },
+    {
+     "id": "2026#17",
+     "text": "In the sentence “Brevity is the soul of wit,” the word “brevity” means: 1 Intelligence 2 Conciseness 3 Humour 4 Cleverness"
+    }
+   ]
+  },
+  {
+   "code": "E-WU",
+   "chapter": "Word Usage",
+   "part": "English",
+   "unit": "Vocabulary",
+   "hist": {
+    "2008": 2,
+    "2009": 2,
+    "2010": 3,
+    "2011": 5,
+    "2012": 2,
+    "2013": 3,
+    "2014": 2,
+    "2015": null,
+    "2016": 2,
+    "2017": 8,
+    "2018": 4,
+    "2019": 5,
+    "2020": 0,
+    "2021": 5,
+    "2022": 0,
+    "2023": 1,
+    "2024": 1,
+    "2025": 0,
+    "2026": 2
+   },
+   "total": 47,
+   "yearsAsked": 15,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 1.35,
+   "pAtLeast1": 0.67,
+   "pAtLeast2Raw": 0.39,
+   "likelyRange": [
+    0,
+    3
+   ],
+   "recency": {
+    "expected2027": 1.14,
+    "pAtLeast1": 0.627
+   },
+   "trend": {
+    "rho": -0.327,
+    "p": 0.18695326168457885,
+    "q": 0.717
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "double blanks",
+     9
+    ],
+    [
+     "cloze passage",
+     5
+    ],
+    [
+     "word choice",
+     3
+    ],
+    [
+     "phrasal verb",
+     2
+    ],
+    [
+     "word both sentences",
+     1
+    ],
+    [
+     "word usage",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#36",
+     "text": "Fill the blanks with the most appropriate combination of options. Further, to augment bond market liquidity, corporates need to be encouraged to_____________ ii b d d h i l ii d ifi i b d l h fl i exiting bonds under the"
+    },
+    {
+     "id": "2024#118",
+     "text": "The company’s _______ growth in revenue surprised analysts. 1 erratic 2 gradual 3 Exponential 4 Stagnant"
+    },
+    {
+     "id": "2026#14",
+     "text": "How many of the following sentences use the phrasal verbs correctly? I. The researchers carried out the experiment as planned. II. The journal turned down the paper due to methodological flaws. III. The student came acro"
+    },
+    {
+     "id": "2026#22",
+     "text": "In the case of the recent plane crash, new findings from the analysis of flight data recorder ______ the theory of pilot suicide. 1 collaborate 2 collide 3 collude 4 corroborate"
+    }
+   ]
+  },
+  {
+   "code": "E-GP",
+   "chapter": "Grammatical Patterns",
+   "part": "English",
+   "unit": "Grammar",
+   "hist": {
+    "2008": 3,
+    "2009": 3,
+    "2010": 2,
+    "2011": 5,
+    "2012": 6,
+    "2013": 9,
+    "2014": 4,
+    "2015": null,
+    "2016": 5,
+    "2017": 1,
+    "2018": 3,
+    "2019": 1,
+    "2020": 5,
+    "2021": 0,
+    "2022": 8,
+    "2023": 3,
+    "2024": 2,
+    "2025": 6,
+    "2026": 3
+   },
+   "total": 69,
+   "yearsAsked": 17,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 1,
+   "expected2027": 2.65,
+   "pAtLeast1": 0.859,
+   "pAtLeast2Raw": 0.741,
+   "likelyRange": [
+    1,
+    5
+   ],
+   "recency": {
+    "expected2027": 3.17,
+    "pAtLeast1": 0.887
+   },
+   "trend": {
+    "rho": 0.204,
+    "p": 0.4016495876030992,
+    "q": 0.849
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "subject verb agreement",
+     7
+    ],
+    [
+     "error spotting",
+     4
+    ],
+    [
+     "question tag",
+     3
+    ],
+    [
+     "modal verbs",
+     2
+    ],
+    [
+     "correct sentence",
+     2
+    ],
+    [
+     "sentence correction",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2025#29",
+     "text": "One of the employees ___________ planning to transfer to another department. 1 were 2 has 3 are 4 is"
+    },
+    {
+     "id": "2025#30",
+     "text": "Which of the following sentences uses the correct form of the verb \"to lay\"? 1 She is laying down for a nap. 2 She lays on the bed every night. 3 She has lain the keys on the counter. 4 She laid the book on the table."
+    },
+    {
+     "id": "2025#33",
+     "text": "Which of the following statements correctly explains the use of articles in the following sentence: After earning an MBA, Srinivas was able to approach a mathematical problem from both a business d l i l i and analytical"
+    },
+    {
+     "id": "2026#13",
+     "text": "Choose the sentence(s) that demonstrate correct subject-verb agreement: I. Neither the principal investigator nor the associates was available for comment. II. A series of workshops on research ethics are scheduled for n"
+    },
+    {
+     "id": "2026#18",
+     "text": "Select the sentence that correctly expresses the sequence of past events. 1 The curator replaces the exhibit after it deteriorated. 2 The curator replaced the exhibit after it has deteriorated. 3 The curator replaced the"
+    },
+    {
+     "id": "2026#19",
+     "text": "Identify the underlined phrase in each sentence and match it with its correct type. Column A Column B A. The heavy grocery bag slipped from her hand in the kitchen. (i) Noun Phrase B. He finished his breakfast quite quic"
+    }
+   ]
+  },
+  {
+   "code": "E-SF",
+   "chapter": "Sentence Forms",
+   "part": "English",
+   "unit": "Grammar",
+   "hist": {
+    "2008": 0,
+    "2009": 1,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 1,
+    "2014": 2,
+    "2015": null,
+    "2016": 1,
+    "2017": 0,
+    "2018": 2,
+    "2019": 2,
+    "2020": 0,
+    "2021": 0,
+    "2022": 2,
+    "2023": 1,
+    "2024": 1,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 13,
+   "yearsAsked": 9,
+   "yearsAvailable": 18,
+   "lastAsked": 2024,
+   "yearsSinceLast": 2,
+   "longestGap": 3,
+   "expected2027": 0.45,
+   "pAtLeast1": 0.388,
+   "pAtLeast2Raw": 0.074,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.36,
+    "pAtLeast1": 0.371
+   },
+   "trend": {
+    "rho": 0.127,
+    "p": 0.6128467883029243,
+    "q": 0.907
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "active passive",
+     6
+    ],
+    [
+     "reported speech",
+     4
+    ],
+    [
+     "phrase replacement",
+     1
+    ],
+    [
+     "sentence improvement",
+     1
+    ],
+    [
+     "phrase correction",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2023#99",
+     "text": "Choose the best option that indicates the change of voice for the sentence given below: They sent for a doctor because Pamela had fainted 1 A doctor was sent for them because Pamela had fainted 2 Pamela fainted and a doc"
+    },
+    {
+     "id": "2024#117",
+     "text": "Choose the best option that indicates the change of voice for the sentence given below: 1 Had you invited Alice? 2 Was Alice invited you? 3 Did you invited by Alice? 4 Were you invited by Alice?"
+    }
+   ]
+  },
+  {
+   "code": "E-WF",
+   "chapter": "Word Formation",
+   "part": "English",
+   "unit": "Grammar",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 3,
+    "2012": 2,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 1,
+    "2017": 1,
+    "2018": 1,
+    "2019": 0,
+    "2020": 1,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 1,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 10,
+   "yearsAsked": 7,
+   "yearsAvailable": 18,
+   "lastAsked": 2024,
+   "yearsSinceLast": 2,
+   "longestGap": 3,
+   "expected2027": 0.25,
+   "pAtLeast1": 0.282,
+   "pAtLeast2Raw": 0.027,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.18,
+    "pAtLeast1": 0.262
+   },
+   "trend": {
+    "rho": -0.106,
+    "p": 0.6768307923019246,
+    "q": 0.907
+   },
+   "recycled": 1,
+   "topSubtopics": [
+    [
+     "spelling",
+     3
+    ],
+    [
+     "adjective identification",
+     2
+    ],
+    [
+     "spelling entrepreneur",
+     1
+    ],
+    [
+     "spelling hindrance",
+     1
+    ],
+    [
+     "spelling ceiling",
+     1
+    ],
+    [
+     "noun identification",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#1",
+     "text": "Which pairs of bits can be joined together to form two words that have opposite meanings? ERT UCE DES END EXP EAR AND SIP RED GOS 1 2 3 4 5 6 7 8 9 10 1 (9,2)(5,7) 2 (1,3)(8,10) 3 (1,5)(10,8) 4 (4,2)(7,8)"
+    }
+   ]
+  },
+  {
+   "code": "E-SND",
+   "chapter": "Sounds & Pronunciation",
+   "part": "English",
+   "unit": "Grammar",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "E-TW",
+   "chapter": "Technical Writing",
+   "part": "English",
+   "unit": "Technical English",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 2,
+    "2021": 0,
+    "2022": 1,
+    "2023": 0,
+    "2024": 1,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 4,
+   "yearsAsked": 3,
+   "yearsAvailable": 18,
+   "lastAsked": 2024,
+   "yearsSinceLast": 2,
+   "longestGap": 11,
+   "expected2027": 0.19,
+   "pAtLeast1": 0.236,
+   "pAtLeast2Raw": 0.016,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.2,
+    "pAtLeast1": 0.28
+   },
+   "trend": {
+    "rho": 0.38,
+    "p": 0.12971757060734818
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "covering letter",
+     1
+    ],
+    [
+     "resume contents",
+     1
+    ],
+    [
+     "technical writing factual",
+     1
+    ],
+    [
+     "technical report element",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2024#120",
+     "text": "Which of the following is an essential element of a technical report? 1 Creative storytelling 2 Statistical data and analysis 3 Anecdotes and personal opinions 4 Emotional appeals"
+    }
+   ]
+  },
+  {
+   "code": "E-AF",
+   "chapter": "Accuracy & Fluency",
+   "part": "English",
+   "unit": "Technical English",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0,
+   "yearsAsked": 0,
+   "yearsAvailable": 18,
+   "lastAsked": null,
+   "yearsSinceLast": null,
+   "longestGap": 18,
+   "expected2027": 0,
+   "pAtLeast1": 0.055,
+   "pAtLeast2Raw": 0,
+   "likelyRange": [
+    0,
+    0
+   ],
+   "recency": {
+    "expected2027": 0,
+    "pAtLeast1": 0.075
+   },
+   "trend": {
+    "rho": 0,
+    "p": 1
+   },
+   "recycled": 0,
+   "topSubtopics": [],
+   "examples": []
+  },
+  {
+   "code": "E-TEE",
+   "chapter": "English Expressions for Technical Education",
+   "part": "English",
+   "unit": "Technical English",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": null,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 1,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1
+   },
+   "total": 2,
+   "yearsAsked": 2,
+   "yearsAvailable": 18,
+   "lastAsked": 2026,
+   "yearsSinceLast": 0,
+   "longestGap": 11,
+   "expected2027": 0.16,
+   "pAtLeast1": 0.211,
+   "pAtLeast2Raw": 0.011,
+   "likelyRange": [
+    0,
+    1
+   ],
+   "recency": {
+    "expected2027": 0.31,
+    "pAtLeast1": 0.347
+   },
+   "trend": {
+    "rho": 0.385,
+    "p": 0.12446888277930518
+   },
+   "recycled": 0,
+   "topSubtopics": [
+    [
+     "expression of approval",
+     1
+    ],
+    [
+     "verb noun collocation",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "id": "2026#15",
+     "text": "Match the following: Verb Noun 1. conduct A. a theory 2. refute B. a study 3. propose C. data 4. analyze D. an argument 1 1-B, 2-D, 3-A, 4-C 2 1-C, 2-A, 3-D, 4-B 3 1-A, 2-C, 3-B, 4-D 4 1-D, 2-B, 3-C, 4-A"
+    }
+   ]
+  }
+ ],
+ "units": [
+  {
+   "part": "Math",
+   "unit": "Algebra",
+   "expected2027": 21.2,
+   "historicMeanScaled": 22.3,
+   "sdScaled": 4.2,
+   "hist": {
+    "2008": 27.8,
+    "2009": 32.1,
+    "2010": 20.3,
+    "2011": 21.3,
+    "2012": 25,
+    "2013": 23.9,
+    "2014": 23.3,
+    "2015": 19.8,
+    "2016": 26.7,
+    "2017": 17.8,
+    "2018": 22,
+    "2019": 25,
+    "2020": 20,
+    "2021": 20.9,
+    "2022": 12.2,
+    "2023": 20.7,
+    "2024": 20.7,
+    "2025": 22.8,
+    "2026": 20.6
+   }
+  },
+  {
+   "part": "Math",
+   "unit": "Trigonometry",
+   "expected2027": 8.2,
+   "historicMeanScaled": 8.1,
+   "sdScaled": 2.4,
+   "hist": {
+    "2008": 5.6,
+    "2009": 7.1,
+    "2010": 5.4,
+    "2011": 10,
+    "2012": 8,
+    "2013": 9.1,
+    "2014": 7.8,
+    "2015": 9.3,
+    "2016": 5.8,
+    "2017": 11.1,
+    "2018": 7,
+    "2019": 6,
+    "2020": 12.5,
+    "2021": 9.3,
+    "2022": 12.2,
+    "2023": 4.3,
+    "2024": 5.4,
+    "2025": 9.8,
+    "2026": 7.8
+   }
+  },
+  {
+   "part": "Math",
+   "unit": "Calculus",
+   "expected2027": 11.1,
+   "historicMeanScaled": 10.7,
+   "sdScaled": 2.6,
+   "hist": {
+    "2008": 11.1,
+    "2009": 7.1,
+    "2010": 13.5,
+    "2011": 8.8,
+    "2012": 10.2,
+    "2013": 9.1,
+    "2014": 8.9,
+    "2015": 9.3,
+    "2016": 7,
+    "2017": 15.6,
+    "2018": 13,
+    "2019": 8.3,
+    "2020": 12.5,
+    "2021": 9.3,
+    "2022": 14.4,
+    "2023": 14.1,
+    "2024": 12,
+    "2025": 8.7,
+    "2026": 10.8
+   }
+  },
+  {
+   "part": "Math",
+   "unit": "Coordinate Geometry",
+   "expected2027": 6.5,
+   "historicMeanScaled": 6.6,
+   "sdScaled": 1.9,
+   "hist": {
+    "2008": 5.6,
+    "2009": 3.6,
+    "2010": 9.5,
+    "2011": 6.3,
+    "2012": 5.7,
+    "2013": 6.8,
+    "2014": 7.8,
+    "2015": 10.5,
+    "2016": 8.1,
+    "2017": 4.4,
+    "2018": 7,
+    "2019": 6,
+    "2020": 2.5,
+    "2021": 7,
+    "2022": 7.8,
+    "2023": 6.5,
+    "2024": 7.6,
+    "2025": 6.5,
+    "2026": 5.9
+   }
+  },
+  {
+   "part": "Math",
+   "unit": "Statistics",
+   "expected2027": 3,
+   "historicMeanScaled": 2.4,
+   "sdScaled": 1.6,
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1.4,
+    "2011": 3.8,
+    "2012": 1.1,
+    "2013": 1.1,
+    "2014": 2.2,
+    "2015": 1.2,
+    "2016": 2.3,
+    "2017": 1.1,
+    "2018": 1,
+    "2019": 4.8,
+    "2020": 2.5,
+    "2021": 3.5,
+    "2022": 3.3,
+    "2023": 4.3,
+    "2024": 4.3,
+    "2025": 2.2,
+    "2026": 4.9
+   }
+  },
+  {
+   "part": "Reasoning",
+   "unit": "Verbal Reasoning",
+   "expected2027": 23.5,
+   "historicMeanScaled": 24.3,
+   "sdScaled": 4.9,
+   "hist": {
+    "2008": 19.1,
+    "2009": 16.9,
+    "2010": 27.8,
+    "2011": 20,
+    "2012": 27.4,
+    "2013": 28.7,
+    "2014": 32,
+    "2015": 33.7,
+    "2016": 28,
+    "2017": 29.7,
+    "2018": 20.7,
+    "2019": 21.3,
+    "2020": 21.5,
+    "2021": 26.2,
+    "2022": 26.7,
+    "2023": 22.2,
+    "2024": 20,
+    "2025": 20.5,
+    "2026": 20
+   }
+  },
+  {
+   "part": "Reasoning",
+   "unit": "Non-Verbal Reasoning",
+   "expected2027": 1.5,
+   "historicMeanScaled": 1.4,
+   "sdScaled": 1.5,
+   "hist": {
+    "2008": 0.9,
+    "2009": 0.9,
+    "2010": 0,
+    "2011": 4.2,
+    "2012": 1.1,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 3.1,
+    "2018": 4.1,
+    "2019": 0,
+    "2020": 2,
+    "2021": 0,
+    "2022": 3.6,
+    "2023": 1.1,
+    "2024": 2.5,
+    "2025": 1.1,
+    "2026": 1.1
+   }
+  },
+  {
+   "part": "Reasoning",
+   "unit": "Logical & Analytical Reasoning",
+   "expected2027": 3.3,
+   "historicMeanScaled": 3.7,
+   "sdScaled": 2.8,
+   "hist": {
+    "2008": 8.2,
+    "2009": 9.8,
+    "2010": 7.8,
+    "2011": 4.2,
+    "2012": 3.4,
+    "2013": 3.1,
+    "2014": 1,
+    "2015": 3.2,
+    "2016": 4,
+    "2017": 2.1,
+    "2018": 1.4,
+    "2019": 5,
+    "2020": 1,
+    "2021": 0,
+    "2022": 0,
+    "2023": 2.2,
+    "2024": 5,
+    "2025": 6.5,
+    "2026": 3.2
+   }
+  },
+  {
+   "part": "Reasoning",
+   "unit": "Data Analysis",
+   "expected2027": 11.8,
+   "historicMeanScaled": 10.6,
+   "sdScaled": 3.8,
+   "hist": {
+    "2008": 11.8,
+    "2009": 12.4,
+    "2010": 4.3,
+    "2011": 11.6,
+    "2012": 8,
+    "2013": 8.2,
+    "2014": 7,
+    "2015": 3.2,
+    "2016": 8,
+    "2017": 5.1,
+    "2018": 13.8,
+    "2019": 13.8,
+    "2020": 15.6,
+    "2021": 13.8,
+    "2022": 9.7,
+    "2023": 14.4,
+    "2024": 12.5,
+    "2025": 11.9,
+    "2026": 15.8
+   }
+  },
+  {
+   "part": "Computer",
+   "unit": "Computer Basics",
+   "expected2027": 4.9,
+   "historicMeanScaled": 4.6,
+   "sdScaled": 3.9,
+   "hist": {
+    "2008": 2.9,
+    "2009": 10,
+    "2010": 11.1,
+    "2011": 2,
+    "2012": 8,
+    "2013": 2,
+    "2014": 2.2,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 6,
+    "2021": 12,
+    "2022": 4,
+    "2023": 6,
+    "2024": 6.7,
+    "2025": 4.4,
+    "2026": 6
+   }
+  },
+  {
+   "part": "Computer",
+   "unit": "Data Representation",
+   "expected2027": 11.5,
+   "historicMeanScaled": 12.2,
+   "sdScaled": 4.5,
+   "hist": {
+    "2008": 12.9,
+    "2009": 10,
+    "2010": 6.7,
+    "2011": 16,
+    "2012": 8,
+    "2013": 12,
+    "2014": 17.8,
+    "2016": 15.6,
+    "2017": 16,
+    "2018": 16,
+    "2019": 20,
+    "2020": 12,
+    "2021": 4,
+    "2022": 16,
+    "2023": 12,
+    "2024": 10,
+    "2025": 10,
+    "2026": 5
+   }
+  },
+  {
+   "part": "Computer",
+   "unit": "Computer Hardware",
+   "expected2027": 1.9,
+   "historicMeanScaled": 1.7,
+   "sdScaled": 1.6,
+   "hist": {
+    "2008": 1.4,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 2,
+    "2013": 4,
+    "2014": 0,
+    "2016": 4.4,
+    "2017": 2,
+    "2018": 2,
+    "2019": 0,
+    "2020": 2,
+    "2021": 4,
+    "2022": 0,
+    "2023": 1,
+    "2024": 3.3,
+    "2025": 3.3,
+    "2026": 1
+   }
+  },
+  {
+   "part": "Computer",
+   "unit": "Computer Software",
+   "expected2027": 0.9,
+   "historicMeanScaled": 0.9,
+   "sdScaled": 1.1,
+   "hist": {
+    "2008": 2.9,
+    "2009": 0,
+    "2010": 2.2,
+    "2011": 0,
+    "2012": 2,
+    "2013": 0,
+    "2014": 0,
+    "2016": 0,
+    "2017": 2,
+    "2018": 2,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 1,
+    "2024": 0,
+    "2025": 2.2,
+    "2026": 2
+   }
+  },
+  {
+   "part": "Computer",
+   "unit": "Internet & Email",
+   "expected2027": 0.9,
+   "historicMeanScaled": 0.6,
+   "sdScaled": 1.5,
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 2,
+    "2012": 0,
+    "2013": 2,
+    "2014": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 6
+   }
+  },
+  {
+   "part": "English",
+   "unit": "Reading Comprehension",
+   "expected2027": 1.6,
+   "historicMeanScaled": 1.5,
+   "sdScaled": 1.1,
+   "hist": {
+    "2008": 2.3,
+    "2009": 1.5,
+    "2010": 1.7,
+    "2011": 1.6,
+    "2012": 0,
+    "2013": 0,
+    "2014": 1.2,
+    "2016": 2.1,
+    "2017": 2.5,
+    "2018": 1.7,
+    "2019": 1.5,
+    "2020": 2,
+    "2021": 4,
+    "2022": 0.9,
+    "2023": 1.8,
+    "2024": 0,
+    "2025": 0,
+    "2026": 3
+   }
+  },
+  {
+   "part": "English",
+   "unit": "Vocabulary",
+   "expected2027": 4.8,
+   "historicMeanScaled": 5.1,
+   "sdScaled": 1.1,
+   "hist": {
+    "2008": 5.4,
+    "2009": 5.4,
+    "2010": 6.7,
+    "2011": 5.2,
+    "2012": 5.3,
+    "2013": 4.4,
+    "2014": 5.3,
+    "2016": 4.2,
+    "2017": 6.5,
+    "2018": 5,
+    "2019": 7,
+    "2020": 3.5,
+    "2021": 6,
+    "2022": 4.1,
+    "2023": 4.5,
+    "2024": 5.5,
+    "2025": 4,
+    "2026": 3
+   }
+  },
+  {
+   "part": "English",
+   "unit": "Grammar",
+   "expected2027": 3.4,
+   "historicMeanScaled": 3.2,
+   "sdScaled": 1.5,
+   "hist": {
+    "2008": 2.3,
+    "2009": 3.1,
+    "2010": 1.7,
+    "2011": 3.2,
+    "2012": 4.7,
+    "2013": 5.6,
+    "2014": 3.5,
+    "2016": 3.7,
+    "2017": 1,
+    "2018": 3.3,
+    "2019": 1.5,
+    "2020": 3,
+    "2021": 0,
+    "2022": 4.5,
+    "2023": 3.6,
+    "2024": 3.6,
+    "2025": 6,
+    "2026": 3
+   }
+  },
+  {
+   "part": "English",
+   "unit": "Technical English",
+   "expected2027": 0.3,
+   "historicMeanScaled": 0.2,
+   "sdScaled": 0.5,
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 1.5,
+    "2021": 0,
+    "2022": 0.5,
+    "2023": 0,
+    "2024": 0.9,
+    "2025": 0,
+    "2026": 1
+   }
+  }
+ ],
+ "offSyllabus": [
+  {
+   "code": "X-VEC",
+   "part": "Math",
+   "chapter": "Vectors & 3D Geometry",
+   "hist": {
+    "2008": 5,
+    "2009": 3,
+    "2010": 5,
+    "2011": 5,
+    "2012": 6,
+    "2013": 6,
+    "2014": 5,
+    "2015": 8,
+    "2016": 6,
+    "2017": 6,
+    "2018": 4,
+    "2019": 3,
+    "2020": 8,
+    "2021": 7,
+    "2022": 5,
+    "2023": 6,
+    "2024": 6,
+    "2025": 6,
+    "2026": 0
+   },
+   "total": 100
+  },
+  {
+   "code": "X-MATH",
+   "part": "Math",
+   "chapter": "Other Math not in 2027 syllabus (number theory, LPP, pure geometry/mensuration, etc.)",
+   "hist": {
+    "2008": 5,
+    "2009": 4,
+    "2010": 3,
+    "2011": 1,
+    "2012": 1,
+    "2013": 1,
+    "2014": 1,
+    "2015": 1,
+    "2016": 0,
+    "2017": 0,
+    "2018": 5,
+    "2019": 6,
+    "2020": 1,
+    "2021": 1,
+    "2022": 1,
+    "2023": 0,
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "total": 34
+  },
+  {
+   "code": "X-ANLR",
+   "part": "Reasoning",
+   "chapter": "Analogy & Classification (odd-one-out)",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 3,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 2,
+    "2017": 0,
+    "2018": 1,
+    "2019": 0,
+    "2020": 0,
+    "2021": 10,
+    "2022": 4,
+    "2023": 1,
+    "2024": 5,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 27
+  },
+  {
+   "code": "X-RSN",
+   "part": "Reasoning",
+   "chapter": "Other Reasoning not in 2027 syllabus",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0
+  },
+  {
+   "code": "X-PROG",
+   "part": "Computer",
+   "chapter": "Programming, Data Structures & Algorithms",
+   "hist": {
+    "2008": 1,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 1,
+    "2025": 1,
+    "2026": 0
+   },
+   "total": 3
+  },
+  {
+   "code": "X-COMP",
+   "part": "Computer",
+   "chapter": "Other Computer topics not in 2027 syllabus",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 1
+  },
+  {
+   "code": "X-ANLE",
+   "part": "English",
+   "chapter": "Verbal Analogy",
+   "hist": {
+    "2008": 2,
+    "2009": 1,
+    "2010": 3,
+    "2011": 1,
+    "2012": 0,
+    "2013": 1,
+    "2014": 1,
+    "2015": 0,
+    "2016": 1,
+    "2017": 0,
+    "2018": 1,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 11
+  },
+  {
+   "code": "X-PARA",
+   "part": "English",
+   "chapter": "Sentence / Paragraph Arrangement",
+   "hist": {
+    "2008": 0,
+    "2009": 2,
+    "2010": 1,
+    "2011": 0,
+    "2012": 0,
+    "2013": 1,
+    "2014": 2,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 1,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 7
+  },
+  {
+   "code": "X-ENG",
+   "part": "English",
+   "chapter": "Other English not in 2027 syllabus",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 0,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 0
+  },
+  {
+   "code": "X-UNK",
+   "part": "Unknown",
+   "chapter": "Question text not available in source",
+   "hist": {
+    "2008": 0,
+    "2009": 0,
+    "2010": 0,
+    "2011": 0,
+    "2012": 2,
+    "2013": 0,
+    "2014": 0,
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 6,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "total": 8
+  }
+ ]
+}

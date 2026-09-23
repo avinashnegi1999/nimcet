@@ -1,0 +1,1262 @@
+{
+ "targets": "2016-2026",
+ "scores": {
+  "P:freq-all": {
+   "n": 957,
+   "brier": 0.17,
+   "logloss": 0.5061,
+   "byPart": {
+    "Math": 0.1988,
+    "Reasoning": 0.1522,
+    "Computer": 0.1501,
+    "English": 0.1445
+   }
+  },
+  "P:freq-last5": {
+   "n": 957,
+   "brier": 0.1803,
+   "logloss": 0.5395,
+   "byPart": {
+    "Math": 0.213,
+    "Reasoning": 0.1576,
+    "Computer": 0.1589,
+    "English": 0.1524
+   }
+  },
+  "P:ew-appear h1": {
+   "n": 957,
+   "brier": 0.1865,
+   "logloss": 0.5524,
+   "byPart": {
+    "Math": 0.2154,
+    "Reasoning": 0.1746,
+    "Computer": 0.1589,
+    "English": 0.1672
+   }
+  },
+  "P:ew-appear h2": {
+   "n": 957,
+   "brier": 0.1765,
+   "logloss": 0.5252,
+   "byPart": {
+    "Math": 0.206,
+    "Reasoning": 0.1604,
+    "Computer": 0.1529,
+    "English": 0.1538
+   }
+  },
+  "P:ew-appear h3": {
+   "n": 957,
+   "brier": 0.173,
+   "logloss": 0.5147,
+   "byPart": {
+    "Math": 0.2023,
+    "Reasoning": 0.1556,
+    "Computer": 0.1512,
+    "English": 0.149
+   }
+  },
+  "P:ew-appear h4": {
+   "n": 957,
+   "brier": 0.1715,
+   "logloss": 0.51,
+   "byPart": {
+    "Math": 0.2006,
+    "Reasoning": 0.1537,
+    "Computer": 0.1505,
+    "English": 0.147
+   }
+  },
+  "P:ew-appear h6": {
+   "n": 957,
+   "brier": 0.1704,
+   "logloss": 0.5063,
+   "byPart": {
+    "Math": 0.1993,
+    "Reasoning": 0.1524,
+    "Computer": 0.1501,
+    "English": 0.1454
+   }
+  },
+  "P:ew-appear h8": {
+   "n": 957,
+   "brier": 0.17,
+   "logloss": 0.5052,
+   "byPart": {
+    "Math": 0.1988,
+    "Reasoning": 0.152,
+    "Computer": 0.1499,
+    "English": 0.1448
+   }
+  },
+  "P:poisson-ew h1": {
+   "n": 957,
+   "brier": 0.1848,
+   "logloss": 0.5753,
+   "byPart": {
+    "Math": 0.2197,
+    "Reasoning": 0.1748,
+    "Computer": 0.1516,
+    "English": 0.1533
+   }
+  },
+  "P:poisson-ew h2": {
+   "n": 957,
+   "brier": 0.1722,
+   "logloss": 0.5244,
+   "byPart": {
+    "Math": 0.2051,
+    "Reasoning": 0.1587,
+    "Computer": 0.1444,
+    "English": 0.1421
+   }
+  },
+  "P:poisson-ew h3": {
+   "n": 957,
+   "brier": 0.1682,
+   "logloss": 0.5089,
+   "byPart": {
+    "Math": 0.2006,
+    "Reasoning": 0.1536,
+    "Computer": 0.1417,
+    "English": 0.1393
+   }
+  },
+  "P:poisson-ew h4": {
+   "n": 957,
+   "brier": 0.1666,
+   "logloss": 0.5036,
+   "byPart": {
+    "Math": 0.1986,
+    "Reasoning": 0.1516,
+    "Computer": 0.1405,
+    "English": 0.1383
+   }
+  },
+  "P:poisson-ew h6": {
+   "n": 957,
+   "brier": 0.1653,
+   "logloss": 0.5004,
+   "byPart": {
+    "Math": 0.1969,
+    "Reasoning": 0.1502,
+    "Computer": 0.1395,
+    "English": 0.1377
+   }
+  },
+  "P:poisson-ew h8": {
+   "n": 957,
+   "brier": 0.1648,
+   "logloss": 0.4996,
+   "byPart": {
+    "Math": 0.1963,
+    "Reasoning": 0.1498,
+    "Computer": 0.1392,
+    "English": 0.1375
+   }
+  },
+  "P:markov": {
+   "n": 957,
+   "brier": 0.1739,
+   "logloss": 0.5153,
+   "byPart": {
+    "Math": 0.1987,
+    "Reasoning": 0.1589,
+    "Computer": 0.1553,
+    "English": 0.1545
+   }
+  },
+  "E:last-year": {
+   "n": 957,
+   "mae": 1.0795,
+   "byPart": {
+    "Math": 1.0533,
+    "Reasoning": 1.7845,
+    "Computer": 0.5318,
+    "English": 1.1643
+   }
+  },
+  "E:mean-all": {
+   "n": 957,
+   "mae": 0.8644,
+   "byPart": {
+    "Math": 0.835,
+    "Reasoning": 1.3762,
+    "Computer": 0.5024,
+    "English": 0.8814
+   }
+  },
+  "E:mean-last5": {
+   "n": 957,
+   "mae": 0.8727,
+   "byPart": {
+    "Math": 0.8481,
+    "Reasoning": 1.3819,
+    "Computer": 0.4819,
+    "English": 0.9438
+   }
+  },
+  "E:ew h1": {
+   "n": 957,
+   "mae": 0.9074,
+   "byPart": {
+    "Math": 0.8908,
+    "Reasoning": 1.446,
+    "Computer": 0.4814,
+    "English": 0.977
+   }
+  },
+  "E:ew h2": {
+   "n": 957,
+   "mae": 0.8623,
+   "byPart": {
+    "Math": 0.8424,
+    "Reasoning": 1.362,
+    "Computer": 0.4758,
+    "English": 0.9238
+   }
+  },
+  "E:ew h3": {
+   "n": 957,
+   "mae": 0.8557,
+   "byPart": {
+    "Math": 0.8326,
+    "Reasoning": 1.35,
+    "Computer": 0.4829,
+    "English": 0.9064
+   }
+  },
+  "E:ew h4": {
+   "n": 957,
+   "mae": 0.8549,
+   "byPart": {
+    "Math": 0.8307,
+    "Reasoning": 1.3485,
+    "Computer": 0.4871,
+    "English": 0.8998
+   }
+  },
+  "E:ew h6": {
+   "n": 957,
+   "mae": 0.8576,
+   "byPart": {
+    "Math": 0.8308,
+    "Reasoning": 1.3582,
+    "Computer": 0.4919,
+    "English": 0.8943
+   }
+  },
+  "E:ew h8": {
+   "n": 957,
+   "mae": 0.8593,
+   "byPart": {
+    "Math": 0.8316,
+    "Reasoning": 1.3633,
+    "Computer": 0.4941,
+    "English": 0.8915
+   }
+  }
+ },
+ "calibration": {
+  "P:freq-all": [
+   {
+    "bin": "0-0.1",
+    "n": 147,
+    "meanPred": 0.047,
+    "observed": 0.048
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 74,
+    "meanPred": 0.151,
+    "observed": 0.23
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 78,
+    "meanPred": 0.252,
+    "observed": 0.333
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 70,
+    "meanPred": 0.342,
+    "observed": 0.371
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 73,
+    "meanPred": 0.442,
+    "observed": 0.562
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 113,
+    "meanPred": 0.535,
+    "observed": 0.54
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 111,
+    "meanPred": 0.648,
+    "observed": 0.685
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 107,
+    "meanPred": 0.745,
+    "observed": 0.71
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 58,
+    "meanPred": 0.846,
+    "observed": 0.793
+   },
+   {
+    "bin": "0.9-1",
+    "n": 126,
+    "meanPred": 0.953,
+    "observed": 0.952
+   }
+  ],
+  "P:freq-last5": [
+   {
+    "bin": "0-0.1",
+    "n": 215,
+    "meanPred": 0.083,
+    "observed": 0.116
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 113,
+    "meanPred": 0.25,
+    "observed": 0.354
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 130,
+    "meanPred": 0.417,
+    "observed": 0.5
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 168,
+    "meanPred": 0.583,
+    "observed": 0.577
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 146,
+    "meanPred": 0.75,
+    "observed": 0.726
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   },
+   {
+    "bin": "0.9-1",
+    "n": 185,
+    "meanPred": 0.917,
+    "observed": 0.881
+   }
+  ],
+  "P:ew-appear h1": [
+   {
+    "bin": "0-0.1",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 231,
+    "meanPred": 0.17,
+    "observed": 0.113
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 80,
+    "meanPred": 0.243,
+    "observed": 0.438
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 72,
+    "meanPred": 0.344,
+    "observed": 0.472
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 88,
+    "meanPred": 0.46,
+    "observed": 0.602
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 80,
+    "meanPred": 0.543,
+    "observed": 0.5
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 85,
+    "meanPred": 0.654,
+    "observed": 0.659
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 112,
+    "meanPred": 0.755,
+    "observed": 0.607
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 209,
+    "meanPred": 0.828,
+    "observed": 0.88
+   },
+   {
+    "bin": "0.9-1",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   }
+  ],
+  "P:ew-appear h2": [
+   {
+    "bin": "0-0.1",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 222,
+    "meanPred": 0.129,
+    "observed": 0.113
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 73,
+    "meanPred": 0.253,
+    "observed": 0.342
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 85,
+    "meanPred": 0.36,
+    "observed": 0.482
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 77,
+    "meanPred": 0.455,
+    "observed": 0.455
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 103,
+    "meanPred": 0.545,
+    "observed": 0.602
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 103,
+    "meanPred": 0.647,
+    "observed": 0.621
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 96,
+    "meanPred": 0.747,
+    "observed": 0.708
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 198,
+    "meanPred": 0.868,
+    "observed": 0.889
+   },
+   {
+    "bin": "0.9-1",
+    "n": 0,
+    "meanPred": null,
+    "observed": null
+   }
+  ],
+  "P:ew-appear h3": [
+   {
+    "bin": "0-0.1",
+    "n": 127,
+    "meanPred": 0.091,
+    "observed": 0.039
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 94,
+    "meanPred": 0.144,
+    "observed": 0.202
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 68,
+    "meanPred": 0.252,
+    "observed": 0.309
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 81,
+    "meanPred": 0.349,
+    "observed": 0.469
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 89,
+    "meanPred": 0.451,
+    "observed": 0.494
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 101,
+    "meanPred": 0.548,
+    "observed": 0.594
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 112,
+    "meanPred": 0.651,
+    "observed": 0.616
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 94,
+    "meanPred": 0.748,
+    "observed": 0.723
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 76,
+    "meanPred": 0.848,
+    "observed": 0.803
+   },
+   {
+    "bin": "0.9-1",
+    "n": 115,
+    "meanPred": 0.909,
+    "observed": 0.965
+   }
+  ],
+  "P:ew-appear h4": [
+   {
+    "bin": "0-0.1",
+    "n": 145,
+    "meanPred": 0.08,
+    "observed": 0.041
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 72,
+    "meanPred": 0.152,
+    "observed": 0.222
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 77,
+    "meanPred": 0.251,
+    "observed": 0.325
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 77,
+    "meanPred": 0.353,
+    "observed": 0.455
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 90,
+    "meanPred": 0.452,
+    "observed": 0.511
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 105,
+    "meanPred": 0.552,
+    "observed": 0.571
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 104,
+    "meanPred": 0.652,
+    "observed": 0.654
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 99,
+    "meanPred": 0.748,
+    "observed": 0.727
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 66,
+    "meanPred": 0.843,
+    "observed": 0.773
+   },
+   {
+    "bin": "0.9-1",
+    "n": 122,
+    "meanPred": 0.92,
+    "observed": 0.959
+   }
+  ],
+  "P:ew-appear h6": [
+   {
+    "bin": "0-0.1",
+    "n": 145,
+    "meanPred": 0.068,
+    "observed": 0.041
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 71,
+    "meanPred": 0.152,
+    "observed": 0.225
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 79,
+    "meanPred": 0.249,
+    "observed": 0.304
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 77,
+    "meanPred": 0.352,
+    "observed": 0.494
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 94,
+    "meanPred": 0.454,
+    "observed": 0.479
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 96,
+    "meanPred": 0.553,
+    "observed": 0.573
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 112,
+    "meanPred": 0.652,
+    "observed": 0.643
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 94,
+    "meanPred": 0.749,
+    "observed": 0.755
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 67,
+    "meanPred": 0.842,
+    "observed": 0.776
+   },
+   {
+    "bin": "0.9-1",
+    "n": 122,
+    "meanPred": 0.933,
+    "observed": 0.959
+   }
+  ],
+  "P:ew-appear h8": [
+   {
+    "bin": "0-0.1",
+    "n": 144,
+    "meanPred": 0.062,
+    "observed": 0.042
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 72,
+    "meanPred": 0.15,
+    "observed": 0.236
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 82,
+    "meanPred": 0.25,
+    "observed": 0.317
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 71,
+    "meanPred": 0.35,
+    "observed": 0.423
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 94,
+    "meanPred": 0.452,
+    "observed": 0.521
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 98,
+    "meanPred": 0.55,
+    "observed": 0.541
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 109,
+    "meanPred": 0.65,
+    "observed": 0.679
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 101,
+    "meanPred": 0.748,
+    "observed": 0.723
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 65,
+    "meanPred": 0.845,
+    "observed": 0.8
+   },
+   {
+    "bin": "0.9-1",
+    "n": 121,
+    "meanPred": 0.939,
+    "observed": 0.959
+   }
+  ],
+  "P:poisson-ew h1": [
+   {
+    "bin": "0-0.1",
+    "n": 252,
+    "meanPred": 0.026,
+    "observed": 0.127
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 39,
+    "meanPred": 0.144,
+    "observed": 0.462
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 55,
+    "meanPred": 0.255,
+    "observed": 0.491
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 43,
+    "meanPred": 0.358,
+    "observed": 0.512
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 71,
+    "meanPred": 0.449,
+    "observed": 0.437
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 60,
+    "meanPred": 0.545,
+    "observed": 0.533
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 73,
+    "meanPred": 0.655,
+    "observed": 0.493
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 78,
+    "meanPred": 0.748,
+    "observed": 0.667
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 97,
+    "meanPred": 0.853,
+    "observed": 0.763
+   },
+   {
+    "bin": "0.9-1",
+    "n": 189,
+    "meanPred": 0.963,
+    "observed": 0.91
+   }
+  ],
+  "P:poisson-ew h2": [
+   {
+    "bin": "0-0.1",
+    "n": 204,
+    "meanPred": 0.03,
+    "observed": 0.113
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 49,
+    "meanPred": 0.144,
+    "observed": 0.163
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 48,
+    "meanPred": 0.248,
+    "observed": 0.375
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 60,
+    "meanPred": 0.347,
+    "observed": 0.5
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 76,
+    "meanPred": 0.452,
+    "observed": 0.461
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 73,
+    "meanPred": 0.551,
+    "observed": 0.493
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 96,
+    "meanPred": 0.655,
+    "observed": 0.583
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 71,
+    "meanPred": 0.759,
+    "observed": 0.634
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 100,
+    "meanPred": 0.852,
+    "observed": 0.76
+   },
+   {
+    "bin": "0.9-1",
+    "n": 180,
+    "meanPred": 0.964,
+    "observed": 0.939
+   }
+  ],
+  "P:poisson-ew h3": [
+   {
+    "bin": "0-0.1",
+    "n": 181,
+    "meanPred": 0.029,
+    "observed": 0.077
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 58,
+    "meanPred": 0.15,
+    "observed": 0.276
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 57,
+    "meanPred": 0.25,
+    "observed": 0.228
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 59,
+    "meanPred": 0.354,
+    "observed": 0.559
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 75,
+    "meanPred": 0.456,
+    "observed": 0.453
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 78,
+    "meanPred": 0.552,
+    "observed": 0.487
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 80,
+    "meanPred": 0.645,
+    "observed": 0.563
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 96,
+    "meanPred": 0.75,
+    "observed": 0.677
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 93,
+    "meanPred": 0.849,
+    "observed": 0.753
+   },
+   {
+    "bin": "0.9-1",
+    "n": 180,
+    "meanPred": 0.964,
+    "observed": 0.933
+   }
+  ],
+  "P:poisson-ew h4": [
+   {
+    "bin": "0-0.1",
+    "n": 170,
+    "meanPred": 0.027,
+    "observed": 0.053
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 60,
+    "meanPred": 0.154,
+    "observed": 0.283
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 62,
+    "meanPred": 0.252,
+    "observed": 0.274
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 60,
+    "meanPred": 0.352,
+    "observed": 0.467
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 71,
+    "meanPred": 0.453,
+    "observed": 0.423
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 90,
+    "meanPred": 0.553,
+    "observed": 0.556
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 70,
+    "meanPred": 0.646,
+    "observed": 0.514
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 111,
+    "meanPred": 0.751,
+    "observed": 0.703
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 82,
+    "meanPred": 0.848,
+    "observed": 0.756
+   },
+   {
+    "bin": "0.9-1",
+    "n": 181,
+    "meanPred": 0.964,
+    "observed": 0.934
+   }
+  ],
+  "P:poisson-ew h6": [
+   {
+    "bin": "0-0.1",
+    "n": 164,
+    "meanPred": 0.027,
+    "observed": 0.043
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 50,
+    "meanPred": 0.153,
+    "observed": 0.26
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 69,
+    "meanPred": 0.25,
+    "observed": 0.304
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 71,
+    "meanPred": 0.35,
+    "observed": 0.394
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 63,
+    "meanPred": 0.451,
+    "observed": 0.476
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 93,
+    "meanPred": 0.552,
+    "observed": 0.548
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 77,
+    "meanPred": 0.647,
+    "observed": 0.532
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 112,
+    "meanPred": 0.752,
+    "observed": 0.696
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 78,
+    "meanPred": 0.848,
+    "observed": 0.756
+   },
+   {
+    "bin": "0.9-1",
+    "n": 180,
+    "meanPred": 0.964,
+    "observed": 0.933
+   }
+  ],
+  "P:poisson-ew h8": [
+   {
+    "bin": "0-0.1",
+    "n": 163,
+    "meanPred": 0.028,
+    "observed": 0.049
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 45,
+    "meanPred": 0.153,
+    "observed": 0.244
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 73,
+    "meanPred": 0.252,
+    "observed": 0.301
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 71,
+    "meanPred": 0.349,
+    "observed": 0.366
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 61,
+    "meanPred": 0.447,
+    "observed": 0.443
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 94,
+    "meanPred": 0.55,
+    "observed": 0.596
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 81,
+    "meanPred": 0.645,
+    "observed": 0.519
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 110,
+    "meanPred": 0.748,
+    "observed": 0.7
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 78,
+    "meanPred": 0.846,
+    "observed": 0.744
+   },
+   {
+    "bin": "0.9-1",
+    "n": 181,
+    "meanPred": 0.964,
+    "observed": 0.934
+   }
+  ],
+  "P:markov": [
+   {
+    "bin": "0-0.1",
+    "n": 99,
+    "meanPred": 0.072,
+    "observed": 0.04
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 83,
+    "meanPred": 0.132,
+    "observed": 0.157
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 100,
+    "meanPred": 0.24,
+    "observed": 0.29
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 75,
+    "meanPred": 0.339,
+    "observed": 0.36
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 67,
+    "meanPred": 0.422,
+    "observed": 0.522
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 147,
+    "meanPred": 0.525,
+    "observed": 0.605
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 107,
+    "meanPred": 0.641,
+    "observed": 0.645
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 92,
+    "meanPred": 0.743,
+    "observed": 0.685
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 78,
+    "meanPred": 0.844,
+    "observed": 0.782
+   },
+   {
+    "bin": "0.9-1",
+    "n": 109,
+    "meanPred": 0.926,
+    "observed": 0.972
+   }
+  ]
+ },
+ "calibrated": {
+  "method": "P:poisson-ew h6 + nested Platt",
+  "n": 957,
+  "brier": 0.1635,
+  "logloss": 0.4909,
+  "calibration": [
+   {
+    "bin": "0-0.1",
+    "n": 144,
+    "meanPred": 0.059,
+    "observed": 0.042
+   },
+   {
+    "bin": "0.1-0.2",
+    "n": 34,
+    "meanPred": 0.151,
+    "observed": 0.118
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 75,
+    "meanPred": 0.258,
+    "observed": 0.293
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 88,
+    "meanPred": 0.352,
+    "observed": 0.375
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 102,
+    "meanPred": 0.452,
+    "observed": 0.461
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 121,
+    "meanPred": 0.547,
+    "observed": 0.545
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 126,
+    "meanPred": 0.655,
+    "observed": 0.675
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 80,
+    "meanPred": 0.744,
+    "observed": 0.725
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 74,
+    "meanPred": 0.848,
+    "observed": 0.946
+   },
+   {
+    "bin": "0.9-1",
+    "n": 113,
+    "meanPred": 0.944,
+    "observed": 0.929
+   }
+  ],
+  "rangeCoverage": 0.914,
+  "rangeCoverageN": 827
+ }
+}
