@@ -2,7 +2,7 @@
 
 **Every past question, printed in full, one page per row of the table below:** [`pyq-by-chapter/`](pyq-by-chapter/) — [S1](pyq-by-chapter/S1.md) · [S2](pyq-by-chapter/S2.md) · [S3](pyq-by-chapter/S3.md) · [S4](pyq-by-chapter/S4.md) · [S5](pyq-by-chapter/S5.md) · [A1](pyq-by-chapter/A1.md) · [A2](pyq-by-chapter/A2.md) · [A3](pyq-by-chapter/A3.md) · [A4](pyq-by-chapter/A4.md) · [A5](pyq-by-chapter/A5.md) · [A6](pyq-by-chapter/A6.md) · [B1](pyq-by-chapter/B1.md) · [B2](pyq-by-chapter/B2.md) · [B3](pyq-by-chapter/B3.md) · [C](pyq-by-chapter/C.md) · [Skip](pyq-by-chapter/Skip.md). This page is the index: Every tier opened into its chapters. Inside each chapter the question forms are listed one per line, the most-repeated ones first, with the paper years they appeared in. Read a chapter, then solve those exact forms from the PYQ papers.
 
-The tier table on the [forecast page](https://avinashnegi1999.github.io/nimcet/forecast.html) says *which areas* matter. This page opens each area into the **chapters and question-types that have actually been asked**, taken from the sub-topic label on every one of the 2,248 classified questions (`data/questions-classified.jsonl`). Counts are over 19 papers; ★ marks the forms that come back nearly every year — do those first inside each chapter.
+The tier table on the [forecast page](https://avinashnegi1999.github.io/nimcet/forecast.html) says *which areas* matter. This page opens each area into the **chapters and question-types that have actually been asked**, taken from the sub-topic label on every one of the 2,248 classified questions (`data/questions-classified.jsonl`). Counts are over 19 papers; ★ marks the forms listed first in each chapter — check the years beside each: several were asked only once or twice, so ★ means "core form", not "comes back every year".
 
 Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −3 per wrong answer.
 
@@ -10,20 +10,20 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 | Priority | Area | 2027 Q | Marks | Page section | All past questions |
 |:---:|---|:---:|:---:|---|---|
-| Tier S | Number systems & Boolean logic | 10 | 120 | [S1](#s1-number-systems--boolean-logic--10-q) | [S1.md](pyq-by-chapter/S1.md) |
-| Tier S | Calculus | 10 | 120 | [S2](#s2-calculus--10-q) | [S2.md](pyq-by-chapter/S2.md) |
-| Tier S | Arithmetic word problems (Reasoning section) | 9 | 108 | [S3](#s3-arithmetic-word-problems--9-q) | [S3.md](pyq-by-chapter/S3.md) |
-| Tier S | Logical puzzles & conditional grouping | 8 | 96 | [S4](#s4-logical-puzzles--conditional-grouping--8-q) | [S4.md](pyq-by-chapter/S4.md) |
-| Tier S | Trigonometry | 8 | 96 | [S5](#s5-trigonometry--8-q) | [S5.md](pyq-by-chapter/S5.md) |
-| Tier A | Computer architecture, OS & memory | 8 | 96 | [A1](#a1-computer-architecture-os--memory--8-q) | [A1.md](pyq-by-chapter/A1.md) |
-| Tier A | Coordinate & conic geometry | 7 | 84 | [A2](#a2-coordinate--conic-geometry--7-q) | [A2.md](pyq-by-chapter/A2.md) |
-| Tier A | Algebra & progressions | 6 | 72 | [A3](#a3-algebra--progressions--6-q) | [A3.md](pyq-by-chapter/A3.md) |
-| Tier A | Probability | 5 | 60 | [A4](#a4-probability--5-q) | [A4.md](pyq-by-chapter/A4.md) |
-| Tier A | Sets, relations & functions | 4 | 48 | [A5](#a5-sets-relations--functions--4-q) | [A5.md](pyq-by-chapter/A5.md) |
-| Tier A | Statistics | 4 | 48 | [A6](#a6-statistics--4-q) | [A6.md](pyq-by-chapter/A6.md) |
-| Tier B | Series, coding-decoding, syllogism | 10 | 120 | [B1](#b1-series-coding-decoding-syllogism--10-q) | [B1.md](pyq-by-chapter/B1.md) |
-| Tier B | Seating, blood relations, clocks, direction | 8 | 96 | [B2](#b2-seating-blood-relations-clocks-direction--8-q) | [B2.md](pyq-by-chapter/B2.md) |
-| Tier B | Grammar & vocabulary | 6 | 72 | [B3](#b3-grammar--vocabulary--6-q) | [B3.md](pyq-by-chapter/B3.md) |
+| Tier S | Number systems & Boolean logic | 10 | 120 | [S1](#s1--number-systems--boolean-logic--10-q) | [S1.md](pyq-by-chapter/S1.md) |
+| Tier S | Calculus | 10 | 120 | [S2](#s2--calculus--10-q) | [S2.md](pyq-by-chapter/S2.md) |
+| Tier S | Arithmetic word problems (Reasoning section) | 9 | 108 | [S3](#s3--arithmetic-word-problems--9-q) | [S3.md](pyq-by-chapter/S3.md) |
+| Tier S | Logical puzzles & conditional grouping | 8 | 96 | [S4](#s4--logical-puzzles--conditional-grouping--8-q) | [S4.md](pyq-by-chapter/S4.md) |
+| Tier S | Trigonometry | 8 | 96 | [S5](#s5--trigonometry--8-q) | [S5.md](pyq-by-chapter/S5.md) |
+| Tier A | Computer architecture, OS & memory | 8 | 96 | [A1](#a1--computer-architecture-os--memory--8-q) | [A1.md](pyq-by-chapter/A1.md) |
+| Tier A | Coordinate & conic geometry | 7 | 84 | [A2](#a2--coordinate--conic-geometry--7-q) | [A2.md](pyq-by-chapter/A2.md) |
+| Tier A | Algebra & progressions | 6 | 72 | [A3](#a3--algebra--progressions--6-q) | [A3.md](pyq-by-chapter/A3.md) |
+| Tier A | Probability | 5 | 60 | [A4](#a4--probability--5-q) | [A4.md](pyq-by-chapter/A4.md) |
+| Tier A | Sets, relations & functions | 4 | 48 | [A5](#a5--sets-relations--functions--4-q) | [A5.md](pyq-by-chapter/A5.md) |
+| Tier A | Statistics | 4 | 48 | [A6](#a6--statistics--4-q) | [A6.md](pyq-by-chapter/A6.md) |
+| Tier B | Series, coding-decoding, syllogism | 10 | 120 | [B1](#b1--series-coding-decoding-syllogism--10-q) | [B1.md](pyq-by-chapter/B1.md) |
+| Tier B | Seating, blood relations, clocks, direction | 8 | 96 | [B2](#b2--seating-blood-relations-clocks-direction--8-q) | [B2.md](pyq-by-chapter/B2.md) |
+| Tier B | Grammar & vocabulary | 6 | 72 | [B3](#b3--grammar--vocabulary--6-q) | [B3.md](pyq-by-chapter/B3.md) |
 | Tier C | P&C, matrices, comprehension, networking, small reasoning types | ~10 | ~120 | [C](#tier-c--bounded-time-10-q) | [C.md](pyq-by-chapter/C.md) |
 | Skip | Vectors & 3D, para jumbles, verbal analogy, linear programming | 0 | 0 | [Skip](#skip) | [Skip.md](pyq-by-chapter/Skip.md) |
 
@@ -430,7 +430,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 ## S4 · Logical puzzles & conditional grouping — 8 Q
 
-194 questions — the single most frequent topic in 19 years — but sliding (τ = −0.44, p = 0.010): 3, 7, 12, 8, 7 in 2022–26. Most-recycled question type: whole sets return after 2–4 years.
+194 questions — the single most frequent topic in 19 years: 3, 7, 12, 8, 7 in 2022–26. Its apparent decline does not survive a multiple-testing correction. Whole puzzle sets have been re-used before (gaps of 1–3 years), though re-use has faded since 2024.
 
 **Chapter 1 — Conditional grouping / selection sets** (3–5 questions from one passage)
 **Most repeated — do these first:**
@@ -890,7 +890,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 ## A3 · Algebra & progressions — 6 Q
 
-117 questions, every paper; drifting down (τ = −0.34, p = 0.049), 5, 7, 3, 5, 7 in 2022–26.
+117 questions, every paper: 5, 7, 3, 5, 7 in 2022–26 (no reliable trend).
 
 ### Chapter 1 — Quadratic equations and polynomials
 
@@ -1182,7 +1182,7 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 ## A6 · Statistics — 4 Q
 
-45 questions, **20 in the last five** and 6 in 2026 — the only Math topic with a significant upward trend (τ = +0.54, p = 0.002).
+45 questions, **20 in the last five** and 6 in 2026 — the only topic whose rising trend survives a multiple-testing correction.
 
 ### Chapter 1 — Mean, median, mode
 
@@ -1662,7 +1662,7 @@ English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 
 
 - **Vectors & 3D geometry** — 101 questions in 18 years, **0 in 2026**, absent from the 2027 syllabus. Do not open the chapter. (If a stray question appears, it will be projection / dot product basics — one line, not worth prep.)
 - **Sentence arrangement (para jumbles)** — last seen 2018.
-- **Verbal analogy** (SAVANT : OBTUSE) — last seen 2014, and only in the old 20-question English section.
+- **Verbal analogy** (SAVANT : OBTUSE) — not in the 2027 syllabus, but word-pair analogies were still asked every year 2021–2024 (e.g. 2022 Q57, 2024 Q8 and Q45). Skim a few; don't study it as a chapter.
 - **Linear programming, statics, dynamics, numerical methods, group theory** — Arihant chapters, never asked.
 
 &nbsp;

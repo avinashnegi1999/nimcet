@@ -23,7 +23,7 @@ Trend column = last 5 years `[2022, 2023, 2024, 2025, 2026]`.
 | Analogy | 8 | 0.4 | 3/19 |  | `0,1,1,0,0` |
 
 ## The one that repeats hardest
-**Logical Deduction & Puzzles = 194 questions, the single most-frequent topic in the whole exam** (every year), with **Arithmetic** (127 Q, every year, 13 in 2026) right behind it. Puzzles are slowly falling (τ = −0.44, p = 0.010); together the two are still ~18 of the 40 questions.
+**Logical Deduction & Puzzles = 194 questions, the single most-frequent topic in the whole exam** (every year), with **Arithmetic** (127 Q, 18 of 19 papers, 13 in 2026) right behind it. Puzzles look like they are falling, but the trend does not survive a multiple-testing correction; together the two are still ~18 of the 40 questions.
 
 ## Study order
 1. **Logical Deduction & Puzzles + Arithmetic word problems** — biggest buckets, drill daily.

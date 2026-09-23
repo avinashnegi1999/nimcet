@@ -23,9 +23,9 @@ Evaluate the following limit:
 
 $$\lim_{x \to 0} \frac{e^{2x} - 1 - 2x}{x^2}$$
 
-**(1)** 1  **(2)** 2  **(3)** 4  **(4)** 1/2
+**(1)** 1  **(2)** 4  **(3)** 2  **(4)** 1/2
 
-**Answer: (2) 2**
+**Answer: (3) 2**
 
 **Solution.**
 Expand the exponential as a Maclaurin series:
@@ -53,9 +53,9 @@ Evaluate:
 
 $$\lim_{x \to \infty} \frac{\sqrt{x}}{\sqrt{x + \sqrt{x + \sqrt{x}}}}$$
 
-**(1)** 0  **(2)** 1  **(3)** 1/2  **(4)** the limit does not exist
+**(1)** 0  **(2)** the limit does not exist  **(3)** 1/2  **(4)** 1
 
-**Answer: (2) 1**
+**Answer: (4) 1**
 
 **Solution.**
 Divide numerator and denominator by $\sqrt{x}$. The denominator becomes
@@ -71,7 +71,7 @@ Therefore the denominator tends to $\sqrt{1 + 0} = 1$, and the whole expression 
 *Intuition worth carrying into the exam:* in a nested radical, only the dominant power survives. Here the outer $\sqrt{x}$ dominates everything nested inside it, so the ratio is 1.
 
 **Difficulty:** Medium · **P = 0.55**
-**Why predicted:** NIMCET 2026 Q48 was this exact structure. A one-year recycling gap accounts for 10.3% of all repeated questions found in the corpus.
+**Why predicted:** NIMCET 2026 Q48 was this exact structure.
 
 ---
 
@@ -81,9 +81,9 @@ Find the local maximum value of the function
 
 $$f(x) = x^3 - 9x^2 + 24x + 5$$
 
-**(1)** 21  **(2)** 25  **(3)** 29  **(4)** 30
+**(1)** 25  **(2)** 21  **(3)** 29  **(4)** 30
 
-**Answer: (2) 25**
+**Answer: (1) 25**
 
 **Solution.**
 Differentiate and find the critical points:
@@ -114,9 +114,9 @@ Evaluate the definite integral:
 
 $$\int_0^{\pi/4} \sec x \, dx$$
 
-**(1)** $\ln(1 + \sqrt{2})$  **(2)** $\ln 2$  **(3)** $\sqrt{2} - 1$  **(4)** $\pi/4$
+**(1)** $\ln 2$  **(2)** $\ln(1 + \sqrt{2})$  **(3)** $\sqrt{2} - 1$  **(4)** $\pi/4$
 
-**Answer: (1) $\ln(1 + \sqrt{2})$**
+**Answer: (2) $\ln(1 + \sqrt{2})$**
 
 **Solution.**
 The standard antiderivative is
@@ -171,9 +171,9 @@ Since $e^2 \ne -e^2$, the two one-sided derivatives differ and $f$ is **not diff
 
 Find the area of the region bounded by the curve $y = x^2$ and the line $y = 2x$.
 
-**(1)** 2/3  **(2)** 4/3  **(3)** 8/3  **(4)** 2
+**(1)** 2/3  **(2)** 2  **(3)** 8/3  **(4)** 4/3
 
-**Answer: (2) 4/3**
+**Answer: (4) 4/3**
 
 **Solution.**
 First find the points of intersection:
@@ -222,9 +222,9 @@ $$\left(f^{-1}\right)'(4) = \frac{1}{f'(1)} = \frac{1}{5}$$
 
 If $f(x) = \displaystyle\int_0^{x^2} \ln(1 + t)\,dt$, find $f'(1)$.
 
-**(1)** $\ln 2$  **(2)** $2\ln 2$  **(3)** $\ln 4 - 1$  **(4)** $1/2$
+**(1)** $\ln 2$  **(2)** $\ln 4 - 1$  **(3)** $2\ln 2$  **(4)** $1/2$
 
-**Answer: (2) $2\ln 2$**
+**Answer: (3) $2\ln 2$**
 
 **Solution.**
 Apply the Leibniz rule (Fundamental Theorem of Calculus with a variable upper limit). If
@@ -248,9 +248,9 @@ $$f'(1) = \ln(1 + 1)\cdot 2 = 2\ln 2$$
 
 The 7th term of an arithmetic progression is 34 and its 13th term is 64. Find the sum of its first 20 terms.
 
-**(1)** 1030  **(2)** 1000  **(3)** 1060  **(4)** 980
+**(1)** 980  **(2)** 1000  **(3)** 1060  **(4)** 1030
 
-**Answer: (1) 1030**
+**Answer: (4) 1030**
 
 **Solution.**
 Let the first term be $a$ and the common difference be $d$.
@@ -270,7 +270,7 @@ $$S_n = \frac{n}{2}\left[2a + (n-1)d\right]$$
 $$S_{20} = \frac{20}{2}\left[2(4) + 19(5)\right] = 10\left[8 + 95\right] = 10 \times 103 = 1030$$
 
 **Difficulty:** Easy · **P = 0.90**
-**Why predicted:** Algebra & Progressions jumped to 11 questions in 2026 — up from a 5-year mean of 7.4 — because it absorbed the deleted Vectors slots. Plain AP term-and-sum is the most common form in this block.
+**Why predicted:** Algebra & Progressions had 7 questions in 2026, above its 2021–25 average of 5.2. Plain AP term-and-sum is the most common form in this block.
 
 ---
 
@@ -278,9 +278,9 @@ $$S_{20} = \frac{20}{2}\left[2(4) + 19(5)\right] = 10\left[8 + 95\right] = 10 \t
 
 The sum of an infinite geometric progression is 15 and the sum of the squares of its terms is 45. Find its common ratio.
 
-**(1)** 1/3  **(2)** 2/3  **(3)** 1/2  **(4)** 3/4
+**(1)** 1/3  **(2)** 1/2  **(3)** 2/3  **(4)** 3/4
 
-**Answer: (2) 2/3**
+**Answer: (3) 2/3**
 
 **Solution.**
 Let the first term be $a$ and common ratio $r$ with $|r| < 1$.
@@ -308,9 +308,9 @@ $$5(1-r) = 1+r \;\Longrightarrow\; 5 - 5r = 1 + r \;\Longrightarrow\; 6r = 4 \;\
 
 The arithmetic mean of two numbers is 5 and their harmonic mean is 3.2. Find the numbers.
 
-**(1)** 2 and 8  **(2)** 3 and 7  **(3)** 4 and 6  **(4)** 1 and 9
+**(1)** 3 and 7  **(2)** 2 and 8  **(3)** 4 and 6  **(4)** 1 and 9
 
-**Answer: (1) 2 and 8**
+**Answer: (2) 2 and 8**
 
 **Solution.**
 For two positive numbers $a$ and $b$, the three classical means satisfy
@@ -409,9 +409,9 @@ $$\text{Sum} = 10 \times (-1) = -10$$
 
 If $\log_2 x + \log_4 x = 6$, find $x$.
 
-**(1)** 8  **(2)** 16  **(3)** 32  **(4)** 64
+**(1)** 8  **(2)** 64  **(3)** 32  **(4)** 16
 
-**Answer: (2) 16**
+**Answer: (4) 16**
 
 **Solution.**
 Convert everything to base 2 using $\log_{b^k} x = \frac{1}{k}\log_b x$:
@@ -433,9 +433,9 @@ $$x = 2^4 = 16$$
 
 The 4th term of a harmonic progression is 1/5 and its 8th term is 1/9. Find its 12th term.
 
-**(1)** 1/11  **(2)** 1/13  **(3)** 1/15  **(4)** 1/12
+**(1)** 1/11  **(2)** 1/15  **(3)** 1/13  **(4)** 1/12
 
-**Answer: (2) 1/13**
+**Answer: (3) 1/13**
 
 **Solution.**
 By definition, a sequence is an HP precisely when the reciprocals of its terms form an AP. So build the AP of reciprocals:
@@ -461,9 +461,9 @@ Therefore the 12th term of the HP is the reciprocal: $\boxed{1/13}$.
 
 From the top of a viewpoint 60 m high, the angles of depression of the top and the bottom of a flagpole standing on the same horizontal plane are 30° and 45° respectively. Find the height of the flagpole.
 
-**(1)** $60\left(1 - \frac{1}{\sqrt{3}}\right)$ m  **(2)** $60(\sqrt{3} - 1)$ m  **(3)** $30\sqrt{3}$ m  **(4)** $20\sqrt{3}$ m
+**(1)** $30\sqrt{3}$ m  **(2)** $60(\sqrt{3} - 1)$ m  **(3)** $60\left(1 - \frac{1}{\sqrt{3}}\right)$ m  **(4)** $20\sqrt{3}$ m
 
-**Answer: (1) $60\left(1 - \frac{1}{\sqrt{3}}\right)$ m ≈ 25.36 m**
+**Answer: (3) $60\left(1 - \frac{1}{\sqrt{3}}\right)$ m ≈ 25.36 m**
 
 **Solution.**
 Set up the geometry. Let the viewpoint be $AB$ with $A$ at the top, $AB = 60$ m. Let the flagpole be $CD$ standing on the same ground line, at horizontal distance $d$ from the viewpoint.
@@ -491,9 +491,9 @@ Numerically, $h \approx 60(1 - 0.5774) = 60 \times 0.4226 \approx 25.36$ m.
 
 If $\cos 6x = a\cos^6 x + b\cos^4 x + c\cos^2 x + d$ holds for every real $x$, find the value of $a + b + c$.
 
-**(1)** 0  **(2)** 2  **(3)** 4  **(4)** −2
+**(1)** 2  **(2)** 0  **(3)** 4  **(4)** −2
 
-**Answer: (2) 2**
+**Answer: (1) 2**
 
 **Solution.**
 The expansion of $\cos 6x$ in powers of $\cos x$ is the Chebyshev polynomial $T_6$:
@@ -525,9 +525,9 @@ Therefore $a + b + c = 1 - d = 1 - (-1) = 2$.
 
 Evaluate $\cos^{-1}\left(\cos\left(-\frac{5\pi}{6}\right)\right) + \sin^{-1}\left(\sin\frac{7\pi}{6}\right)$.
 
-**(1)** $\frac{2\pi}{3}$  **(2)** $\frac{\pi}{3}$  **(3)** $\pi$  **(4)** $\frac{\pi}{2}$
+**(1)** $\frac{\pi}{2}$  **(2)** $\frac{\pi}{3}$  **(3)** $\pi$  **(4)** $\frac{2\pi}{3}$
 
-**Answer: (1) $\frac{2\pi}{3}$**
+**Answer: (4) $\frac{2\pi}{3}$**
 
 **Solution.**
 The trap here is assuming $\cos^{-1}(\cos\theta) = \theta$. That holds only when $\theta$ lies in the principal range.
@@ -590,9 +590,9 @@ The second root is **extraneous** — it was introduced by taking tangent, which
 
 In a triangle $ABC$, the sides are $a = 5$, $b = 7$ and $c = 8$. Find $\cos C$.
 
-**(1)** 1/7  **(2)** 1/5  **(3)** 2/7  **(4)** 3/7
+**(1)** 3/7  **(2)** 1/5  **(3)** 2/7  **(4)** 1/7
 
-**Answer: (1) 1/7**
+**Answer: (4) 1/7**
 
 **Solution.**
 Apply the law of cosines, taking care to use the side *opposite* to angle $C$, which is $c$:
@@ -610,9 +610,9 @@ $$\cos C = \frac{25 + 49 - 64}{2 \times 5 \times 7} = \frac{10}{70} = \frac{1}{7
 
 The maximum value of $\sin x + \sin(x+1)$ is $k\cos\left(\frac{1}{2}\right)$. Find $k$.
 
-**(1)** 1  **(2)** 2  **(3)** $\sqrt{2}$  **(4)** 1/2
+**(1)** 1  **(2)** $\sqrt{2}$  **(3)** 2  **(4)** 1/2
 
-**Answer: (2) 2**
+**Answer: (3) 2**
 
 **Solution.**
 Use the sum-to-product identity:
@@ -670,12 +670,15 @@ Hence $x = \sqrt{3}\,y$.
 
 Segments of the lines $2x + 3y = 1$ and $4x - 3y = 11$ are diameters of a circle whose area is $49\pi$ square units. Find the equation of the circle.
 
-**(1)** $(x-2)^2 + (y+1)^2 = 49$
-**(2)** $(x+2)^2 + (y-1)^2 = 49$
+**(1)** $(x+2)^2 + (y-1)^2 = 49$
+
+**(2)** $(x-2)^2 + (y+1)^2 = 49$
+
 **(3)** $(x-2)^2 + (y+1)^2 = 7$
+
 **(4)** $(x-1)^2 + (y+2)^2 = 49$
 
-**Answer: (1) $(x-2)^2 + (y+1)^2 = 49$**
+**Answer: (2) $(x-2)^2 + (y+1)^2 = 49$**
 
 **Solution.**
 **Step 1 — find the centre.**
@@ -704,9 +707,9 @@ $$(x - 2)^2 + (y + 1)^2 = 49$$
 
 A triangle has a vertex at $(1, 2)$, and the midpoints of the two sides through that vertex are $(-1, 1)$ and $(2, 3)$. Find the area of the triangle.
 
-**(1)** 2  **(2)** 4  **(3)** 6  **(4)** 8
+**(1)** 8  **(2)** 4  **(3)** 6  **(4)** 2
 
-**Answer: (1) 2 square units**
+**Answer: (4) 2 square units**
 
 **Solution.**
 **Step 1 — recover the other two vertices.**
@@ -759,12 +762,15 @@ $$y(4) = 2(2)(x + 2) \;\Longrightarrow\; 4y = 4x + 8 \;\Longrightarrow\; y = x +
 
 The eccentricity of an ellipse centred at the origin is 1/2, and one of its directrices is the line $x = -4$. Find its equation.
 
-**(1)** $\frac{x^2}{4} + \frac{y^2}{3} = 1$
+**(1)** $\frac{x^2}{4} + \frac{y^2}{2} = 1$
+
 **(2)** $\frac{x^2}{16} + \frac{y^2}{12} = 1$
-**(3)** $\frac{x^2}{4} + \frac{y^2}{2} = 1$
+
+**(3)** $\frac{x^2}{4} + \frac{y^2}{3} = 1$
+
 **(4)** $\frac{x^2}{3} + \frac{y^2}{4} = 1$
 
-**Answer: (1) $\frac{x^2}{4} + \frac{y^2}{3} = 1$**
+**Answer: (3) $\frac{x^2}{4} + \frac{y^2}{3} = 1$**
 
 **Solution.**
 For an ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ with $a > b$, the directrices are $x = \pm\frac{a}{e}$.
@@ -787,12 +793,15 @@ $$\frac{x^2}{4} + \frac{y^2}{3} = 1$$
 
 A circle of radius 3 lies in the first quadrant and touches both coordinate axes. Find its equation.
 
-**(1)** $x^2 + y^2 - 6x - 6y + 9 = 0$
-**(2)** $x^2 + y^2 - 3x - 3y + 9 = 0$
+**(1)** $x^2 + y^2 - 3x - 3y + 9 = 0$
+
+**(2)** $x^2 + y^2 - 6x - 6y + 9 = 0$
+
 **(3)** $x^2 + y^2 - 6x - 6y = 0$
+
 **(4)** $x^2 + y^2 + 6x + 6y + 9 = 0$
 
-**Answer: (1) $x^2 + y^2 - 6x - 6y + 9 = 0$**
+**Answer: (2) $x^2 + y^2 - 6x - 6y + 9 = 0$**
 
 **Solution.**
 A circle that touches both axes has its centre equidistant from both, at distance equal to the radius. In the first quadrant this means the centre is $(r, r) = (3, 3)$.
@@ -815,9 +824,9 @@ $$x^2 + y^2 - 6x - 6y + 9 = 0$$
 
 Let $(x_0, y_0)$ be a point with integer coordinates lying on the line $8x - 3y = 11$ and equidistant from both coordinate axes. Find $x_0 + y_0$.
 
-**(1)** 0  **(2)** 2  **(3)** −2  **(4)** 11
+**(1)** 2  **(2)** 0  **(3)** −2  **(4)** 11
 
-**Answer: (1) 0**
+**Answer: (2) 0**
 
 **Solution.**
 "Equidistant from both coordinate axes" means $|x| = |y|$, so the point lies on one of the two lines $y = x$ or $y = -x$. Test each against $8x - 3y = 11$.
@@ -842,12 +851,15 @@ $$x_0 + y_0 = 1 + (-1) = 0$$
 
 On the set $\{1, 2, 3, \dots, 12\}$, define a relation $\sim$ by: $a \sim b$ if and only if $a - b$ is divisible by 3. Then $\sim$ is
 
-**(1)** reflexive and symmetric but not transitive
-**(2)** an equivalence relation with 3 equivalence classes
+**(1)** an equivalence relation with 3 equivalence classes
+
+**(2)** reflexive and symmetric but not transitive
+
 **(3)** an equivalence relation with 4 equivalence classes
+
 **(4)** not reflexive
 
-**Answer: (2) an equivalence relation with 3 equivalence classes**
+**Answer: (1) an equivalence relation with 3 equivalence classes**
 
 **Solution.**
 Check the three defining properties.
@@ -871,7 +883,7 @@ Hence **3 equivalence classes**.
 > **Compare with NIMCET 2026 Q24**, which defined $a \sim b$ if $a - 2b$ is divisible by 3. That relation is *not* reflexive, because $a - 2a = -a$ is divisible by 3 only when $3 \mid a$. Read the definition carefully — a one-character change flips the answer.
 
 **Difficulty:** Medium · **P = 0.78**
-**Why predicted:** Sets, Relations & Functions rose from a 19-year mean of 3.3 to 7 questions in 2026 — it is one of the two topics that absorbed the deleted Vectors slots. Divisibility-defined relations were tested directly (2026 Q24, Q27; 2025 Q46).
+**Why predicted:** Sets, Relations & Functions had 6 questions in 2026, well above its 19-year mean of 3.1. Divisibility-defined relations were tested directly (2026 Q24, Q27; 2025 Q46).
 
 ---
 
@@ -879,9 +891,9 @@ Hence **3 equivalence classes**.
 
 Find the number of onto (surjective) functions from a set with 4 elements to a set with 3 elements.
 
-**(1)** 36  **(2)** 24  **(3)** 81  **(4)** 64
+**(1)** 81  **(2)** 24  **(3)** 36  **(4)** 64
 
-**Answer: (1) 36**
+**Answer: (3) 36**
 
 **Solution.**
 Use inclusion–exclusion. The number of onto functions from an $m$-element set to an $n$-element set is
@@ -909,9 +921,9 @@ $$6 \times 6 = 36 \;\checkmark$$
 
 If 4 sets are drawn in a Venn diagram in general position, find the number of distinct regions formed, including the region outside all four sets.
 
-**(1)** 8  **(2)** 15  **(3)** 16  **(4)** 32
+**(1)** 8  **(2)** 15  **(3)** 32  **(4)** 16
 
-**Answer: (3) 16**
+**Answer: (4) 16**
 
 **Solution.**
 Each of the four sets independently either contains a given point or does not. A region of the Venn diagram is exactly one membership pattern — one choice of "in or out" for each of the 4 sets:
@@ -952,9 +964,9 @@ $$n(A \cap B) = 55 - 45 = 10$$
 
 If $f(x) = \dfrac{2x + 3}{x - 1}$ for $x \ne 1$, find $f^{-1}(5)$.
 
-**(1)** 8/3  **(2)** 3/8  **(3)** 2  **(4)** 5/3
+**(1)** 2  **(2)** 3/8  **(3)** 8/3  **(4)** 5/3
 
-**Answer: (1) 8/3**
+**Answer: (3) 8/3**
 
 **Solution.**
 $f^{-1}(5)$ is the value of $x$ for which $f(x) = 5$. There is no need to construct the whole inverse function.
@@ -975,9 +987,9 @@ $$8 = 3x \;\Longrightarrow\; x = \frac{8}{3}$$
 
 A fair die is rolled twice independently. Find the probability that the first roll shows a number not less than 4, **or** the two rolls sum to 8.
 
-**(1)** 5/9  **(2)** 1/2  **(3)** 2/3  **(4)** 11/18
+**(1)** 11/18  **(2)** 1/2  **(3)** 2/3  **(4)** 5/9
 
-**Answer: (1) 5/9**
+**Answer: (4) 5/9**
 
 **Solution.**
 The sample space has $6 \times 6 = 36$ equally likely outcomes.
@@ -997,7 +1009,7 @@ Apply the addition rule:
 
 $$P(E \cup F) = \frac{18 + 5 - 3}{36} = \frac{20}{36} = \frac{5}{9}$$
 
-*The whole question hinges on not forgetting to subtract the overlap — option (4) 11/18 = 22/36 is what you get if you subtract nothing.*
+*The whole question hinges on not forgetting to subtract the overlap — option (1) 11/18 = 22/36 is what you get if you subtract nothing.*
 
 **Difficulty:** Medium · **P = 0.80**
 **Why predicted:** Probability appears in all 19 papers. NIMCET 2026 Q115 used this exact "either … or …" framing with a die rolled twice.
@@ -1061,9 +1073,9 @@ $$= p^2 + (1-p)^2 = \left(\frac{1}{3}\right)^2 + \left(\frac{2}{3}\right)^2 = \f
 
 Urn A contains 3 red and 2 white balls. Urn B contains 2 red and 3 white balls. An urn is chosen at random and one ball is drawn from it; the ball is red. Find the probability that urn A was the one chosen.
 
-**(1)** 3/5  **(2)** 2/5  **(3)** 1/2  **(4)** 3/10
+**(1)** 1/2  **(2)** 2/5  **(3)** 3/5  **(4)** 3/10
 
-**Answer: (1) 3/5**
+**Answer: (3) 3/5**
 
 **Solution.**
 Let $R$ denote "the drawn ball is red".
@@ -1087,9 +1099,9 @@ $$P(A \mid R) = \frac{P(A)P(R\mid A)}{P(R)} = \frac{3/10}{1/2} = \frac{3}{10}\ti
 
 Five fair coins are tossed simultaneously. Find the probability of getting exactly 3 heads.
 
-**(1)** 5/16  **(2)** 3/16  **(3)** 1/2  **(4)** 5/32
+**(1)** 3/16  **(2)** 5/16  **(3)** 1/2  **(4)** 5/32
 
-**Answer: (1) 5/16**
+**Answer: (2) 5/16**
 
 **Solution.**
 This is a binomial experiment with $n = 5$ trials and success probability $p = \frac{1}{2}$.
@@ -1113,9 +1125,9 @@ For the grouped frequency distribution below, find the mean (to one decimal plac
 |---|---|---|---|---|---|---|
 | Number of students | 8 | 14 | 20 | 18 | 10 | 6 |
 
-**(1)** 32.1  **(2)** 34.2  **(3)** 35.6  **(4)** 33.0
+**(1)** 32.1  **(2)** 33.0  **(3)** 35.6  **(4)** 34.2
 
-**Answer: (2) 34.2**
+**Answer: (4) 34.2**
 
 **Solution.**
 For grouped data, use the class midpoints $x_i$ weighted by the frequencies $f_i$:
@@ -1135,7 +1147,7 @@ $$\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$$
 $$\bar{x} = \frac{2600}{76} = 34.21\ldots \approx 34.2$$
 
 **Difficulty:** Easy–Medium · **P = 0.72**
-**Why predicted:** Statistics is the **only** Math topic with a statistically significant rising trend (Mann-Kendall $\tau = +0.57$, $p = 0.002$). A grouped-frequency table appeared in 2026 Q33, 2023 Q108 and 2021 Q80.
+**Why predicted:** Statistics is the **only** topic whose rising trend survives a multiple-testing correction (6 questions in 2026). A grouped-frequency table appeared in 2026 Q33, 2023 Q108 and 2021 Q80.
 
 ---
 
@@ -1143,9 +1155,9 @@ $$\bar{x} = \frac{2600}{76} = 34.21\ldots \approx 34.2$$
 
 The distances (in metres) recorded in seven throws by a shot-putter are 14.5, 15.2, 16.8, 17.1, 15.9, 16.3 and 14.7. Find the sample mean.
 
-**(1)** 15.79  **(2)** 16.10  **(3)** 15.50  **(4)** 16.45
+**(1)** 15.50  **(2)** 16.10  **(3)** 15.79  **(4)** 16.45
 
-**Answer: (1) 15.79 m**
+**Answer: (3) 15.79 m**
 
 **Solution.**
 Add the seven observations:
@@ -1170,9 +1182,9 @@ $$\bar{x} = \frac{110.5}{7} = 15.7857\ldots \approx 15.79$$
 
 An investigator lost one observation while collecting data. The four remaining values are 10, 12, 15 and 18, and the mean of all five observations is 14. Find the missing value.
 
-**(1)** 12  **(2)** 14  **(3)** 15  **(4)** 16
+**(1)** 12  **(2)** 15  **(3)** 14  **(4)** 16
 
-**Answer: (3) 15**
+**Answer: (2) 15**
 
 **Solution.**
 Let the missing value be $x$. The mean of all five observations is 14, so their total is
@@ -1196,9 +1208,9 @@ $$x = 70 - 55 = 15$$
 
 Find the number of permutations of the letters of the word **BANGLORE** in which the block **ANGLE** appears together, in that exact order.
 
-**(1)** 24  **(2)** 120  **(3)** 720  **(4)** 48
+**(1)** 48  **(2)** 120  **(3)** 720  **(4)** 24
 
-**Answer: (1) 24**
+**Answer: (4) 24**
 
 **Solution.**
 **Step 1 — check the letters.** BANGLORE has 8 letters: B, A, N, G, L, O, R, E — all distinct.
@@ -1224,9 +1236,9 @@ Since the block's internal order is fixed by the question, the answer is **24**.
 
 How many 3-digit numbers formed using distinct digits chosen from $\{1, 2, 3, 4, 5\}$ are divisible by 6?
 
-**(1)** 6  **(2)** 8  **(3)** 10  **(4)** 12
+**(1)** 8  **(2)** 6  **(3)** 10  **(4)** 12
 
-**Answer: (2) 8**
+**Answer: (1) 8**
 
 **Solution.**
 A number is divisible by 6 exactly when it is divisible by **both 2 and 3**.
@@ -1269,9 +1281,9 @@ Four qualifying subsets: {1,2,3}, {1,3,5}, {2,3,4}, {3,4,5}.
 
 From 6 men and 4 women, a committee of 4 people is to be formed containing at least 2 women. Find the number of ways.
 
-**(1)** 115  **(2)** 120  **(3)** 105  **(4)** 90
+**(1)** 120  **(2)** 115  **(3)** 105  **(4)** 90
 
-**Answer: (1) 115**
+**Answer: (2) 115**
 
 **Solution.**
 "At least 2 women" means exactly 2, exactly 3, or exactly 4 women. Count each case and add.
@@ -1301,9 +1313,9 @@ Find the value of the following determinant at $x = 2027$:
 
 $$\begin{vmatrix} x & x+1 & x+3 \\ x+1 & x+3 & x+6 \\ x+3 & x+6 & x+10 \end{vmatrix}$$
 
-**(1)** −1  **(2)** 0  **(3)** 1  **(4)** 2027
+**(1)** 1  **(2)** 0  **(3)** −1  **(4)** 2027
 
-**Answer: (1) −1**
+**Answer: (3) −1**
 
 **Solution.**
 Do not expand directly. Use row operations, which leave the determinant unchanged.
@@ -1341,9 +1353,9 @@ $$B = \begin{pmatrix} -1 & -1 & 2 \\ 0 & -1 & -1 \\ 0 & 0 & -1 \end{pmatrix}$$
 
 find the sum of all the entries of $B^2$.
 
-**(1)** 2  **(2)** 4  **(3)** −1  **(4)** 0
+**(1)** 4  **(2)** 2  **(3)** −1  **(4)** 0
 
-**Answer: (2) 4**
+**Answer: (1) 4**
 
 **Solution.**
 Compute $B^2 = B \times B$ row by row.
@@ -1378,9 +1390,9 @@ $$1 + 2 - 3 + 0 + 1 + 2 + 0 + 0 + 1 = 4$$
 
 Evaluate $\displaystyle \lim_{x\to 0}\frac{\tan x - x}{x - \sin x}$.
 
-**(1)** 1  **(2)** 1/2  **(3)** 2  **(4)** 3
+**(1)** 1  **(2)** 1/2  **(3)** 3  **(4)** 2
 
-**Answer: (3) 2**
+**Answer: (4) 2**
 
 **Solution.**
 Both numerator and denominator → 0, so expand in series about $x = 0$:
@@ -1403,9 +1415,9 @@ $$\lim_{x\to 0}\frac{\tan x - x}{x - \sin x} = \frac{1/3}{1/6} = 2$$
 
 Find the remainder when $7^{100}$ is divided by 5.
 
-**(1)** 1  **(2)** 2  **(3)** 3  **(4)** 4
+**(1)** 3  **(2)** 2  **(3)** 1  **(4)** 4
 
-**Answer: (1) 1**
+**Answer: (3) 1**
 
 **Solution.**
 Work modulo 5.
@@ -1434,9 +1446,9 @@ The remainder is **1**.
 
 Find the value of $(1 + i)^8$, where $i = \sqrt{-1}$.
 
-**(1)** 16  **(2)** −16  **(3)** $16i$  **(4)** 8
+**(1)** 8  **(2)** −16  **(3)** $16i$  **(4)** 16
 
-**Answer: (1) 16**
+**Answer: (4) 16**
 
 **Solution.**
 Square first — it collapses immediately:
@@ -1469,9 +1481,9 @@ $$(1+i)^8 = \left[(1+i)^2\right]^4 = (2i)^4 = 2^4 \cdot i^4 = 16 \times 1 = 16$$
 
 Five boxes labelled P, Q, R, S and T are stacked one above the other. R is above S but below Q. T is at the bottom. P is just above Q. Which box is exactly in the middle of the stack?
 
-**(1)** Q  **(2)** R  **(3)** S  **(4)** P
+**(1)** R  **(2)** Q  **(3)** S  **(4)** P
 
-**Answer: (2) R**
+**Answer: (1) R**
 
 **Solution.**
 Take the clues one at a time and build the stack from the top down.
@@ -1493,7 +1505,7 @@ Combining, the chain is P → Q → R → S, with T beneath everything:
 Five boxes means the middle is position 3, which holds **R**.
 
 **Difficulty:** Easy · **P = 0.82**
-**Why predicted:** NIMCET 2026 Q95 used an identical five-box stack. Puzzles are the largest Reasoning topic. Note the significant *declining* trend ($\tau = -0.44$, $p = 0.012$) — from 19 per paper in 2008 to about 7 now — so expect roughly 10, not 19.
+**Why predicted:** NIMCET 2026 Q95 used an identical five-box stack. Puzzles are the largest Reasoning topic. Puzzles ran about 20 per paper in 2008–10 and 7–12 in 2023–26 (the decline is not statistically reliable after correction), so expect roughly 8, not 19.
 
 ---
 
@@ -1537,9 +1549,9 @@ Third from the left is **Y**.
 
 Six files in a directory are labelled P, Q, R, S, T and U. Exactly two of them are read-only. R is read-only. S is not read-only. If T is read-only, then U is not. U is read-only. Which file is the second read-only file?
 
-**(1)** P  **(2)** Q  **(3)** T  **(4)** U
+**(1)** P  **(2)** Q  **(3)** U  **(4)** T
 
-**Answer: (4) U**
+**Answer: (3) U**
 
 **Solution.**
 Work through the statements in order:
@@ -1563,9 +1575,9 @@ Given that R was named first, the second read-only file is **U**.
 
 Seven content creators A, B, C, D, E, F and G are divided into three teams of sizes 3, 2 and 2. A and B are on the same team. E and G together form one of the two-member teams. C is on the largest team. C and D are not on the same team. Which creators form the three-member team?
 
-**(1)** A, B, C  **(2)** A, B, D  **(3)** C, D, F  **(4)** A, B, F
+**(1)** A, B, D  **(2)** A, B, C  **(3)** C, D, F  **(4)** A, B, F
 
-**Answer: (1) A, B, C**
+**Answer: (2) A, B, C**
 
 **Solution.**
 **Step 1 — fix the known team.**
@@ -1601,9 +1613,9 @@ The leftover pair is {D, F}, which is a valid two-member team. Check every const
 
 In a family of six persons A, B, C, D, E and F, there are exactly two married couples. D is the grandmother of A and the mother of B. C is the wife of B and the mother of F. F is the granddaughter of E. A is the brother of F. How many male members are there in the family?
 
-**(1)** 2  **(2)** 3  **(3)** 4  **(4)** cannot be determined
+**(1)** 3  **(2)** 2  **(3)** 4  **(4)** cannot be determined
 
-**Answer: (2) 3**
+**Answer: (1) 3**
 
 **Solution.**
 Deduce each person's gender and generation.
@@ -1642,11 +1654,14 @@ Deduce each person's gender and generation.
 Nine candidates R, S, T, U, V, W, X, Y and Z serve on three committees of three members each. No candidate serves on more than one committee. R and S are on the same committee. T is not on the same committee as U. V is on the same committee as R. Which of the following **must** be true?
 
 **(1)** T and V are on the same committee
-**(2)** R, S and V are on the same committee
-**(3)** U is on the same committee as S
-**(4)** T and W are on different committees
 
-**Answer: (2) R, S and V are on the same committee**
+**(2)** T and W are on different committees
+
+**(3)** U is on the same committee as S
+
+**(4)** R, S and V are on the same committee
+
+**Answer: (4) R, S and V are on the same committee**
 
 **Solution.**
 **Step 1 — chain the two "same committee" clues.**
@@ -1671,9 +1686,9 @@ Each committee holds exactly three members, so {R, S, V} is complete. No one els
 
 Five houses stand in a row, each painted a different colour and occupied by a person of a different profession. The doctor lives in the red house. The teacher lives immediately to the right of the blue house. The green house is at one end of the row. The lawyer lives in the green house. The blue house is second from the left. Who lives in the third house from the left?
 
-**(1)** doctor  **(2)** teacher  **(3)** lawyer  **(4)** cannot be determined
+**(1)** teacher  **(2)** doctor  **(3)** lawyer  **(4)** cannot be determined
 
-**Answer: (2) teacher**
+**Answer: (1) teacher**
 
 **Solution.**
 Number the houses 1 to 5 from the left.
@@ -1703,9 +1718,9 @@ That already answers the question. The remaining clues are consistency checks an
 
 A caterpillar climbs a pole 20 metres high. Each day it climbs 5 metres, and each night it slips back 3 metres. On which day does it first reach the top?
 
-**(1)** day 8  **(2)** day 9  **(3)** day 10  **(4)** day 7
+**(1)** day 8  **(2)** day 10  **(3)** day 9  **(4)** day 7
 
-**Answer: (2) day 9**
+**Answer: (3) day 9**
 
 **Solution.**
 The trap in this question is to divide 20 by the net gain of 2 metres per day and answer "day 10". That over-counts, because **on the final day the caterpillar reaches the top and never slips back.**
@@ -1738,9 +1753,9 @@ The caterpillar first reaches the top on **day 9**.
 
 In a class, a student ranks 35th from the top and 32nd from the bottom. How many students are in the class?
 
-**(1)** 66  **(2)** 67  **(3)** 65  **(4)** 68
+**(1)** 68  **(2)** 67  **(3)** 65  **(4)** 66
 
-**Answer: (1) 66**
+**Answer: (4) 66**
 
 **Solution.**
 The standard formula is
@@ -1792,9 +1807,9 @@ After three steps, $X = \mathbf{12}$.
 
 The sum of three numbers is 98. The ratio of the first to the second is 2 : 3, and the ratio of the second to the third is 5 : 8. Find the second number.
 
-**(1)** 30  **(2)** 20  **(3)** 48  **(4)** 15
+**(1)** 48  **(2)** 20  **(3)** 30  **(4)** 15
 
-**Answer: (1) 30**
+**Answer: (3) 30**
 
 **Solution.**
 **Step 1 — link the two ratios through the common term.**
@@ -1854,9 +1869,9 @@ $$\frac{r}{100 + r} \times 100 = \frac{25}{125}\times 100 = 20\%$$
 
 Five years ago, A was three times as old as B. Now A is twice as old as B. What is A's present age?
 
-**(1)** 20 years  **(2)** 15 years  **(3)** 30 years  **(4)** 25 years
+**(1)** 25 years  **(2)** 15 years  **(3)** 30 years  **(4)** 20 years
 
-**Answer: (1) 20 years**
+**Answer: (4) 20 years**
 
 **Solution.**
 Let A's present age be $a$ and B's present age be $b$.
@@ -1886,9 +1901,9 @@ Therefore $a = 2(10) = 20$.
 
 Two containers A and B of equal volume are completely filled. Container A holds alcohol and water in the ratio 5 : 3, and container B holds them in the ratio 1 : 3. Both containers are emptied into a third container. Find the ratio of alcohol to water in the mixture.
 
-**(1)** 7 : 9  **(2)** 3 : 5  **(3)** 5 : 11  **(4)** 1 : 2
+**(1)** 3 : 5  **(2)** 7 : 9  **(3)** 5 : 11  **(4)** 1 : 2
 
-**Answer: (1) 7 : 9**
+**Answer: (2) 7 : 9**
 
 **Solution.**
 Because the two containers have **equal volume**, work with fractions of one unit volume each.
@@ -1918,9 +1933,9 @@ $$\text{alcohol : water} = \frac{7}{8} : \frac{9}{8} = \mathbf{7 : 9}$$
 
 An examination consists of 160 questions. One mark is awarded for each correct answer and one-quarter mark is deducted for each wrong answer. A candidate attempts every question and scores 100 marks. How many answers were correct?
 
-**(1)** 112  **(2)** 108  **(3)** 120  **(4)** 100
+**(1)** 120  **(2)** 108  **(3)** 112  **(4)** 100
 
-**Answer: (1) 112**
+**Answer: (3) 112**
 
 **Solution.**
 Let $c$ be the number of correct answers. Since all 160 questions were attempted, the number of wrong answers is $160 - c$.
@@ -1991,9 +2006,9 @@ $$P_2 = 5520, \qquad P_3 = 5280, \qquad P_4 = \mathbf{5060}$$
 
 What is the next number in the sequence: 72, 69, 66, 63, …?
 
-**(1)** 60  **(2)** 61  **(3)** 59  **(4)** 62
+**(1)** 62  **(2)** 61  **(3)** 59  **(4)** 60
 
-**Answer: (1) 60**
+**Answer: (4) 60**
 
 **Solution.**
 Take successive differences:
@@ -2013,9 +2028,9 @@ $$63 - 3 = \mathbf{60}$$
 
 Find the next term in the sequence: 28, 327, 464, 5125, …?
 
-**(1)** 6216  **(2)** 6196  **(3)** 7216  **(4)** 6256
+**(1)** 6196  **(2)** 6216  **(3)** 7216  **(4)** 6256
 
-**Answer: (1) 6216**
+**Answer: (2) 6216**
 
 **Solution.**
 These are not ordinary numbers — each is a **concatenation**. Split each term into a leading digit and the rest:
@@ -2042,9 +2057,9 @@ The next value of $n$ is 6, and $6^3 = 216$, so the term is $6 \mid 216 = \mathb
 
 Find the missing term: 3, 7, 16, 35, 74, …?
 
-**(1)** 153  **(2)** 148  **(3)** 151  **(4)** 160
+**(1)** 148  **(2)** 153  **(3)** 151  **(4)** 160
 
-**Answer: (1) 153**
+**Answer: (2) 153**
 
 **Solution.**
 Ordinary differences do not settle: $4, 9, 19, 39$. Try a multiplicative recurrence instead — check what must be added after doubling each term:
@@ -2071,9 +2086,9 @@ $$74 \times 2 + 5 = 148 + 5 = \mathbf{153}$$
 
 Complete the letter series: AZ, CX, EV, GT, …?
 
-**(1)** IR  **(2)** IS  **(3)** HR  **(4)** JR
+**(1)** JR  **(2)** IS  **(3)** HR  **(4)** IR
 
-**Answer: (1) IR**
+**Answer: (4) IR**
 
 **Solution.**
 Handle the two letter positions separately.
@@ -2126,9 +2141,9 @@ So the rule is simply **each letter replaced by its position in the alphabet**. 
 
 If **INDIA** is coded as **JLGEF**, how is **ROME** coded?
 
-**(1)** SMPA  **(2)** SQPI  **(3)** SMPI  **(4)** TMPA
+**(1)** SMPI  **(2)** SQPI  **(3)** SMPA  **(4)** TMPA
 
-**Answer: (1) SMPA**
+**Answer: (3) SMPA**
 
 **Solution.**
 **Step 1 — find the shift for each position.**
@@ -2168,9 +2183,9 @@ In a certain language:
 
 Which word means "bad"?
 
-**(1)** dop  **(2)** roz  **(3)** tak  **(4)** fen
+**(1)** tak  **(2)** roz  **(3)** dop  **(4)** fen
 
-**Answer: (1) dop**
+**Answer: (3) dop**
 
 **Solution.**
 Compare the sentences pairwise, matching shared words to shared meanings.
@@ -2195,9 +2210,9 @@ $$\text{dop} = \mathbf{bad}$$
 
 In a certain code, **MOUSE** is written as **PRXVH**. How is **TIGER** written in that code?
 
-**(1)** WLJHU  **(2)** WLJHV  **(3)** VLJHU  **(4)** WKJHU
+**(1)** WKJHU  **(2)** WLJHV  **(3)** VLJHU  **(4)** WLJHU
 
-**Answer: (1) WLJHU**
+**Answer: (4) WLJHU**
 
 **Solution.**
 **Step 1 — find the shift.**
@@ -2273,12 +2288,15 @@ II. No golden-coloured thing is cheap.
 I. All mangoes are cheap.
 II. No mango is cheap.
 
-**(1)** only conclusion I follows
-**(2)** only conclusion II follows
+**(1)** only conclusion II follows
+
+**(2)** only conclusion I follows
+
 **(3)** both conclusions follow
+
 **(4)** neither conclusion follows
 
-**Answer: (2) only conclusion II follows**
+**Answer: (1) only conclusion II follows**
 
 **Solution.**
 Statement I places all mangoes inside the set of golden-coloured things. Statement II says that set is entirely separate from the set of cheap things.
@@ -2310,12 +2328,15 @@ Since mangoes are contained in a set that has **no** overlap with "cheap", no ma
 
 **Conclusion:** No Z is an X.
 
-**(1)** the conclusion follows from (a) and (b) only
-**(2)** the conclusion follows from (b) and (c) only
+**(1)** the conclusion follows from (b) and (c) only
+
+**(2)** the conclusion follows from (a) and (b) only
+
 **(3)** the conclusion follows from all three statements together
+
 **(4)** the conclusion does not follow
 
-**Answer: (1) it follows from (a) and (b) only**
+**Answer: (2) it follows from (a) and (b) only**
 
 **Solution.**
 Trace the minimum set of premises the conclusion actually needs.
@@ -2342,9 +2363,9 @@ Therefore every Z lies inside a region that shares nothing with X, so **no Z is 
 I. The city should widen its main roads and improve public transport.
 II. The city should ban all private vehicles.
 
-**(1)** only I follows  **(2)** only II follows  **(3)** both follow  **(4)** neither follows
+**(1)** only II follows  **(2)** only I follows  **(3)** both follow  **(4)** neither follows
 
-**Answer: (1) only I follows**
+**Answer: (2) only I follows**
 
 **Solution.**
 A course of action "follows" when it is both **relevant** to the stated problem and **practicable** as a response.
@@ -2366,9 +2387,9 @@ Relevant in direction, but disproportionate: an outright ban is not implementabl
 
 Six analysts A, B, C, D, E and F are seated around a circular table facing the centre. A is seated opposite D. B is seated immediately to the right of A. C is seated immediately to the left of D. E is not seated adjacent to A. Who is seated opposite B?
 
-**(1)** E  **(2)** F  **(3)** C  **(4)** D
+**(1)** D  **(2)** F  **(3)** C  **(4)** E
 
-**Answer: (1) E**
+**Answer: (4) E**
 
 **Solution.**
 With six people at a circular table, each person has exactly one person opposite, and the opposite pairs are three positions apart. Number the seats 1 to 6 around the table, so the opposite pairs are 1–4, 2–5 and 3–6.
@@ -2429,9 +2450,9 @@ Combining these two facts directly: **P6 is the son of P1**.
 
 Seven students A, B, C, D, E, F and G sit in a row facing north. D sits exactly in the middle. A sits at the extreme left. B sits immediately to the right of D. C sits at the extreme right. E sits immediately to the left of D. F does not sit adjacent to A. Who sits third to the left of C?
 
-**(1)** D  **(2)** B  **(3)** E  **(4)** G
+**(1)** E  **(2)** B  **(3)** D  **(4)** G
 
-**Answer: (1) D**
+**Answer: (3) D**
 
 **Solution.**
 Number the seats 1 to 7 from the left.
@@ -2470,9 +2491,9 @@ C is at seat 7. Third to the *left* of C means three seats toward the lower numb
 
 Pointing to a woman, Arun says, "She is the daughter of my father's only son." How is the woman related to Arun?
 
-**(1)** daughter  **(2)** sister  **(3)** niece  **(4)** cousin
+**(1)** sister  **(2)** daughter  **(3)** niece  **(4)** cousin
 
-**Answer: (1) daughter**
+**Answer: (2) daughter**
 
 **Solution.**
 Unwrap the description from the inside out — this is always the right order for blood-relation questions.
@@ -2494,12 +2515,15 @@ The woman is therefore Arun's **daughter**.
 
 Mira's mother-in-law's mother is my grandmother. All my mother's children are unmarried to date. Based on this, which of the following is true?
 
-**(1)** Mira is the wife of my aunt's son
-**(2)** Mira is my brother's wife
-**(3)** Mira is my uncle's daughter
-**(4)** Mira is my cousin
+**(1)** Mira is my cousin
 
-**Answer: (1) Mira is the wife of my aunt's son**
+**(2)** Mira is my brother's wife
+
+**(3)** Mira is my uncle's daughter
+
+**(4)** Mira is the wife of my aunt's son
+
+**Answer: (4) Mira is the wife of my aunt's son**
 
 **Solution.**
 **Step 1 — locate Mira's mother-in-law.**
@@ -2569,12 +2593,15 @@ A is two generations below D, and A is male, so A is D's **grandson**.
 
 At what time between 3 o'clock and 4 o'clock do the two hands of a clock coincide?
 
-**(1)** $16\frac{4}{11}$ minutes past 3
+**(1)** 16 minutes past 3
+
 **(2)** 15 minutes past 3
-**(3)** 16 minutes past 3
+
+**(3)** $16\frac{4}{11}$ minutes past 3
+
 **(4)** $17\frac{1}{11}$ minutes past 3
 
-**Answer: (1) $16\frac{4}{11}$ minutes past 3**
+**Answer: (3) $16\frac{4}{11}$ minutes past 3**
 
 **Solution.**
 **Step 1 — establish the two hand speeds.**
@@ -2641,12 +2668,15 @@ Two companies report the following figures for the year:
 
 Which statement is correct?
 
-**(1)** A has a higher profit margin than B
-**(2)** B has a higher profit margin than A
+**(1)** B has a higher profit margin than A
+
+**(2)** A has a higher profit margin than B
+
 **(3)** Both have equal profit margins
+
 **(4)** The profit margin cannot be computed from this data
 
-**Answer: (1) A has a higher profit margin than B**
+**Answer: (2) A has a higher profit margin than B**
 
 **Solution.**
 Profit margin is profit expressed as a percentage of revenue:
@@ -2680,9 +2710,9 @@ Three products have the following composition:
 
 If 200 g of A, 100 g of B and 200 g of C are mixed, what is the protein content of the mixture?
 
-**(1)** 24%  **(2)** 25%  **(3)** 23%  **(4)** 22%
+**(1)** 22%  **(2)** 25%  **(3)** 23%  **(4)** 24%
 
-**Answer: (1) 24%**
+**Answer: (4) 24%**
 
 **Solution.**
 This is a weighted average — weight each product's percentage by the **mass** used, not by the number of products.
@@ -2713,9 +2743,9 @@ $$\frac{120}{500}\times 100 = 24\%$$
 
 Vikram starts from a point and walks 18 metres towards the west. He then turns left and walks 14 metres. After that he turns left again and walks 18 metres. How far is he from his starting point, and in which direction?
 
-**(1)** 14 m south  **(2)** 14 m north  **(3)** 32 m south  **(4)** 18 m south
+**(1)** 14 m north  **(2)** 14 m south  **(3)** 32 m south  **(4)** 18 m south
 
-**Answer: (1) 14 metres south**
+**Answer: (2) 14 metres south**
 
 **Solution.**
 Track each leg, remembering that "turn left" is relative to the direction currently being faced.
@@ -2750,9 +2780,9 @@ He is **14 metres south** of where he started.
 
 Choose the odd one out.
 
-**(1)** Sonnet  **(2)** Ode  **(3)** Elegy  **(4)** Novel
+**(1)** Novel  **(2)** Ode  **(3)** Elegy  **(4)** Sonnet
 
-**Answer: (4) Novel**
+**Answer: (1) Novel**
 
 **Solution.**
 Identify the category each item belongs to:
@@ -2782,9 +2812,9 @@ Three of the four are forms of **poetry**; the novel is prose. **Novel** is the 
 
 What is the decimal equivalent of the 8-bit two's complement number `11010011`?
 
-**(1)** −45  **(2)** −43  **(3)** 211  **(4)** −44
+**(1)** 211  **(2)** −43  **(3)** −45  **(4)** −44
 
-**Answer: (1) −45**
+**Answer: (3) −45**
 
 **Solution.**
 **Step 1 — read the sign bit.**
@@ -2816,9 +2846,9 @@ $$-128 + 64 + 0 + 16 + 0 + 0 + 2 + 1 = -128 + 83 = -45 \;\checkmark$$
 
 In a 9-bit two's complement system, what is the range of representable integers?
 
-**(1)** −256 to +255  **(2)** −255 to +255  **(3)** −256 to +256  **(4)** −512 to +511
+**(1)** −512 to +511  **(2)** −255 to +255  **(3)** −256 to +256  **(4)** −256 to +255
 
-**Answer: (1) −256 to +255**
+**Answer: (4) −256 to +255**
 
 **Solution.**
 For an $n$-bit two's complement system the range is
@@ -2840,9 +2870,9 @@ $$-2^8 = -256 \quad \text{to} \quad 2^8 - 1 = 255$$
 
 Multiply the binary numbers `1100` and `1011`. The product in binary is
 
-**(1)** `10000100`  **(2)** `10000010`  **(3)** `1000100`  **(4)** `10001100`
+**(1)** `10001100`  **(2)** `10000010`  **(3)** `1000100`  **(4)** `10000100`
 
-**Answer: (1) `10000100`**
+**Answer: (4) `10000100`**
 
 **Solution.**
 **Fast route — convert, multiply, convert back.**
@@ -2877,9 +2907,9 @@ $$132 = 10000100_2$$
 
 What is the hexadecimal representation of the decimal number 265?
 
-**(1)** `109`  **(2)** `10A`  **(3)** `119`  **(4)** `FF`
+**(1)** `10A`  **(2)** `109`  **(3)** `119`  **(4)** `FF`
 
-**Answer: (1) `109`**
+**Answer: (2) `109`**
 
 **Solution.**
 **Method 1 — repeated division by 16.**
@@ -2949,9 +2979,9 @@ $$\boxed{x + y'z'}$$
 
 For the Boolean expression $(A \oplus B) \cdot (B \rightarrow C)$, how many rows of the 3-variable truth table evaluate to 1?
 
-**(1)** 3  **(2)** 2  **(3)** 4  **(4)** 5
+**(1)** 4  **(2)** 2  **(3)** 3  **(4)** 5
 
-**Answer: (1) 3**
+**Answer: (3) 3**
 
 **Solution.**
 Recall the two operators:
@@ -2982,9 +3012,9 @@ Recall the two operators:
 
 Which logic gate outputs 1 only when its two inputs differ?
 
-**(1)** XOR  **(2)** XNOR  **(3)** NAND  **(4)** NOR
+**(1)** NOR  **(2)** XNOR  **(3)** NAND  **(4)** XOR
 
-**Answer: (1) XOR**
+**Answer: (4) XOR**
 
 **Solution.**
 Compare the four truth tables:
@@ -3012,9 +3042,9 @@ The others:
 
 What is the minimum number of 2-input NAND gates required to implement a 2-input XOR gate?
 
-**(1)** 4  **(2)** 3  **(3)** 5  **(4)** 2
+**(1)** 3  **(2)** 4  **(3)** 5  **(4)** 2
 
-**Answer: (1) 4**
+**Answer: (2) 4**
 
 **Solution.**
 NAND is a **universal gate**, so any Boolean function can be built from NANDs alone. The standard minimal XOR construction uses four.
@@ -3085,12 +3115,15 @@ $$21 + 0.65625 = \mathbf{21.65625}$$
 
 In 8-bit two's complement arithmetic, compute `10011001 + 01110111`. What is the result?
 
-**(1)** `00010000` with no overflow
+**(1)** `10010000`
+
 **(2)** `00010000` with overflow
-**(3)** `10010000`
+
+**(3)** `00010000` with no overflow
+
 **(4)** `11110000`
 
-**Answer: (1) `00010000` with no overflow**
+**Answer: (3) `00010000` with no overflow**
 
 **Solution.**
 **Step 1 — interpret the operands as signed values.**
@@ -3126,9 +3159,9 @@ Overflow in two's complement occurs **only** when two operands of the *same* sig
 
 A CPU uses a 16-bit instruction format. If 4 bits are used for the opcode and the remaining bits specify a single memory operand, what is the maximum directly addressable memory?
 
-**(1)** 4 K words  **(2)** 8 K words  **(3)** 64 K words  **(4)** 1 K words
+**(1)** 8 K words  **(2)** 4 K words  **(3)** 64 K words  **(4)** 1 K words
 
-**Answer: (1) 4 K words**
+**Answer: (2) 4 K words**
 
 **Solution.**
 **Step 1 — count the address bits.**
@@ -3153,12 +3186,15 @@ $$2^{12} = 4096 = 4\text{K words}$$
 
 Which ordering of memory types is correct, from **slowest** to **fastest** access?
 
-**(1)** Magnetic tape → HDD → SSD → RAM → cache → register
+**(1)** HDD → magnetic tape → RAM → SSD → cache → register
+
 **(2)** Register → cache → RAM → SSD → HDD → magnetic tape
-**(3)** HDD → magnetic tape → RAM → SSD → cache → register
+
+**(3)** Magnetic tape → HDD → SSD → RAM → cache → register
+
 **(4)** RAM → cache → register → SSD → HDD → magnetic tape
 
-**Answer: (1)**
+**Answer: (3)**
 
 **Solution.**
 The memory hierarchy trades speed against cost and capacity. From slowest and cheapest to fastest and most expensive:
@@ -3213,9 +3249,9 @@ Option (3) is plainly false — nothing would ever advance. Option (4) describes
 
 A hard disk has 2 platters (4 recording surfaces), 5000 tracks per surface, 2000 sectors per track and 512 bytes per sector. What is its total capacity?
 
-**(1)** ≈ 20.5 GB  **(2)** ≈ 10.2 GB  **(3)** ≈ 40.9 GB  **(4)** ≈ 5.1 GB
+**(1)** ≈ 5.1 GB  **(2)** ≈ 10.2 GB  **(3)** ≈ 40.9 GB  **(4)** ≈ 20.5 GB
 
-**Answer: (1) ≈ 20.5 GB**
+**Answer: (4) ≈ 20.5 GB**
 
 **Solution.**
 Multiply the four levels of the disk geometry together:
@@ -3245,12 +3281,15 @@ $$= 20.48 \times 10^9 \text{ bytes} \approx \mathbf{20.5\ \text{GB}}$$
 
 Which of the following is a disadvantage of dynamically linked libraries (DLLs) compared with static linking?
 
-**(1)** A missing or incompatible library version can break the program at run time
+**(1)** Memory cannot be shared between processes
+
 **(2)** The executable file is larger
-**(3)** Memory cannot be shared between processes
+
+**(3)** A missing or incompatible library version can break the program at run time
+
 **(4)** The program cannot be updated without recompiling
 
-**Answer: (1)**
+**Answer: (3)**
 
 **Solution.**
 Compare the two linking strategies.
@@ -3308,12 +3347,15 @@ The aggregate working set fits in physical RAM with roughly 6 GB to spare, so th
 
 Which statement correctly distinguishes system software from application software?
 
-**(1)** System software manages hardware resources and provides a platform; application software performs tasks for the end user
-**(2)** System software is always open-source, application software is proprietary
-**(3)** Application software runs in kernel mode, system software runs in user mode
-**(4)** System software cannot be updated once installed
+**(1)** System software cannot be updated once installed
 
-**Answer: (1)**
+**(2)** System software is always open-source, application software is proprietary
+
+**(3)** Application software runs in kernel mode, system software runs in user mode
+
+**(4)** System software manages hardware resources and provides a platform; application software performs tasks for the end user
+
+**Answer: (4)**
 
 **Solution.**
 The defining distinction is **purpose**, not licence or privilege level.
@@ -3339,9 +3381,9 @@ Why the others fail:
 
 Which protocol allows an email client to read messages while leaving them on the server, keeping multiple devices synchronised?
 
-**(1)** IMAP  **(2)** POP3  **(3)** SMTP  **(4)** FTP
+**(1)** POP3  **(2)** IMAP  **(3)** SMTP  **(4)** FTP
 
-**Answer: (1) IMAP**
+**Answer: (2) IMAP**
 
 **Solution.**
 Distinguish the three mail protocols — the exam tests this trio repeatedly.
@@ -3397,9 +3439,9 @@ Why the others are wrong:
 
 Which C expression toggles bit `m` (0-indexed) of an unsigned 32-bit integer `x`, leaving all other bits unchanged?
 
-**(1)** `x ^ (1u << m)`  **(2)** `x | (1u << m)`  **(3)** `x & ~(1u << m)`  **(4)** `x >> m`
+**(1)** `x | (1u << m)`  **(2)** `x ^ (1u << m)`  **(3)** `x & ~(1u << m)`  **(4)** `x >> m`
 
-**Answer: (1) `x ^ (1u << m)`**
+**Answer: (2) `x ^ (1u << m)`**
 
 **Solution.**
 **Step 1 — build the mask.**
@@ -3435,7 +3477,7 @@ Option (4) `x >> m` merely shifts the value right and changes every bit position
 
 *10 questions. Predicted breakdown: Vocabulary 3 · Grammar & error spotting 2 · Fill in the blanks 2 · Reading comprehension 2 · Idioms & phrases 1.*
 
-> **English fell from 20 questions to 10 in 2023** and has stayed there for four papers. It is now worth 120 marks against Mathematics' 600. Cap your preparation time here accordingly — and note that **para jumbles and verbal analogy are effectively dead**, with zero questions since 2018 and 2013 respectively.
+> **English fell from 20 questions to 10 in 2023** and has stayed there for four papers. It is now worth 120 marks against Mathematics' 600. Cap your preparation time here accordingly — and note that **para jumbles are effectively dead** (zero questions since 2018). Verbal analogy is off the 2027 syllabus but was still asked every year 2021–2024, so skim it rather than zero it.
 
 ---
 
@@ -3443,9 +3485,9 @@ Option (4) `x >> m` merely shifts the value right and changes every bit position
 
 Choose the word that is closest in meaning to **BELLIGERENT**.
 
-**(1)** aggressive  **(2)** generous  **(3)** indifferent  **(4)** cautious
+**(1)** indifferent  **(2)** generous  **(3)** aggressive  **(4)** cautious
 
-**Answer: (1) aggressive**
+**Answer: (3) aggressive**
 
 **Solution.**
 **Belligerent** means hostile and inclined to fight or argue. It comes from the Latin *bellum* ("war") and *gerere* ("to wage") — literally *waging war*. A belligerent country is one at war; a belligerent person is combative.
@@ -3466,9 +3508,9 @@ Choose the word that is closest in meaning to **BELLIGERENT**.
 
 In the sentence "Brevity is the soul of wit", the word **brevity** means
 
-**(1)** conciseness  **(2)** humour  **(3)** clarity  **(4)** intelligence
+**(1)** intelligence  **(2)** humour  **(3)** clarity  **(4)** conciseness
 
-**Answer: (1) conciseness**
+**Answer: (4) conciseness**
 
 **Solution.**
 **Brevity** means shortness of expression — using few words. It shares its root with *brief* and *abbreviate* (Latin *brevis*, "short").
@@ -3490,9 +3532,9 @@ The line is from *Hamlet*, and its sense is that wit is most effective when it i
 
 Choose the word most nearly **opposite** in meaning to **PROLIFIC**.
 
-**(1)** unproductive  **(2)** abundant  **(3)** talented  **(4)** verbose
+**(1)** talented  **(2)** abundant  **(3)** unproductive  **(4)** verbose
 
-**Answer: (1) unproductive**
+**Answer: (3) unproductive**
 
 **Solution.**
 **Prolific** means producing a great deal — a prolific writer publishes many books; a prolific season yields a large harvest.
@@ -3546,12 +3588,15 @@ That makes **(1)** correct and **(2)** wrong.
 
 Which sentence correctly expresses a sequence of past events?
 
-**(1)** By the time the results were announced, she had already left the campus.
-**(2)** By the time the results were announced, she has already left the campus.
-**(3)** By the time the results are announced, she had already left the campus.
-**(4)** By the time the results were announced, she already leaves the campus.
+**(1)** By the time the results were announced, she already leaves the campus.
 
-**Answer: (1)**
+**(2)** By the time the results were announced, she has already left the campus.
+
+**(3)** By the time the results are announced, she had already left the campus.
+
+**(4)** By the time the results were announced, she had already left the campus.
+
+**Answer: (4)**
 
 **Solution.**
 When two actions both happened in the past, the **earlier** one takes the past perfect (*had* + past participle) and the **later** one takes the simple past.
@@ -3576,9 +3621,9 @@ Why the others fail:
 
 New findings from the analysis of the flight data recorder ______ the theory of pilot error.
 
-**(1)** corroborate  **(2)** corroborates  **(3)** corroborating  **(4)** to corroborate
+**(1)** corroborates  **(2)** corroborate  **(3)** corroborating  **(4)** to corroborate
 
-**Answer: (1) corroborate**
+**Answer: (2) corroborate**
 
 **Solution.**
 **Step 1 — find the true subject.**
@@ -3603,9 +3648,9 @@ The clause has no other verb, so it needs a finite one. *Corroborating* (partici
 
 The man and the dog ______ through the forest when the storm broke.
 
-**(1)** were fleeing  **(2)** was fleeing  **(3)** has fled  **(4)** flees
+**(1)** was fleeing  **(2)** were fleeing  **(3)** has fled  **(4)** flees
 
-**Answer: (1) were fleeing**
+**Answer: (2) were fleeing**
 
 **Solution.**
 **Step 1 — identify the subject.**
@@ -3665,12 +3710,15 @@ Select the sentence that most logically completes the passage.
 
 > *Qualitative research often prioritises depth over breadth. Unlike large-scale surveys, it accepts a smaller sample in exchange for richer detail. ______*
 
-**(1)** Its findings therefore generalise less readily, but explain more thoroughly.
-**(2)** It is therefore always the superior research method.
-**(3)** Large-scale surveys are consequently obsolete.
-**(4)** Sample size has no bearing on research quality.
+**(1)** Sample size has no bearing on research quality.
 
-**Answer: (1)**
+**(2)** It is therefore always the superior research method.
+
+**(3)** Large-scale surveys are consequently obsolete.
+
+**(4)** Its findings therefore generalise less readily, but explain more thoroughly.
+
+**Answer: (4)**
 
 **Solution.**
 The passage sets up a **trade-off**: smaller sample (a cost) in exchange for richer detail (a benefit). A completing sentence must preserve both sides of that balance.
@@ -3695,9 +3743,9 @@ The passage sets up a **trade-off**: smaller sample (a cost) in exchange for ric
 
 In this sentence, the idiom **an arm and a leg** means
 
-**(1)** an extremely high price  **(2)** a physical injury  **(3)** a long wait  **(4)** a difficult decision
+**(1)** a long wait  **(2)** a physical injury  **(3)** an extremely high price  **(4)** a difficult decision
 
-**Answer: (1) an extremely high price**
+**Answer: (3) an extremely high price**
 
 **Solution.**
 **To cost an arm and a leg** means to be extremely expensive — the price is figured as though you were paying with body parts.
@@ -3774,7 +3822,7 @@ The distractors each take the phrase literally or attach it to the wrong idea:
 1. **First pass — untimed, section by section.** Attempt a section, then read every solution in full, including the ones you got right. The solutions deliberately contain exam technique (the proximity rule, the caterpillar's final-day trap, the extraneous-root check) that is worth more than the individual answers.
 2. **Second pass — timed, full paper.** 120 questions in 2 hours means 60 seconds per question. Shuffle the options first.
 3. **Then go to the real papers.** Solve **NIMCET 2025** and **NIMCET 2023** until you recognise a stem within five seconds. The recycling analysis puts the most common repeat gaps at two years and four years, which is precisely where those two papers sit relative to 2027.
-4. **Skip vector algebra entirely.** It was removed by the 2026 syllabus revision, and the data confirms the deletion — 6 questions in 2025, 1 in 2026.
+4. **Skip vector algebra entirely.** It was removed by the 2026 syllabus revision, and the data confirms the deletion — 6 questions in 2025, 0 in 2026.
 
 ---
 

@@ -23,7 +23,7 @@ Trend column = questions in the last 5 years `[2022, 2023, 2024, 2025, 2026]`.
 | Mathematical Logic | 2 | 0.1 | 2/19 |  | `0,1,0,0,1` |
 
 ## What repeats every single year (never skip)
-Calculus, Trigonometry, Algebra & Progressions, Coordinate Geometry, Probability, Sets & Functions and P&C each show up **every year**. Together ≈ **37 of the 50 Math questions**. **Vectors & 3D is gone** — 5–8 a year for eighteen years, then 0 in 2026 after the syllabus revision; its slots went to Statistics (6 in 2026), Sets & Functions (6) and Algebra (7). Statistics is the one Math topic with a significant upward trend (τ = +0.54, p = 0.002). **Mathematical Logic** (truth tables, negation) is new: 1 question in 2023 and 2026, and it is named in the 2027 syllabus.
+Calculus, Trigonometry, Algebra & Progressions, Coordinate Geometry, Probability and Sets & Functions each show up **every year**; P&C in 18 of 19 (none in 2022). Together ≈ **37 of the 50 Math questions**. **Vectors & 3D is gone** — 3–8 a year for eighteen years, then 0 in 2026 after the syllabus revision; in 2026 Statistics (6), Sets & Functions (6) and Algebra (7) sat above their averages. Statistics is the only topic whose rising trend survives a multiple-testing correction. **Mathematical Logic** (truth tables, negation) is new: 1 question in 2023 and 2026, and it is named in the 2027 syllabus.
 
 ## Study order
 1. **Calculus + Trigonometry + Algebra** first — ~21 Q/yr combined, all guaranteed.

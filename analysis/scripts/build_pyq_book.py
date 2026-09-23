@@ -60,10 +60,24 @@ PAGES=[
 ("B2","B2 · Seating, blood relations, clocks, direction","8",[("Seating & Arrangement","B2a · Seating & arrangement"),("Blood Relations","B2b · Blood relations"),("Clocks & Calendars","B2c · Clocks & calendars"),("Direction Sense","B2d · Direction sense")]),
 ("B3","B3 · Grammar & vocabulary","6",[("Vocabulary (synonym/antonym)","B3a · Vocabulary"),("Grammar & Error Spotting","B3b · Grammar & error spotting")]),
 ("C","Tier C · P&C, matrices, comprehension, networking, small reasoning types","~10",[("Permutation & Combination","C1 · Permutation & combination"),("Matrices & Determinants","C2 · Matrices & determinants"),("Reading Comprehension","C3 · Reading comprehension"),("Fill in the Blanks","C4 · Fill in the blanks"),("Idioms & Phrases","C5 · Idioms & phrases"),("Networking & Internet","C6 · Networking & Internet"),("Mathematical Logic","C7 · Mathematical logic"),("Number Theory (HCF/LCM/divisibility)","C8 · Number theory"),("Data Interpretation","C9 · Data interpretation"),("Cubes Dice & Visual","C10 · Venn diagrams, figures, cubes & dice"),("Data Sufficiency","C11 · Data sufficiency"),("Odd-one-out & Classification","C12 · Odd one out"),("Complex Numbers","C13 · Complex numbers"),("Differential Equations","C14 · Differential equations"),("Programming DS & Algorithms","C15 · Programming")]),
-("Skip","Skip · Vectors & 3D, para jumbles, verbal analogy","0",[("Vectors & 3D Geometry","Skip · Vectors & 3D (off syllabus since 2026 — reference only)"),("Sentence Arrangement","Skip · Sentence arrangement (para jumbles, last seen 2018)"),("Analogy","Skip · Verbal analogy (last seen 2014)")]),
+("Skip","Skip · Vectors & 3D, para jumbles, verbal analogy","0",[("Vectors & 3D Geometry","Skip · Vectors & 3D (off syllabus since 2026 — reference only)"),("Sentence Arrangement","Skip · Sentence arrangement (para jumbles, last seen 2018)"),("Analogy","Skip · Analogy (not in the 2027 syllabus, but still asked every year 2021–2024)")]),
 ]
 # rows with topic "Unknown" are pdf/site garbage ("not available on source site") and are not printed anywhere
-def chapter(topic,sub):
+# Calculus chapters come from the audited 2027-syllabus labels (data/syllabus-2027/labels.jsonl): the old subtopic
+# regex filed "definite integral …" under Indefinite integration (audit 2026-09-23).
+SYL={}
+_lab=f"{R}/data/syllabus-2027/labels.jsonl"
+if os.path.exists(_lab):
+    for l in open(_lab,encoding="utf-8"):
+        d=json.loads(l); SYL[(d["year"],d["n"])]=d["code"]
+CALC={"M-LIM":"Limits","M-CONT":"Continuity and differentiability","M-DIFB":"Continuity and differentiability","M-DIFF":"Differentiation",
+      "M-AOD":"Application of derivatives (tangent, normal, maxima–minima, rates)","M-IND":"Indefinite integration","M-DEF":"Definite integration",
+      "M-AUC":"Area under curves","M-DE":"Differential equations"}
+# the source prints these five questions twice inside the same paper — kept (so every entry is listed once) but marked
+DUP={(2012,117):"Q26",(2012,118):"Q27",(2012,119):"Q28",(2012,120):"Q29",(2018,85):"Q80"}
+def chapter(topic,sub,row=None):
+    if topic=="Calculus" and row is not None and (row["year"],row["n"]) in SYL:
+        return CALC.get(SYL[(row["year"],row["n"])],"Other forms")
     for title,rx in C.get(topic,[]):
         if re.search(rx,sub,flags=re.I): return title
     return "Other forms"
@@ -98,16 +112,20 @@ for slug,title,fq,areas in PAGES:
         qs=[r for r in rows if r["topic"]==topic]
         if not qs: continue
         chs=collections.OrderedDict((t,[]) for t,_ in C.get(topic,[])); chs["Other forms"]=[]
-        for r in qs: chs[chapter(topic,r["subtopic"])].append(r)
+        for r in qs: chs[chapter(topic,r["subtopic"],r)].append(r)
         total+=len(qs); chapters+= [f"{t} ({len(v)})" for t,v in chs.items() if v]
         out.append(f"\n\n---\n\n&nbsp;\n\n# {label}\n\n*{len(qs)} questions across 19 papers · " + " · ".join(f"{t}: {len(v)}" for t,v in chs.items() if v) + "*\n")
         n=0
         for t,v in chs.items():
             if not v: continue
             out.append(f"\n\n&nbsp;\n\n## {label.split(' · ')[0]} — {t}\n")
+            if topic=="Calculus" and t=="Differential equations":
+                out.append("\n*The other four differential-equation questions (2017 Q77, Q82; 2018 Q74; 2019 Q18) are on the Tier C page, section [C14](C.md).*\n")
             for r in sorted(v,key=lambda r:(-r["year"],r["n"])):
                 n+=1; s,o=fmt(r["text"])
-                out.append(f"\n---\n\n### Question {n} &nbsp;·&nbsp; NIMCET {r['year']}, Q{r['n']}\n\n*{r['subtopic']} · difficulty {dict(E='easy',M='medium',H='hard')[r['difficulty']]}*\n\n{s}\n")
+                dup=DUP.get((r["year"],r["n"]))
+                note=f" · the source prints this question twice (same as {r['year']} {dup})" if dup else ""
+                out.append(f"\n---\n\n### Question {n} &nbsp;·&nbsp; NIMCET {r['year']}, Q{r['n']}\n\n*{r['subtopic']} · difficulty {dict(E='easy',M='medium',H='hard')[r['difficulty']]}{note}*\n\n{s}\n")
                 if o: out.append("\n"+o+"\n")
     txt="\n".join(out); open(f"{OUT}/{slug}.md","w").write(txt)
     print(f"{slug}.md {len(txt)//1024} KB {total} q")

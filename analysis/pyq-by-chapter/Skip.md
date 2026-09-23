@@ -1834,7 +1834,7 @@ The following passage consists of six sentences. The first sentence (S1) is give
 
 &nbsp;
 
-# Skip · Verbal analogy (last seen 2014)
+# Skip · Analogy (not in the 2027 syllabus, but still asked every year 2021–2024)
 
 *25 questions across 19 papers · Analogies: 25*
 

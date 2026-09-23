@@ -28,14 +28,14 @@
  },
  "Math|Permutation & Combination": {
   "pred": 2.8,
-  "lo": 0.8,
+  "lo": 0.7,
   "hi": 4.8,
   "series": [
    4,
    7,
    2,
    3,
-   5,
+   3,
    4,
    7,
    4,
@@ -55,7 +55,7 @@
  },
  "Math|Calculus": {
   "pred": 9.6,
-  "lo": 6.7,
+  "lo": 6.8,
   "hi": 12.5,
   "series": [
    6,
@@ -89,7 +89,7 @@
    6,
    3,
    3,
-   7,
+   6,
    6,
    4,
    4,
@@ -143,7 +143,7 @@
    6,
    4,
    8,
-   8,
+   7,
    8,
    7,
    8,
@@ -218,7 +218,7 @@
  "Math|Vectors & 3D Geometry": {
   "pred": 0.0,
   "lo": 0,
-  "hi": 2.9,
+  "hi": 2.8,
   "series": [
    5,
    3,
@@ -432,9 +432,9 @@
   "last5": 2.6
  },
  "Reasoning|Clocks & Calendars": {
-  "pred": 1.6,
+  "pred": 1.5,
   "lo": 0.3,
-  "hi": 2.8,
+  "hi": 2.7,
   "series": [
    2,
    0,
@@ -446,7 +446,7 @@
    2,
    3,
    1,
-   2,
+   1,
    1,
    1,
    2,
@@ -461,7 +461,7 @@
  "Reasoning|Arithmetic (speed-time-work, ratio, %, mixture)": {
   "pred": 9.0,
   "lo": 2.9,
-  "hi": 15.0,
+  "hi": 15.1,
   "series": [
    10,
    7,

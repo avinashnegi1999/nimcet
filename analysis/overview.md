@@ -78,8 +78,8 @@ All appear ~every year. This is where your 600→800 jump lives.
 4. **Algebra & Progressions** — 5.8/yr, every year (slowly falling)
 5. **Arithmetic word problems** — 6.4/yr, every year — *sits in the Reasoning section*
 6. **Probability** — 4.5/yr, every year
-7. **Sets, Relations & Functions** — 3.1/yr, every year (absorbing vector slots)
-8. **Statistics** — 2.3/yr, the one Math topic *rising* (τ = +0.54, p = 0.002)
+7. **Sets, Relations & Functions** — 3.1/yr, every year (6 in 2026)
+8. **Statistics** — 2.3/yr, the only topic whose rising trend survives a multiple-testing correction
 
 > ~~Vectors & 3D~~ — 5.1/yr for eighteen years, **0 in 2026, removed from the syllabus. Do not study.**
 >
@@ -105,7 +105,7 @@ Vectors & 3D (off syllabus), Complex Numbers, Differential Equations, Programmin
 
 - **Calculus + Trigonometry + Arithmetic + Number Systems + Puzzles** ≈ **45 questions/year** from five topics. Nail these before anything else.
 - **Do not study vectors.** 0 questions in 2026, absent from the 2027 syllabus.
-- ~1 in 10 questions is a recycled past question; the gap peaks at 2 and 4 years, so know the 2025 and 2023 papers cold for 2027.
+- Re-used questions were real (15% of the 2023 paper, hand-checked) but have almost stopped (0.8% of 2026) — solve recent papers for style, not to spot repeats.
 - Your bottleneck (Math) overlaps perfectly with the highest-frequency topics — good news, effort compounds.
 - **Skip early:** complex numbers, differential equations, programming/DS. Combined ~1 Q/year. Not worth Tier-1 time.
 - Reasoning is your cheapest points/hour after Math basics — deduction puzzles show up 10×/year and need zero theory.

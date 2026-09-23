@@ -23,7 +23,7 @@ Trend column = last 5 years `[2022, 2023, 2024, 2025, 2026]`.
 1. **Vocabulary** — daily flashcards (syn/antonym word lists).
 2. **Fill in the Blanks + Grammar & Error Spotting** — ~6 Q/yr, learn common rules.
 3. **Reading Comprehension + Idioms** — steady but lower yield; practice for speed.
-4. **Skip:** Sentence Arrangement and verbal Analogy — absent since 2018 / 2014.
+4. **Skip:** Sentence Arrangement (absent since 2018). Verbal Analogy is not in the 2027 syllabus but still appeared in 2021, 2022 and 2024 — skim it rather than skip it outright.
 
 _Note: "English | Analogy" is real — word-pair analogies (SAVANT : OBTUSE) sat in the English section of the 2008–2014 papers. They have not appeared since._
 _Re-verified 2026-09-02: every question re-read by Claude Fable 5.1 (2012's image-only pages read visually); numbers above are the re-verified counts. Arithmetic word problems are counted under Reasoning, where the real paper puts them._

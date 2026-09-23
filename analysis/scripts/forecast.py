@@ -2,7 +2,12 @@ import os
 import json,collections,statistics,sys
 S=os.environ.get("NIMCET_WORK","work")
 rows=[json.loads(l) for l in open(f"{S}/questions-classified.jsonl")]
+# the source prints these five twice inside the same paper (2012 Q117-120 = Q26-29, 2018 Q85 = Q80); count once (audit 2026-09-23)
+DUP={(2012,117),(2012,118),(2012,119),(2012,120),(2018,85)}
+rows=[r for r in rows if (r["year"],r["n"]) not in DUP]
 YEARS=list(range(2008,2027)); SIZE={"Math":50,"Reasoning":40,"Computer":20,"English":10}
+# official section sizes, known before each exam: 50/40/10/20 up to 2022, 50/40/20/10 from 2023
+OFF=lambda sec,y:{"Math":50,"Reasoning":40,"Computer":10 if y<2023 else 20,"English":20 if y<2023 else 10}[sec]
 cnt=collections.defaultdict(lambda:collections.Counter())   # (sec,topic)->year->n
 secn=collections.defaultdict(collections.Counter)
 for r in rows:
@@ -23,7 +28,8 @@ def mean5(xs,a=None):
 def meanall(xs,a=None):
     xs=[x for x in xs if x is not None]; return sum(xs)/len(xs) if xs else 0
 methods={"EWMA.20":lambda xs:ewma(xs,.2),"EWMA.35":lambda xs:ewma(xs,.35),"EWMA.50":lambda xs:ewma(xs,.5),"LastYear":lastyear,"Mean5":mean5,"MeanAll":meanall}
-# back-test: targets 2015-2026 (skip 2015 for sections with 0), predict share then × actual section size that year
+# back-test: targets 2015-2026 (skip 2015 for sections with 0), predict share then × the official section size that year
+# (the target paper's realised section size was used before the 2026-09-23 audit — a small leak of the answer)
 err={m:[] for m in methods}
 for (sec,top) in cnt:
     for ty in range(2015,2027):
@@ -31,7 +37,7 @@ for (sec,top) in cnt:
         if not n: continue
         hist=[share(sec,top,y) for y in YEARS if y<ty]
         actual=cnt[(sec,top)][ty]
-        for m,f in methods.items(): err[m].append(abs(f(hist)*n-actual))
+        for m,f in methods.items(): err[m].append(abs(f(hist)*OFF(sec,ty)-actual))
 print("BACK-TEST MAE (share space, targets 2015-2026):")
 for m,e in sorted(err.items(),key=lambda kv:sum(kv[1])/len(kv[1])): print(f"  {m:9} {sum(e)/len(e):.3f}")
 # forecast 2027 with EWMA .20, vectors zeroed

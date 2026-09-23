@@ -26,15 +26,15 @@ Evaluate `lim(x→0) (e^(2x) − 1 − 2x) / x²`
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 4
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 4
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 2
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 1/2
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.88
 >
@@ -51,19 +51,19 @@ Evaluate `lim(x→0) (e^(2x) − 1 − 2x) / x²`
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 0
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; does not exist
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1/2
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; does not exist
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 1
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.55
 >
-> **Why predicted** — Nested-radical limit at infinity appeared verbatim-in-form in 2026. Lag-1 recycling accounts for 10.3% of repeats.
+> **Why predicted** — Nested-radical limit at infinity appeared verbatim-in-form in 2026 (Q48).
 >
 > **Seen before in** — 2026 Q48 (identical structure).
 
@@ -74,9 +74,9 @@ Evaluate `lim(x→0) (e^(2x) − 1 − 2x) / x²`
 
 The local maximum value of `f(x) = x³ − 9x² + 24x + 5` is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 21
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 25
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 25
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 21
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 29
 
@@ -84,7 +84,7 @@ The local maximum value of `f(x) = x³ − 9x² + 24x + 5` is
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.82
 >
@@ -99,9 +99,9 @@ The local maximum value of `f(x) = x³ − 9x² + 24x + 5` is
 
 `∫₀^(π/4) sec x dx` equals
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `ln(1+√2)`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `ln 2`
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `ln 2`
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `ln(1+√2)`
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; `√2 − 1`
 
@@ -109,11 +109,11 @@ The local maximum value of `f(x) = x³ − 9x² + 24x + 5` is
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.86
 >
-> **Why predicted** — A definite integral of a standard trigonometric form has appeared every year since 2019. This exact integral was NIMCET 2026 Q113 — and the 1-year recycling gap carries 10.3% of all repeats.
+> **Why predicted** — A definite integral of a standard trigonometric form has appeared every year since 2019. This exact integral was NIMCET 2026 Q113.
 >
 > **Seen before in** — 2026 Q113 (`∫₀^(π/4) dx/cos x`).
 
@@ -151,15 +151,15 @@ The area of the region bounded by `y = x²` and `y = 2x` is
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2/3
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 4/3
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 8/3
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 4/3
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.58
 >
@@ -201,15 +201,15 @@ If `f(x) = ∫₀^(x²) ln(1 + t) dt`, then `f′(1)` equals
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; `ln 2`
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `2 ln 2`
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `ln 4 − 1`
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `ln 4 − 1`
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `2 ln 2`
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; `1/2`
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Hard &nbsp;·&nbsp; P = 0.48
 >
@@ -227,21 +227,21 @@ If `f(x) = ∫₀^(x²) ln(1 + t) dt`, then `f′(1)` equals
 
 The 7th term of an AP is 34 and the 13th term is 64. The sum of its first 20 terms is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1030
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 980
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1000
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1060
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 980
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 1030
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.90
 >
-> **Why predicted** — Algebra & Progressions jumped to 11 questions in 2026 (from a 5-year mean of 7.4), absorbing the removed Vectors slots. Plain AP sum is the most common form.
+> **Why predicted** — Algebra & Progressions had 7 questions in 2026, above its 2021–25 average of 5.2. Plain AP sum is the most common form.
 >
 > **Seen before in** — 2026 Q37, 2025, 2024.
 
@@ -254,15 +254,15 @@ The sum of an infinite GP is 15 and the sum of the squares of its terms is 45. I
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1/3
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2/3
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1/2
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1/2
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 2/3
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 3/4
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.72
 >
@@ -277,9 +277,9 @@ The sum of an infinite GP is 15 and the sum of the squares of its terms is 45. I
 
 The arithmetic mean of two numbers is 5 and their harmonic mean is 3.2. The numbers are
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2 and 8
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3 and 7
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 3 and 7
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2 and 8
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 4 and 6
 
@@ -287,7 +287,7 @@ The arithmetic mean of two numbers is 5 and their harmonic mean is 3.2. The numb
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.68
 >
@@ -379,15 +379,15 @@ If `log₂ x + log₄ x = 6`, then x equals
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 8
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 16
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 64
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 32
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 64
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 16
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.58
 >
@@ -404,15 +404,15 @@ The 4th term of an HP is 1/5 and its 8th term is 1/9. Its 12th term is
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1/11
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1/13
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1/15
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1/15
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1/13
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 1/12
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.52
 >
@@ -430,17 +430,17 @@ The 4th term of an HP is 1/5 and its 8th term is 1/9. Its 12th term is
 
 From the top of a viewpoint 60 m high, the angles of depression of the top and the bottom of a flagpole standing on the same horizontal plane are 30° and 45° respectively. The height of the flagpole is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `60(1 − 1/√3)` m
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `30√3` m
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; `60(√3 − 1)` m
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `30√3` m
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `60(1 − 1/√3)` m
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; `20√3` m
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.90
 >
@@ -455,9 +455,9 @@ From the top of a viewpoint 60 m high, the angles of depression of the top and t
 
 If `cos 6x = a cos⁶x + b cos⁴x + c cos²x + d` for all real x, then `a + b + c` equals
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 0
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 0
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 4
 
@@ -465,11 +465,11 @@ If `cos 6x = a cos⁶x + b cos⁴x + c cos²x + d` for all real x, then `a + b +
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Hard &nbsp;·&nbsp; P = 0.50
 >
-> **Why predicted** — Appeared in 2026 Q109. Lag-1 repeats are 10.3% of the recycled pool and this is a self-contained, reusable stem.
+> **Why predicted** — Appeared in 2026 Q109; a self-contained, reusable stem.
 >
 > **Seen before in** — 2026 Q109 (identical).
 
@@ -480,17 +480,17 @@ If `cos 6x = a cos⁶x + b cos⁴x + c cos²x + d` for all real x, then `a + b +
 
 `cos⁻¹(cos(−5π/6)) + sin⁻¹(sin(7π/6))` equals
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `2π/3`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `π/2`
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; `π/3`
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; `π`
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; `π/2`
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; `2π/3`
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.72
 >
@@ -530,17 +530,17 @@ The number of real solutions of `tan⁻¹(2x) + tan⁻¹(3x) = π/4` is
 
 In a triangle ABC, `a = 5`, `b = 7`, `c = 8`. Then `cos C` equals
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1/7
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3/7
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1/5
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 2/7
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 3/7
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 1/7
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.70
 >
@@ -557,15 +557,15 @@ The maximum value of `sin x + sin(x + 1)` is `k·cos(1/2)`. Then k equals
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; √2
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; √2
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 2
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 1/2
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.55
 >
@@ -608,9 +608,9 @@ If `x − y·tan 35° = tan 25°·(y + x·tan 35°)` for some real x, y, then
 
 Segments of the lines `2x + 3y = 1` and `4x − 3y = 11` are diameters of a circle of area `49π` square units. The equation of the circle is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `(x−2)² + (y+1)² = 49`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `(x+2)² + (y−1)² = 49`
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `(x+2)² + (y−1)² = 49`
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `(x−2)² + (y+1)² = 49`
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; `(x−2)² + (y+1)² = 7`
 
@@ -618,7 +618,7 @@ Segments of the lines `2x + 3y = 1` and `4x − 3y = 11` are diameters of a circ
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.72
 >
@@ -633,17 +633,17 @@ Segments of the lines `2x + 3y = 1` and `4x − 3y = 11` are diameters of a circ
 
 A triangle has a vertex at (1, 2) and the midpoints of the two sides through it are (−1, 1) and (2, 3). The area of the triangle is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 8
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 4
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 6
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 8
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 2
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -683,17 +683,17 @@ The equation of the tangent to the parabola `y² = 8x` at the point (2, 4) is
 
 The eccentricity of an ellipse centred at the origin is 1/2 and one of its directrices is `x = −4`. Its equation is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `x²/4 + y²/3 = 1`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `x²/4 + y²/2 = 1`
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; `x²/16 + y²/12 = 1`
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `x²/4 + y²/2 = 1`
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `x²/4 + y²/3 = 1`
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; `x²/3 + y²/4 = 1`
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.62
 >
@@ -708,9 +708,9 @@ The eccentricity of an ellipse centred at the origin is 1/2 and one of its direc
 
 A circle of radius 3 in the first quadrant touches both coordinate axes. Its equation is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `x² + y² − 6x − 6y + 9 = 0`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `x² + y² − 3x − 3y + 9 = 0`
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `x² + y² − 3x − 3y + 9 = 0`
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `x² + y² − 6x − 6y + 9 = 0`
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; `x² + y² − 6x − 6y = 0`
 
@@ -718,7 +718,7 @@ A circle of radius 3 in the first quadrant touches both coordinate axes. Its equ
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.60
 >
@@ -733,9 +733,9 @@ A circle of radius 3 in the first quadrant touches both coordinate axes. Its equ
 
 Let `(x₀, y₀)` be a point with integer coordinates on the line `8x − 3y = 11` that is equidistant from both coordinate axes. Then `x₀ + y₀` equals
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 0
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 0
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; −2
 
@@ -743,7 +743,7 @@ Let `(x₀, y₀)` be a point with integer coordinates on the line `8x − 3y = 
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.52
 >
@@ -761,9 +761,9 @@ Let `(x₀, y₀)` be a point with integer coordinates on the line `8x − 3y = 
 
 On the set `{1, 2, …, 12}`, define `a ~ b` if `a − b` is divisible by 3. Then `~` is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; reflexive and symmetric but not transitive
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; an equivalence relation with 3 equivalence classes
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; an equivalence relation with 3 equivalence classes
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; reflexive and symmetric but not transitive
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; an equivalence relation with 4 equivalence classes
 
@@ -771,11 +771,11 @@ On the set `{1, 2, …, 12}`, define `a ~ b` if `a − b` is divisible by 3. The
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.78
 >
-> **Why predicted** — Sets/Relations/Functions rose from 3.3 (19-yr mean) to 7 in 2026 and is one of the two topics that absorbed the Vectors slots. Divisibility-defined relations were tested directly in 2026.
+> **Why predicted** — Sets/Relations/Functions had 6 questions in 2026, well above its 19-year mean of 3.1. Divisibility-defined relations were tested directly in 2026 (Q24).
 >
 > **Seen before in** — 2026 Q24 (`a − 2b` divisible by 3); 2026 Q27; 2025 Q46.
 
@@ -786,17 +786,17 @@ On the set `{1, 2, …, 12}`, define `a ~ b` if `a − b` is divisible by 3. The
 
 The number of onto functions from a set with 4 elements to a set with 3 elements is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 36
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 81
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 24
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 81
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 36
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 64
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.66
 >
@@ -815,13 +815,13 @@ If 4 sets are drawn in a Venn diagram in general position, the number of distinc
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 15
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 16
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 32
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 32
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 16
 
 &nbsp;
 
-> **Answer &nbsp; (3)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.55
 >
@@ -861,17 +861,17 @@ If `n(A) = 25`, `n(B) = 30` and `n(A ∪ B) = 45`, then `n(A ∩ B)` equals
 
 If `f(x) = (2x + 3)/(x − 1)` for `x ≠ 1`, then `f⁻¹(5)` equals
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 8/3
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 3/8
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 8/3
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 5/3
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.64
 >
@@ -889,17 +889,17 @@ If `f(x) = (2x + 3)/(x − 1)` for `x ≠ 1`, then `f⁻¹(5)` equals
 
 A fair die is rolled twice independently. The probability that the first roll shows a number not less than 4, **or** the two rolls sum to 8, is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 5/9
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 11/18
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1/2
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 2/3
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 11/18
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 5/9
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.80
 >
@@ -964,17 +964,17 @@ X and Y are independent identically distributed Bernoulli random variables with 
 
 Urn A contains 3 red and 2 white balls; urn B contains 2 red and 3 white balls. An urn is chosen at random and one ball is drawn; it is red. The probability that urn A was chosen is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3/5
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1/2
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2/5
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1/2
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 3/5
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 3/10
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -989,9 +989,9 @@ Urn A contains 3 red and 2 white balls; urn B contains 2 red and 3 white balls. 
 
 Five fair coins are tossed. The probability of getting exactly 3 heads is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 5/16
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3/16
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 3/16
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 5/16
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1/2
 
@@ -999,7 +999,7 @@ Five fair coins are tossed. The probability of getting exactly 3 heads is
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.62
 >
@@ -1019,19 +1019,19 @@ For the grouped data below, the mean is closest to | Class | 20–25 | 25–30 |
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 32.1
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 34.2
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 33.0
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 35.6
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 33.0
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 34.2
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.72
 >
-> **Why predicted** — Statistics is the only Math topic with a statistically significant rising trend (Mann-Kendall τ = +0.57, p = 0.002). A grouped-frequency table appeared in 2026 Q33, 2023 Q108 and 2021 Q80.
+> **Why predicted** — Statistics is the only topic whose rising trend survives a multiple-testing correction (6 questions in 2026). A grouped-frequency table appeared in 2026 Q33, 2023 Q108 and 2021 Q80.
 >
 > **Seen before in** — 2026 Q33; 2023 Q108; 2021 Q80.
 
@@ -1042,21 +1042,21 @@ For the grouped data below, the mean is closest to | Class | 20–25 | 25–30 |
 
 The distances (in metres) of seven throws are 14.5, 15.2, 16.8, 17.1, 15.9, 16.3, 14.7. The sample mean is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 15.79
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 15.50
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 16.10
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 15.50
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 15.79
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 16.45
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.60
 >
-> **Why predicted** — 2026 used raw-list mean-and-SD (Q32). A 1-year recycling gap covers 10.3% of repeats.
+> **Why predicted** — 2026 used raw-list mean-and-SD (Q32).
 >
 > **Seen before in** — 2026 Q32 (identical data style).
 
@@ -1069,15 +1069,15 @@ An investigator lost one observation. The remaining values are 10, 12, 15, 18 an
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; 12
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 14
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 15
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 15
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 14
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 16
 
 &nbsp;
 
-> **Answer &nbsp; (3)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.52
 >
@@ -1095,17 +1095,17 @@ An investigator lost one observation. The remaining values are 10, 12, 15, 18 an
 
 The number of permutations of the letters of the word **BANGLORE** in which the block **ANGLE** appears together (in that order) is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 24
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 48
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 120
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 720
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 48
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 24
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.58
 >
@@ -1120,9 +1120,9 @@ The number of permutations of the letters of the word **BANGLORE** in which the 
 
 How many 3-digit numbers, formed using distinct digits from {1, 2, 3, 4, 5}, are divisible by 6?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 6
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 8
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 8
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 6
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 10
 
@@ -1130,7 +1130,7 @@ How many 3-digit numbers, formed using distinct digits from {1, 2, 3, 4, 5}, are
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.50
 >
@@ -1145,9 +1145,9 @@ How many 3-digit numbers, formed using distinct digits from {1, 2, 3, 4, 5}, are
 
 From 6 men and 4 women, a committee of 4 is to be formed with at least 2 women. The number of ways is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 115
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 120
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 120
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 115
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 105
 
@@ -1155,7 +1155,7 @@ From 6 men and 4 women, a committee of 4 is to be formed with at least 2 women. 
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.55
 >
@@ -1173,17 +1173,17 @@ From 6 men and 4 women, a committee of 4 is to be formed with at least 2 women. 
 
 The value of the determinant ``` | x     x+1   x+3  | | x+1   x+3   x+6  | | x+3   x+6   x+10 | ``` at `x = 2027` is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; −1
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 0
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; −1
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 2027
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.62
 >
@@ -1198,9 +1198,9 @@ The value of the determinant ``` | x     x+1   x+3  | | x+1   x+3   x+6  | | x+3
 
 For `B = [[−1, −1, 2], [0, −1, −1], [0, 0, −1]]`, the sum of all entries of `B²` is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 4
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 4
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; −1
 
@@ -1208,7 +1208,7 @@ For `B = [[−1, −1, 2], [0, −1, −1], [0, 0, −1]]`, the sum of all entri
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.50
 >
@@ -1230,13 +1230,13 @@ For `B = [[−1, −1, 2], [0, −1, −1], [0, 0, −1]]`, the sum of all entri
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 1/2
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 3
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 3
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 2
 
 &nbsp;
 
-> **Answer &nbsp; (3)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.80
 >
@@ -1251,17 +1251,17 @@ For `B = [[−1, −1, 2], [0, −1, −1], [0, 0, −1]]`, the sum of all entri
 
 The remainder when `7¹⁰⁰` is divided by 5 is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 1
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 3
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 1
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 4
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.42
 >
@@ -1276,17 +1276,17 @@ The remainder when `7¹⁰⁰` is divided by 5 is
 
 `(1 + i)⁸` equals
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 16
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 8
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; −16
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 16i
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 8
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 16
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.22
 >
@@ -1308,9 +1308,9 @@ The remainder when `7¹⁰⁰` is divided by 5 is
 
 Five boxes P, Q, R, S, T are stacked one above the other. R is above S but below Q. T is at the bottom. P is just above Q. Which box is exactly in the middle?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Q
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; R
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; R
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; Q
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; S
 
@@ -1318,11 +1318,11 @@ Five boxes P, Q, R, S, T are stacked one above the other. R is above S but below
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.82
 >
-> **Why predicted** — Puzzles are the largest Reasoning topic (10.1 predicted) and stacking is the cheapest form. Note the significant *declining* trend (τ = −0.44, p = 0.012) — from 19/yr in 2008 to ~7 now — so expect ~10, not 19.
+> **Why predicted** — Puzzles are the largest Reasoning topic (10.1 predicted) and stacking is the cheapest form. Puzzles ran ~20 a paper in 2008–10 and 7–12 in 2023–26 (the decline is not statistically reliable after correction), so expect ~8, not 19.
 >
 > **Seen before in** — 2026 Q95 (identical five-box setup).
 
@@ -1362,13 +1362,13 @@ Six files in a directory are labelled P, Q, R, S, T, U. Exactly two are read-onl
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; Q
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; T
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; U
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; U
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; T
 
 &nbsp;
 
-> **Answer &nbsp; (4)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.70
 >
@@ -1383,9 +1383,9 @@ Six files in a directory are labelled P, Q, R, S, T, U. Exactly two are read-onl
 
 Seven content creators A, B, C, D, E, F, G are split into three teams of sizes 3, 2 and 2. A and B must be on the same team. E and G form one of the two-member teams. C is on the largest team. C cannot be with D. Which team has three members?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; A, B, C
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; A, B, D
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; A, B, D
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; A, B, C
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; C, D, F
 
@@ -1393,7 +1393,7 @@ Seven content creators A, B, C, D, E, F, G are split into three teams of sizes 3
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.72
 >
@@ -1408,9 +1408,9 @@ Seven content creators A, B, C, D, E, F, G are split into three teams of sizes 3
 
 In a group of six persons A–F there are two married couples. D is the grandmother of A and mother of B. C is the wife of B and mother of F. F is the granddaughter of E. A is the brother of F. How many male members are there?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 2
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 3
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 4
 
@@ -1418,7 +1418,7 @@ In a group of six persons A–F there are two married couples. D is the grandmot
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.68
 >
@@ -1435,15 +1435,15 @@ Nine candidates R–Z serve on three committees of three members each; nobody se
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; T and V are on the same committee
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; R, S and V are on the same committee
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; T and W are on different committees
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; U is with S
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; T and W are on different committees
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; R, S and V are on the same committee
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Hard &nbsp;·&nbsp; P = 0.60
 >
@@ -1458,9 +1458,9 @@ Nine candidates R–Z serve on three committees of three members each; nobody se
 
 Five houses in a row are painted in five different colours and occupied by five people of different professions. The doctor lives in the red house. The teacher lives immediately to the right of the blue house. The green house is at one end. The lawyer lives in the green house. The blue house is second from the left. Who lives in the third house?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; doctor
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; teacher
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; teacher
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; doctor
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; lawyer
 
@@ -1468,7 +1468,7 @@ Five houses in a row are painted in five different colours and occupied by five 
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Hard &nbsp;·&nbsp; P = 0.62
 >
@@ -1485,15 +1485,15 @@ A caterpillar climbs a pole 20 m high. Each day it climbs 5 m and each night it 
 
 &nbsp;&nbsp;&nbsp;**(1)**&nbsp; day 8
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; day 9
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; day 10
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; day 10
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; day 9
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; day 7
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (3)**
 >
 > Net 2 m/day, but on the final day it does not slip back. Start of day n it is at 2(n−1); after climbing, 2n+3 ≥ 20 ⟹ n = 9. Day 8 reaches only 19 m.
 >
@@ -1510,17 +1510,17 @@ A caterpillar climbs a pole 20 m high. Each day it climbs 5 m and each night it 
 
 In a class, a student ranks 35th from the top and 32nd from the bottom. The number of students in the class is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 66
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 68
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 67
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 65
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 68
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 66
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.65
 >
@@ -1565,17 +1565,17 @@ A gaming device takes inputs X and Y and updates them each step as `X = XY/2` an
 
 The sum of three numbers is 98. The ratio of the first to the second is 2 : 3 and of the second to the third is 5 : 8. The second number is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 30
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 48
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 20
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 48
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 30
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 15
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.80
 >
@@ -1615,17 +1615,17 @@ If the price of LPG rises by 25%, by what percentage must consumption be reduced
 
 Five years ago, A was three times as old as B. Now A is twice as old as B. A's present age (in years) is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 20
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 25
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 15
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 30
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 25
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 20
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.72
 >
@@ -1640,9 +1640,9 @@ Five years ago, A was three times as old as B. Now A is twice as old as B. A's p
 
 Two containers A and B of equal volume contain alcohol and water in the ratios 5 : 3 and 1 : 3 respectively. If both are emptied into a third container, the ratio of alcohol to water is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 7 : 9
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3 : 5
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 3 : 5
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 7 : 9
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 5 : 11
 
@@ -1650,7 +1650,7 @@ Two containers A and B of equal volume contain alcohol and water in the ratios 5
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.70
 >
@@ -1665,17 +1665,17 @@ Two containers A and B of equal volume contain alcohol and water in the ratios 5
 
 An examination has 160 questions. 1 mark is awarded for a correct answer and 1/4 mark is deducted for a wrong one. A candidate attempts all questions and scores 100. The number of correct answers is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 112
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 120
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 108
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 120
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 112
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 100
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.62
 >
@@ -1720,17 +1720,17 @@ Rajan invests ₹15,860 for his three sons so that each receives the same amount
 
 What comes next: 72, 69, 66, 63, …?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 60
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 62
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 61
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 59
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 62
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 60
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.82
 >
@@ -1745,9 +1745,9 @@ What comes next: 72, 69, 66, 63, …?
 
 Find the next term: 2 8, 3 27, 4 64, 5 125, …?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 6 216
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 6 196
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 6 196
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 6 216
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 7 216
 
@@ -1755,7 +1755,7 @@ Find the next term: 2 8, 3 27, 4 64, 5 125, …?
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -1770,9 +1770,9 @@ Find the next term: 2 8, 3 27, 4 64, 5 125, …?
 
 Find the missing term: 3, 7, 16, 35, 74, …?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 153
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 148
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 148
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 153
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 151
 
@@ -1780,7 +1780,7 @@ Find the missing term: 3, 7, 16, 35, 74, …?
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.60
 >
@@ -1795,17 +1795,17 @@ Find the missing term: 3, 7, 16, 35, 74, …?
 
 Complete the letter series: AZ, CX, EV, GT, …?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; IR
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; JR
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; IS
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; HR
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; JR
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; IR
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.58
 >
@@ -1848,17 +1848,17 @@ If "TRUTH" is coded as 7-18-21-20-8 and "FALSE" as 6-1-12-19-5, then "LOGIC" is 
 
 If INDIA is coded as JLGEF, then ROME is coded as
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; SMPA
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; SMPI
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; SQPI
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; SMPI
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; SMPA
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; TMPA
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > INDIA→JLGEF uses shifts +1, −2, +3, −4, +5. Applying the first four to ROME: R→S, O→M, M→P, E→A.
 >
@@ -1875,17 +1875,17 @@ If INDIA is coded as JLGEF, then ROME is coded as
 
 In a certain language, "mit tak roz" means "he is good", "roz fen dop" means "good and bad" and "tak dop nim" means "is bad now". Which word means "bad"?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; dop
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; tak
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; roz
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; tak
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; dop
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; fen
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.62
 >
@@ -1900,17 +1900,17 @@ In a certain language, "mit tak roz" means "he is good", "roz fen dop" means "go
 
 If in a code `MOUSE` is written as `PRXVH`, then `TIGER` is written as
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; WLJHU
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; WKJHU
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; WLJHV
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; VLJHU
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; WKJHU
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; WLJHU
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.66
 >
@@ -1953,9 +1953,9 @@ Statements: All polymers are compounds. All plastics are polymers. Conclusions: 
 
 Statements: All mangoes are golden in colour. No golden-coloured things are cheap. Conclusions: (I) All mangoes are cheap. (II) No mango is cheap.
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; only I follows
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; only II follows
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; only II follows
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; only I follows
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; both follow
 
@@ -1963,7 +1963,7 @@ Statements: All mangoes are golden in colour. No golden-coloured things are chea
 
 &nbsp;
 
-> **Answer &nbsp; (2)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.62
 >
@@ -1978,9 +1978,9 @@ Statements: All mangoes are golden in colour. No golden-coloured things are chea
 
 Statements: (a) All Zs are Ys. (b) No Y is an X. (c) Every X is a W. Conclusion: No Z is an X.
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; follows from (a) and (b) only
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; follows from (b) and (c) only
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; follows from (b) and (c) only
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; follows from (a) and (b) only
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; follows from all three
 
@@ -1988,7 +1988,7 @@ Statements: (a) All Zs are Ys. (b) No Y is an X. (c) Every X is a W. Conclusion:
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.66
 >
@@ -2003,9 +2003,9 @@ Statements: (a) All Zs are Ys. (b) No Y is an X. (c) Every X is a W. Conclusion:
 
 Statement: Traffic congestion in the city has increased sharply over the last two years. Courses of action: (I) The city should widen its main roads. (II) The city should ban all private vehicles.
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; only I follows
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; only II follows
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; only II follows
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; only I follows
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; both follow
 
@@ -2013,7 +2013,7 @@ Statement: Traffic congestion in the city has increased sharply over the last tw
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.58
 >
@@ -2031,17 +2031,17 @@ Statement: Traffic congestion in the city has increased sharply over the last tw
 
 Six analysts A, B, C, D, E, F sit around a circular table facing the centre. A is opposite D. B is immediately to the right of A. C is immediately to the left of D. E is not adjacent to A. Who sits opposite B?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; E
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; D
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; F
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; C
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; D
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; E
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.74
 >
@@ -2083,17 +2083,17 @@ Seven family members P1–P7 travel in one vehicle. P4 is the sister of P2. P6 i
 
 Seven students A–G sit in a row facing north. D sits exactly in the middle. A sits at the extreme left. B sits immediately right of D. C sits at the extreme right. E sits immediately left of D. F is not adjacent to A. Who sits third to the left of C?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; D
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; E
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; B
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; E
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; D
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; G
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Row: A G E D B F C. C is at seat 7; three seats left is seat 4 = D.
 >
@@ -2113,9 +2113,9 @@ Seven students A–G sit in a row facing north. D sits exactly in the middle. A 
 
 Pointing to a woman, Arun says, "She is the daughter of my father's only son." How is the woman related to Arun?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; daughter
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; sister
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; sister
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; daughter
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; niece
 
@@ -2123,7 +2123,7 @@ Pointing to a woman, Arun says, "She is the daughter of my father's only son." H
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.80
 >
@@ -2138,17 +2138,17 @@ Pointing to a woman, Arun says, "She is the daughter of my father's only son." H
 
 Mira's mother-in-law's mother is my grandmother. All my mother's children are unmarried to date. Which is true?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Mira is my aunt's son's wife
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Mira is my cousin
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; Mira is my brother's wife
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; Mira is my uncle's daughter
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; Mira is my cousin
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; Mira is my aunt's son's wife
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Hard &nbsp;·&nbsp; P = 0.66
 >
@@ -2191,17 +2191,17 @@ A is the brother of B. C is the mother of B. D is the father of C. E is the moth
 
 At what time between 3 o'clock and 4 o'clock do the hands of a clock coincide?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 16 4/11 min past 3
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 16 min past 3
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 15 min past 3
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 16 min past 3
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 16 4/11 min past 3
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 17 1/11 min past 3
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.72
 >
@@ -2244,9 +2244,9 @@ If 1 January 2027 is a Friday, what day is 1 January 2028?
 
 Companies A and B report: Revenue (A: 120, B: 150), Costs (A: 80, B: 110), Customer Satisfaction (A: 85%, B: 78%). Which statement is correct?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; A has a higher profit margin than B
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; B has a higher profit margin than A
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; B has a higher profit margin than A
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; A has a higher profit margin than B
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; Both have equal profit margins
 
@@ -2254,7 +2254,7 @@ Companies A and B report: Revenue (A: 120, B: 150), Costs (A: 80, B: 110), Custo
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -2269,17 +2269,17 @@ Companies A and B report: Revenue (A: 120, B: 150), Costs (A: 80, B: 110), Custo
 
 Products A, B, C have protein content 20%, 30%, 25% and carbohydrate content 50%, 40%, 45%. If 200 g of A, 100 g of B and 200 g of C are mixed, the protein content of the mixture is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 24%
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 22%
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 25%
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 23%
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 22%
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; 24%
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Protein = 40 + 30 + 50 = 120 g in 500 g total = 24%. Averaging the three percentages gives 25% — the trap.
 >
@@ -2299,9 +2299,9 @@ Products A, B, C have protein content 20%, 30%, 25% and carbohydrate content 50%
 
 Vikram walks 18 m west, turns left and walks 14 m, then turns left and walks 18 m. How far is he from his starting point and in which direction?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 14 m south
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 14 m north
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 14 m north
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 14 m south
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 32 m south
 
@@ -2309,7 +2309,7 @@ Vikram walks 18 m west, turns left and walks 14 m, then turns left and walks 18 
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.60
 >
@@ -2324,17 +2324,17 @@ Vikram walks 18 m west, turns left and walks 14 m, then turns left and walks 18 
 
 Choose the odd one out.
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Sonnet
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Novel
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; Ode
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; Elegy
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; Novel
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; Sonnet
 
 &nbsp;
 
-> **Answer &nbsp; (4)**
+> **Answer &nbsp; (1)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.42
 >
@@ -2358,17 +2358,17 @@ Choose the odd one out.
 
 The decimal equivalent of the 8-bit two's complement number `11010011` is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; −45
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 211
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; −43
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 211
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; −45
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; −44
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.88
 >
@@ -2383,17 +2383,17 @@ The decimal equivalent of the 8-bit two's complement number `11010011` is
 
 In a 9-bit two's complement system, the range of representable integers is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; −256 to +255
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; −512 to +511
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; −255 to +255
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; −256 to +256
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; −512 to +511
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; −256 to +255
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.82
 >
@@ -2408,17 +2408,17 @@ In a 9-bit two's complement system, the range of representable integers is
 
 The product of the binary numbers `1100` and `1011` is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `10000100`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `10001100`
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; `10000010`
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; `1000100`
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; `10001100`
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; `10000100`
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.72
 >
@@ -2433,9 +2433,9 @@ The product of the binary numbers `1100` and `1011` is
 
 The hexadecimal representation of the decimal number 265 is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `109`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `10A`
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `10A`
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `109`
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; `119`
 
@@ -2443,7 +2443,7 @@ The hexadecimal representation of the decimal number 265 is
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.80
 >
@@ -2483,17 +2483,17 @@ The simplified form of `(x + y′ + z′)(x + y′ + z)(x + y + z′)` is
 
 For the Boolean expression `(A ⊕ B) · (B → C)`, the number of rows in the 3-variable truth table where the expression is 1 is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 4
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; 2
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 4
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; 3
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; 5
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.70
 >
@@ -2508,17 +2508,17 @@ For the Boolean expression `(A ⊕ B) · (B → C)`, the number of rows in the 3
 
 Which gate outputs 1 only when its two inputs differ?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; XOR
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; NOR
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; XNOR
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; NAND
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; NOR
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; XOR
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.74
 >
@@ -2533,9 +2533,9 @@ Which gate outputs 1 only when its two inputs differ?
 
 The minimum number of NAND gates required to implement a 2-input XOR gate is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 4
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 3
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 3
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 4
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 5
 
@@ -2543,7 +2543,7 @@ The minimum number of NAND gates required to implement a 2-input XOR gate is
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.58
 >
@@ -2583,17 +2583,17 @@ The unsigned binary number `10101.10101` in decimal is
 
 In 8-bit two's complement arithmetic, `10011001 + 01110111` gives
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `00010000` with no overflow
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `10010000`
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; `00010000` with overflow
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `10010000`
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; `00010000` with no overflow
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; `11110000`
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium-Hard &nbsp;·&nbsp; P = 0.64
 >
@@ -2611,9 +2611,9 @@ In 8-bit two's complement arithmetic, `10011001 + 01110111` gives
 
 A CPU uses a 16-bit instruction format. If 4 bits are used for the opcode and the rest specify a single memory operand, the maximum directly addressable memory is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 4 K words
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; 8 K words
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 8 K words
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; 4 K words
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; 64 K words
 
@@ -2621,7 +2621,7 @@ A CPU uses a 16-bit instruction format. If 4 bits are used for the opcode and th
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.80
 >
@@ -2636,17 +2636,17 @@ A CPU uses a 16-bit instruction format. If 4 bits are used for the opcode and th
 
 Which ordering of memory types is correct, from **slowest** to **fastest** access?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Magnetic tape → HDD → SSD → RAM → cache → register
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; HDD → magnetic tape → RAM → SSD → cache → register
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; Register → cache → RAM → SSD → HDD → magnetic tape
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; HDD → magnetic tape → RAM → SSD → cache → register
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; Magnetic tape → HDD → SSD → RAM → cache → register
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; RAM → cache → register → SSD → HDD → magnetic tape
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.84
 >
@@ -2686,17 +2686,17 @@ In the fetch-decode-execute cycle, the Program Counter is
 
 A hard disk has 2 platters (4 surfaces), 5000 tracks per surface and 2000 sectors per track, with 512 bytes per sector. Its total capacity is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; ≈ 20.5 GB
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; ≈ 5.1 GB
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; ≈ 10.2 GB
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; ≈ 40.9 GB
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; ≈ 5.1 GB
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; ≈ 20.5 GB
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -2711,17 +2711,17 @@ A hard disk has 2 platters (4 surfaces), 5000 tracks per surface and 2000 sector
 
 A disadvantage of dynamically linked libraries (DLLs) compared with static linking is
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; a missing or incompatible library version breaks the program at run time
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; memory cannot be shared between processes
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; the executable file is larger
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; memory cannot be shared between processes
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; a missing or incompatible library version breaks the program at run time
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; the program cannot be updated without recompiling
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.62
 >
@@ -2761,17 +2761,17 @@ A computer has 16 GB of RAM and runs 100 processes averaging 100 MB each. Which 
 
 Which statement correctly distinguishes system software from application software?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; System software manages hardware resources; application software performs user tasks
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; System software cannot be updated
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; System software is always open-source
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; Application software runs in kernel mode
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; System software cannot be updated
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; System software manages hardware resources; application software performs user tasks
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.70
 >
@@ -2789,9 +2789,9 @@ Which statement correctly distinguishes system software from application softwar
 
 Which protocol allows an email client to read messages while leaving them on the server, and to synchronise across multiple devices?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; IMAP
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; POP3
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; POP3
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; IMAP
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; SMTP
 
@@ -2799,7 +2799,7 @@ Which protocol allows an email client to read messages while leaving them on the
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.72
 >
@@ -2842,9 +2842,9 @@ When a browser needs the IP address of a domain name that is not in its local ca
 
 Which C expression toggles bit `m` (0-indexed) of an unsigned 32-bit integer `x`?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `x ^ (1u << m)`
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; `x | (1u << m)`
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `x | (1u << m)`
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; `x ^ (1u << m)`
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; `x & ~(1u << m)`
 
@@ -2852,7 +2852,7 @@ Which C expression toggles bit `m` (0-indexed) of an unsigned 32-bit integer `x`
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.55
 >
@@ -2876,17 +2876,17 @@ Which C expression toggles bit `m` (0-indexed) of an unsigned 32-bit integer `x`
 
 Choose the synonym of **BELLIGERENT**:
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; aggressive
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; indifferent
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; generous
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; indifferent
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; aggressive
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; cautious
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.72
 >
@@ -2901,17 +2901,17 @@ Choose the synonym of **BELLIGERENT**:
 
 In "Brevity is the soul of wit", the word **brevity** means
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; conciseness
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; intelligence
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; humour
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; clarity
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; intelligence
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; conciseness
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -2926,17 +2926,17 @@ In "Brevity is the soul of wit", the word **brevity** means
 
 Choose the antonym of **PROLIFIC**:
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; unproductive
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; talented
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; abundant
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; talented
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; unproductive
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; verbose
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.58
 >
@@ -2979,17 +2979,17 @@ Which sentence shows correct subject-verb agreement?
 
 Which sentence correctly expresses a sequence of past events?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; By the time the results were announced, she had already left the campus.
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; By the time the results were announced, she already leaves the campus.
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; By the time the results were announced, she has already left the campus.
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; By the time the results are announced, she had already left the campus.
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; By the time the results were announced, she already leaves the campus.
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; By the time the results were announced, she had already left the campus.
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -3007,9 +3007,9 @@ Which sentence correctly expresses a sequence of past events?
 
 New findings from the flight-data-recorder analysis ______ the theory of pilot error.
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; corroborate
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; corroborates
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; corroborates
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; corroborate
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; corroborating
 
@@ -3017,7 +3017,7 @@ New findings from the flight-data-recorder analysis ______ the theory of pilot e
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.70
 >
@@ -3032,9 +3032,9 @@ New findings from the flight-data-recorder analysis ______ the theory of pilot e
 
 The man and the dog ______ through the forest when the storm broke.
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; were fleeing
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; was fleeing
 
-&nbsp;&nbsp;&nbsp;**(2)**&nbsp; was fleeing
+&nbsp;&nbsp;&nbsp;**(2)**&nbsp; were fleeing
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; has fled
 
@@ -3042,7 +3042,7 @@ The man and the dog ______ through the forest when the storm broke.
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (2)**
 >
 > Difficulty: Easy-Medium &nbsp;·&nbsp; P = 0.64
 >
@@ -3085,17 +3085,17 @@ The man and the dog ______ through the forest when the storm broke.
 
 *"Qualitative research often prioritises depth over breadth. Unlike large-scale surveys, it accepts a smaller sample in exchange for richer detail."* Which sentence best completes the passage?
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Its findings therefore generalise less readily but explain more thoroughly.
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; Sample size has no bearing on research quality.
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; It is therefore always the superior method.
 
 &nbsp;&nbsp;&nbsp;**(3)**&nbsp; Large-scale surveys are consequently obsolete.
 
-&nbsp;&nbsp;&nbsp;**(4)**&nbsp; Sample size has no bearing on research quality.
+&nbsp;&nbsp;&nbsp;**(4)**&nbsp; Its findings therefore generalise less readily but explain more thoroughly.
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (4)**
 >
 > Difficulty: Medium &nbsp;·&nbsp; P = 0.66
 >
@@ -3113,17 +3113,17 @@ The man and the dog ______ through the forest when the storm broke.
 
 "The new phone costs everyone not just an arm and a leg, but also a kidney." The idiom **an arm and a leg** means
 
-&nbsp;&nbsp;&nbsp;**(1)**&nbsp; an extremely high price
+&nbsp;&nbsp;&nbsp;**(1)**&nbsp; a long wait
 
 &nbsp;&nbsp;&nbsp;**(2)**&nbsp; a physical injury
 
-&nbsp;&nbsp;&nbsp;**(3)**&nbsp; a long wait
+&nbsp;&nbsp;&nbsp;**(3)**&nbsp; an extremely high price
 
 &nbsp;&nbsp;&nbsp;**(4)**&nbsp; a difficult decision
 
 &nbsp;
 
-> **Answer &nbsp; (1)**
+> **Answer &nbsp; (3)**
 >
 > Difficulty: Easy &nbsp;·&nbsp; P = 0.68
 >
@@ -3138,20 +3138,20 @@ The man and the dog ______ through the forest when the storm broke.
 
 | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|
-| 1-(2) | 2-(2) | 3-(2) | 4-(1) | 5-(2) | 6-(2) | 7-(1) | 8-(2) | 9-(1) | 10-(2) |
-| 11-(1) | 12-(1) | 13-(2) | 14-(1) | 15-(2) | 16-(2) | 17-(1) | 18-(2) | 19-(1) | 20-(2) |
-| 21-(1) | 22-(2) | 23-(1) | 24-(1) | 25-(1) | 26-(1) | 27-(1) | 28-(1) | 29-(1) | 30-(2) |
-| 31-(1) | 32-(3) | 33-(2) | 34-(1) | 35-(1) | 36-(1) | 37-(1) | 38-(1) | 39-(1) | 40-(2) |
-| 41-(1) | 42-(3) | 43-(1) | 44-(2) | 45-(1) | 46-(1) | 47-(2) | 48-(1) | 49-(1) | 50-(1) |
-| 51-(2) | 52-(2) | 53-(4) | 54-(1) | 55-(2) | 56-(2) | 57-(2) | 58-(2) | 59-(1) | 60-(2) |
-| 61-(1) | 62-(1) | 63-(1) | 64-(1) | 65-(1) | 66-(1) | 67-(1) | 68-(1) | 69-(1) | 70-(1) |
-| 71-(1) | 72-(1) | 73-(1) | 74-(1) | 75-(3) | 76-(2) | 77-(1) | 78-(1) | 79-(1) | 80-(1) |
-| 81-(1) | 82-(1) | 83-(1) | 84-(1) | 85-(1) | 86-(1) | 87-(1) | 88-(1) | 89-(1) | 90-(4) |
-| 91-(1) | 92-(1) | 93-(1) | 94-(1) | 95-(1) | 96-(1) | 97-(1) | 98-(1) | 99-(1) | 100-(1) |
-| 101-(1) | 102-(1) | 103-(1) | 104-(1) | 105-(1) | 106-(1) | 107-(1) | 108-(1) | 109-(1) | 110-(1) |
-| 111-(1) | 112-(1) | 113-(1) | 114-(1) | 115-(1) | 116-(1) | 117-(1) | 118-(1) | 119-(1) | 120-(1) |
+| 1-(3) | 2-(4) | 3-(1) | 4-(2) | 5-(2) | 6-(4) | 7-(1) | 8-(3) | 9-(4) | 10-(3) |
+| 11-(2) | 12-(1) | 13-(2) | 14-(1) | 15-(4) | 16-(3) | 17-(3) | 18-(1) | 19-(4) | 20-(2) |
+| 21-(4) | 22-(3) | 23-(1) | 24-(2) | 25-(4) | 26-(1) | 27-(3) | 28-(2) | 29-(2) | 30-(1) |
+| 31-(3) | 32-(4) | 33-(2) | 34-(3) | 35-(4) | 36-(1) | 37-(1) | 38-(3) | 39-(2) | 40-(4) |
+| 41-(3) | 42-(2) | 43-(4) | 44-(1) | 45-(2) | 46-(3) | 47-(1) | 48-(4) | 49-(3) | 50-(4) |
+| 51-(1) | 52-(2) | 53-(3) | 54-(2) | 55-(1) | 56-(4) | 57-(1) | 58-(3) | 59-(4) | 60-(2) |
+| 61-(3) | 62-(1) | 63-(4) | 64-(2) | 65-(3) | 66-(1) | 67-(4) | 68-(2) | 69-(2) | 70-(4) |
+| 71-(1) | 72-(3) | 73-(3) | 74-(4) | 75-(3) | 76-(1) | 77-(2) | 78-(2) | 79-(4) | 80-(1) |
+| 81-(3) | 82-(2) | 83-(4) | 84-(1) | 85-(3) | 86-(1) | 87-(2) | 88-(4) | 89-(2) | 90-(1) |
+| 91-(3) | 92-(4) | 93-(4) | 94-(2) | 95-(1) | 96-(3) | 97-(4) | 98-(2) | 99-(1) | 100-(3) |
+| 101-(2) | 102-(3) | 103-(1) | 104-(4) | 105-(3) | 106-(1) | 107-(4) | 108-(2) | 109-(1) | 110-(2) |
+| 111-(3) | 112-(4) | 113-(3) | 114-(1) | 115-(4) | 116-(2) | 117-(2) | 118-(1) | 119-(4) | 120-(3) |
 
-> The answer key is option-position-heavy on (1) in the later sections because the questions were written correct-answer-first. When you use this as a mock, shuffle the options.
+> Correct answers are spread evenly over options (1)–(4) (30 each where possible). The options were re-balanced in the 2026-09-23 audit — before that, 88 of 120 answers were option (1).
 
 ---
 
@@ -3159,5 +3159,5 @@ The man and the dog ______ through the forest when the storm broke.
 
 1. **Take it timed** — 120 questions in 2 hours, +12/−3. It is calibrated to the 2026 difficulty level, which is the hardest in the corpus.
 2. **Score by section** and compare against the marks-at-stake table in `nimcet-2027-prediction.md` §11.
-3. **Then solve NIMCET 2025 and 2023 cold.** Those two papers are, statistically, the most likely sources for recycled 2027 questions (2-year and 4-year gaps = 31% of all repeats found).
+3. **Then solve NIMCET 2026 and 2025 cold** — for their style and difficulty. (Re-use of old questions has faded to 0.8% of the 2026 paper, so no single past paper is a likely source of 2027 repeats; the earlier "2025 and 2023" advice was withdrawn in the 2026-09-23 audit.)
 4. Ignore Vectors entirely.

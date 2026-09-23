@@ -147,11 +147,16 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 @media (prefers-reduced-motion:no-preference){
   .fill{transition:width .5s ease}
 }
+.newlink{display:block;margin:0 0 10px;padding:12px 16px;border-radius:10px;border:1px solid var(--reg);color:inherit;text-decoration:none;font-size:15px}
+.newlink:hover{background:rgba(127,127,127,.08)}
+.auditnote{margin:0 0 18px;font-size:13px;opacity:.8}
 </style>
 </head>
 <body>
 <div class="wrap">
 
+<a class="newlink" href="syllabus-2027-heatmap.html"><b>New:</b> every chapter of the 2027 syllabus ranked by its chance of appearing in NIMCET 2027 &rarr;</a>
+<p class="auditnote">Audited and corrected on 2026-09-23 — re-use claims, trend tests, duplicate questions and a few figures were fixed. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/analysis/AUDIT-2026-09-23.md">What changed &rarr;</a></p>
 <header class="mast">
   <div class="eyebrow">Forecast from 19 papers · 2,248 questions</div>
   <h1>NIMCET 2027 Forecast</h1>
@@ -159,8 +164,8 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
   <div class="provenance">
     <div><b>19</b> papers parsed</div>
     <div><b>2,248</b> questions extracted</div>
-    <div><b>270</b> recycled question pairs found</div>
-    <div><b>±1.4</b> questions — measured back-test error</div>
+    <div><b>134</b> re-used questions confirmed by reading</div>
+    <div><b>±1.45</b> questions — measured back-test error</div>
   </div>
 </header>
 
@@ -181,17 +186,17 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
     <div class="finding alert">
       <div class="stat" style="color:var(--reg)">6 &rarr; 0</div>
       <div class="lbl">Vectors is gone</div>
-      <p>Vector &amp; 3D questions ran at 5–8 per paper for 18 years, then collapsed to zero in 2026 when the revised syllabus dropped vector algebra. Those slots moved into Statistics (+2.0), Sets &amp; Functions (+1.6) and Algebra (+1.6) versus their 5-year means.</p>
+      <p>Vector &amp; 3D questions ran at 3–8 per paper for 18 years, then collapsed to zero in 2026, and the 2027 syllabus does not list them. In 2026 Statistics (6), Sets &amp; Functions (6) and Algebra (7) sat above their recent averages — one paper only, so treat that as a hint about where the slots went, not a rule.</p>
     </div>
     <div class="finding">
-      <div class="stat">1 in 10</div>
-      <div class="lbl">Questions are recycled</div>
-      <p>270 cross-year near-duplicates were detected, 77 of them near-verbatim. The gap peaks at <b>2 years</b> and <b>4 years</b> — which points 2027 straight at the 2025 and 2023 papers.</p>
+      <div class="stat">15% &rarr; 1%</div>
+      <div class="lbl">Re-used questions have faded</div>
+      <p>Of 270 pairs the text detector flagged, 171 are real repeats when read one by one (134 re-used questions in all, including repeats a second detector found). Re-use peaked at 15% of the 2023 paper, then fell to 2.5% in 2025 and <b>0.8% in 2026</b>. Don't bank on old questions coming back in 2027.</p>
     </div>
     <div class="finding">
-      <div class="stat">1.42 vs 1.83</div>
+      <div class="stat">1.45 vs 1.85</div>
       <div class="lbl">Don't just copy last year</div>
-      <p>A slow exponential average of the whole history predicts each topic to ±1.42 questions. Predicting "same as last year" scores 1.83 — the worst of six methods tested.</p>
+      <p>A slow exponential average of the whole history predicts each topic to ±1.45 questions. Predicting "same as last year" scores 1.85 — the worst of six methods tested.</p>
     </div>
   </div>
 </section>
@@ -212,7 +217,7 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 
 <section>
   <h2>Nineteen years, one grid</h2>
-  <p class="sub">Questions per topic per paper. The last column is the 2027 prediction. 2012 is partly missing (59 of its questions exist only as images in the source PDF) and 2015 stops at question 90 — both are down-weighted, never scored against.</p>
+  <p class="sub">Questions per topic per paper. The last column is the 2027 prediction. 2015 stops at question 90 (faded column). 2012's image-only questions have been read; the source prints five questions twice inside the same paper (2012 Q117–120 = Q26–29, 2018 Q85 = Q80) and each is counted once here.</p>
   <div class="hm-tabs" role="group" aria-label="Choose section">
     <button aria-pressed="true" data-sec="Math">Mathematics</button>
     <button aria-pressed="false" data-sec="Reasoning">Reasoning</button>
@@ -228,7 +233,7 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 
 <section>
   <h2>The recycling evidence</h2>
-  <p class="sub">Detected by cosine similarity over question stems with every numeral masked, so a question re-asked with different numbers still matches. Whole multi-question puzzle sets get lifted intact. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/analysis/recycled-questions-solved.md"><b>All fourteen written out in full, with worked solutions &rarr;</b></a></p>
+  <p class="sub">Candidates come from text similarity with every numeral masked; then every pair was read. 171 of the 270 flagged pairs are real repeats (147 the same question, 24 the same problem with new numbers); the other 99 were short maths stems that only looked alike. Whole multi-question puzzle sets have been lifted intact. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/analysis/recycled-questions-solved.md"><b>All fourteen written out in full, with worked solutions &rarr;</b></a></p>
   <div class="scroller">
   <table class="data">
     <thead><tr><th>Question</th><th>Appeared in</th><th class="num">Gap</th></tr></thead>
@@ -253,26 +258,26 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 
   <h3>Where repeated questions come from</h3>
   <div class="bars" id="gapbars"></div>
-  <p class="sub" style="margin-top:14px"><b>Read this as a study order:</b> a 2-year gap points at <b>2025</b>, a 4-year gap at <b>2023</b>. Those two papers should be the ones you can recognise on sight.</p>
+  <p class="sub" style="margin-top:14px">Counted once per re-use (a whole puzzle set counts once), gaps of 1, 2 and 4 years are about equally common. Re-use per paper: 17 in 2022, 18 in 2023, then 7, 3 and 1 in 2024–2026. Solve recent papers for their style and difficulty — not because their questions are likely to return.</p>
 </section>
 
 <section>
   <h2>Does the method actually work?</h2>
-  <p class="sub">Each method predicted year Y using only papers up to Y−1, scored against the real paper, for every target from 2016 to 2026. Error is in questions per topic.</p>
+  <p class="sub">Each method predicted year Y using only papers up to Y−1 and that year's official section sizes, scored against the real paper, for every target from 2015 to 2026. Error is in questions per topic.</p>
   <div class="scroller">
   <table class="data">
     <thead><tr><th>Method</th><th class="num">Mean abs. error</th><th>What it does</th></tr></thead>
     <tbody>
-      <tr><td class="best">EWMA α = 0.20 &nbsp;<span class="tag s">selected</span></td><td class="num best">1.422</td><td>Exponentially decaying weights over all 19 years</td></tr>
-      <tr><td>Mean of last 5</td><td class="num">1.429</td><td>Flat recent window</td></tr>
-      <tr><td>Mean of all years</td><td class="num">1.440</td><td>Long-run average share</td></tr>
-      <tr><td>EWMA α = 0.35</td><td class="num">1.442</td><td>Faster decay, more weight on recent papers</td></tr>
-      <tr><td>EWMA α = 0.50</td><td class="num">1.501</td><td>Very fast decay</td></tr>
-      <tr><td>Same as last year</td><td class="num">1.829</td><td>Copy the 2026 count forward</td></tr>
+      <tr><td class="best">EWMA α = 0.20 &nbsp;<span class="tag s">selected</span></td><td class="num best">1.450</td><td>Exponentially decaying weights over all 19 years</td></tr>
+      <tr><td>Mean of last 5</td><td class="num">1.451</td><td>Flat recent window</td></tr>
+      <tr><td>Mean of all years</td><td class="num">1.466</td><td>Long-run average share</td></tr>
+      <tr><td>EWMA α = 0.35</td><td class="num">1.469</td><td>Faster decay, more weight on recent papers</td></tr>
+      <tr><td>EWMA α = 0.50</td><td class="num">1.527</td><td>Very fast decay</td></tr>
+      <tr><td>Same as last year</td><td class="num">1.845</td><td>Copy the 2026 count forward</td></tr>
     </tbody>
   </table>
   </div>
-  <p class="sub" style="margin-top:14px">Only two topics show a statistically significant trend across 2008–2025: <b>Statistics is rising</b> (Mann-Kendall τ = +0.54, p = 0.002) and <b>Logical deduction puzzles are falling</b> (τ = −0.44, p = 0.012). Everything else is stationary noise — which is exactly why mean-reverting methods beat trend-following ones here.</p>
+  <p class="sub" style="margin-top:14px">All 39 topics were tested for a trend over 2008–2025 (Mann-Kendall) and the result corrected for testing that many at once. Only <b>Statistics rising</b> holds up (τ = +0.60 on question counts, corrected q = 0.045). The puzzle decline looks significant on its own (p = 0.01) but not after the correction. Everything else is noise — which is why mean-reverting methods beat trend-following ones here.</p>
 </section>
 
 <section>
@@ -283,21 +288,21 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
     <thead><tr><th>Priority</th><th>Area</th><th class="num">Q</th><th class="num">Marks</th><th>Why it ranks here</th></tr></thead>
     <tbody>
       <tr><td><span class="tag s">Tier S</span></td><td>Number systems &amp; Boolean logic</td><td class="num">10</td><td class="num">120</td><td>Biggest single block in the paper; mechanical and fully learnable</td></tr>
-      <tr><td><span class="tag s">Tier S</span></td><td>Calculus</td><td class="num">10</td><td class="num">120</td><td>Largest Math topic, present in all 19 papers, zero syllabus risk; absorbed part of the vector share</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Calculus</td><td class="num">10</td><td class="num">120</td><td>Largest Math topic, present in all 19 papers, zero syllabus risk</td></tr>
       <tr><td><span class="tag s">Tier S</span></td><td>Arithmetic word problems</td><td class="num">9</td><td class="num">108</td><td>Sits in the Reasoning section; 13 questions in 2026, the biggest Reasoning block now</td></tr>
-      <tr><td><span class="tag s">Tier S</span></td><td>Logical puzzles &amp; conditional grouping</td><td class="num">8</td><td class="num">96</td><td>The most-recycled question type — whole sets return after 2–4 years</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Logical puzzles &amp; conditional grouping</td><td class="num">8</td><td class="num">96</td><td>Largest Reasoning block for 19 years; whole puzzle sets have been re-used before (2009→2012, 2015→2017, 2018→2020, 2024→2025)</td></tr>
       <tr><td><span class="tag s">Tier S</span></td><td>Trigonometry</td><td class="num">8</td><td class="num">96</td><td>Height &amp; distance appears almost every single year</td></tr>
       <tr><td><span class="tag a">Tier A</span></td><td>Architecture, OS &amp; memory hierarchy</td><td class="num">8</td><td class="num">96</td><td>Grew with the doubled Computer section — 8–10 per paper since 2023</td></tr>
       <tr><td><span class="tag a">Tier A</span></td><td>Coordinate &amp; conic geometry</td><td class="num">7</td><td class="num">84</td><td>Circle first — it is the most repeated sub-form</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Algebra &amp; progressions</td><td class="num">6</td><td class="num">72</td><td>Still every year, but slowly declining (τ = −0.34, p = 0.049)</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Algebra &amp; progressions</td><td class="num">6</td><td class="num">72</td><td>Asked every year; its apparent decline is not statistically reliable</td></tr>
       <tr><td><span class="tag a">Tier A</span></td><td>Probability</td><td class="num">5</td><td class="num">60</td><td>Present in all 19 papers</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Sets, relations &amp; functions</td><td class="num">4</td><td class="num">48</td><td>6 questions in 2026 — took vector slots</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Statistics</td><td class="num">4</td><td class="num">48</td><td>The one significantly rising Math topic (p = 0.002); 6 questions in 2026</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Sets, relations &amp; functions</td><td class="num">4</td><td class="num">48</td><td>6 questions in 2026, above its average</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Statistics</td><td class="num">4</td><td class="num">48</td><td>The only trend that holds up statistically — rising; 6 questions in 2026</td></tr>
       <tr><td><span class="tag b">Tier B</span></td><td>Series, coding-decoding, syllogism</td><td class="num">10</td><td class="num">120</td><td>Low effort, high volume — drill patterns, not theory</td></tr>
       <tr><td><span class="tag b">Tier B</span></td><td>Seating, blood relations, clocks, direction</td><td class="num">8</td><td class="num">96</td><td>Fully mechanical once you have a notation</td></tr>
       <tr><td><span class="tag b">Tier B</span></td><td>Grammar &amp; vocabulary</td><td class="num">6</td><td class="num">72</td><td>English is only 10 questions now — cap your time</td></tr>
       <tr><td><span class="tag b">Tier C</span></td><td>P&amp;C, matrices, comprehension, networking, small reasoning types</td><td class="num">~10</td><td class="num">~120</td><td>Bounded time; networking had 6 questions in 2026 — one evening</td></tr>
-      <tr><td><span class="tag no">Skip</span></td><td>Vector algebra, para jumbles, verbal analogy, linear programming</td><td class="num">0</td><td class="num">0</td><td>Removed from syllabus or absent for 8+ years</td></tr>
+      <tr><td><span class="tag no">Skip</span></td><td>Vector algebra, para jumbles, verbal analogy, linear programming</td><td class="num">0</td><td class="num">0</td><td>Not in the 2027 syllabus. Para jumbles last seen 2018; verbal analogy still appeared in 2022 and 2024, so skim it rather than zero it</td></tr>
     </tbody>
   </table>
   </div>
@@ -310,14 +315,15 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
     <ul>
       <li><b>No individual question is predicted.</b> The generated 2027 paper reproduces concept, structure and difficulty — not content. Expect concept-level hits, never question-level ones.</li>
       <li><b>Small topics are noise.</b> Permutation &amp; combination, number theory and complex numbers sit at 0–3 questions, so their intervals run to zero. Do not over-read them.</li>
-      <li><b>Two papers are damaged.</b> 2012's image-only pages have now been read (only 2 garbled entries remain), but 2015 stops at Q90 and 2019 has 6 missing questions, so pre-2016 trends carry more uncertainty than the tables suggest.</li>
+      <li><b>The source papers have gaps.</b> 2015 stops at Q90, 2019 has 6 questions marked "Not Available" and 2012 has 2 garbled entries, so pre-2016 trends carry more uncertainty than the tables suggest. The source also prints five questions twice inside the same paper; each is counted once.</li>
       <li><b>A new syllabus revision would invalidate this.</b> If NIMCET publishes a revised syllabus for 2027, the section split and the vectors call must both be re-checked first.</li>
-      <li><b>The recycling rate is a floor, not a ceiling.</b> The detector only reads cleanly-extracted text stems — 1,751 of 2,248 questions — so the true repeat rate is higher than 1 in 10.</li>
+      <li><b>Raw detector counts overstate re-use.</b> 99 of the 270 pairs the text detector flagged were false matches, so only hand-checked repeats are used above. The detector can also miss heavily reworded repeats, so the confirmed figure is a careful floor — but it clearly shows re-use fading since 2024.</li>
     </ul>
   </div>
 </section>
 
 <footer>
+  New 2027-syllabus chapter view: <a href="syllabus-2027-heatmap.html">syllabus-2027-heatmap.html</a> · audit notes: <span class="mono">analysis/AUDIT-2026-09-23.md</span>.<br>
   Built from <span class="mono">papers/nimcet-2008.pdf</span> … <span class="mono">nimcet-2026.pdf</span>. Full report in <span class="mono">analysis/nimcet-2027-prediction.md</span>; the generated paper in <span class="mono">analysis/nimcet-2027-predicted-paper.md</span>, whose 67 computable answers are checked by <span class="mono">analysis/verify_predicted_paper.py</span>.
 </footer>
 </div>
@@ -326,30 +332,30 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 const YEARS=[2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
 const DATA={
  Math:[
-  ["Calculus",[6, 6, 9, 6, 9, 8, 8, 7, 6, 12, 11, 6, 10, 8, 11, 12, 9, 7, 9],9.6,6.7,12.5],
-  ["Trigonometry",[4, 6, 4, 8, 8, 8, 7, 8, 5, 9, 7, 4, 10, 8, 11, 4, 5, 9, 8],7.9,4.7,11.1],
+  ["Calculus",[6, 6, 9, 6, 9, 8, 8, 7, 6, 12, 11, 6, 10, 8, 11, 12, 9, 7, 9],9.6,6.8,12.5],
+  ["Trigonometry",[4, 6, 4, 8, 7, 8, 7, 8, 5, 9, 7, 4, 10, 8, 11, 4, 5, 9, 8],7.9,4.7,11.1],
   ["Coordinate & Conic Geometry",[5, 4, 7, 5, 5, 6, 8, 9, 7, 5, 7, 7, 2, 6, 8, 6, 7, 6, 6],6.6,4.4,8.9],
   ["Algebra & Progressions",[9, 7, 2, 8, 8, 7, 7, 5, 8, 5, 8, 7, 3, 6, 5, 7, 3, 5, 7],6.2,3.9,8.4],
-  ["Probability",[6, 6, 3, 3, 7, 6, 4, 4, 6, 5, 4, 5, 2, 4, 3, 5, 7, 5, 3],4.8,2.9,6.6],
+  ["Probability",[6, 6, 3, 3, 6, 6, 4, 4, 6, 5, 4, 5, 2, 4, 3, 5, 7, 5, 3],4.8,2.9,6.6],
   ["Sets, Relations & Functions",[3, 4, 4, 3, 1, 1, 1, 2, 3, 2, 4, 2, 4, 3, 3, 4, 5, 4, 6],4.4,3.2,5.6],
   ["Statistics",[0, 0, 2, 3, 1, 2, 2, 1, 2, 2, 1, 4, 2, 3, 3, 3, 4, 4, 6],3.9,2.5,5.2],
-  ["Permutation & Combination",[4, 7, 2, 3, 5, 4, 7, 4, 4, 2, 4, 6, 4, 3, 0, 1, 4, 3, 1],2.8,0.8,4.8],
+  ["Permutation & Combination",[4, 7, 2, 3, 3, 4, 7, 4, 4, 2, 4, 6, 4, 3, 0, 1, 4, 3, 1],2.8,0.7,4.8],
   ["Matrices & Determinants",[0, 3, 3, 1, 4, 2, 2, 3, 2, 1, 3, 1, 4, 2, 1, 1, 2, 3, 3],2.4,1.0,3.8],
   ["Number Theory",[4, 3, 2, 1, 1, 1, 0, 1, 0, 0, 3, 2, 0, 1, 1, 0, 1, 1, 0],0.8,0,2.0],
   ["Mathematical Logic",[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],0.3,0,0.8],
   ["Complex Numbers",[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0],0.2,0,1.0],
   ["Differential Equations",[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0],0.1,0,1.0],
-  ["Vectors & 3D Geometry",[5, 3, 5, 5, 6, 6, 5, 8, 6, 6, 5, 3, 8, 7, 5, 6, 6, 6, 0],0.0,0,2.9]
+  ["Vectors & 3D Geometry",[5, 3, 5, 5, 6, 6, 5, 8, 6, 6, 5, 3, 8, 7, 5, 6, 6, 6, 0],0.0,0,2.8]
  ],
  Reasoning:[
-  ["Arithmetic Word Problems",[10, 7, 4, 8, 6, 3, 5, 0, 4, 4, 9, 8, 15, 1, 2, 12, 6, 10, 13],9.0,2.9,15.0],
+  ["Arithmetic Word Problems",[10, 7, 4, 8, 6, 3, 5, 0, 4, 4, 9, 8, 15, 1, 2, 12, 6, 10, 13],9.0,2.9,15.1],
   ["Logical Deduction & Puzzles",[23, 21, 19, 7, 8, 13, 9, 13, 10, 12, 5, 9, 7, 1, 3, 7, 12, 8, 7],8.4,4.0,12.8],
   ["Series & Sequence",[3, 4, 8, 2, 3, 2, 2, 6, 1, 6, 3, 3, 7, 5, 7, 3, 0, 5, 3],3.9,0.8,7.1],
   ["Coding-Decoding",[0, 2, 4, 1, 4, 2, 1, 4, 3, 1, 1, 3, 5, 5, 1, 9, 2, 2, 2],3.2,0.1,6.2],
   ["Seating & Arrangement",[1, 0, 5, 4, 6, 7, 10, 1, 14, 7, 0, 3, 2, 0, 6, 1, 1, 2, 3],2.9,0,7.7],
   ["Syllogism",[0, 4, 2, 5, 0, 4, 0, 2, 1, 0, 5, 2, 1, 0, 3, 2, 3, 5, 3],2.9,0.7,5.1],
   ["Blood Relations",[5, 0, 0, 5, 5, 4, 5, 8, 4, 4, 0, 1, 1, 8, 2, 1, 1, 2, 3],2.7,0,5.9],
-  ["Clocks & Calendars",[2, 0, 1, 2, 1, 3, 1, 2, 3, 1, 2, 1, 1, 2, 2, 0, 3, 1, 1],1.6,0.3,2.8],
+  ["Clocks & Calendars",[2, 0, 1, 2, 1, 3, 1, 2, 3, 1, 1, 1, 1, 2, 2, 0, 3, 1, 1],1.5,0.3,2.7],
   ["Cubes, Dice & Visual",[0, 1, 1, 4, 1, 0, 0, 0, 0, 3, 3, 0, 1, 0, 3, 1, 2, 1, 1],1.4,0,3.1],
   ["Data Interpretation",[0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 3, 0, 0, 0, 2],1.2,0,4.0],
   ["Odd-one-out",[0, 0, 3, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 3, 1, 0, 3, 1, 0],1.0,0,2.6],
@@ -395,10 +401,11 @@ bars(document.getElementById("otherbars"),
      [...DATA.Reasoning.slice(0,6), ...DATA.Computer.slice(0,3), ...DATA.English.slice(0,3)], 17);
 
 /* ---- recycling gap bars ---- */
-const GAPS=[[1, 23], [2, 45], [3, 30], [4, 35], [5, 15], [6, 32], [7, 17], [8, 12], [9, 10], [10, 10]];
+// verified re-use events (a puzzle set counts once), gap to its most recent earlier appearance — see data/syllabus-2027/repeat-review.tsv
+const GAPS=[[1, 19], [2, 22], [3, 8], [4, 22], [5, 7], [6, 7], [7, 4], [8, 8], [9, 6], [10, 4]];
 const gmax=Math.max(...GAPS.map(g=>g[1]));
 document.getElementById("gapbars").innerHTML = GAPS.map(([g,n])=>{
-  const hot = (g===2||g===4);
+  const hot = false;
   return `<div class="bar">
     <div class="t">${g} year gap${hot?' &nbsp;<span class="tag no">peak</span>':''}</div>
     <div class="track"><div class="fill" style="width:${n/gmax*100}%${hot?';background:var(--reg)':''}"></div></div>
@@ -423,7 +430,7 @@ function drawHeat(sec){
   for(const [name,series,pred] of rows){
     html+=`<tr><th class="row">${name}</th>`;
     html+=series.map((v,i)=>{
-      const broken = YEARS[i]===2012 || YEARS[i]===2015;
+      const broken = YEARS[i]===2015;
       return `<td style="background:${shade(v)}${broken?';opacity:.45':''}" title="${YEARS[i]}: ${v}${broken?' (partial paper)':''}">${v||""}</td>`;
     }).join("");
     html+=`<td class="p" style="background:${shade(pred)}" title="2027 prediction">${pred.toFixed(1)}</td></tr>`;

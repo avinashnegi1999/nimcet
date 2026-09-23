@@ -1,7 +1,9 @@
 # NIMCET 2027 — Statistical Prediction Report
 
 Built from all 19 papers in `papers/` (2008–2026), 2,248 extracted questions.
-Generated 2026-08-17. **Re-verified 2026-09-02 with a full single-model re-classification — see §12; the tables in §7–§8 now show the re-verified forecast.**
+Generated 2026-08-17. **Re-verified 2026-09-02 with a full single-model re-classification — see §13; the tables in §7–§8 now show the re-verified forecast.**
+
+> **Audited 2026-09-23** ([`AUDIT-2026-09-23.md`](AUDIT-2026-09-23.md)). Corrected in place below: (1) re-use — 99 of the 270 detector pairs were false matches and re-use has faded to 0.8% of the 2026 paper, so the "solve 2025 and 2023 because they will be recycled" advice is withdrawn; (2) trends — after correcting for testing 39 topics only Statistics' rise holds up; (3) stale July numbers left over in §0, §2, §10 and §11; (4) the back-test now uses official section sizes (best MAE 1.45, not 1.42); (5) five questions the source prints twice inside one paper. A back-tested chapter-level forecast for the 2027 syllabus is in [`syllabus-2027/`](syllabus-2027/README.md).
 
 ---
 
@@ -10,7 +12,7 @@ Generated 2026-08-17. **Re-verified 2026-09-02 with a full single-model re-class
 | Step | Method |
 |---|---|
 | Text extraction | `pdftotext -layout` on all 19 PDFs, question splitting on the `Qus : N` marker |
-| Question count recovered | **2,249** (120/paper except 2015 = 90, 2019 = 119) |
+| Question count recovered | **2,248** (120/paper except 2015 = 90; 2012 and 2019 = 119). Five entries are the same question printed twice in one paper (2012 Q117–120 = Q26–29; 2018 Q85 = Q80) |
 | Topic labels | `data/pyq-analysis-result.json` (38 topics × 19 years, question-level classification from the earlier pass) |
 | Style / difficulty / concept read | Manual read of every 2026 question and the 2025 Math + Computer blocks |
 | Recycling detection | TF-IDF cosine over question stems (options stripped, all numerals masked to `NUM`) — finds the same question re-asked with different numbers |
@@ -21,10 +23,10 @@ Generated 2026-08-17. **Re-verified 2026-09-02 with a full single-model re-class
 
 | Problem | Size | Effect |
 |---|---|---|
-| **2012 paper is 59/120 image-only** | 2.6% of corpus | 2012 counts scaled up by coverage; treated as low-weight |
+| **2012 paper has image-only pages** | 63 questions | read from rendered page images in the re-verification (§13); 2 garbled entries remain |
 | **2015 PDF truncated at Q90** | 30 questions | English + Computer blocks missing for 2015 |
-| **2019 missing 1 question** | negligible | — |
-| Recycling detector only sees text-extractable stems | 1,400 of 2,249 usable | reported recycling rates are a **lower bound** |
+| **2019: 6 questions marked "Not Available"** | 6 questions | counted as Unknown |
+| Recycling detector only sees text-extractable stems | 1,751 of 2,248 usable | raw pair counts **overstate** re-use — 99 of 270 flagged pairs were false matches when read (audit) |
 
 Nothing here comes from internet summaries. Every number traces to the PDFs in `papers/`.
 
@@ -66,26 +68,26 @@ The stored topic labels file them under "Math → Arithmetic", which inflates Ma
 | 2023 | 6 |
 | 2024 | 6 |
 | 2025 | 6 (2025 Q35, Q47, Q50, Q52, Q53 are explicit vector questions) |
-| **2026** | **1** |
+| 2026 | **0** |
 
-A drop from a 19-year mean of 5.2 to 1. Under the 2008–2025 distribution the chance of seeing ≤1 is under 2%. This is a syllabus deletion, not noise.
+A drop from 3–8 a year (mean 5.6 over 2008–2025) to 0 — a syllabus deletion, not noise.
 
-**Where those ~5 questions went in 2026** (change vs the 5-year mean):
+**Topics above their 2021–25 average in 2026** (one paper, so a hint about where the slots went — not proof):
 
-| Topic | last-5 mean | 2026 | Δ |
+| Topic | 2021–25 mean | 2026 | Δ |
 |---|---|---|---|
-| Algebra & Progressions | 7.4 | 11 | **+3.6** |
-| Sets, Relations & Functions | 5.2 | 7 | **+1.8** |
-| Statistics | 3.4 | 4 | +0.6 |
-| Trigonometry | 7.2 | 8 | +0.8 |
+| Statistics | 3.4 | 6 | +2.6 |
+| Sets, Relations & Functions | 3.8 | 6 | +2.2 |
+| Algebra & Progressions | 5.2 | 7 | +1.8 |
+| Trigonometry | 7.4 | 8 | +0.6 |
 
-**Do not prepare Vectors for 2027.** The residual 1 question is 3D-geometry-flavoured, not vector algebra.
+**Do not prepare Vectors for 2027.**
 
 ---
 
 ## 3. Trend tests (Mann-Kendall on 2008–2025)
 
-Only two topics show a statistically significant monotone trend at p < 0.05:
+Two topics have p < 0.05 when each is tested on its own — but 39 topics were tested, so about two such results are expected by chance. **Audit (2026-09-23), Benjamini–Hochberg over all 39:** only **Statistics** stays significant (on question counts τ = +0.60, q = 0.045; on shares q = 0.15); Puzzles q = 0.19, everything else q ≥ 0.40. The τ values below came from a script that is not in the repo; the audit recomputed them with `scipy.stats.kendalltau`.
 
 | Topic | τ | p | Direction |
 |---|---|---|---|
@@ -104,9 +106,9 @@ Everything else is statistically flat. **That is itself the finding**: NIMCET's 
 
 ---
 
-## 4. Question recycling — the strongest exploitable pattern
+## 4. Question recycling — real, but faded since 2024
 
-TF-IDF cosine ≥ 0.55 across different years, numerals masked. **300 cross-year near-duplicate pairs, 44 of them near-verbatim (cos ≥ 0.95).**
+TF-IDF cosine ≥ 0.55 across different years, numerals masked. July run: 300 pairs (44 at cos ≥ 0.95); re-verified run: 270 pairs (77 at ≥ 0.85). **Audit (2026-09-23): every one of the 270 was read — 171 are real repeats (147 the same question, 24 the same problem with new numbers) and 99 are false matches, mostly short maths stems. The July per-year table below is kept for the record but overstates re-use.**
 
 ### Recycling rate per paper
 
@@ -120,7 +122,7 @@ TF-IDF cosine ≥ 0.55 across different years, numerals masked. **300 cross-year
 | 2025 | 12 | 10.0% |
 | 2026 | 10 | 8.3% |
 
-**Roughly 1 in 10 questions in a modern NIMCET paper has appeared before.** Since the detector only sees clean text stems, the real figure is higher.
+**Hand-checked re-use per paper:** 2020 11.7%, 2021 11.7%, 2022 14.2%, 2023 15.0%, 2024 8.3%, 2025 2.5%, **2026 0.8%** (134 re-used questions in all). Re-use was real and has nearly stopped.
 
 ### The recycling gap distribution
 
@@ -132,19 +134,11 @@ TF-IDF cosine ≥ 0.55 across different years, numerals masked. **300 cross-year
 | 3 years | 32 | 10.7% |
 | 1 year | 31 | 10.3% |
 
-Restricting to near-verbatim repeats (cos ≥ 0.95) sharpens it: **gap 2 = 15 pairs, gap 4 = 9, gap 3 = 7, gap 1 = 6.** Even gaps dominate — 55% of verbatim repeats come back after exactly 2 or 4 years.
+Restricting to near-verbatim repeats (cos ≥ 0.95) sharpens it: gap 2 = 15 pairs, gap 4 = 9, gap 3 = 7, gap 1 = 6. **Audit:** pairs are not independent — one re-used 4-question puzzle set makes 12 pairs. Counted once per re-use event (118 events), the gaps are 1 yr: 19, 2 yr: 22, 3 yr: 8, 4 yr: 22 — 1, 2 and 4 years are about equally common.
 
 ### What that means for 2027
 
-| Source year | Gap to 2027 | Priority |
-|---|---|---|
-| **2025** | 2 | **highest — most common recycling gap** |
-| **2023** | 4 | **highest — second most common** |
-| 2024 | 3 | high |
-| 2026 | 1 | high (and it defines the new style) |
-| 2021 | 6 | medium |
-
-**Actionable: solve NIMCET 2025 and 2023 to the point where you recognise a stem in 5 seconds.** Statistically those two papers are the most likely to donate questions to 2027.
+**Audit correction:** the gap pattern cannot pick a source paper for 2027 — re-use events per paper fell from 17–18 (2022–23) to 7, 3 and 1 (2024–26). Solve recent papers (2026 first, then 2025) for their style and difficulty, not because their questions are likely to return. The earlier "solve 2025 and 2023 because they will donate questions" advice is withdrawn.
 
 ### Verified verbatim repeats found in the corpus
 
@@ -175,6 +169,8 @@ Note the pattern: **whole multi-question puzzle sets get lifted intact**, not ju
 
 Predict year *Y* using only papers ≤ *Y−1*, score against the real paper. Targets 2016–2026, error in questions per topic. Broken years (2012, 2015) excluded from scoring.
 
+> **Audit (2026-09-23):** the tables below are the July run. Re-scored using only each year's official section sizes (the July run used the target paper's realised sizes, a small leak), the selected EWMA α = 0.20 scores **MAE 1.45** and "last year only" **1.85**; the ordering does not change. See §13 and [`AUDIT-2026-09-23.md`](AUDIT-2026-09-23.md).
+
 ### Forecasting in share-within-section space
 
 | Method | MAE (questions) |
@@ -204,7 +200,7 @@ Predict year *Y* using only papers ≤ *Y−1*, score against the real paper. Ta
 3. **Trend extrapolation (LinReg) also loses** — consistent with §3, where almost nothing has a significant trend.
 4. Restricted to the post-2023 regime only (targets 2023–2026), the ranking tightens (Blend45 1.381, EWMA.20 1.403, LastYear 1.547) but the ordering holds.
 
-**Method selected for the 2027 forecast: EWMA α = 0.20 on share-within-section, plus a hard syllabus override zeroing Vectors.** Expected accuracy: **±1.4 questions per topic**, with an 80% band of roughly ±3 for the large topics.
+**Method selected for the 2027 forecast: EWMA α = 0.20 on share-within-section, plus a hard syllabus override zeroing Vectors.** Expected accuracy: **±1.4 questions per topic** (1.45 after the audit's re-scoring), with an 80% band of roughly ±3 for the large topics.
 
 ---
 
@@ -245,7 +241,7 @@ Re-verified 2026-09-02. EWMA α = 0.20 on share-within-section × 50, Vectors fo
 | Differential Equations | **0** | 0–1 | 0 | 0.0 | 0.2 |
 | Vectors & 3D Geometry | **0** | 0–3 | 0 | 4.6 | 5.3 |
 
-Calculus + Trigonometry + Coordinate Geometry + Algebra = **~30 of 50**. Statistics is the one Math topic with a significant upward trend (τ = +0.54, p = 0.002) and absorbed the most vector slots in 2026 (6 questions).
+Calculus + Trigonometry + Coordinate Geometry + Algebra = **~30 of 50**. Statistics is the only topic whose rising trend survives a multiple-testing correction, and it had 6 questions in 2026.
 
 ---
 
@@ -270,7 +266,7 @@ Calculus + Trigonometry + Coordinate Geometry + Algebra = **~30 of 50**. Statist
 | Analogy | **1** | 0–3 | 0 | 0.4 | 0.4 |
 | Data Sufficiency | **0** | 0–2 | 0 | 0.4 | 0.4 |
 
-Arithmetic word problems now edge out puzzles as the biggest Reasoning bucket (13 in 2026). Puzzles are the only Reasoning topic with a significant downward trend (τ = −0.44, p = 0.010).
+Arithmetic word problems now edge out puzzles as the biggest Reasoning bucket (13 in 2026). Puzzles look like they are falling, but that trend does not survive the multiple-testing correction (q = 0.19).
 
 ### Computer Awareness (20)
 
@@ -295,13 +291,15 @@ Networking is the one to watch: near-zero for 18 years, then **6 questions in 20
 | Analogy | **0** | 0–2 | 0 | 1.0 | 0.9 |
 | Sentence Arrangement | **0** | 0–0 | 0 | 0.0 | 0.4 |
 
-Dead: **Sentence Arrangement (para jumbles)** and **verbal analogy** — 0 questions since 2018 and 2014 respectively.
+Dead: **Sentence Arrangement (para jumbles)** — 0 questions since 2018. **Verbal analogy** is not in the 2027 syllabus but still appeared in 2021, 2022 and 2024 — low priority, not zero.
 
 ---
 
 ## 9. Deliverable 3 — Top 50 most likely concepts for 2027
 
 Likelihood = P(at least one question from this concept appears). Derived from topic forecast × the concept's share of that topic across 2019–2026, with a recycling bonus where a verbatim repeat exists.
+
+> **Audit note:** these P values were set by judgement and were never back-tested; several are high against history (e.g. height & distance 0.95, though it appeared in 11 of 19 papers). Use them as an ordering, not as probabilities. Back-tested, calibrated chapter probabilities are on [`syllabus-2027-heatmap.html`](../syllabus-2027-heatmap.html).
 
 | # | Concept | Section | P | Supporting years |
 |---|---|---|---|---|
@@ -363,11 +361,11 @@ Likelihood = P(at least one question from this concept appears). Derived from to
 | Topic | P(appears) | Reason |
 |---|---|---|
 | **Vector algebra** (dot/cross/triple product, projection) | **< 0.05** | Removed from syllabus in the 2026 revision; 2026 had 0 |
-| Verbal analogy (`WORD : WORD`) in English | 0.08 | 0 questions since 2013 |
+| Verbal analogy (`WORD : WORD`) in English | 0.30 | not in the 2027 syllabus, but 1–3 questions in 2021, 2022 and 2024 |
 | Para jumbles / sentence arrangement | 0.10 | 0 questions since 2018 |
-| Complex numbers | 0.20 | 7 questions in 19 years, none since 2023 |
-| Differential equations | 0.20 | 6 questions in 19 years, none since 2022 |
-| Cubes, dice, non-verbal figure series | 0.30 | 0 in 2023, 2024, 2026 |
+| Complex numbers | 0.20 | 4 questions in 19 years (re-verified labels), none since 2023 |
+| Differential equations | 0.20 | 4 questions in 19 years (re-verified labels), none since 2022 |
+| Cubes, dice, non-verbal figure series | 0.60 | 1–3 a year recently (1 in 2023, 2 in 2024, 1 in 2026) — the earlier "0" was wrong |
 | Odd-one-out / classification | 0.35 | 0 in 2026, 0 in 2023 |
 | Linear programming | 0.10 | never appears in the corpus |
 | HCF/LCM as a standalone question | 0.40 | falling; 0 in 2026 |
@@ -378,13 +376,15 @@ Likelihood = P(at least one question from this concept appears). Derived from to
 
 Ranked by **expected marks at stake ÷ effort**, using the 2027 forecast and 12 marks per question.
 
-### Tier S — do these first (≈ 480 marks of the 1440)
+> **Superseded (audit 2026-09-23):** the tables in this section are the July version. The current tiers — re-verified 2026-09-02 and matching §7–§8 — are on [`forecast.html`](../forecast.html) and in [`study-plan-by-tier.md`](study-plan-by-tier.md): Tier S = Number systems & Boolean (10), Calculus (10), Arithmetic word problems (9), Logical puzzles (8), Trigonometry (8); Tier A = Architecture/OS/memory (8), Coordinate geometry (7), Algebra (6), Probability (5), Sets & functions (4), Statistics (4).
+
+### Tier S — do these first (≈ 480 marks of the 1440) — July version
 
 | Rank | Area | Expected Q | Marks | Why |
 |---|---|---|---|---|
 | 1 | **Calculus** — limits, continuity/differentiability, maxima-minima, definite integrals | 8 | 96 | Largest Math topic, stable for 19 years, no syllabus risk |
 | 2 | **Number systems & Boolean logic** | 10 | 120 | Biggest single scoring block in the paper; mechanical, fully learnable in ~2 weeks |
-| 3 | **Algebra & Progressions** — AP/GP/HP, quadratic roots, AM-GM-HM | 8 | 96 | Absorbed the vector slots; 11 questions in 2026 |
+| 3 | **Algebra & Progressions** — AP/GP/HP, quadratic roots, AM-GM-HM | 8 | 96 | 7 questions in 2026, above its 2021–25 average of 5.2 (audit: the "11" was wrong) |
 | 4 | **Puzzles & conditional grouping** | 10 | 120 | Largest Reasoning block; also the most-recycled question type |
 | 5 | **Trigonometry** — identities, height & distance, inverse trig | 7 | 84 | Perfectly stable; height-and-distance appears nearly every year |
 
@@ -403,7 +403,7 @@ Ranked by **expected marks at stake ÷ effort**, using the 2027 forecast and 12 
 | Rank | Area | Expected Q | Marks | Note |
 |---|---|---|---|---|
 | 11 | Series, coding-decoding, syllogism | 12 | 144 | Low-effort, high-volume; drill patterns not theory |
-| 12 | Statistics (mean/median/mode/SD/variance) | 3 | 36 | The one significantly *rising* Math topic (p = 0.002) |
+| 12 | Statistics (mean/median/mode/SD/variance) | 3 | 36 | The only trend that survives a multiple-testing correction (audit: q = 0.045) |
 | 13 | Blood relations, seating, clocks, direction | 9 | 108 | Fully mechanical once you have a notation |
 | 14 | Grammar (subject-verb agreement, verb forms) + vocabulary | 5 | 60 | English is only 10 questions now — cap your time here |
 
@@ -427,7 +427,7 @@ After the forecast was built, it was checked against `resources/Nimcet 2027 Syll
 
 **Vectors and 3D geometry appear nowhere in the document — zero mentions of "vector", "3D" or "dimension".** This independently corroborates the strongest call in this report, which was derived purely from the 6 → 1 collapse in the 2026 paper. Two independent lines of evidence now agree: **do not prepare vector algebra.**
 
-It also confirms the Computer section's expansion in substance — "Internet and Email", "Web Browsing", "Online Security" are named explicitly, which matches the five networking questions that appeared in 2026 after fifteen near-empty years.
+It also confirms the Computer section's expansion in substance — "Internet and Email", "Web Browsing", "Online Security" are named explicitly, which matches the six networking questions that appeared in 2026 after fifteen near-empty years (two of them quote the syllabus wording).
 
 ### What it adds — topics I under-weighted
 
@@ -440,7 +440,7 @@ These are named in the syllabus but scored low or zero in the frequency-based fo
 | **Input–Output** (machine sequencing) | 0 allocated — never seen in 19 papers | listed under Reasoning | ~0–1. Low history, but a total blind spot is not worth the risk. Spend one hour. |
 | **Mirror images** | 0.6 (Cubes/Dice/Visual) | listed under Reasoning | Keep low, but do not zero it out. |
 | **Alphanumeric series** | folded into Series (3.9) | listed separately | Practise the mixed letter+digit variant, not just numeric. |
-| **Exponentials, Inequalities** | inside Algebra | named separately under Algebra | Already covered by the Algebra allocation of 8. |
+| **Exponentials, Inequalities** | inside Algebra | named separately under Algebra | Already covered by the Algebra allocation of 6. |
 | **Technical writing** | 0 | listed under General English | ~0–1. Novel; no historical precedent to model. |
 | **Data Visualization** | inside DI (1.5) | named separately | Expect chart-reading, not just tables. |
 
@@ -458,9 +458,9 @@ The section split, the Math topic distribution and the recycling analysis are al
 
 **What is genuinely reliable:**
 - The section split (50/40/20/10) — 4 years of consistent evidence, ~0.9 confidence.
-- Vectors being gone — a clean syllabus signal confirmed by a 6 → 1 drop.
-- The recycling behaviour — 300 measured duplicate pairs is hard evidence, and the 2-year/4-year gap peak is a real, exploitable regularity.
-- Topic distribution to ±1.4 questions — this is the measured back-test error, not a guess.
+- Vectors being gone — a clean syllabus signal confirmed by a 6 → 0 drop.
+- Re-use was real (134 hand-checked re-used questions) — but it has faded to 0.8% of the 2026 paper, so it is not an exploitable regularity for 2027 (audit correction).
+- Topic distribution to ±1.45 questions — this is the measured back-test error using official section sizes, not a guess.
 
 **What is not reliable:**
 - Any individual predicted question matching a real 2027 question. The predicted paper below reproduces *concept, structure, difficulty and style*, not content. Expect concept-level hits, not question-level ones.
@@ -468,11 +468,11 @@ The section split, the Math topic distribution and the recycling analysis are al
 - Anything about a further NIMCET-side syllabus revision for 2027. If NIMCET publishes a new syllabus, §2 and §6 must be re-checked before trusting the rest.
 - The 2012 and 2015 papers are partially missing, so pre-2016 trends carry more uncertainty than the tables suggest.
 
-**The strongest single claim in this report** is not any topic count. It is: *solve 2025 and 2023 cold, because a 2-year and 4-year recycling gap is where 31% of all repeated questions come from.*
+~~**The strongest single claim in this report** … solve 2025 and 2023 cold, because a 2-year and 4-year recycling gap is where 31% of all repeated questions come from.~~ **Withdrawn in the 2026-09-23 audit** — the pair counts behind it included false matches and double-counted puzzle sets, and re-use has almost stopped since 2024. The reliable claims are the section split and the Vectors deletion.
 
 ---
 
-## 12. Re-verification pass (2026-09-02, Claude Fable 5.1)
+## 13. Re-verification pass (2026-09-02, Claude Fable 5.1)
 
 The whole pipeline was re-run from the PDFs with one model reading every question (no subagents): `pdftotext` → question split → **2,248 questions classified one by one** into the same taxonomy plus two syllabus-named additions (Mathematical Logic, Data Sufficiency) and a free-text sub-topic per question → aggregate → duplicate detection → trend tests → back-test → forecast. Scripts are in `analysis/scripts/`; per-question labels in `data/questions-classified.jsonl`; the July counts are kept in `data/archive/` for comparison.
 
@@ -486,14 +486,14 @@ The whole pipeline was re-run from the PDFs with one model reading every questio
 |---|---|---|
 | Section split changed in 2023 (Computer 10→20, English 20→10) | yes | **yes** — Computer 20/19/19/20, English 11/13/10/11 for 2023–2026 |
 | Vectors removed | 6 → 1 in 2026 | **6 → 0 in 2026** |
-| Statistics rising | τ = +0.57, p = 0.002 | **τ = +0.54, p = 0.002** |
-| Puzzles falling | τ = −0.44, p = 0.012 | **τ = −0.44, p = 0.010** |
-| Best forecaster | EWMA α = 0.20, MAE 1.43 | **EWMA α = 0.20, MAE 1.42** |
-| Worst forecaster | copy last year, 1.81 | **copy last year, 1.83** |
-| Recycling gap peaks | 2 and 4 years | **2 and 4 years** (45 and 35 pairs) |
-| Recycled pairs / near-verbatim | 300 / 44 | **270 / 77** (cosine ≥ 0.6 / ≥ 0.85, 1,751 usable stems) |
+| Statistics rising | τ = +0.57, p = 0.002 | **τ = +0.54, p = 0.002** — audit: the only trend that survives correction (q = 0.045) |
+| Puzzles falling | τ = −0.44, p = 0.012 | **τ = −0.44, p = 0.010** — audit: not significant after correction (q = 0.19) |
+| Best forecaster | EWMA α = 0.20, MAE 1.43 | **EWMA α = 0.20, MAE 1.42** — audit: 1.45 with official section sizes |
+| Worst forecaster | copy last year, 1.81 | **copy last year, 1.83** — audit: 1.85 |
+| Recycling gap peaks | 2 and 4 years | **2 and 4 years** (45 and 35 pairs) — audit: per re-use event 1, 2 and 4 years are about equal |
+| Recycled pairs / near-verbatim | 300 / 44 | **270 / 77** (cosine ≥ 0.6 / ≥ 0.85, 1,751 usable stems) — audit: 171 of 270 genuine |
 
-One new, weaker signal: **Algebra & Progressions is drifting down** over 2008–2025 (τ = −0.34, p = 0.049). It is still ~6 questions a year; just do not expect the 8–12 of the early years.
+One new, weaker signal was reported: Algebra & Progressions drifting down (τ = −0.34, p = 0.049). **Audit:** after correcting for 39 tests it is noise (q = 0.40). It is still ~6 questions a year.
 
 ### Section counts by year (re-verified labels)
 | Year | Math | Reasoning | Computer | English | Unknown |
@@ -523,6 +523,27 @@ One new, weaker signal: **Algebra & Progressions is drifting down** over 2008–
 ### Topics whose 19-year totals moved by 5 or more
 | Section | Topic | July | Re-verified | Δ |
 |---|---|---|---|---|
+| Reasoning | Arithmetic (speed-time-work, ratio, %, mixture) | 0 | 127 | +127 |
+| Math | Arithmetic (speed-time-work, ratio, %, mixture) | 112 | 0 | −112 |
+| Unknown | Unknown | 96 | 8 | −88 |
+| English | Grammar & Error Spotting | 53 | 74 | +21 |
+| Math | Calculus | 146 | 160 | +14 |
+| English | Analogy | 3 | 17 | +14 |
+| Reasoning | Series & Sequence | 61 | 73 | +12 |
+| Reasoning | Cubes Dice & Visual | 10 | 22 | +12 |
+| Math | Algebra & Progressions | 128 | 117 | −11 |
+| Reasoning | Data Interpretation | 27 | 17 | −10 |
+| Reasoning | Blood Relations | 50 | 59 | +9 |
+| Reasoning | Analogy | 17 | 8 | −9 |
+| Math | Matrices & Determinants | 33 | 41 | +8 |
+| English | Idioms & Phrases | 28 | 20 | −8 |
+| Reasoning | Data Sufficiency | 0 | 8 | +8 |
+| Computer | Hardware OS & General CS | 75 | 81 | +6 |
+| Math | Statistics | 39 | 45 | +6 |
+| Math | Number Theory (HCF/LCM/divisibility) | 28 | 22 | −6 |
+| Reasoning | Seating & Arrangement | 68 | 73 | +5 |
+
+(Table filled in during the 2026-09-23 audit from `data/archive/pyq-analysis-result-2026-07-sonnet.json` vs `data/pyq-analysis-result.json`; it was empty before.)
 
 
 Most moves are boundary calls: word analogies were filed under English rather than Reasoning; several "number puzzle" items became Number Theory; table/chart items inside puzzle sets became Puzzles rather than Data Interpretation; and the recovered 2012 questions add to Math, Reasoning and English.
@@ -535,5 +556,6 @@ Most moves are boundary calls: word analogies were filed under English rather th
 
 ### Data caveats that remain
 - 2015 has 90 questions; 2019 has 6 "Not Available" items; 2012 has 2 garbled items.
-- Recycling detection reads text stems only (1,751 of 2,248 usable) — the rate is still a floor.
+- Recycling detection reads text stems only (1,751 of 2,248 usable). Raw pair counts overstate re-use (99 of 270 false); the hand-checked count can still miss heavily reworded repeats.
+- Five source entries are the same question printed twice in one paper (2012 Q117–120, 2018 Q85); the audit counts each once.
 - The 2027 syllabus PDF in `resources/` is third-party; verify against the official brochure when released.

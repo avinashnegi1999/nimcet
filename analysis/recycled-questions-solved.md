@@ -2,7 +2,7 @@
 
 The fourteen entries from the **recycling evidence** table on the [forecast page](https://avinashnegi1999.github.io/nimcet/forecast.html). Each is printed the way it appeared in the paper, then solved step by step. Where the two papers order the options differently, both option numbers are given at the end.
 
-The recycling gap peaks at **2 and 4 years**, so for 2027 the 2025 and 2023 papers are the most likely sources. Puzzle *sets* are lifted whole — learn the set, collect 3–5 marks at once.
+These are real, hand-checked repeats — but re-use has faded: 15% of the 2023 paper was re-used, 2.5% of 2025 and 0.8% of 2026 (audit 2026-09-23). Learn these as examples of the forms NIMCET likes; do not count on them returning. Puzzle *sets* have been lifted whole, so a set is worth learning end to end.
 
 &nbsp;
 
@@ -294,7 +294,7 @@ A, B, C, D, E, F and G are travelling in three vehicles — a Swift, a Creta and
 
 > **Answer: G, E, A → 2024 Q63 option (2) "GEA"**
 
-(The 2024 paper said "only one of them is a male" — a misprint, since B and D are both male. The 2025 paper corrected it to two.)
+(The 2024 paper says "only one of them is a male" — either a misprint or meant per vehicle; the 2025 paper says two are male. The answers above are the same under both readings.)
 
 &nbsp;
 

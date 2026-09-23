@@ -403,7 +403,7 @@ The number of words that can be formed by using the letters of the word 'MATHEMA
 
 ### Question 22 &nbsp;·&nbsp; NIMCET 2012, Q117
 
-*MATHEMATICS start end T · difficulty medium*
+*MATHEMATICS start end T · difficulty medium · the source prints this question twice (same as 2012 Q26)*
 
 The number of words that can be formed by using the letters of the word MATHEMATICS that start as well as end with T is
 
@@ -421,7 +421,7 @@ The number of words that can be formed by using the letters of the word MATHEMAT
 
 ### Question 23 &nbsp;·&nbsp; NIMCET 2012, Q120
 
-*license plates · difficulty easy*
+*license plates · difficulty easy · the source prints this question twice (same as 2012 Q29)*
 
 The number of different license plates that can be formed in the format 3 English letters (A….Z) followed by 4 digits (0, 1, …9) with repetitions allowed in letters and digits is equal to
 
