@@ -122,6 +122,10 @@
   .tier ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
   .tier li { font-size: 13px; color: var(--ink-soft); display: flex; justify-content: space-between; gap: 8px; }
   .tier li b { color: var(--ink); font-family: var(--font-mono); font-weight: 600; }
+  .tier .grp + .grp { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
+  .tier .grp-h { display: flex; align-items: center; font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 8px; }
+  .tier .grp-h .dot { width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+  .tier .grp-h .n { color: var(--ink-faint); font-weight: 600; white-space: pre; }
 
   .notes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .note { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; font-size: 13.5px; color: var(--ink-soft); box-shadow: var(--shadow); }
@@ -315,10 +319,17 @@ const fb = document.getElementById("filters");
 const tb = document.getElementById("tiers");
 [1, 2, 3, 4].forEach(t => {
   const items = C.filter(c => tierOf(c) === t);
-  const ul = el("ul");
-  for (const c of items) ul.append(el("li", null, el("span", { text: c.name.replace(/ \(.*$/, "") }), el("b", { text: c.asked ? pct(c.p) : "—" })));
-  tb.append(el("div", { class: "tier" }, el("div", { class: "head" }, el("span", { class: "band", style: "background:" + TIER[t].c }), el("h3", { text: "Tier " + t + " · " + items.length })),
-    el("p", { class: "sub", text: TIER[t].name + " — " + TIER[t].sub }), ul));
+  const card = el("div", { class: "tier" }, el("div", { class: "head" }, el("span", { class: "band", style: "background:" + TIER[t].c }), el("h3", { text: "Tier " + t + " · " + items.length })),
+    el("p", { class: "sub", text: TIER[t].name + " — " + TIER[t].sub }));
+  // grouped by section, most likely first inside each group
+  for (const s of ["Math", "Reasoning", "Computer", "English"]) {
+    const g = items.filter(c => c.s === s);
+    if (!g.length) continue;
+    const ul = el("ul");
+    for (const c of g) ul.append(el("li", null, el("span", { text: c.name.replace(/ \(.*$/, "") }), el("b", { text: c.asked ? pct(c.p) : "—" })));
+    card.append(el("div", { class: "grp" }, el("div", { class: "grp-h", style: "color:" + SEC_COLOR[s] }, el("span", { class: "dot", style: "background:" + SEC_COLOR[s] }), SEC_NAME[s], el("span", { class: "n", text: " · " + g.length })), ul));
+  }
+  tb.append(card);
 });
 
 // ---- notes ----
