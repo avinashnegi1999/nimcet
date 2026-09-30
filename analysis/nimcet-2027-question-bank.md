@@ -2802,7 +2802,7 @@ Three of the four are forms of **poetry**; the novel is prose. **Novel** is the 
 
 # SECTION C — COMPUTER AWARENESS
 
-*20 questions. Predicted breakdown: Number systems & Boolean logic 10 · Architecture, OS & memory 7 · Networking & Internet 2 · Programming & data structures 1.*
+*20 questions. Breakdown here: Number systems & Boolean logic 10 · Architecture, OS & memory 7 · Networking & Internet 2 · Programming & data structures 1. Forecast after the 2026-09-30 re-audit: 8.7 · 8.7 · 1.5 · 1.1 — so add one more architecture/OS topic when you revise.*
 
 > **This section doubled in size in 2023** — from 10 questions to 20 — and has held at 19 to 22 questions for four consecutive papers. At 240 marks it is now worth nearly half of Mathematics, and unlike Mathematics it is almost entirely factual and mechanical. **This is the highest marks-per-hour-of-study block in the entire paper.**
 

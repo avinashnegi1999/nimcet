@@ -13,9 +13,9 @@ Trend column = last 5 years `[2022, 2023, 2024, 2025, 2026]`.
 | Programming DS & Algorithms | 7 | 0.4 | 5/19 |  | `0,0,1,3,0` |
 
 ## What repeats
-**Number System & Boolean Logic = 125 questions (nearly every year; 10–12 in 2023–2025, 5 in 2026).** Binary/octal/hex conversion, 1's & 2's complement, Boolean algebra, logic gates, K-maps. Small closed syllabus, near-guaranteed marks — the best ROI topic in the entire paper.
+**Number System & Boolean Logic = 125 questions (nearly every year; 12, 9 and 8 in 2023–2025, 5 in 2026 — falling since the section doubled).** Binary/octal/hex conversion, 1's & 2's complement, Boolean algebra, logic gates, K-maps. Small closed syllabus, near-guaranteed marks — the best ROI topic in the entire paper.
 
-**Hardware, OS & General CS** is now 8–10 Q/yr in the new regime (cache, pipelining, registers, memory hierarchy, virtual memory, TLB, file systems). **Networking & Internet jumped to 6 questions in 2026** (DNS, cookies, rendering engine, POP3 vs IMAP, HTTP) after 18 near-zero years — treat it as live.
+**Hardware, OS & General CS** is now 8–9 Q/yr in the new regime, level with number systems (cache, pipelining, registers, memory hierarchy, virtual memory, TLB, file systems). **Networking & Internet jumped to 6 questions in 2026** (DNS, cookies, rendering engine, POP3 vs IMAP, HTTP) after 18 near-zero years — treat it as live.
 
 ## Study order
 1. **Number System & Boolean Logic** — master fully, it's basically free marks.

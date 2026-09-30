@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23",
+ "generated": "2026-09-30",
  "source": "19 NIMCET papers 2008-2026 (papers/), labels in data/syllabus-2027/labels.jsonl",
  "partSizes2027": {
   "Math": 50,
@@ -9,15 +9,16 @@
  },
  "model": {
   "halfLife": 6,
+  "computerUnitBudgetFrom": 2023,
   "calibration": {
-   "a": 0.718,
-   "b": -0.043,
+   "a": 0.713,
+   "b": -0.042,
    "fittedOn": "1272 chapter-year predictions (targets 2012-2026)"
   },
   "recencyVariant": {
    "halfLife": 2,
-   "a": 0.652,
-   "b": 0.025
+   "a": 0.651,
+   "b": 0.024
   }
  },
  "chapters": [
@@ -140,7 +141,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 1.73,
-   "pAtLeast1": 0.743,
+   "pAtLeast1": 0.742,
    "pAtLeast2Raw": 0.517,
    "likelyRange": [
     0,
@@ -242,7 +243,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 2.47,
-   "pAtLeast1": 0.841,
+   "pAtLeast1": 0.839,
    "pAtLeast2Raw": 0.706,
    "likelyRange": [
     1,
@@ -344,7 +345,7 @@
    "yearsSinceLast": 0,
    "longestGap": 7,
    "expected2027": 0.53,
-   "pAtLeast1": 0.426,
+   "pAtLeast1": 0.427,
    "pAtLeast2Raw": 0.1,
    "likelyRange": [
     0,
@@ -352,7 +353,7 @@
    ],
    "recency": {
     "expected2027": 0.7,
-    "pAtLeast1": 0.509
+    "pAtLeast1": 0.508
    },
    "trend": {
     "rho": -0.088,
@@ -434,7 +435,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 0.72,
-   "pAtLeast1": 0.498,
+   "pAtLeast1": 0.499,
    "pAtLeast2Raw": 0.162,
    "likelyRange": [
     0,
@@ -524,7 +525,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 1.59,
-   "pAtLeast1": 0.719,
+   "pAtLeast1": 0.718,
    "pAtLeast2Raw": 0.473,
    "likelyRange": [
     0,
@@ -716,7 +717,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 3.3,
-   "pAtLeast1": 0.909,
+   "pAtLeast1": 0.907,
    "pAtLeast2Raw": 0.842,
    "likelyRange": [
     1,
@@ -818,7 +819,7 @@
    "yearsSinceLast": 1,
    "longestGap": 1,
    "expected2027": 2.92,
-   "pAtLeast1": 0.882,
+   "pAtLeast1": 0.88,
    "pAtLeast2Raw": 0.788,
    "likelyRange": [
     1,
@@ -826,7 +827,7 @@
    ],
    "recency": {
     "expected2027": 1.87,
-    "pAtLeast1": 0.757
+    "pAtLeast1": 0.756
    },
    "trend": {
     "rho": -0.572,
@@ -920,7 +921,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 5.46,
-   "pAtLeast1": 0.963,
+   "pAtLeast1": 0.962,
    "pAtLeast2Raw": 0.972,
    "likelyRange": [
     3,
@@ -1022,7 +1023,7 @@
    "yearsSinceLast": 3,
    "longestGap": 6,
    "expected2027": 0.32,
-   "pAtLeast1": 0.323,
+   "pAtLeast1": 0.324,
    "pAtLeast2Raw": 0.042,
    "likelyRange": [
     0,
@@ -1104,7 +1105,7 @@
    "yearsSinceLast": 0,
    "longestGap": 15,
    "expected2027": 0.21,
-   "pAtLeast1": 0.256,
+   "pAtLeast1": 0.257,
    "pAtLeast2Raw": 0.02,
    "likelyRange": [
     0,
@@ -1173,7 +1174,7 @@
    "yearsSinceLast": 14,
    "longestGap": 14,
    "expected2027": 0.03,
-   "pAtLeast1": 0.069,
+   "pAtLeast1": 0.07,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -1229,7 +1230,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 3.31,
-   "pAtLeast1": 0.909,
+   "pAtLeast1": 0.908,
    "pAtLeast2Raw": 0.842,
    "likelyRange": [
     1,
@@ -1331,7 +1332,7 @@
    "yearsSinceLast": 0,
    "longestGap": 3,
    "expected2027": 1.33,
-   "pAtLeast1": 0.666,
+   "pAtLeast1": 0.665,
    "pAtLeast2Raw": 0.383,
    "likelyRange": [
     0,
@@ -1425,7 +1426,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 1.29,
-   "pAtLeast1": 0.658,
+   "pAtLeast1": 0.657,
    "pAtLeast2Raw": 0.371,
    "likelyRange": [
     0,
@@ -1515,7 +1516,7 @@
    "yearsSinceLast": 0,
    "longestGap": 3,
    "expected2027": 0.98,
-   "pAtLeast1": 0.581,
+   "pAtLeast1": 0.58,
    "pAtLeast2Raw": 0.258,
    "likelyRange": [
     0,
@@ -1523,7 +1524,7 @@
    ],
    "recency": {
     "expected2027": 1.01,
-    "pAtLeast1": 0.596
+    "pAtLeast1": 0.595
    },
    "trend": {
     "rho": -0.064,
@@ -1601,7 +1602,7 @@
    "yearsSinceLast": 0,
    "longestGap": 3,
    "expected2027": 1.26,
-   "pAtLeast1": 0.651,
+   "pAtLeast1": 0.65,
    "pAtLeast2Raw": 0.36,
    "likelyRange": [
     0,
@@ -1609,7 +1610,7 @@
    ],
    "recency": {
     "expected2027": 1.77,
-    "pAtLeast1": 0.742
+    "pAtLeast1": 0.741
    },
    "trend": {
     "rho": 0.151,
@@ -1703,7 +1704,7 @@
    "yearsSinceLast": 0,
    "longestGap": 3,
    "expected2027": 1.46,
-   "pAtLeast1": 0.693,
+   "pAtLeast1": 0.692,
    "pAtLeast2Raw": 0.428,
    "likelyRange": [
     0,
@@ -1805,7 +1806,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 1.73,
-   "pAtLeast1": 0.743,
+   "pAtLeast1": 0.742,
    "pAtLeast2Raw": 0.517,
    "likelyRange": [
     0,
@@ -1997,7 +1998,7 @@
    ],
    "recency": {
     "expected2027": 0.78,
-    "pAtLeast1": 0.535
+    "pAtLeast1": 0.534
    },
    "trend": {
     "rho": 0.294,
@@ -2165,7 +2166,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 2.27,
-   "pAtLeast1": 0.819,
+   "pAtLeast1": 0.817,
    "pAtLeast2Raw": 0.662,
    "likelyRange": [
     0,
@@ -2173,7 +2174,7 @@
    ],
    "recency": {
     "expected2027": 2.32,
-    "pAtLeast1": 0.813
+    "pAtLeast1": 0.812
    },
    "trend": {
     "rho": -0.105,
@@ -2267,7 +2268,7 @@
    "yearsSinceLast": 3,
    "longestGap": 3,
    "expected2027": 0.99,
-   "pAtLeast1": 0.583,
+   "pAtLeast1": 0.582,
    "pAtLeast2Raw": 0.26,
    "likelyRange": [
     0,
@@ -2353,7 +2354,7 @@
    "yearsSinceLast": 0,
    "longestGap": 3,
    "expected2027": 1.66,
-   "pAtLeast1": 0.73,
+   "pAtLeast1": 0.729,
    "pAtLeast2Raw": 0.493,
    "likelyRange": [
     0,
@@ -2455,7 +2456,7 @@
    "yearsSinceLast": 1,
    "longestGap": 4,
    "expected2027": 0.54,
-   "pAtLeast1": 0.43,
+   "pAtLeast1": 0.431,
    "pAtLeast2Raw": 0.103,
    "likelyRange": [
     0,
@@ -2537,7 +2538,7 @@
    "yearsSinceLast": 4,
    "longestGap": 9,
    "expected2027": 0.3,
-   "pAtLeast1": 0.309,
+   "pAtLeast1": 0.31,
    "pAtLeast2Raw": 0.036,
    "likelyRange": [
     0,
@@ -2610,7 +2611,7 @@
    "yearsSinceLast": 0,
    "longestGap": 7,
    "expected2027": 0.44,
-   "pAtLeast1": 0.385,
+   "pAtLeast1": 0.386,
    "pAtLeast2Raw": 0.073,
    "likelyRange": [
     0,
@@ -2692,7 +2693,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 1.65,
-   "pAtLeast1": 0.73,
+   "pAtLeast1": 0.728,
    "pAtLeast2Raw": 0.493,
    "likelyRange": [
     0,
@@ -2700,7 +2701,7 @@
    ],
    "recency": {
     "expected2027": 1.74,
-    "pAtLeast1": 0.737
+    "pAtLeast1": 0.736
    },
    "trend": {
     "rho": 0.184,
@@ -2794,7 +2795,7 @@
    "yearsSinceLast": 2,
    "longestGap": 5,
    "expected2027": 0.53,
-   "pAtLeast1": 0.424,
+   "pAtLeast1": 0.425,
    "pAtLeast2Raw": 0.098,
    "likelyRange": [
     0,
@@ -2802,7 +2803,7 @@
    ],
    "recency": {
     "expected2027": 0.44,
-    "pAtLeast1": 0.409
+    "pAtLeast1": 0.408
    },
    "trend": {
     "rho": -0.106,
@@ -2880,7 +2881,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 1.06,
-   "pAtLeast1": 0.601,
+   "pAtLeast1": 0.6,
    "pAtLeast2Raw": 0.285,
    "likelyRange": [
     0,
@@ -2888,7 +2889,7 @@
    ],
    "recency": {
     "expected2027": 1.05,
-    "pAtLeast1": 0.606
+    "pAtLeast1": 0.605
    },
    "trend": {
     "rho": -0.076,
@@ -2974,7 +2975,7 @@
    "yearsSinceLast": 0,
    "longestGap": 5,
    "expected2027": 0.95,
-   "pAtLeast1": 0.573,
+   "pAtLeast1": 0.572,
    "pAtLeast2Raw": 0.247,
    "likelyRange": [
     0,
@@ -2982,7 +2983,7 @@
    ],
    "recency": {
     "expected2027": 1.03,
-    "pAtLeast1": 0.601
+    "pAtLeast1": 0.6
    },
    "trend": {
     "rho": -0.235,
@@ -3174,7 +3175,7 @@
    ],
    "recency": {
     "expected2027": 0.84,
-    "pAtLeast1": 0.55
+    "pAtLeast1": 0.549
    },
    "trend": {
     "rho": -0.096,
@@ -3252,7 +3253,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 3.01,
-   "pAtLeast1": 0.889,
+   "pAtLeast1": 0.888,
    "pAtLeast2Raw": 0.803,
    "likelyRange": [
     1,
@@ -3354,7 +3355,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 3.13,
-   "pAtLeast1": 0.898,
+   "pAtLeast1": 0.896,
    "pAtLeast2Raw": 0.819,
    "likelyRange": [
     1,
@@ -3456,7 +3457,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 3.35,
-   "pAtLeast1": 0.912,
+   "pAtLeast1": 0.91,
    "pAtLeast2Raw": 0.847,
    "likelyRange": [
     1,
@@ -3648,7 +3649,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 2.65,
-   "pAtLeast1": 0.859,
+   "pAtLeast1": 0.857,
    "pAtLeast2Raw": 0.742,
    "likelyRange": [
     1,
@@ -3750,7 +3751,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 5.57,
-   "pAtLeast1": 0.963,
+   "pAtLeast1": 0.962,
    "pAtLeast2Raw": 0.975,
    "likelyRange": [
     3,
@@ -3852,7 +3853,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 2.78,
-   "pAtLeast1": 0.871,
+   "pAtLeast1": 0.869,
    "pAtLeast2Raw": 0.766,
    "likelyRange": [
     1,
@@ -3954,7 +3955,7 @@
    "yearsSinceLast": 0,
    "longestGap": 9,
    "expected2027": 0.29,
-   "pAtLeast1": 0.305,
+   "pAtLeast1": 0.307,
    "pAtLeast2Raw": 0.035,
    "likelyRange": [
     0,
@@ -4024,7 +4025,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 4.26,
-   "pAtLeast1": 0.953,
+   "pAtLeast1": 0.952,
    "pAtLeast2Raw": 0.925,
    "likelyRange": [
     2,
@@ -4126,7 +4127,7 @@
    "yearsSinceLast": 0,
    "longestGap": 6,
    "expected2027": 0.59,
-   "pAtLeast1": 0.451,
+   "pAtLeast1": 0.452,
    "pAtLeast2Raw": 0.119,
    "likelyRange": [
     0,
@@ -4208,7 +4209,7 @@
    "yearsSinceLast": 18,
    "longestGap": 18,
    "expected2027": 0.01,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -4264,7 +4265,7 @@
    "yearsSinceLast": 0,
    "longestGap": 4,
    "expected2027": 1.46,
-   "pAtLeast1": 0.693,
+   "pAtLeast1": 0.692,
    "pAtLeast2Raw": 0.428,
    "likelyRange": [
     0,
@@ -4362,7 +4363,7 @@
    "yearsSinceLast": 0,
    "longestGap": 3,
    "expected2027": 1.39,
-   "pAtLeast1": 0.68,
+   "pAtLeast1": 0.679,
    "pAtLeast2Raw": 0.406,
    "likelyRange": [
     0,
@@ -4370,7 +4371,7 @@
    ],
    "recency": {
     "expected2027": 1.71,
-    "pAtLeast1": 0.734
+    "pAtLeast1": 0.733
    },
    "trend": {
     "rho": 0.028,
@@ -4464,7 +4465,7 @@
    "yearsSinceLast": 1,
    "longestGap": 2,
    "expected2027": 1.12,
-   "pAtLeast1": 0.617,
+   "pAtLeast1": 0.616,
    "pAtLeast2Raw": 0.308,
    "likelyRange": [
     0,
@@ -4472,7 +4473,7 @@
    ],
    "recency": {
     "expected2027": 0.53,
-    "pAtLeast1": 0.447
+    "pAtLeast1": 0.446
    },
    "trend": {
     "rho": -0.678,
@@ -4648,7 +4649,7 @@
    "yearsSinceLast": 0,
    "longestGap": 11,
    "expected2027": 1.28,
-   "pAtLeast1": 0.656,
+   "pAtLeast1": 0.655,
    "pAtLeast2Raw": 0.367,
    "likelyRange": [
     0,
@@ -4656,7 +4657,7 @@
    ],
    "recency": {
     "expected2027": 1.39,
-    "pAtLeast1": 0.678
+    "pAtLeast1": 0.677
    },
    "trend": {
     "rho": 0.199,
@@ -4734,7 +4735,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 9.96,
-   "pAtLeast1": 0.963,
+   "pAtLeast1": 0.962,
    "pAtLeast2Raw": 0.999,
    "likelyRange": [
     6,
@@ -4836,7 +4837,7 @@
    "yearsSinceLast": 2,
    "longestGap": 6,
    "expected2027": 0.55,
-   "pAtLeast1": 0.436,
+   "pAtLeast1": 0.437,
    "pAtLeast2Raw": 0.107,
    "likelyRange": [
     0,
@@ -4918,7 +4919,7 @@
    "yearsSinceLast": null,
    "longestGap": 19,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -4968,16 +4969,16 @@
    "lastAsked": 2023,
    "yearsSinceLast": 3,
    "longestGap": 11,
-   "expected2027": 0.23,
-   "pAtLeast1": 0.263,
-   "pAtLeast2Raw": 0.022,
+   "expected2027": 0.27,
+   "pAtLeast1": 0.293,
+   "pAtLeast2Raw": 0.03,
    "likelyRange": [
     0,
     1
    ],
    "recency": {
-    "expected2027": 0.11,
-    "pAtLeast1": 0.205
+    "expected2027": 0.12,
+    "pAtLeast1": 0.21
    },
    "trend": {
     "rho": -0.281,
@@ -5041,16 +5042,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 6,
-   "expected2027": 2.19,
-   "pAtLeast1": 0.809,
-   "pAtLeast2Raw": 0.643,
+   "expected2027": 2.6,
+   "pAtLeast1": 0.853,
+   "pAtLeast2Raw": 0.733,
    "likelyRange": [
-    0,
-    4
+    1,
+    5
    ],
    "recency": {
-    "expected2027": 2.73,
-    "pAtLeast1": 0.853
+    "expected2027": 2.86,
+    "pAtLeast1": 0.864
    },
    "trend": {
     "rho": 0.496,
@@ -5143,16 +5144,16 @@
    "lastAsked": 2025,
    "yearsSinceLast": 1,
    "longestGap": 7,
-   "expected2027": 0.52,
-   "pAtLeast1": 0.42,
-   "pAtLeast2Raw": 0.095,
+   "expected2027": 0.61,
+   "pAtLeast1": 0.46,
+   "pAtLeast2Raw": 0.127,
    "likelyRange": [
     0,
-    1
+    2
    ],
    "recency": {
-    "expected2027": 0.51,
-    "pAtLeast1": 0.44
+    "expected2027": 0.53,
+    "pAtLeast1": 0.45
    },
    "trend": {
     "rho": -0.142,
@@ -5229,16 +5230,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 4,
-   "expected2027": 1.87,
-   "pAtLeast1": 0.765,
-   "pAtLeast2Raw": 0.559,
+   "expected2027": 2.23,
+   "pAtLeast1": 0.812,
+   "pAtLeast2Raw": 0.652,
    "likelyRange": [
     0,
     4
    ],
    "recency": {
-    "expected2027": 2.15,
-    "pAtLeast1": 0.793
+    "expected2027": 2.26,
+    "pAtLeast1": 0.806
    },
    "trend": {
     "rho": -0.116,
@@ -5331,9 +5332,9 @@
    "lastAsked": 2012,
    "yearsSinceLast": 14,
    "longestGap": 13,
-   "expected2027": 0.06,
-   "pAtLeast1": 0.109,
-   "pAtLeast2Raw": 0.001,
+   "expected2027": 0.07,
+   "pAtLeast1": 0.124,
+   "pAtLeast2Raw": 0.002,
    "likelyRange": [
     0,
     0
@@ -5387,16 +5388,16 @@
    "lastAsked": 2025,
    "yearsSinceLast": 1,
    "longestGap": 4,
-   "expected2027": 0.92,
-   "pAtLeast1": 0.563,
-   "pAtLeast2Raw": 0.235,
+   "expected2027": 0.74,
+   "pAtLeast1": 0.507,
+   "pAtLeast2Raw": 0.171,
    "likelyRange": [
     0,
     2
    ],
    "recency": {
-    "expected2027": 0.82,
-    "pAtLeast1": 0.545
+    "expected2027": 0.8,
+    "pAtLeast1": 0.539
    },
    "trend": {
     "rho": -0.159,
@@ -5477,16 +5478,16 @@
    "lastAsked": 2025,
    "yearsSinceLast": 1,
    "longestGap": 2,
-   "expected2027": 1.38,
-   "pAtLeast1": 0.677,
-   "pAtLeast2Raw": 0.401,
+   "expected2027": 1.11,
+   "pAtLeast1": 0.614,
+   "pAtLeast2Raw": 0.305,
    "likelyRange": [
     0,
     3
    ],
    "recency": {
-    "expected2027": 0.81,
-    "pAtLeast1": 0.542
+    "expected2027": 0.79,
+    "pAtLeast1": 0.536
    },
    "trend": {
     "rho": -0.353,
@@ -5563,16 +5564,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 3,
-   "expected2027": 0.86,
-   "pAtLeast1": 0.544,
-   "pAtLeast2Raw": 0.211,
+   "expected2027": 0.69,
+   "pAtLeast1": 0.488,
+   "pAtLeast2Raw": 0.152,
    "likelyRange": [
     0,
     2
    ],
    "recency": {
-    "expected2027": 0.67,
-    "pAtLeast1": 0.499
+    "expected2027": 0.65,
+    "pAtLeast1": 0.492
    },
    "trend": {
     "rho": -0.105,
@@ -5649,16 +5650,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 2,
-   "expected2027": 2.7,
-   "pAtLeast1": 0.864,
-   "pAtLeast2Raw": 0.751,
+   "expected2027": 2.18,
+   "pAtLeast1": 0.806,
+   "pAtLeast2Raw": 0.64,
    "likelyRange": [
-    1,
-    5
+    0,
+    4
    ],
    "recency": {
-    "expected2027": 2.66,
-    "pAtLeast1": 0.847
+    "expected2027": 2.59,
+    "pAtLeast1": 0.84
    },
    "trend": {
     "rho": -0.046,
@@ -5751,16 +5752,16 @@
    "lastAsked": 2024,
    "yearsSinceLast": 2,
    "longestGap": 5,
-   "expected2027": 0.76,
-   "pAtLeast1": 0.511,
-   "pAtLeast2Raw": 0.176,
+   "expected2027": 0.61,
+   "pAtLeast1": 0.459,
+   "pAtLeast2Raw": 0.125,
    "likelyRange": [
     0,
     2
    ],
    "recency": {
-    "expected2027": 0.54,
-    "pAtLeast1": 0.453
+    "expected2027": 0.53,
+    "pAtLeast1": 0.447
    },
    "trend": {
     "rho": 0.086,
@@ -5837,16 +5838,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 1,
-   "expected2027": 4.86,
-   "pAtLeast1": 0.963,
-   "pAtLeast2Raw": 0.955,
+   "expected2027": 3.92,
+   "pAtLeast1": 0.939,
+   "pAtLeast2Raw": 0.902,
    "likelyRange": [
     2,
-    8
+    7
    ],
    "recency": {
-    "expected2027": 4,
-    "pAtLeast1": 0.932
+    "expected2027": 3.89,
+    "pAtLeast1": 0.927
    },
    "trend": {
     "rho": 0.096,
@@ -5940,7 +5941,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -5991,7 +5992,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -6041,16 +6042,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 8,
-   "expected2027": 0.49,
-   "pAtLeast1": 0.406,
-   "pAtLeast2Raw": 0.086,
+   "expected2027": 0.56,
+   "pAtLeast1": 0.438,
+   "pAtLeast2Raw": 0.108,
    "likelyRange": [
     0,
-    1
+    2
    ],
    "recency": {
-    "expected2027": 0.57,
-    "pAtLeast1": 0.465
+    "expected2027": 0.63,
+    "pAtLeast1": 0.483
    },
    "trend": {
     "rho": 0.222,
@@ -6123,16 +6124,16 @@
    "lastAsked": 2025,
    "yearsSinceLast": 1,
    "longestGap": 3,
-   "expected2027": 1.4,
-   "pAtLeast1": 0.681,
-   "pAtLeast2Raw": 0.408,
+   "expected2027": 1.61,
+   "pAtLeast1": 0.72,
+   "pAtLeast2Raw": 0.478,
    "likelyRange": [
     0,
     3
    ],
    "recency": {
-    "expected2027": 1.41,
-    "pAtLeast1": 0.682
+    "expected2027": 1.54,
+    "pAtLeast1": 0.705
    },
    "trend": {
     "rho": 0.319,
@@ -6225,16 +6226,16 @@
    "lastAsked": 2023,
    "yearsSinceLast": 3,
    "longestGap": 5,
-   "expected2027": 0.25,
-   "pAtLeast1": 0.28,
-   "pAtLeast2Raw": 0.027,
+   "expected2027": 0.35,
+   "pAtLeast1": 0.342,
+   "pAtLeast2Raw": 0.049,
    "likelyRange": [
     0,
     1
    ],
    "recency": {
-    "expected2027": 0.13,
-    "pAtLeast1": 0.225
+    "expected2027": 0.14,
+    "pAtLeast1": 0.232
    },
    "trend": {
     "rho": -0.295,
@@ -6294,16 +6295,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 6,
-   "expected2027": 0.68,
-   "pAtLeast1": 0.483,
-   "pAtLeast2Raw": 0.147,
+   "expected2027": 0.95,
+   "pAtLeast1": 0.572,
+   "pAtLeast2Raw": 0.247,
    "likelyRange": [
     0,
     2
    ],
    "recency": {
-    "expected2027": 1.09,
-    "pAtLeast1": 0.615
+    "expected2027": 1.16,
+    "pAtLeast1": 0.631
    },
    "trend": {
     "rho": 0.166,
@@ -6389,7 +6390,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -6440,7 +6441,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -6490,16 +6491,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 11,
-   "expected2027": 0.61,
-   "pAtLeast1": 0.459,
-   "pAtLeast2Raw": 0.125,
+   "expected2027": 1.07,
+   "pAtLeast1": 0.602,
+   "pAtLeast2Raw": 0.288,
    "likelyRange": [
     0,
     2
    ],
    "recency": {
-    "expected2027": 1.19,
-    "pAtLeast1": 0.637
+    "expected2027": 1,
+    "pAtLeast1": 0.594
    },
    "trend": {
     "rho": 0.027,
@@ -6584,16 +6585,16 @@
    "lastAsked": 2026,
    "yearsSinceLast": 0,
    "longestGap": 17,
-   "expected2027": 0.25,
-   "pAtLeast1": 0.279,
-   "pAtLeast2Raw": 0.026,
+   "expected2027": 0.43,
+   "pAtLeast1": 0.383,
+   "pAtLeast2Raw": 0.071,
    "likelyRange": [
     0,
     1
    ],
    "recency": {
-    "expected2027": 0.59,
-    "pAtLeast1": 0.47
+    "expected2027": 0.5,
+    "pAtLeast1": 0.434
    },
    "trend": {
     "rho": 0.397,
@@ -6654,7 +6655,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -6705,7 +6706,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -6756,7 +6757,7 @@
    "yearsSinceLast": 0,
    "longestGap": 2,
    "expected2027": 1.56,
-   "pAtLeast1": 0.712,
+   "pAtLeast1": 0.711,
    "pAtLeast2Raw": 0.461,
    "likelyRange": [
     0,
@@ -6764,7 +6765,7 @@
    ],
    "recency": {
     "expected2027": 1.56,
-    "pAtLeast1": 0.708
+    "pAtLeast1": 0.707
    },
    "trend": {
     "rho": 0.021,
@@ -6854,7 +6855,7 @@
    "yearsSinceLast": 0,
    "longestGap": 0,
    "expected2027": 3.4,
-   "pAtLeast1": 0.915,
+   "pAtLeast1": 0.914,
    "pAtLeast2Raw": 0.854,
    "likelyRange": [
     1,
@@ -6956,7 +6957,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 1.35,
-   "pAtLeast1": 0.67,
+   "pAtLeast1": 0.669,
    "pAtLeast2Raw": 0.39,
    "likelyRange": [
     0,
@@ -6964,7 +6965,7 @@
    ],
    "recency": {
     "expected2027": 1.14,
-    "pAtLeast1": 0.627
+    "pAtLeast1": 0.626
    },
    "trend": {
     "rho": -0.327,
@@ -7050,7 +7051,7 @@
    "yearsSinceLast": 0,
    "longestGap": 1,
    "expected2027": 2.65,
-   "pAtLeast1": 0.859,
+   "pAtLeast1": 0.857,
    "pAtLeast2Raw": 0.741,
    "likelyRange": [
     1,
@@ -7152,7 +7153,7 @@
    "yearsSinceLast": 2,
    "longestGap": 3,
    "expected2027": 0.45,
-   "pAtLeast1": 0.388,
+   "pAtLeast1": 0.389,
    "pAtLeast2Raw": 0.074,
    "likelyRange": [
     0,
@@ -7234,7 +7235,7 @@
    "yearsSinceLast": 2,
    "longestGap": 3,
    "expected2027": 0.25,
-   "pAtLeast1": 0.282,
+   "pAtLeast1": 0.283,
    "pAtLeast2Raw": 0.027,
    "likelyRange": [
     0,
@@ -7316,7 +7317,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -7367,7 +7368,7 @@
    "yearsSinceLast": 2,
    "longestGap": 11,
    "expected2027": 0.19,
-   "pAtLeast1": 0.236,
+   "pAtLeast1": 0.238,
    "pAtLeast2Raw": 0.016,
    "likelyRange": [
     0,
@@ -7440,7 +7441,7 @@
    "yearsSinceLast": null,
    "longestGap": 18,
    "expected2027": 0,
-   "pAtLeast1": 0.055,
+   "pAtLeast1": 0.056,
    "pAtLeast2Raw": 0,
    "likelyRange": [
     0,
@@ -7491,7 +7492,7 @@
    "yearsSinceLast": 0,
    "longestGap": 11,
    "expected2027": 0.16,
-   "pAtLeast1": 0.211,
+   "pAtLeast1": 0.212,
    "pAtLeast2Raw": 0.011,
    "likelyRange": [
     0,
@@ -7780,7 +7781,7 @@
   {
    "part": "Computer",
    "unit": "Computer Basics",
-   "expected2027": 4.9,
+   "expected2027": 5.8,
    "historicMeanScaled": 4.6,
    "sdScaled": 3.9,
    "hist": {
@@ -7807,7 +7808,7 @@
   {
    "part": "Computer",
    "unit": "Data Representation",
-   "expected2027": 11.5,
+   "expected2027": 9.3,
    "historicMeanScaled": 12.2,
    "sdScaled": 4.5,
    "hist": {
@@ -7834,7 +7835,7 @@
   {
    "part": "Computer",
    "unit": "Computer Hardware",
-   "expected2027": 1.9,
+   "expected2027": 2.2,
    "historicMeanScaled": 1.7,
    "sdScaled": 1.6,
    "hist": {
@@ -7861,7 +7862,7 @@
   {
    "part": "Computer",
    "unit": "Computer Software",
-   "expected2027": 0.9,
+   "expected2027": 1.3,
    "historicMeanScaled": 0.9,
    "sdScaled": 1.1,
    "hist": {
@@ -7888,7 +7889,7 @@
   {
    "part": "Computer",
    "unit": "Internet & Email",
-   "expected2027": 0.9,
+   "expected2027": 1.5,
    "historicMeanScaled": 0.6,
    "sdScaled": 1.5,
    "hist": {

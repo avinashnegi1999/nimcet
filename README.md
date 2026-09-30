@@ -4,6 +4,8 @@ Data-driven breakdown of **19 years of NIMCET question papers** — every questi
 
 > **2248 questions · 19 papers · 38 topics · 87 chapters of the 2027 syllabus · 134 re-used questions confirmed by hand**
 >
+> **Re-audited 2026-09-30:** data, labels, re-use counts and both forecast pipelines were re-derived and reproduce exactly. Fixed: the Computer forecast was biased towards number systems (it now uses only the 20-question papers since 2023), topic intervals were widened to a true 80%, "the method won" became "tied with simple averages", and the syllabus is now checked against the [official revised syllabus](https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf). Full list: [`analysis/AUDIT-2026-09-30.md`](analysis/AUDIT-2026-09-30.md).
+>
 > **Audited 2026-09-23:** every claim on the forecast page and its sub-pages was re-checked against the data. Re-use, trend-test, duplicate-question and back-test claims were corrected, the mock paper's answer key was fixed, and a new chapter-level forecast for the 2027 syllabus was added. Full list: [`analysis/AUDIT-2026-09-23.md`](analysis/AUDIT-2026-09-23.md).
 >
 > **Re-verified 2026-09-02:** every question re-read and re-classified by Claude Fable 5.1 (one model, no subagents), including the 2012 image-only pages read visually. Per-question labels are now in [`data/questions-classified.jsonl`](data/questions-classified.jsonl). All headline findings held; the numbers below are the re-verified ones.
@@ -15,7 +17,7 @@ Interactive heat-map + topic ranking + year trends. Works on any device, anytime
 All 2,248 questions re-labelled into the 87 chapters of the 2027 syllabus, with a back-tested, calibrated chance of at least one question per chapter, the expected number of questions and a likely range. Method and data: [`analysis/syllabus-2027/`](analysis/syllabus-2027/README.md).
 
 ### 🔮 [→ NIMCET 2027 Forecast — what the next paper will most likely ask](https://avinashnegi1999.github.io/nimcet/forecast.html)
-Nineteen papers parsed, every topic trend significance-tested, six forecasting methods back-tested against the real papers. Shows the predicted 2027 topic distribution to **±1.45 questions**, the 19-year heat-map, and the hand-checked record of which past questions NIMCET has re-used — and how that has faded since 2024.
+Nineteen papers parsed, every topic trend significance-tested, six forecasting methods back-tested against the real papers. Shows the predicted 2027 topic distribution to **±1.44 questions**, the 19-year heat-map, and the hand-checked record of which past questions NIMCET has re-used — and how that has faded since 2024.
 
 <sub>Served from this repo ([`forecast.html`](forecast.html)) — one self-contained file, no external dependencies, works offline. A [mirror](https://claude.ai/code/artifact/10f48734-667d-4d7d-a573-a7085fff346a) also exists but requires a Claude login.</sub>
 
@@ -62,7 +64,7 @@ Each of these appeared in 18 or 19 of the 19 papers (the 2015 source has no Comp
 
 ## ❌ Vectors is gone — do not study it
 
-Vector & 3D questions ran at **3–8 per paper for eighteen years, then dropped to 0 in 2026** when the revised syllabus removed vector algebra. The 2027 syllabus document contains **zero** mentions of "vector", "3D" or "dimension".
+Vector & 3D questions ran at **3–8 per paper for eighteen years, then dropped to 0 in 2026** when the revised syllabus removed vector algebra. The [official revised syllabus](https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf) (in force from 2026) contains **zero** mentions of "vector", "3D" or "dimension" — checked 2026-09-30.
 
 In 2026, **Statistics** (6), **Sets, Relations & Functions** (6) and **Algebra & Progressions** (7) sat above their recent averages — a hint about where those slots went, from one paper only.
 
@@ -72,10 +74,10 @@ In 2026, **Statistics** (6), **Sets, Relations & Functions** (6) and **Algebra &
 |---|---:|---|
 | Mathematics | 50 | Calculus 10 · Trigonometry 8 · Coordinate Geo 7 · Algebra 6 · Probability 5 · Sets & Functions 4 · Statistics 4 |
 | Reasoning | 40 | Arithmetic 9 · Puzzles 8 · Series 4 · Coding 3 · Seating 3 · Syllogism 3 |
-| Computer | 20 | Number systems & Boolean 10 · Architecture/OS/memory 8 · Networking 1 |
+| Computer | 20 | Number systems & Boolean 9 · Architecture/OS/memory/software 9 · Internet & email 1–2 (6 in 2026) · Programming 1 |
 | English | 10 | Grammar 3 · Vocabulary 3 · Comprehension 2 · Fill-blanks 1 |
 
-Method: exponentially-weighted average of topic shares, chosen because it **won a back-test against five alternatives** (MAE 1.45 questions vs 1.85 for "just copy last year", which came last; re-scored in the 2026-09-23 audit using only each year's official section sizes). Full workings in [`analysis/nimcet-2027-prediction.md`](analysis/nimcet-2027-prediction.md).
+Method: exponentially-weighted average of topic shares (MAE 1.45 questions in the back-test). It **ties** with plain averages (last-5 mean 1.451, all-years mean 1.466) and clearly beats "just copy last year" (1.85). Computer is the exception: it doubled in 2023 and its mix changed, so it is forecast from the 20-question papers (2023–2026) only — on 2024–2026 that cuts the Computer error from 2.45 to 1.97 questions per topic. Overall back-test error with that change: 1.44. Full workings in [`analysis/nimcet-2027-prediction.md`](analysis/nimcet-2027-prediction.md).
 
 ## 🧭 2027 syllabus: the chapters most likely to appear
 
@@ -86,9 +88,9 @@ The same papers, mapped onto the **chapters of the 2027 syllabus** instead of th
 | Numerical Reasoning (arithmetic word problems) | Reasoning | 96% | 10.0 (6–14) |
 | Puzzles | Reasoning | 96% | 5.6 (3–9) |
 | Probability | Math | 96% | 5.5 (3–9) |
-| Boolean Algebra | Computer | 96% | 4.9 (2–8) |
 | Alphanumeric Series | Reasoning | 95% | 4.3 (2–7) |
-| Word & Phrase Meanings | English | 92% | 3.4 (1–6) |
+| Boolean Algebra | Computer | 94% | 3.9 (2–7) |
+| Word & Phrase Meanings | English | 91% | 3.4 (1–6) |
 | Coding-Decoding | Reasoning | 91% | 3.4 (1–6) |
 | Trigonometric Ratios and Functions | Math | 91% | 3.3 (1–6) |
 | Set Theory | Math | 91% | 3.3 (1–6) |
@@ -108,10 +110,10 @@ Counted once per re-use (a whole puzzle set counts once), gaps of 1, 2 and 4 yea
 
 Chapter-by-chapter contents of every tier: [`analysis/study-plan-by-tier.md`](analysis/study-plan-by-tier.md). Every past question, written out in full and grouped by those chapters: [`analysis/pyq-by-chapter/`](analysis/pyq-by-chapter/README.md).
 
-- 🔴 **Tier S — do first (~540 marks):** Number Systems & Boolean Logic (10 Q) · Calculus (10 Q) · Arithmetic word problems (9 Q) · Logical Puzzles (8 Q) · Trigonometry (8 Q).
-- 🟠 **Tier A — next:** Computer architecture/OS/memory (8 Q) · Coordinate & Conic Geo (7 Q) · Algebra & Progressions (6 Q) · Probability (5 Q) · Sets & Functions (4 Q) · Statistics (4 Q — the only topic trend that survives a multiple-testing correction: rising).
+- 🔴 **Tier S — do first (~530 marks):** Calculus (10 Q) · Number Systems & Boolean Logic (9 Q — falling since 2023: 12, 9, 8, 5) · Arithmetic word problems (9 Q) · Logical Puzzles (8 Q) · Trigonometry (8 Q).
+- 🟠 **Tier A — next:** Computer architecture/OS/memory/software (9 Q — now level with number systems) · Coordinate & Conic Geo (7 Q) · Algebra & Progressions (6 Q) · Probability (5 Q) · Sets & Functions (4 Q) · Statistics (4 Q — the only topic trend that survives a multiple-testing correction: rising).
 - 🟡 **Tier B — cheap, don't skip:** Series/Coding/Syllogism (10 Q) · Seating/Blood Relations/Clocks/Direction (8 Q) · Grammar + Vocabulary (6 Q).
-- ⚪ **Tier C — bounded time:** P&C (3) · Matrices (2) · Comprehension (2) · Networking (1–2 forecast, but 6 in 2026 — do one evening on DNS/HTTP/email protocols) · Mathematical Logic / truth tables (1).
+- ⚪ **Tier C — bounded time:** P&C (3) · Matrices (2) · Comprehension (2) · Internet, email & online security (1–2 forecast, but 6 in 2026, the first paper under the new syllabus — one or two evenings on browsing, DNS/HTTP, email protocols and online threats) · Mathematical Logic / truth tables (1).
 - ⛔ **Do not study:** Vector algebra · para jumbles · linear programming. (Verbal analogy is not in the 2027 syllabus but was still asked every year 2021–2024 — skim, don't zero.)
 
 ---
@@ -218,7 +220,7 @@ nimcet/
 ├── index.html                  # live interactive dashboard (GitHub Pages)
 ├── forecast.html               # 2027 forecast page: topic predictions, back-test, re-use record, tiers
 ├── syllabus-2027-heatmap.html  # every 2027-syllabus chapter ranked by its chance of appearing in 2027
-├── 2027 syllabous/             # the NIMCET 2027 syllabus PDF the chapter forecast is built on
+├── 2027 syllabous/             # the syllabus PDF the chapter forecast is built on (aspirant-compiled; matches the official revised syllabus)
 ├── analysis/
 │   ├── nimcet-2027-prediction.md       # ⭐ the 2027 forecast: trends, back-test, recycling
 │   ├── study-plan-by-tier.md           # ⭐ what to study, chapter by chapter, in tier order
@@ -229,6 +231,7 @@ nimcet/
 │   ├── recycled-questions-solved.md    #   the fourteen headline re-used questions, solved
 │   ├── syllabus-2027/                  #   2027-syllabus chapter forecast: method, findings, scripts
 │   ├── AUDIT-2026-09-23.md             #   what the 2026-09-23 audit checked and corrected
+│   ├── AUDIT-2026-09-30.md             #   the 2026-09-30 re-audit: Computer forecast, intervals, official syllabus
 │   ├── scripts/                        #   parse → classify → aggregate → dups → forecast → build (see its README)
 │   ├── overview.md         # full ranking, priority plan, conclusions
 │   ├── math.md             # Mathematics topic breakdown
@@ -260,9 +263,11 @@ nimcet/
 
 **Audit (2026-09-23).** Trend tests are now corrected for testing 39 topics at once (only Statistics' rise holds up); re-use counts come from pairs read by hand, not raw detector hits; the back-test uses only official section sizes. See [`analysis/AUDIT-2026-09-23.md`](analysis/AUDIT-2026-09-23.md).
 
-**Known data gaps:** the 2015 PDF stops at Q90 (no Computer or English questions), 2019 has 6 questions marked "Not Available" and 2012 has 2 garbled entries — 8 questions in all have no usable text. 2012's image-only pages were read visually in the 2026-09-02 pass. The source prints five questions twice inside the same paper (2012 Q117–120, 2018 Q85); the forecast counts each once. A text detector cannot see heavily reworded repeats, so the 134 confirmed re-used questions are a careful floor — but the drop to about 1% of the 2026 paper does not depend on that.
+**Re-audit (2026-09-30).** Everything was re-derived and reproduces exactly. Computer is now forecast from the 20-question papers (2023+) in both forecasts, topic intervals are widened from 73% to 80% real coverage, the "winning method" claim is now a tie, the chapter forecast is compared with a fair baseline, and syllabus claims cite the official document. See [`analysis/AUDIT-2026-09-30.md`](analysis/AUDIT-2026-09-30.md).
 
-Source papers: aspirestudy.in year-wise PYQ archive. PYQ analysis 2026-07-15; 2027 forecast 2026-08-17; re-verified 2026-09-02; audited and 2027-syllabus forecast added 2026-09-23.
+**Known data gaps:** the 2015 PDF stops at Q90 (no Computer or English questions), 2019 has 6 questions marked "Not Available" and 2012 has 2 garbled entries — 8 questions in all have no usable text. 2012 Q63 is a broken image in the source and is not in the data at all (2012 has 119 questions). 2012's image-only pages were read visually in the 2026-09-02 pass. The source prints five questions twice inside the same paper (2012 Q117–120, 2018 Q85); the forecast counts each once. A text detector cannot see heavily reworded repeats, so the 134 confirmed re-used questions are a careful floor — but the drop to about 1% of the 2026 paper does not depend on that.
+
+Source papers: aspirestudy.in year-wise PYQ archive. PYQ analysis 2026-07-15; 2027 forecast 2026-08-17; re-verified 2026-09-02; audited and 2027-syllabus forecast added 2026-09-23; re-audited 2026-09-30.
 
 ---
 

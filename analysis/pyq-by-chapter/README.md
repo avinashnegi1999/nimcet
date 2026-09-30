@@ -4,12 +4,12 @@ Each question is printed as it appeared in the paper (text as extracted from the
 
 | Page | Area | 2027 Q | Questions on page | Chapters |
 |---|---|:---:|:---:|---|
-| [S1.md](S1.md) | S1 · Number systems & Boolean logic | 10 | 125 | Number systems and conversions (34); Signed numbers (1's / 2's complement, overflow) (30); Floating point (7); Boolean algebra, SOP/POS, K-maps (37); Logic gates and circuits (14); Other forms (3) |
+| [S1.md](S1.md) | S1 · Number systems & Boolean logic | 9 | 125 | Number systems and conversions (34); Signed numbers (1's / 2's complement, overflow) (30); Floating point (7); Boolean algebra, SOP/POS, K-maps (37); Logic gates and circuits (14); Other forms (3) |
 | [S2.md](S2.md) | S2 · Calculus | 10 | 160 | Limits (23); Continuity and differentiability (18); Differentiation (17); Application of derivatives (tangent, normal, maxima–minima, rates) (36); Indefinite integration (16); Definite integration (32); Area under curves (10); Differential equations (1); Other forms (7) |
 | [S3.md](S3.md) | S3 · Arithmetic word problems | 9 | 127 | Percentages, profit and loss, interest (31); Ratio, proportion, averages, mixtures (37); Time, speed and distance (22); Time and work, pipes (6); Ages (13); Equations and number puzzles (18) |
 | [S4.md](S4.md) | S4 · Logical puzzles & conditional grouping | 8 | 194 | Conditional grouping and selection sets (47); Attribute matching (who has what) (16); Ordering and ranking (40); Truth-tellers and liars (8); Rules, processes and simulations (50); Verbal reasoning (course of action, assumptions, arguments) (14); Other forms (19) |
 | [S5.md](S5.md) | S5 · Trigonometry | 8 | 133 | Heights and distances (18); Identities and values (60); Trigonometric equations and solutions (20); Inverse trigonometric functions (3); Properties of triangles (15); Other forms (17) |
-| [A1.md](A1.md) | A1 · Computer architecture, OS & memory | 8 | 81 | CPU, registers and instruction execution (24); Memory hierarchy, cache and storage (42); I/O, OS and software (15) |
+| [A1.md](A1.md) | A1 · Computer architecture, OS & memory | 9 | 81 | CPU, registers and instruction execution (24); Memory hierarchy, cache and storage (42); I/O, OS and software (15) |
 | [A2.md](A2.md) | A2 · Coordinate & conic geometry | 7 | 116 | Straight lines and pairs of lines (51); Circles (17); Parabola (12); Ellipse (15); Hyperbola (8); Other loci and areas (13) |
 | [A3.md](A3.md) | A3 · Algebra & progressions | 6 | 117 | Quadratic equations and polynomials (39); Progressions (AP, GP, HP) and means (48); Logarithms, indices and exponentials (21); Binomial theorem and coefficients (4); Other forms (5) |
 | [A4.md](A4.md) | A4 · Probability | 5 | 88 | Classical probability (dice, coins, cards, selections) (36); Conditional probability, independence and Bayes (28); Binomial, geometric and expectation (18); Other forms (6) |

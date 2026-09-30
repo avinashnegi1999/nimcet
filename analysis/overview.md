@@ -87,14 +87,14 @@ All appear ~every year. This is where your 600→800 jump lives.
 
 ### 🟡 Tier 2 — big scoring buckets outside Math (fast ROI)
 9. **Logical Deduction & Puzzles** — 10.2/yr — *single biggest topic in the exam.* Pure practice, no syllabus.
-10. **Number System & Boolean Logic** (Computer) — 6.5/yr, ~10 of the 20 Computer questions now — small syllabus, near-guaranteed marks.
-10b. **Hardware, OS & Architecture** — 8–10/yr since 2023 — fact-sheet grind.
+10. **Number System & Boolean Logic** (Computer) — 6.6/yr, ~9 of the 20 Computer questions now (12, 9, 8, 5 in 2023–2026) — small syllabus, near-guaranteed marks.
+10b. **Hardware, OS & Architecture** — 8–9/yr since 2023, now level with number systems — fact-sheet grind.
 11. **Vocabulary** (syn/antonym) — 4.9/yr — flashcard grind.
 12. **Seating & Arrangement**, **Series**, **Coding-Decoding**, **Blood Relations** — 2.6–3.6/yr each, all learnable to near-100%.
 13. **Fill in Blanks + Grammar** — 6/yr combined, easy English marks.
 
 ### 🟢 Tier 3 — cover after Tier 1&2, don't obsess
-P&C, Matrices, Syllogism, Comprehension, Idioms, Clocks/Calendars, Number Theory, Mathematical Logic, Networking (6 Q in 2026 — one evening).
+P&C, Matrices, Syllogism, Comprehension, Idioms, Clocks/Calendars, Number Theory, Mathematical Logic, Networking & online security (6 Q in 2026, the first paper under the new syllabus — one or two evenings).
 
 ### ⚪ Tier 4 — skim / last-week only (rare, ≤0.5/yr)
 Vectors & 3D (off syllabus), Complex Numbers, Differential Equations, Programming/DS, Cubes/Dice, Analogy, Odd-one-out, Data Interpretation, Direction Sense, Data Sufficiency.

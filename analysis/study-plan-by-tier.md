@@ -4,18 +4,18 @@
 
 The tier table on the [forecast page](https://avinashnegi1999.github.io/nimcet/forecast.html) says *which areas* matter. This page opens each area into the **chapters and question-types that have actually been asked**, taken from the sub-topic label on every one of the 2,248 classified questions (`data/questions-classified.jsonl`). Counts are over 19 papers; ★ marks the forms listed first in each chapter — check the years beside each: several were asked only once or twice, so ★ means "core form", not "comes back every year".
 
-Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −3 per wrong answer.
+Forecast numbers are the 2026-09-02 re-verified ones; the two Computer rows (S1, A1) were updated in the [2026-09-30 re-audit](AUDIT-2026-09-30.md), which forecasts Computer from the 20-question papers (2023+) only. 12 marks per question, −3 per wrong answer.
 
 &nbsp;
 
 | Priority | Area | 2027 Q | Marks | Page section | All past questions |
 |:---:|---|:---:|:---:|---|---|
-| Tier S | Number systems & Boolean logic | 10 | 120 | [S1](#s1--number-systems--boolean-logic--10-q) | [S1.md](pyq-by-chapter/S1.md) |
+| Tier S | Number systems & Boolean logic | 9 | 108 | [S1](#s1--number-systems--boolean-logic--9-q) | [S1.md](pyq-by-chapter/S1.md) |
 | Tier S | Calculus | 10 | 120 | [S2](#s2--calculus--10-q) | [S2.md](pyq-by-chapter/S2.md) |
 | Tier S | Arithmetic word problems (Reasoning section) | 9 | 108 | [S3](#s3--arithmetic-word-problems--9-q) | [S3.md](pyq-by-chapter/S3.md) |
 | Tier S | Logical puzzles & conditional grouping | 8 | 96 | [S4](#s4--logical-puzzles--conditional-grouping--8-q) | [S4.md](pyq-by-chapter/S4.md) |
 | Tier S | Trigonometry | 8 | 96 | [S5](#s5--trigonometry--8-q) | [S5.md](pyq-by-chapter/S5.md) |
-| Tier A | Computer architecture, OS & memory | 8 | 96 | [A1](#a1--computer-architecture-os--memory--8-q) | [A1.md](pyq-by-chapter/A1.md) |
+| Tier A | Computer architecture, OS & memory | 9 | 108 | [A1](#a1--computer-architecture-os--memory--9-q) | [A1.md](pyq-by-chapter/A1.md) |
 | Tier A | Coordinate & conic geometry | 7 | 84 | [A2](#a2--coordinate--conic-geometry--7-q) | [A2.md](pyq-by-chapter/A2.md) |
 | Tier A | Algebra & progressions | 6 | 72 | [A3](#a3--algebra--progressions--6-q) | [A3.md](pyq-by-chapter/A3.md) |
 | Tier A | Probability | 5 | 60 | [A4](#a4--probability--5-q) | [A4.md](pyq-by-chapter/A4.md) |
@@ -41,9 +41,9 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 &nbsp;
 
-## S1 · Number systems & Boolean logic — 10 Q
+## S1 · Number systems & Boolean logic — 9 Q
 
-125 questions in 19 years, 42 in the last five. Closed syllabus, entirely mechanical. Every item below has been asked; the starred ones repeat.
+125 questions in 19 years, 42 in the last five. Falling since the Computer section doubled: 12, 9, 8, 5 in 2023–2026, so 9 is an average, not a floor. Closed syllabus, entirely mechanical. Every item below has been asked; the starred ones repeat.
 
 ### Chapter 1 — Number systems and conversions
 
@@ -646,9 +646,9 @@ Forecast numbers are the 2026-09-02 re-verified ones. 12 marks per question, −
 
 &nbsp;
 
-## A1 · Computer architecture, OS & memory — 8 Q
+## A1 · Computer architecture, OS & memory — 9 Q
 
-81 questions, **36 in the last five** (8–10 per paper since 2023). Fact-sheet material.
+81 questions, **36 in the last five** (8–9 per paper since 2023 — now level with number systems). Fact-sheet material.
 
 ### Chapter 1 — CPU and instruction execution
 
@@ -1638,7 +1638,7 @@ English is 10 questions since 2023: 3 vocabulary, 3 grammar, 2 comprehension, 1 
 
 **Reading comprehension (forecast 2; 50 total)** — passages have been 2–8 questions long (Cuban missile crisis, pterosaurs, fungi, air pollution & cardiovascular disease, white cement, left-handedness, corporate takeovers, lichens, university education, Churchill "we shall fight", VR, science vs religion, climate change, accelerating universe); also single-paragraph "which conclusion can be deduced" items (gig workers 2026) and sentence-that-logically-completes-the-passage (qualitative research 2026). Practice for speed; no study material.
 
-**Networking & Internet (forecast 1–2 but 6 in 2026)** — DNS translates URL → IP; cookies; browser rendering engine; URL / HTTP / DNS definitions matched; IMAP vs POP3 (POP3 downloads and deletes, IMAP syncs); TCP/IP needed for Internet access; www = World Wide Web. One evening covers it.
+**Networking & Internet (forecast 1.5 but 6 in 2026, the first paper under the new syllabus)** — DNS translates URL → IP; cookies; browser rendering engine; URL / HTTP / DNS definitions matched; IMAP vs POP3 (POP3 downloads and deletes, IMAP syncs); TCP/IP needed for Internet access; www = World Wide Web. The official syllabus also names **online security** (basic online threats and safety) — no question yet, but add it. One or two evenings cover it.
 
 **Mathematical logic (forecast 1; named in the 2027 syllabus)** — negation of ¬S ∨ (¬R ∧ S) (= S ∧ R); count truth-table rows where (¬p ∨ q) ⇒ r is true (5 of 8); tautology test; implication chains P ⟹ Q ⟹ R with S. Learn truth tables for ∧, ∨, ¬, ⇒, ⇔ and De Morgan for statements.
 

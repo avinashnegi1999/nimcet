@@ -3,6 +3,8 @@
 Built from all 19 papers in `papers/` (2008–2026), 2,248 extracted questions.
 Generated 2026-08-17. **Re-verified 2026-09-02 with a full single-model re-classification — see §13; the tables in §7–§8 now show the re-verified forecast.**
 
+> **Re-audited 2026-09-30** ([`AUDIT-2026-09-30.md`](AUDIT-2026-09-30.md)): the Computer forecast in §8 now uses only the 20-question papers (it was biased towards number systems), the §7–§8 bands are widened to a true 80%, the back-test "winner" is a tie (§5), and the syllabus claims are checked against the [official revised syllabus](https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf).
+
 > **Audited 2026-09-23** ([`AUDIT-2026-09-23.md`](AUDIT-2026-09-23.md)). Corrected in place below: (1) re-use — 99 of the 270 detector pairs were false matches and re-use has faded to 0.8% of the 2026 paper, so the "solve 2025 and 2023 because they will be recycled" advice is withdrawn; (2) trends — after correcting for testing 39 topics only Statistics' rise holds up; (3) stale July numbers left over in §0, §2, §10 and §11; (4) the back-test now uses official section sizes (best MAE 1.45, not 1.42); (5) five questions the source prints twice inside one paper. A back-tested chapter-level forecast for the 2027 syllabus is in [`syllabus-2027/`](syllabus-2027/README.md).
 
 ---
@@ -195,12 +197,12 @@ Predict year *Y* using only papers ≤ *Y−1*, score against the real paper. Ta
 
 ### Conclusions from the back-test
 
-1. **Slowly-decaying weighted averages win.** EWMA α = 0.20 means the last year gets ~20% weight, the year before ~16%, and so on — the whole history matters.
+1. **Averages of the history win — but they tie with each other.** EWMA α = 0.20 means the last year gets ~20% weight, the year before ~16%, and so on. Re-audit 2026-09-30: after the official-size re-scoring EWMA α = 0.20 (1.450), the last-5 mean (1.451) and the all-years mean (1.466) are a statistical tie (EWMA − last-5 = −0.001 ± 0.024 over 457 predictions). Only "same as last year" is clearly worse.
 2. **Copying last year is the worst method tested** (MAE 1.70–1.81 vs 1.43). This directly contradicts the instinct "2026 is the new syllabus so just predict 2026 again". Weighting 2026 heavily is right; copying it is not.
 3. **Trend extrapolation (LinReg) also loses** — consistent with §3, where almost nothing has a significant trend.
 4. Restricted to the post-2023 regime only (targets 2023–2026), the ranking tightens (Blend45 1.381, EWMA.20 1.403, LastYear 1.547) but the ordering holds.
 
-**Method selected for the 2027 forecast: EWMA α = 0.20 on share-within-section, plus a hard syllabus override zeroing Vectors.** Expected accuracy: **±1.4 questions per topic** (1.45 after the audit's re-scoring), with an 80% band of roughly ±3 for the large topics.
+**Method selected for the 2027 forecast: EWMA α = 0.20 on share-within-section, plus a hard syllabus override zeroing Vectors; Computer from the 20-question papers (2023+) only (re-audit 2026-09-30, see §8).** Expected accuracy: **±1.44 questions per topic** (back-test 2015–2026 with official section sizes), with an 80% band of roughly ±4 for the large topics.
 
 ---
 
@@ -222,24 +224,24 @@ The only realistic risk is a further NIMCET-side revision; nothing in the 2023�
 
 ## 7. Deliverable 2 — Predicted Mathematics topic distribution (50 questions)
 
-Re-verified 2026-09-02. EWMA α = 0.20 on share-within-section × 50, Vectors forced to zero by the syllabus and its share redistributed proportionally. 80% band = ±1.28 × the standard deviation of the method's own back-test residuals for that topic.
+Re-verified 2026-09-02. EWMA α = 0.20 on share-within-section × 50, Vectors forced to zero by the syllabus and its share redistributed proportionally. 80% band = ±1.7 × the standard deviation of the method's own back-test residuals for that topic (was ±1.28 until the 2026-09-30 re-audit; out of sample that held the real count only 73% of the time in 2019–2026, ±1.7 holds it 80% of the time).
 
 | Topic | Predicted | 80% band | 2026 actual | last-5 mean | 19-yr mean |
 |---|---|---|---|---|---|
-| **Calculus** | **10** | 7–12 | 9 | 9.6 | 8.4 |
-| **Trigonometry** | **8** | 5–11 | 8 | 7.4 | 7.0 |
-| **Coordinate & Conic Geometry** | **7** | 4–9 | 6 | 6.6 | 6.1 |
-| **Algebra & Progressions** | **6** | 4–8 | 7 | 5.4 | 6.2 |
-| **Probability** | **5** | 3–7 | 3 | 4.6 | 4.6 |
+| **Calculus** | **10** | 6–13 | 9 | 9.6 | 8.4 |
+| **Trigonometry** | **8** | 4–12 | 8 | 7.4 | 7.0 |
+| **Coordinate & Conic Geometry** | **7** | 4–10 | 6 | 6.6 | 6.1 |
+| **Algebra & Progressions** | **6** | 3–9 | 7 | 5.4 | 6.2 |
+| **Probability** | **5** | 2–7 | 3 | 4.6 | 4.6 |
 | **Sets Relations & Functions** | **4** | 3–6 | 6 | 4.4 | 3.1 |
-| **Statistics** | **4** | 2–5 | 6 | 4.0 | 2.4 |
-| Permutation & Combination | **3** | 1–5 | 1 | 1.8 | 3.6 |
+| **Statistics** | **4** | 2–6 | 6 | 4.0 | 2.4 |
+| Permutation & Combination | **3** | 0–6 | 1 | 1.8 | 3.6 |
 | Matrices & Determinants | **2** | 1–4 | 3 | 2.0 | 2.2 |
 | Number Theory (HCF/LCM/divisibility) | **1** | 0–2 | 0 | 0.6 | 1.2 |
 | Mathematical Logic | **0** | 0–1 | 1 | 0.4 | 0.1 |
 | Complex Numbers | **0** | 0–1 | 0 | 0.2 | 0.2 |
 | Differential Equations | **0** | 0–1 | 0 | 0.0 | 0.2 |
-| Vectors & 3D Geometry | **0** | 0–3 | 0 | 4.6 | 5.3 |
+| Vectors & 3D Geometry | **0** | 0–4 | 0 | 4.6 | 5.3 |
 
 Calculus + Trigonometry + Coordinate Geometry + Algebra = **~30 of 50**. Statistics is the only topic whose rising trend survives a multiple-testing correction, and it had 6 questions in 2026.
 
@@ -251,20 +253,20 @@ Calculus + Trigonometry + Coordinate Geometry + Algebra = **~30 of 50**. Statist
 
 | Topic | Predicted | 80% band | 2026 | last-5 | 19-yr mean |
 |---|---|---|---|---|---|
-| **Arithmetic (speed-time-work, ratio, %, mixture)** | **9** | 3–15 | 13 | 8.6 | 6.7 |
-| **Logical Deduction & Puzzles** | **8** | 4–13 | 7 | 7.4 | 10.2 |
-| **Series & Sequence** | **4** | 1–7 | 3 | 3.6 | 3.8 |
-| **Coding-Decoding** | **3** | 0–6 | 2 | 3.2 | 2.7 |
-| Seating & Arrangement | **3** | 0–8 | 3 | 2.6 | 3.8 |
-| Syllogism | **3** | 1–5 | 3 | 3.2 | 2.2 |
-| Blood Relations | **3** | 0–6 | 3 | 1.8 | 3.1 |
+| **Arithmetic (speed-time-work, ratio, %, mixture)** | **9** | 1–17 | 13 | 8.6 | 6.7 |
+| **Logical Deduction & Puzzles** | **8** | 3–14 | 7 | 7.4 | 10.2 |
+| **Series & Sequence** | **4** | 0–8 | 3 | 3.6 | 3.8 |
+| **Coding-Decoding** | **3** | 0–7 | 2 | 3.2 | 2.7 |
+| Seating & Arrangement | **3** | 0–9 | 3 | 2.6 | 3.8 |
+| Syllogism | **3** | 0–6 | 3 | 3.2 | 2.2 |
+| Blood Relations | **3** | 0–7 | 3 | 1.8 | 3.1 |
 | Clocks & Calendars | **2** | 0–3 | 1 | 1.4 | 1.5 |
-| Cubes Dice & Visual | **1** | 0–3 | 1 | 1.6 | 1.2 |
-| Data Interpretation | **1** | 0–4 | 2 | 1.0 | 0.9 |
+| Cubes Dice & Visual | **1** | 0–4 | 1 | 1.6 | 1.2 |
+| Data Interpretation | **1** | 0–5 | 2 | 1.0 | 0.9 |
 | Odd-one-out & Classification | **1** | 0–3 | 0 | 1.0 | 0.7 |
 | Direction Sense | **1** | 0–2 | 1 | 0.6 | 0.9 |
-| Analogy | **1** | 0–3 | 0 | 0.4 | 0.4 |
-| Data Sufficiency | **0** | 0–2 | 0 | 0.4 | 0.4 |
+| Analogy | **1** | 0–4 | 0 | 0.4 | 0.4 |
+| Data Sufficiency | **1** | 0–2 | 0 | 0.4 | 0.4 |
 
 Arithmetic word problems now edge out puzzles as the biggest Reasoning bucket (13 in 2026). Puzzles look like they are falling, but that trend does not survive the multiple-testing correction (q = 0.19).
 
@@ -272,24 +274,26 @@ Arithmetic word problems now edge out puzzles as the biggest Reasoning bucket (1
 
 | Topic | Predicted | 80% band | 2026 | last-5 | 19-yr mean |
 |---|---|---|---|---|---|
-| **Number System & Boolean Logic** | **10** | 6–14 | 5 | 8.4 | 6.6 |
-| **Hardware OS & General CS** | **8** | 5–11 | 9 | 7.2 | 4.3 |
-| Networking & Internet | **1** | 0–4 | 6 | 1.2 | 0.4 |
-| Programming DS & Algorithms | **1** | 0–2 | 0 | 0.8 | 0.4 |
+| **Hardware OS & General CS** | **8.7** | 5–13 | 9 | 7.2 | 4.3 |
+| **Number System & Boolean Logic** | **8.7** | 4–14 | 5 | 8.4 | 6.6 |
+| Networking & Internet | **1.5** | 0–5 | 6 | 1.2 | 0.4 |
+| Programming DS & Algorithms | **1.1** | 0–3 | 0 | 0.8 | 0.4 |
 
-Networking is the one to watch: near-zero for 18 years, then **6 questions in 2026** (DNS, cookies, rendering engine, POP3 vs IMAP, HTTP, email protocols). The forecast is deliberately conservative — a single-year jump isn't a trend — but treat the 80% band as 1–6.
+**Changed in the 2026-09-30 re-audit** (shown to one decimal so the section adds up to 20). Computer is now forecast from the 20-question papers only (2023–2026, plain mean of shares). The all-years EWMA predicted Number System & Boolean at 13.1, 12.9, 12.2 and 11.5 for 2023–2026 against 12, 9, 8 and 5 asked, and Hardware/OS too low every time (6.5–7.5 against 8–9). On the 2024–2026 Computer topics the 2023+ mean scores 1.97 questions per topic against 2.45 for the all-years EWMA. The old forecast was 10.2 / 7.8 / 1.2 / 0.8.
+
+Networking is the one to watch: near-zero for 18 years, then **6 questions in 2026** (DNS, cookies, rendering engine, POP3 vs IMAP, HTTP, email protocols) — the first paper set from the [official revised syllabus](https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf), which names Web Browsing, Email and Online Security. One paper is not a trend, so the forecast stays at 1.5, but treat 0–6 as the realistic range and give it an evening or two.
 
 ### General English (10)
 
 | Topic | Predicted | 80% band | 2026 | last-5 | 19-yr mean |
 |---|---|---|---|---|---|
-| Grammar & Error Spotting | **3** | 0–6 | 4 | 4.4 | 3.9 |
-| Vocabulary (synonym/antonym) | **3** | 1–5 | 2 | 4.2 | 5.0 |
-| Reading Comprehension | **2** | 0–4 | 4 | 1.6 | 2.6 |
-| Fill in the Blanks | **1** | 0–4 | 1 | 1.8 | 3.2 |
-| Idioms & Phrases | **1** | 0–2 | 0 | 1.0 | 1.1 |
+| Grammar & Error Spotting | **3** | 0–7 | 4 | 4.4 | 3.9 |
+| Vocabulary (synonym/antonym) | **3** | 0–6 | 2 | 4.2 | 5.0 |
+| Reading Comprehension | **2** | 0–5 | 4 | 1.6 | 2.6 |
+| Fill in the Blanks | **1** | 0–5 | 1 | 1.8 | 3.2 |
+| Idioms & Phrases | **1** | 0–3 | 0 | 1.0 | 1.1 |
 | Analogy | **0** | 0–2 | 0 | 1.0 | 0.9 |
-| Sentence Arrangement | **0** | 0–0 | 0 | 0.0 | 0.4 |
+| Sentence Arrangement | **0** | 0–1 | 0 | 0.0 | 0.4 |
 
 Dead: **Sentence Arrangement (para jumbles)** — 0 questions since 2018. **Verbal analogy** is not in the 2027 syllabus but still appeared in 2021, 2022 and 2024 — low priority, not zero.
 
@@ -422,6 +426,8 @@ Vector algebra, para jumbles, verbal analogy, linear programming.
 After the forecast was built, it was checked against `resources/Nimcet 2027 Syllabus.pdf`.
 
 > ⚠ **Source caveat.** That PDF's own cover line reads *"Prepared by NIMCET Aspirant"* — it is a **third-party compilation, not an official NIMCET publication.** Treat everything below as corroboration, not authority. Verify against the official NIMCET brochure when it is released.
+>
+> **Checked 2026-09-30:** the official *"Revised Syllabus for NIMCET Exam (With effect from 2026)"* ([PDF](https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf)) lists the same topics, the same 50/40/20/10 split, and never mentions vectors or 3D. The points below therefore stand on the official text.
 
 ### What it confirms
 
@@ -460,7 +466,7 @@ The section split, the Math topic distribution and the recycling analysis are al
 - The section split (50/40/20/10) — 4 years of consistent evidence, ~0.9 confidence.
 - Vectors being gone — a clean syllabus signal confirmed by a 6 → 0 drop.
 - Re-use was real (134 hand-checked re-used questions) — but it has faded to 0.8% of the 2026 paper, so it is not an exploitable regularity for 2027 (audit correction).
-- Topic distribution to ±1.45 questions — this is the measured back-test error using official section sizes, not a guess.
+- Topic distribution to ±1.44 questions — this is the measured back-test error using official section sizes, not a guess.
 
 **What is not reliable:**
 - Any individual predicted question matching a real 2027 question. The predicted paper below reproduces *concept, structure, difficulty and style*, not content. Expect concept-level hits, not question-level ones.

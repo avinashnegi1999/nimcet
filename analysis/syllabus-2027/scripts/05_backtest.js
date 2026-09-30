@@ -7,6 +7,9 @@
 // Shares are computed inside each syllabus Part (Math/Reasoning/Computer/English) over
 // in-syllabus questions only, and scaled by that Part's size in the target paper.
 // 2015 has no Computer/English questions in the source, so those Parts skip 2015.
+// Computer doubled from 10 to 20 questions in 2023 and its unit mix moved with it (Data Representation over-predicted
+// in every paper 2023-2026). "+C-unit" methods keep each Computer chapter's share of its unit from the weighted history
+// but take the unit's total from the 20-question papers (2023+) only, once at least one exists (audit 2026-09-30).
 // Output: data/syllabus-2027/backtest.json
 const fs = require("fs"), path = require("path");
 const ROOT = path.resolve(__dirname, "../../..");
@@ -15,8 +18,9 @@ const L = fs.readFileSync(D("labels.jsonl"), "utf8").trim().split("\n").map(JSON
 const tax = JSON.parse(fs.readFileSync(D("taxonomy.json"), "utf8"));
 const YEARS = []; for (let y = 2008; y <= 2026; y++) YEARS.push(y);
 
-const chapters = []; // {code, part}
-for (const p of tax.parts) for (const u of p.units) for (const [code] of u.chapters) chapters.push({ code, part: p.section });
+const chapters = []; // {code, part, unit}
+for (const p of tax.parts) for (const u of p.units) for (const [code] of u.chapters) chapters.push({ code, part: p.section, unit: u.unit });
+const unitOf = Object.fromEntries(chapters.map(c => [c.code, c.unit]));
 const has = (part, y) => !(y === 2015 && (part === "Computer" || part === "English"));
 const cnt = {}, tot = {};
 for (const r of L) {
@@ -35,6 +39,17 @@ function ew(vals, h) { // exponentially weighted mean, most recent last; half-li
   let s = 0, w = 0; const n = vals.length;
   vals.forEach((v, i) => { const wi = Math.pow(0.5, (n - 1 - i) / h); s += wi * v; w += wi; });
   return { mean: s / w, weight: w };
+}
+// expected count with the Computer unit budget from 2023+ papers (see header); other Parts unchanged
+const REGIME = { Computer: 2023 };
+function lam(c, p, ys, N, h) {
+  const base = ew(ys.map(y => share(c, p, y)), h).mean;
+  const since = REGIME[p] && ys.filter(y => y >= REGIME[p]);
+  if (!since || !since.length) return base * N;
+  const unit = chapters.filter(ch => ch.part === p && ch.unit === unitOf[c]).map(ch => ch.code);
+  const all = unit.reduce((s, u) => s + ew(ys.map(y => share(u, p, y)), h).mean, 0);
+  const recent = unit.reduce((s, u) => s + since.reduce((t, y) => t + share(u, p, y), 0) / since.length, 0);
+  return all > 0 ? base / all * recent * N : 0;
 }
 const methods = {};
 // probability methods
@@ -57,6 +72,10 @@ methods["E:last-year"] = (c, p, ys, N) => share(c, p, ys[ys.length - 1]) * N;
 methods["E:mean-all"] = (c, p, ys, N) => ys.reduce((s, y) => s + share(c, p, y), 0) / ys.length * N;
 methods["E:mean-last5"] = (c, p, ys, N) => { const t = ys.slice(-5); return t.reduce((s, y) => s + share(c, p, y), 0) / t.length * N; };
 for (const h of [1, 2, 3, 4, 6, 8]) methods[`E:ew h${h}`] = (c, p, ys, N) => ew(ys.map(y => share(c, p, y)), h).mean * N;
+for (const h of [2, 6]) {
+  methods[`E:ew h${h} +C-unit`] = (c, p, ys, N) => lam(c, p, ys, N, h);
+  methods[`P:poisson-ew h${h} +C-unit`] = (c, p, ys, N) => 1 - Math.exp(-Math.max(lam(c, p, ys, N, h), 0.02));
+}
 
 const res = {};
 for (const m in methods) res[m] = { n: 0, brier: 0, logloss: 0, mae: 0, byPart: {} };
@@ -96,7 +115,7 @@ for (const m in calib) {
   for (const [p, h] of calib[m]) { const b = bins[Math.min(9, Math.floor(p * 10))]; b.n++; b.p += p; b.hit += h; }
   calTables[m] = bins.map((b, i) => ({ bin: `${i / 10}-${(i + 1) / 10}`, n: b.n, meanPred: b.n ? +(b.p / b.n).toFixed(3) : null, observed: b.n ? +(b.hit / b.n).toFixed(3) : null }));
 }
-// ---- nested Platt calibration of the chosen method (Poisson on weighted share, half-life 6) ----
+// ---- nested Platt calibration of the chosen method (Poisson on weighted share, half-life 6, Computer unit budget 2023+) ----
 // For each target T the calibration (a, b) is fitted only on predictions for targets 2012..T-1,
 // so the calibrated score is still an honest out-of-sample number.
 const logit = p => Math.log(p / (1 - p)), sig = z => 1 / (1 + Math.exp(-z)), cl = p => Math.min(0.99, Math.max(0.01, p));
@@ -104,7 +123,7 @@ const rows = [];
 for (let T = 2012; T <= 2026; T++) for (const ch of chapters) {
   if (!has(ch.part, T)) continue;
   const ys = YEARS.filter(y => y < T && has(ch.part, y));
-  rows.push({ T, z: logit(cl(methods["P:poisson-ew h6"](ch.code, ch.part, ys, OFFICIAL(ch.part, T)))), hit: x(ch.code, T) > 0 ? 1 : 0 });
+  rows.push({ T, z: logit(cl(methods["P:poisson-ew h6 +C-unit"](ch.code, ch.part, ys, OFFICIAL(ch.part, T)))), hit: x(ch.code, T) > 0 ? 1 : 0 });
 }
 function platt(rs) { let a = 1, b = 0; for (let it = 0; it < 3000; it++) { let ga = 0, gb = 0; for (const r of rs) { const e = sig(a * r.z + b) - r.hit; ga += e * r.z; gb += e; } a -= 0.5 * ga / rs.length; b -= 0.5 * gb / rs.length; } return [a, b]; }
 let cb = 0, cll = 0, cn = 0; const cbins = Array.from({ length: 10 }, () => ({ n: 0, p: 0, hit: 0 }));
@@ -115,7 +134,7 @@ for (let T = 2016; T <= 2026; T++) {
     const k = cbins[Math.min(9, Math.floor(p * 10))]; k.n++; k.p += p; k.hit += r.hit;
   }
 }
-const calibrated = { method: "P:poisson-ew h6 + nested Platt", n: cn, brier: +(cb / cn).toFixed(4), logloss: +(cll / cn).toFixed(4),
+const calibrated = { method: "P:poisson-ew h6 +C-unit + nested Platt", n: cn, brier: +(cb / cn).toFixed(4), logloss: +(cll / cn).toFixed(4),
   calibration: cbins.map((k, i) => ({ bin: `${i / 10}-${(i + 1) / 10}`, n: k.n, meanPred: k.n ? +(k.p / k.n).toFixed(3) : null, observed: k.n ? +(k.hit / k.n).toFixed(3) : null })) };
 // how often did the real count land inside the Poisson 10th-90th percentile range of the chosen count method?
 const pois = (lam, k) => { let s2 = 0, t = Math.exp(-lam); for (let i = 0; i <= k; i++) { s2 += t; t *= lam / (i + 1); } return s2; };
@@ -124,7 +143,7 @@ let inR = 0, rn = 0;
 for (let T = 2016; T <= 2026; T++) for (const ch of chapters) {
   if (!has(ch.part, T)) continue; const ys = YEARS.filter(y => y < T && has(ch.part, y));
   if (!ys.some(y => x(ch.code, y) > 0)) continue;
-  const [lo, hi] = rangeOf(methods["E:ew h6"](ch.code, ch.part, ys, OFFICIAL(ch.part, T))); const a = x(ch.code, T); rn++; if (a >= lo && a <= hi) inR++;
+  const [lo, hi] = rangeOf(methods["E:ew h6 +C-unit"](ch.code, ch.part, ys, OFFICIAL(ch.part, T))); const a = x(ch.code, T); rn++; if (a >= lo && a <= hi) inR++;
 }
 calibrated.rangeCoverage = +(inR / rn).toFixed(3); calibrated.rangeCoverageN = rn;
 console.log("likely-range coverage", calibrated.rangeCoverage, "of", rn);

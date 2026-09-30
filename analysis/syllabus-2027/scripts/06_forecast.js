@@ -2,6 +2,9 @@
 // Model (chosen by the back-test in 05_backtest.js, targets 2016-2026):
 //   share_c  = exponentially weighted mean of the chapter's share of its Part, half-life 6 papers
 //   E_c      = share_c x N_part(2027)            (N = 50 / 40 / 20 / 10)
+//              Computer only: E_c = share_c / (sum of share over its unit) x (unit's mean share in the 20-question
+//              papers, 2023+) x 20. Computer doubled in 2023 and the all-years weights kept over-predicting Data
+//              Representation (13.3/12, 13.1/9, 12.7/9, 12.4/5 for 2023-2026); this back-tests better (audit 2026-09-30).
 //   p_raw    = 1 - exp(-E_c)                      (Poisson: chance of >= 1 question)
 //   likelyRange = Poisson 10th-90th percentile of E; in the back-test it held the real count ~91% of the time
 //   P_c      = sigmoid(a * logit(p_raw) + b)      (Platt calibration fitted on 2012-2026 targets,
@@ -34,9 +37,21 @@ const share = (c, p, y) => x(c, y) / tot[p][y];
 const ew = (v, h) => { let s = 0, w = 0; const n = v.length; v.forEach((a, i) => { const wi = Math.pow(0.5, (n - 1 - i) / h); s += wi * a; w += wi; }); return s / w; };
 const logit = p => Math.log(p / (1 - p)), sig = z => 1 / (1 + Math.exp(-z)), cl = p => Math.min(0.99, Math.max(0.01, p));
 const chapters = []; for (const p of tax.parts) for (const u of p.units) for (const [code, name] of u.chapters) chapters.push({ code, name, part: p.section, unit: u.unit });
+const unitOf = Object.fromEntries(chapters.map(c => [c.code, c.unit]));
+// expected count; Computer takes its unit budget from the 20-question papers (see header). Same function as 05_backtest.js.
+const REGIME = { Computer: 2023 };
+function lam(c, p, ys, N, h) {
+  const base = ew(ys.map(y => share(c, p, y)), h);
+  const since = REGIME[p] && ys.filter(y => y >= REGIME[p]);
+  if (!since || !since.length) return base * N;
+  const unit = chapters.filter(ch => ch.part === p && ch.unit === unitOf[c]).map(ch => ch.code);
+  const all = unit.reduce((s, u) => s + ew(ys.map(y => share(u, p, y)), h), 0);
+  const recent = unit.reduce((s, u) => s + since.reduce((t, y) => t + share(u, p, y), 0) / since.length, 0);
+  return all > 0 ? base / all * recent * N : 0;
+}
 
 // ---- Platt calibration, fitted on rolling-origin predictions for targets 2012..2026 ----
-function rawP(c, p, ys, N, h) { return 1 - Math.exp(-Math.max(ew(ys.map(y => share(c, p, y)), h) * N, 0.02)); }
+function rawP(c, p, ys, N, h) { return 1 - Math.exp(-Math.max(lam(c, p, ys, N, h), 0.02)); }
 function fitPlatt(h) {
   const rows = [];
   for (let T = 2012; T <= 2026; T++) for (const ch of chapters) {
@@ -68,9 +83,8 @@ const out = [];
 for (const ch of chapters) {
   const ys = YEARS.filter(y => has(ch.part, y));
   const hist = Object.fromEntries(YEARS.map(y => [y, has(ch.part, y) ? x(ch.code, y) : null]));
-  const s6 = ew(ys.map(y => share(ch.code, ch.part, y)), 6), s2 = ew(ys.map(y => share(ch.code, ch.part, y)), 2);
   const N = N2027[ch.part];
-  const E = s6 * N, E2 = s2 * N;
+  const E = lam(ch.code, ch.part, ys, N, 6), E2 = lam(ch.code, ch.part, ys, N, 2);
   const P = sig(cal6.a * logit(cl(1 - Math.exp(-Math.max(E, 0.02)))) + cal6.b);
   const P2 = sig(cal2.a * logit(cl(1 - Math.exp(-Math.max(E2, 0.02)))) + cal2.b);
   const appeared = ys.filter(y => x(ch.code, y) > 0);
@@ -117,9 +131,9 @@ const off = tax.offSyllabus.map(([code, part, name]) => ({ code, part, chapter: 
   hist: Object.fromEntries(YEARS.map(y => [y, L.filter(r => r.code === code && r.year === y).length])), total: L.filter(r => r.code === code).length }));
 
 const result = {
-  generated: "2026-09-23", source: "19 NIMCET papers 2008-2026 (papers/), labels in data/syllabus-2027/labels.jsonl",
+  generated: "2026-09-30", source: "19 NIMCET papers 2008-2026 (papers/), labels in data/syllabus-2027/labels.jsonl",
   partSizes2027: N2027,
-  model: { halfLife: 6, calibration: { a: +cal6.a.toFixed(3), b: +cal6.b.toFixed(3), fittedOn: cal6.n + " chapter-year predictions (targets 2012-2026)" },
+  model: { halfLife: 6, computerUnitBudgetFrom: 2023, calibration: { a: +cal6.a.toFixed(3), b: +cal6.b.toFixed(3), fittedOn: cal6.n + " chapter-year predictions (targets 2012-2026)" },
     recencyVariant: { halfLife: 2, a: +cal2.a.toFixed(3), b: +cal2.b.toFixed(3) } },
   chapters: out, units, offSyllabus: off,
 };

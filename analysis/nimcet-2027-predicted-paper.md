@@ -3,7 +3,7 @@
 120 questions · 2 hours · +12 correct / −3 wrong.
 Structure follows the 2023–2026 pattern: **Math 50 · Reasoning 40 · Computer 20 · English 10.**
 
-Topic mix follows the 2026-09-02 re-verified forecast (each block header shows the forecast and its 80% band; the mock stays within every band, off by at most 2 per topic).
+Topic mix follows the 2026-09-02 re-verified forecast; the headers show the forecast and 80% band as updated in the 2026-09-30 re-audit (Computer now forecast from the 2023+ papers, bands widened to a true 80%). The mock stays within every band; the largest gap is arithmetic word problems (6 here, 9 forecast), and the Computer block keeps 10 number-system and 7 architecture questions against 8.7 each forecast — practise one extra architecture/OS topic on top.
 
 These are **newly written** questions built to match the concept, structure, difficulty and style that the 2008–2026 analysis says is most likely — not copies of old papers. `P` = estimated probability that a question of this concept-and-form appears in NIMCET 2027.
 
@@ -15,7 +15,7 @@ These are **newly written** questions built to match the concept, structure, dif
 
 # SECTION A — MATHEMATICS (Q1–Q50)
 
-## Calculus (8 questions — 2027 forecast 10, band 7–12)
+## Calculus (8 questions — 2027 forecast 10, band 6–13)
 
 
 ---
@@ -218,7 +218,7 @@ If `f(x) = ∫₀^(x²) ln(1 + t) dt`, then `f′(1)` equals
 > **Seen before in** — 2025 Q43 (`d/dx ∫_(sin x)^(sin 2x) e^(t²) dt`).
 
 
-## Algebra & Progressions (8 questions — 2027 forecast 6, band 4–8)
+## Algebra & Progressions (8 questions — 2027 forecast 6, band 3–9)
 
 
 ---
@@ -421,7 +421,7 @@ The 4th term of an HP is 1/5 and its 8th term is 1/9. Its 12th term is
 > **Seen before in** — 2022, 2019.
 
 
-## Trigonometry (7 questions — 2027 forecast 8, band 5–11)
+## Trigonometry (7 questions — 2027 forecast 8, band 4–12)
 
 
 ---
@@ -599,7 +599,7 @@ If `x − y·tan 35° = tan 25°·(y + x·tan 35°)` for some real x, y, then
 > **Seen before in** — 2026 Q54 (identical).
 
 
-## Coordinate & Conic Geometry (6 questions — 2027 forecast 7, band 4–9)
+## Coordinate & Conic Geometry (6 questions — 2027 forecast 7, band 4–10)
 
 
 ---
@@ -880,7 +880,7 @@ If `f(x) = (2x + 3)/(x − 1)` for `x ≠ 1`, then `f⁻¹(5)` equals
 > **Seen before in** — 2026 Q53; 2026 Q117.
 
 
-## Probability (5 questions — 2027 forecast 5, band 3–7)
+## Probability (5 questions — 2027 forecast 5, band 2–7)
 
 
 ---
@@ -1008,7 +1008,7 @@ Five fair coins are tossed. The probability of getting exactly 3 heads is
 > **Seen before in** — 2024; 2021; 2018.
 
 
-## Statistics (3 questions — 2027 forecast 4, band 2–5)
+## Statistics (3 questions — 2027 forecast 4, band 2–6)
 
 
 ---
@@ -1086,7 +1086,7 @@ An investigator lost one observation. The remaining values are 10, 12, 15, 18 an
 > **Seen before in** — 2026 Q34.
 
 
-## Permutation & Combination (3 questions — 2027 forecast 3, band 1–5)
+## Permutation & Combination (3 questions — 2027 forecast 3, band 0–6)
 
 
 ---
@@ -1299,7 +1299,7 @@ The remainder when `7¹⁰⁰` is divided by 5 is
 
 # SECTION B — ANALYTICAL ABILITY & LOGICAL REASONING (Q51–Q90)
 
-## Logical deduction & puzzles (10 questions — 2027 forecast 8, band 4–13)
+## Logical deduction & puzzles (10 questions — 2027 forecast 8, band 3–14)
 
 
 ---
@@ -1556,7 +1556,7 @@ A gaming device takes inputs X and Y and updates them each step as `X = XY/2` an
 > **Seen before in** — 2026 Q92 (identical update rule).
 
 
-## Arithmetic word problems (6 questions — 2027 forecast 9, band 3–15)
+## Arithmetic word problems (6 questions — 2027 forecast 9, band 1–17)
 
 
 ---
@@ -1711,7 +1711,7 @@ Rajan invests ₹15,860 for his three sons so that each receives the same amount
 > **Seen before in** — 2026 Q93 (₹15,860, three sons); 2025 Q1.
 
 
-## Number & letter series (4 questions — 2027 forecast 4, band 1–7)
+## Number & letter series (4 questions — 2027 forecast 4, band 0–8)
 
 
 ---
@@ -1814,7 +1814,7 @@ Complete the letter series: AZ, CX, EV, GT, …?
 > **Seen before in** — 2023; 2021; 2017.
 
 
-## Coding-decoding (4 questions — 2027 forecast 3, band 0–6)
+## Coding-decoding (4 questions — 2027 forecast 3, band 0–7)
 
 
 ---
@@ -1919,7 +1919,7 @@ If in a code `MOUSE` is written as `PRXVH`, then `TIGER` is written as
 > **Seen before in** — 2024; 2022; 2018.
 
 
-## Syllogism / statement-conclusion (4 questions — 2027 forecast 3, band 1–5)
+## Syllogism / statement-conclusion (4 questions — 2027 forecast 3, band 0–6)
 
 
 ---
@@ -2022,7 +2022,7 @@ Statement: Traffic congestion in the city has increased sharply over the last tw
 > **Seen before in** — 2026 Q63; 2026 Q69.
 
 
-## Seating arrangement (3 questions — 2027 forecast 3, band 0–8)
+## Seating arrangement (3 questions — 2027 forecast 3, band 0–9)
 
 
 ---
@@ -2104,7 +2104,7 @@ Seven students A–G sit in a row facing north. D sits exactly in the middle. A 
 > **Seen before in** — 2023; 2019; 2013.
 
 
-## Blood relations (3 questions — 2027 forecast 3, band 0–6)
+## Blood relations (3 questions — 2027 forecast 3, band 0–7)
 
 
 ---
@@ -2235,7 +2235,7 @@ If 1 January 2027 is a Friday, what day is 1 January 2028?
 > **Seen before in** — 2024; 2022; 2019.
 
 
-## Data interpretation (2 questions — 2027 forecast 1, band 0–4)
+## Data interpretation (2 questions — 2027 forecast 1, band 0–5)
 
 
 ---
@@ -2349,7 +2349,7 @@ Choose the odd one out.
 
 > **This section doubled in 2023 (10 → 20 questions) and has stayed at 19–22 for four years. It is now the highest marks-per-hour-of-study block in the paper.**
 
-## Number systems & Boolean logic (10 questions — 2027 forecast 10, band 6–14)
+## Number systems & Boolean logic (10 questions — 2027 forecast 8.7, band 4–14)
 
 
 ---
@@ -2602,7 +2602,7 @@ In 8-bit two's complement arithmetic, `10011001 + 01110111` gives
 > **Seen before in** — 2025 Q13.
 
 
-## Computer architecture, OS, memory (7 questions — 2027 forecast 8, band 5–11)
+## Computer architecture, OS, memory (7 questions — 2027 forecast 8.7, band 5–13)
 
 
 ---
@@ -2780,7 +2780,7 @@ Which statement correctly distinguishes system software from application softwar
 > **Seen before in** — 2026 Q9; 2023.
 
 
-## Networking & Internet (2 questions — 2027 forecast 1, band 0–4)
+## Networking & Internet (2 questions — 2027 forecast 1.5, band 0–5)
 
 
 ---
@@ -2833,7 +2833,7 @@ When a browser needs the IP address of a domain name that is not in its local ca
 > **Seen before in** — 2026 Q112; 2026 Q8.
 
 
-## Programming / data structures (1 question — 2027 forecast 1, band 0–2)
+## Programming / data structures (1 question — 2027 forecast 1.1, band 0–3)
 
 
 ---
@@ -2867,7 +2867,7 @@ Which C expression toggles bit `m` (0-indexed) of an unsigned 32-bit integer `x`
 
 > **English fell from 20 questions to 10 in 2023 and has stayed there. Cap your preparation time accordingly.**
 
-## Vocabulary (3 questions — 2027 forecast 3, band 1–5)
+## Vocabulary (3 questions — 2027 forecast 3, band 0–6)
 
 
 ---
@@ -2945,7 +2945,7 @@ Choose the antonym of **PROLIFIC**:
 > **Seen before in** — 2022; 2019.
 
 
-## Grammar & error spotting (2 questions — 2027 forecast 3, band 0–6)
+## Grammar & error spotting (2 questions — 2027 forecast 3, band 0–7)
 
 
 ---
@@ -2998,7 +2998,7 @@ Which sentence correctly expresses a sequence of past events?
 > **Seen before in** — 2026 Q18.
 
 
-## Fill in the blanks (2 questions — 2027 forecast 1, band 0–4)
+## Fill in the blanks (2 questions — 2027 forecast 1, band 0–5)
 
 
 ---
@@ -3051,7 +3051,7 @@ The man and the dog ______ through the forest when the storm broke.
 > **Seen before in** — 2025 Q28.
 
 
-## Reading comprehension (2 questions — 2027 forecast 2, band 0–4)
+## Reading comprehension (2 questions — 2027 forecast 2, band 0–5)
 
 
 ---
@@ -3104,7 +3104,7 @@ The man and the dog ______ through the forest when the storm broke.
 > **Seen before in** — 2026 Q16.
 
 
-## Idioms & phrases (1 question — 2027 forecast 1, band 0–2)
+## Idioms & phrases (1 question — 2027 forecast 1, band 0–3)
 
 
 ---

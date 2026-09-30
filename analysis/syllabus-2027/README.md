@@ -31,8 +31,12 @@ and tap-to-expand history, composition and latest questions per chapter. One sel
    ([`backtest.json`](../../data/syllabus-2027/backtest.json)).
 5. **Forecast** ([`06_forecast.js`](scripts/06_forecast.js)) — the winner: each chapter's share of its Part, weighted
    towards recent papers (half-life 6 papers), × the Part's 2027 size = expected questions; chance of ≥1 question =
-   Poisson, then calibrated on past years. Back-test: Brier 0.1635 vs 0.2497 for a flat guess (≈35% better); expected
-   count off by 0.86 questions per chapter on average. The "likely range" (Poisson 10th–90th percentile) held the real
+   Poisson, then calibrated on past years. **Computer** (since the 2026-09-30 re-audit): each unit's total comes from the
+   20-question papers (2023+) only, and its chapters share it by their weighted history — the all-paper version
+   over-predicted Data Representation in every paper 2023–2026 (13.3 vs 12, 13.1 vs 9, 12.7 vs 9, 12.4 vs 5). Back-test:
+   Brier 0.1637 vs 0.2497 for a flat guess (≈34% better) — but only ≈4% better than simply counting how often each
+   chapter was asked before (Brier 0.170), so most of the signal is that plain count; expected count off by 0.85
+   questions per chapter on average (0.86 before the Computer change; Computer alone 0.48 vs 0.49). The "likely range" (Poisson 10th–90th percentile) held the real
    count 91% of the time, so read it as a ~90% range. A recency-heavy variant (half-life 2) is reported next to it
    ([`forecast-2027.json`](../../data/syllabus-2027/forecast-2027.json)).
 6. **Page** ([`07_build_page.js`](scripts/07_build_page.js)).
@@ -51,14 +55,26 @@ Reproduce (Node.js only): run `01_prelabel` … `07_build_page` in [`scripts/`](
 - **2026 was set from the 2027 syllabus:** Vectors & 3D had 3–8 questions every year 2008–2025 and 0 in 2026; Internet &
   Email got 6 questions in 2026 (2 in all earlier papers), and two 2026 questions quote the syllabus wording ("Web
   Browsing", "Sending, receiving, and managing emails"). Only one such paper exists, so chapters where the recency-heavy
-  model disagrees by ≥10 points are flagged on the page.
+  model disagrees by ≥10 points are flagged on the page. The model still expects only 1.5 Internet & Email questions,
+  and Online Security, application software and utility programs have no past questions at all — they are in the
+  syllabus, small and factual, so cover them anyway.
 - **Trends:** Statistics rising and Problem Solving falling are the only borderline trends (q = 0.08 after correcting for
   69 chapters; not significant at 5%). Problem Solving is partly a catch-all label, so its fall is weaker evidence.
 - **Chapters differ a lot in breadth** ("Numerical Reasoning" = all arithmetic word problems; "Measurement of Angles" is
   tiny), so a high chance for a broad chapter is partly a matter of size.
 - **Caveats:** the 2015 source has no Computer/English questions (treated as missing, not zero); 8 questions have no text in
-  the source and 5 are within-paper duplicates (2012 Q117–120 repeat Q26–29; 2018 Q85 repeats Q80 — excluded); the syllabus PDF says "Compiled by NIMCET Aspirant" — check it
-  against the official notification.
+  the source and 5 are within-paper duplicates (2012 Q117–120 repeat Q26–29; 2018 Q85 repeats Q80 — excluded); 2012 Q63
+  is a broken image in the source and is not in the data. The syllabus PDF in this repo says "Compiled by NIMCET
+  Aspirant"; on 2026-09-30 its chapter list was checked against the
+  [official revised syllabus](https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf)
+  (in force from 2026) and matches it, including the 50/40/20/10 split and no vectors.
+
+## Re-audit (2026-09-30)
+
+All scripts `01`–`07` re-run from scratch and reproduced every output byte for byte before any change. Changed: the
+Computer unit budget (step 5 above), the page's baseline comparison and syllabus note. Every non-Computer chapter keeps
+its expected count; its calibrated chance moved by at most 0.2 points because the calibration is refitted. Details:
+[`../AUDIT-2026-09-30.md`](../AUDIT-2026-09-30.md).
 
 ## Audit (2026-09-23)
 
@@ -111,7 +127,7 @@ A self-audit re-checked the data and every claim:
 | Differentiability | 46% | 0.6 (0–2) | 7/19 |
 | Area Under Curve | 43% | 0.5 (0–2) | 9/19 |
 | Exponentials | 43% | 0.5 (0–1) | 7/19 |
-| Pair of Straight Line | 42% | 0.5 (0–1) | 7/19 |
+| Pair of Straight Line | 43% | 0.5 (0–1) | 7/19 |
 | Rectangular Cartesian System | 39% | 0.4 (0–1) | 9/19 |
 | Complex Numbers | 32% | 0.3 (0–1) | 5/19 |
 | Differential Equation | 31% | 0.3 (0–1) | 4/19 |
@@ -145,23 +161,23 @@ A self-audit re-checked the data and every claim:
 
 | Chapter | 2027 chance | Expected (likely range) | Asked in |
 |---|---:|---:|---:|
-| Boolean Algebra | 96% | 4.9 (2–8) | 16/18 |
-| Two's Complement | 86% | 2.7 (1–5) | 13/18 |
-| CPU & Instructions | 81% | 2.2 (0–4) | 9/18 |
-| Computer Memory | 77% | 1.9 (0–4) | 13/18 |
-| RAM, ROM & Cache | 68% | 1.4 (0–3) | 10/18 |
-| Binary & Hexadecimal | 68% | 1.4 (0–3) | 13/18 |
-| Character, Integer & Fraction Representation | 56% | 0.9 (0–2) | 9/18 |
-| Binary Arithmetic | 54% | 0.9 (0–2) | 8/18 |
-| Floating Point Representation | 51% | 0.8 (0–2) | 8/18 |
-| System Software | 48% | 0.7 (0–2) | 5/18 |
-| Internet & Web Browsing | 46% | 0.6 (0–2) | 3/18 |
-| Input/Output Devices | 42% | 0.5 (0–1) | 6/18 |
-| Storage Devices | 41% | 0.5 (0–1) | 4/18 |
-| Operating Systems | 28% | 0.3 (0–1) | 4/18 |
-| Email | 28% | 0.3 (0–1) | 1/18 |
-| Computer Organization | 26% | 0.2 (0–1) | 3/18 |
-| Backup Devices | 11% | 0.1 (0–0) | 1/18 |
+| Boolean Algebra | 94% | 3.9 (2–7) | 16/18 |
+| CPU & Instructions | 85% | 2.6 (1–5) | 9/18 |
+| Computer Memory | 81% | 2.2 (0–4) | 13/18 |
+| Two's Complement | 81% | 2.2 (0–4) | 13/18 |
+| RAM, ROM & Cache | 72% | 1.6 (0–3) | 10/18 |
+| Binary & Hexadecimal | 61% | 1.1 (0–3) | 13/18 |
+| Internet & Web Browsing | 60% | 1.1 (0–2) | 3/18 |
+| System Software | 57% | 0.9 (0–2) | 5/18 |
+| Character, Integer & Fraction Representation | 51% | 0.7 (0–2) | 9/18 |
+| Binary Arithmetic | 49% | 0.7 (0–2) | 8/18 |
+| Input/Output Devices | 46% | 0.6 (0–2) | 6/18 |
+| Floating Point Representation | 46% | 0.6 (0–2) | 8/18 |
+| Storage Devices | 44% | 0.6 (0–2) | 4/18 |
+| Email | 38% | 0.4 (0–1) | 1/18 |
+| Operating Systems | 34% | 0.3 (0–1) | 4/18 |
+| Computer Organization | 29% | 0.3 (0–1) | 3/18 |
+| Backup Devices | 12% | 0.1 (0–0) | 1/18 |
 | Input Devices | no record | – | 0/18 |
 | Output Devices | no record | – | 0/18 |
 | Utility Programs & Device Drivers | no record | – | 0/18 |
@@ -173,7 +189,7 @@ A self-audit re-checked the data and every claim:
 
 | Chapter | 2027 chance | Expected (likely range) | Asked in |
 |---|---:|---:|---:|
-| Word & Phrase Meanings | 92% | 3.4 (1–6) | 18/18 |
+| Word & Phrase Meanings | 91% | 3.4 (1–6) | 18/18 |
 | Grammatical Patterns | 86% | 2.6 (1–5) | 17/18 |
 | Comprehension of Written Text | 71% | 1.6 (0–3) | 14/18 |
 | Word Usage | 67% | 1.4 (0–3) | 15/18 |

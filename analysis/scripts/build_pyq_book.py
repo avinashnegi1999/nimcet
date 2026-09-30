@@ -45,12 +45,12 @@ C={
 }
 # ---- one page per row of the tier table in study-plan-by-tier.md: (file slug, page title, forecast Q, [(topic, heading label), ...])
 PAGES=[
-("S1","S1 · Number systems & Boolean logic","10",[("Number System & Boolean Logic","S1 · Number systems & Boolean logic")]),
+("S1","S1 · Number systems & Boolean logic","9",[("Number System & Boolean Logic","S1 · Number systems & Boolean logic")]),
 ("S2","S2 · Calculus","10",[("Calculus","S2 · Calculus")]),
 ("S3","S3 · Arithmetic word problems","9",[("Arithmetic (speed-time-work, ratio, %, mixture)","S3 · Arithmetic word problems")]),
 ("S4","S4 · Logical puzzles & conditional grouping","8",[("Logical Deduction & Puzzles","S4 · Logical puzzles & conditional grouping")]),
 ("S5","S5 · Trigonometry","8",[("Trigonometry","S5 · Trigonometry")]),
-("A1","A1 · Computer architecture, OS & memory","8",[("Hardware OS & General CS","A1 · Computer architecture, OS & memory")]),
+("A1","A1 · Computer architecture, OS & memory","9",[("Hardware OS & General CS","A1 · Computer architecture, OS & memory")]),
 ("A2","A2 · Coordinate & conic geometry","7",[("Coordinate & Conic Geometry","A2 · Coordinate & conic geometry")]),
 ("A3","A3 · Algebra & progressions","6",[("Algebra & Progressions","A3 · Algebra & progressions")]),
 ("A4","A4 · Probability","5",[("Probability","A4 · Probability")]),
