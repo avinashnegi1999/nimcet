@@ -155,12 +155,12 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 <body>
 <div class="wrap">
 
-<a class="newlink" href="syllabus-2027-heatmap.html"><b>New:</b> every chapter of the 2027 syllabus ranked by its chance of appearing in NIMCET 2027 &rarr;</a>
-<p class="auditnote">Audited and corrected on 2026-09-23 — re-use claims, trend tests, duplicate questions and a few figures were fixed. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/analysis/AUDIT-2026-09-23.md">What changed &rarr;</a><br>Re-audited 2026-09-30 — the Computer forecast now uses only the 20-question papers (2023 onward), intervals were widened to a true 80%, and the syllabus is checked against the official document. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/analysis/AUDIT-2026-09-30.md">What changed &rarr;</a></p>
+<a class="newlink" href="syllabus-2027-heatmap.html"><b>New:</b> every 2027-syllabus chapter, ranked by its chance of appearing &rarr;</a>
+<p class="auditnote">Audited 2026-09-23: re-use, trends and several figures were corrected. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/4-analysis/audits/2026-09-23.md">What changed &rarr;</a><br>Re-audited 2026-09-30: the Computer forecast was fixed and the ranges were widened to a true 80%. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/4-analysis/audits/2026-09-30.md">What changed &rarr;</a></p>
 <header class="mast">
   <div class="eyebrow">Forecast from 19 papers · 2,248 questions</div>
   <h1>NIMCET 2027 Forecast</h1>
-  <p class="dek">Every NIMCET paper from 2008 to 2026 was parsed, classified and back-tested to answer one question: what is most likely to be asked in June 2027, and how confident can we be about it?</p>
+  <p class="dek">All 19 NIMCET papers from 2008 to 2026 were parsed, classified and back-tested. What will June 2027 ask, and how sure can we be?</p>
   <div class="provenance">
     <div><b>19</b> papers parsed</div>
     <div><b>2,248</b> questions extracted</div>
@@ -171,7 +171,7 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 
 <section>
   <h2>The paper you will sit</h2>
-  <p class="sub">The section split is not a guess. NIMCET changed it in <b>2023</b> — not 2026 — and has held it for four consecutive papers.</p>
+  <p class="sub">NIMCET changed the split in <b>2023</b>, not 2026. It has held for four papers.</p>
   <div class="splits">
     <div class="split"><div class="name">Mathematics</div><div class="q">50</div><div class="meta">600 marks · unchanged since 2008</div></div>
     <div class="split"><div class="name">Analytical Ability &amp; Logical Reasoning</div><div class="q">40</div><div class="meta">480 marks · unchanged since 2008</div></div>
@@ -186,28 +186,28 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
     <div class="finding alert">
       <div class="stat" style="color:var(--reg)">6 &rarr; 0</div>
       <div class="lbl">Vectors is gone</div>
-      <p>Vector &amp; 3D questions ran at 3–8 per paper for 18 years, then collapsed to zero in 2026, and the <a href="https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf">official revised syllabus</a> (in force from 2026) does not list them. In 2026 Statistics (6), Sets &amp; Functions (6) and Algebra (7) sat above their recent averages — one paper only, so treat that as a hint about where the slots went, not a rule.</p>
+      <p>There were 3–8 vector &amp; 3D questions a paper for 18 years, then none in 2026. The <a href="https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf">official syllabus</a> (from 2026) drops them. In 2026 Statistics (6), Sets (6) and Algebra (7) rose, but that is one paper, so read it as a hint, not a rule.</p>
     </div>
     <div class="finding">
       <div class="stat">15% &rarr; 1%</div>
       <div class="lbl">Re-used questions have faded</div>
-      <p>Of 270 pairs the text detector flagged, 171 are real repeats when read one by one (134 re-used questions in all, including repeats a second detector found). Re-use peaked at 15% of the 2023 paper, then fell to 2.5% in 2025 and <b>0.8% in 2026</b>. Don't bank on old questions coming back in 2027.</p>
+      <p>134 re-used questions were found, all checked by hand. Re-use peaked at 15% of the 2023 paper, then fell to 2.5% in 2025 and <b>0.8% in 2026</b>. Don't count on repeats.</p>
     </div>
     <div class="finding">
       <div class="stat">1.44 vs 1.85</div>
       <div class="lbl">Don't just copy last year</div>
-      <p>Averaging the history predicts each topic to about ±1.45 questions — a slow exponential average, the last-5 mean and the all-years mean are a statistical tie. Predicting "same as last year" scores 1.85, clearly the worst.</p>
+      <p>Averaging past papers predicts each topic to about ±1.45 questions, and the three averages tie. Copying last year scores 1.85, clearly the worst.</p>
     </div>
   </div>
 </section>
 
 <section>
   <h2>Mathematics, topic by topic</h2>
-  <p class="sub">Blue bar is the 2027 prediction, pale band is the 80% interval from back-test residuals (widened on 2026-09-30: the old band held the real count only 73% of the time; this one held it 80% of the time in 2019–2026), red tick is what 2026 actually asked.</p>
+  <p class="sub">Blue bar: the 2027 prediction. Pale band: the 80% range, which held the real count 80% of the time in 2019–2026. Red tick: what 2026 asked.</p>
   <div class="bars" id="mathbars"></div>
   <div class="legend">
     <div><i style="background:var(--bubble)"></i>2027 prediction</div>
-    <div><i style="background:var(--bubble-wash)"></i>80% interval</div>
+    <div><i style="background:var(--bubble-wash)"></i>80% range</div>
     <div><i style="background:var(--reg);width:3px"></i>2026 actual</div>
   </div>
 
@@ -217,7 +217,7 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 
 <section>
   <h2>Nineteen years, one grid</h2>
-  <p class="sub">Questions per topic per paper. The last column is the 2027 prediction. 2015 stops at question 90 (faded column). 2012's image-only questions have been read; the source prints five questions twice inside the same paper (2012 Q117–120 = Q26–29, 2018 Q85 = Q80) and each is counted once here.</p>
+  <p class="sub">Questions per topic per paper. The last column is the 2027 prediction. 2015 stops at Q90 (faded column). Questions printed twice in one paper (2012 Q117–120, 2018 Q85) count once.</p>
   <div class="hm-tabs" role="group" aria-label="Choose section">
     <button aria-pressed="true" data-sec="Math">Mathematics</button>
     <button aria-pressed="false" data-sec="Reasoning">Reasoning</button>
@@ -233,7 +233,7 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 
 <section>
   <h2>The recycling evidence</h2>
-  <p class="sub">Candidates come from text similarity with every numeral masked; then every pair was read. 171 of the 270 flagged pairs are real repeats (147 the same question, 24 the same problem with new numbers); the other 99 were short maths stems that only looked alike. Whole multi-question puzzle sets have been lifted intact. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/analysis/recycled-questions-solved.md"><b>All fourteen written out in full, with worked solutions &rarr;</b></a></p>
+  <p class="sub">Every flagged pair was read by hand. 171 of the 270 are real repeats: 147 identical, and 24 with new numbers. The other 99 only looked alike. Whole puzzle sets were lifted intact. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/3-practice/reused-questions-solved.md"><b>All fourteen, solved &rarr;</b></a></p>
   <div class="scroller">
   <table class="data">
     <thead><tr><th>Question</th><th>Appeared in</th><th class="num">Gap</th></tr></thead>
@@ -258,17 +258,17 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 
   <h3>Where repeated questions come from</h3>
   <div class="bars" id="gapbars"></div>
-  <p class="sub" style="margin-top:14px">Counted once per re-use (a whole puzzle set counts once), gaps of 1, 2 and 4 years are about equally common. Re-use per paper: 17 in 2022, 18 in 2023, then 7, 3 and 1 in 2024–2026. Solve recent papers for their style and difficulty — not because their questions are likely to return.</p>
+  <p class="sub" style="margin-top:14px">Counted once per re-use, gaps of 1, 2 and 4 years are about equally common. Re-use per paper was 17 in 2022 and 18 in 2023, then 7, 3 and 1 in 2024–2026. Solve recent papers for their style, not for repeats.</p>
 </section>
 
 <section>
   <h2>Does the method actually work?</h2>
-  <p class="sub">Each method predicted year Y using only papers up to Y−1 and that year's official section sizes, scored against the real paper, for every target from 2015 to 2026. Error is in questions per topic.</p>
+  <p class="sub">Each method predicted every paper from 2015 to 2026 using only earlier papers. The error is in questions per topic.</p>
   <div class="scroller">
   <table class="data">
     <thead><tr><th>Method</th><th class="num">Mean abs. error</th><th>What it does</th></tr></thead>
     <tbody>
-      <tr><td class="best">EWMA α = 0.20, Computer from 2023+ papers &nbsp;<span class="tag s">selected</span></td><td class="num best">1.437</td><td>The row below, except Computer: mean share of the 20-question papers only (since 2026-09-30)</td></tr>
+      <tr><td class="best">EWMA α = 0.20, Computer from 2023+ papers &nbsp;<span class="tag s">selected</span></td><td class="num best">1.437</td><td>As below, but Computer uses only the 20-question papers</td></tr>
       <tr><td>EWMA α = 0.20</td><td class="num">1.450</td><td>Exponentially decaying weights over all 19 years</td></tr>
       <tr><td>Mean of last 5</td><td class="num">1.451</td><td>Flat recent window</td></tr>
       <tr><td>Mean of all years</td><td class="num">1.466</td><td>Long-run average share</td></tr>
@@ -278,33 +278,33 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
     </tbody>
   </table>
   </div>
-  <p class="sub" style="margin-top:14px">The top three are a statistical tie: EWMA α = 0.20 beats the last-5 mean by 0.001 ± 0.024 questions over 457 predictions. Only "same as last year" is clearly worse. The one change that does matter is <b>Computer</b>: it doubled to 20 questions in 2023 and its mix changed, and the all-years average over-predicted number systems in every paper since (13.1 vs 12, 12.9 vs 9, 12.2 vs 8, 11.5 vs 5). On the 2024–2026 Computer topics, the mean of the 20-question papers scores 1.97 against 2.45 for the all-years EWMA, so Computer is now forecast that way. English also changed size, but there the all-years EWMA still scores best, so it is unchanged.</p>
-  <p class="sub" style="margin-top:14px">All 39 topics were tested for a trend over 2008–2026 (Mann-Kendall) and the result corrected for testing that many at once. Only <b>Statistics rising</b> holds up (τ = +0.65 on question counts, corrected q = 0.011). The puzzle decline looks significant on its own (p = 0.007) but not after the correction (q = 0.13). Everything else is noise — which is why mean-reverting methods beat trend-following ones here.</p>
+  <p class="sub" style="margin-top:14px">The three averages tie: EWMA beats the last-5 mean by 0.001 ± 0.024 over 457 predictions. Copying last year is clearly worst. <b>Computer</b> is the one real gain. It doubled in 2023 and its mix changed, so the all-years average over-predicted number systems in every paper since (13.1 vs 12, 12.9 vs 9, 12.2 vs 8, 11.5 vs 5). Using only the 20-question papers cuts its error from 2.45 to 1.97. English stays unchanged, because its all-years average still scores best.</p>
+  <p class="sub" style="margin-top:14px">All 39 topics were tested for trends (Mann-Kendall, 2008–2026), with a correction for testing that many. Only <b>Statistics rising</b> holds up (τ = +0.65, q = 0.011). The fall in puzzles does not survive the correction (q = 0.13). The rest is noise, which is why averages beat trend-following methods.</p>
 </section>
 
 <section>
   <h2>What to study, in order</h2>
-  <p class="sub">Ranked by marks at stake against effort, at 12 marks per question. Re-verified 2026-09-02. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/analysis/study-plan-by-tier.md"><b>Chapter-by-chapter list of what to study inside each tier &rarr;</b></a></p>
+  <p class="sub">Ranked by marks at stake against effort, at 12 marks a question. <a href="https://github.com/avinashnegi1999/nimcet/blob/master/1-study-plan/README.md"><b>Chapter-by-chapter study plan &rarr;</b></a></p>
   <div class="scroller">
   <table class="data">
     <thead><tr><th>Priority</th><th>Area</th><th class="num">Q</th><th class="num">Marks</th><th>Why it ranks here</th></tr></thead>
     <tbody>
-      <tr><td><span class="tag s">Tier S</span></td><td>Number systems &amp; Boolean logic</td><td class="num">9</td><td class="num">108</td><td>One of the two big Computer blocks; mechanical and fully learnable. Falling since the 2023 split (12, 9, 8, 5), so 9 is an average, not a floor</td></tr>
-      <tr><td><span class="tag s">Tier S</span></td><td>Calculus</td><td class="num">10</td><td class="num">120</td><td>Largest Math topic, present in all 19 papers, zero syllabus risk</td></tr>
-      <tr><td><span class="tag s">Tier S</span></td><td>Arithmetic word problems</td><td class="num">9</td><td class="num">108</td><td>Sits in the Reasoning section; 13 questions in 2026, the biggest Reasoning block now</td></tr>
-      <tr><td><span class="tag s">Tier S</span></td><td>Logical puzzles &amp; conditional grouping</td><td class="num">8</td><td class="num">96</td><td>Largest Reasoning block for 19 years; whole puzzle sets have been re-used before (2009→2012, 2015→2017, 2018→2020, 2024→2025)</td></tr>
-      <tr><td><span class="tag s">Tier S</span></td><td>Trigonometry</td><td class="num">8</td><td class="num">96</td><td>Height &amp; distance appears almost every single year</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Architecture, OS, memory &amp; software</td><td class="num">9</td><td class="num">108</td><td>Grew with the doubled Computer section — 8–9 per paper since 2023, now level with number systems; broader to learn, so Tier A</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Coordinate &amp; conic geometry</td><td class="num">7</td><td class="num">84</td><td>Circle first — it is the most repeated sub-form</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Algebra &amp; progressions</td><td class="num">6</td><td class="num">72</td><td>Asked every year; its apparent decline is not statistically reliable</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Probability</td><td class="num">5</td><td class="num">60</td><td>Present in all 19 papers</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Sets, relations &amp; functions</td><td class="num">4</td><td class="num">48</td><td>6 questions in 2026, above its average</td></tr>
-      <tr><td><span class="tag a">Tier A</span></td><td>Statistics</td><td class="num">4</td><td class="num">48</td><td>The only trend that holds up statistically — rising; 6 questions in 2026</td></tr>
-      <tr><td><span class="tag b">Tier B</span></td><td>Series, coding-decoding, syllogism</td><td class="num">10</td><td class="num">120</td><td>Low effort, high volume — drill patterns, not theory</td></tr>
-      <tr><td><span class="tag b">Tier B</span></td><td>Seating, blood relations, clocks, direction</td><td class="num">8</td><td class="num">96</td><td>Fully mechanical once you have a notation</td></tr>
-      <tr><td><span class="tag b">Tier B</span></td><td>Grammar &amp; vocabulary</td><td class="num">6</td><td class="num">72</td><td>English is only 10 questions now — cap your time</td></tr>
-      <tr><td><span class="tag b">Tier C</span></td><td>P&amp;C, matrices, comprehension, internet &amp; email, small reasoning types</td><td class="num">~10</td><td class="num">~120</td><td>Bounded time. Internet &amp; email is forecast at 1.5 from history, but the first paper under the new syllabus (2026) asked 6 — give it one or two evenings, including online security</td></tr>
-      <tr><td><span class="tag no">Skip</span></td><td>Vector algebra, para jumbles, verbal analogy, linear programming</td><td class="num">0</td><td class="num">0</td><td>Not in the 2027 syllabus. Para jumbles last seen 2018; verbal analogy still appeared in 2022 and 2024, so skim it rather than zero it</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Number systems &amp; Boolean logic</td><td class="num">9</td><td class="num">108</td><td>Mechanical and fully learnable. Falling since 2023 (12, 9, 8, 5), so 9 is an average, not a floor</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Calculus</td><td class="num">10</td><td class="num">120</td><td>The largest Math topic, in all 19 papers</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Arithmetic word problems</td><td class="num">9</td><td class="num">108</td><td>In the Reasoning section; 13 in 2026, now the biggest Reasoning block</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Logical puzzles &amp; conditional grouping</td><td class="num">8</td><td class="num">96</td><td>The largest Reasoning block for 19 years; whole sets have been re-used</td></tr>
+      <tr><td><span class="tag s">Tier S</span></td><td>Trigonometry</td><td class="num">8</td><td class="num">96</td><td>Height &amp; distance appears almost every year</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Architecture, OS, memory &amp; software</td><td class="num">9</td><td class="num">108</td><td>8–9 a paper since 2023, level with number systems, but broader to learn</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Coordinate &amp; conic geometry</td><td class="num">7</td><td class="num">84</td><td>Do circles first: the most repeated form</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Algebra &amp; progressions</td><td class="num">6</td><td class="num">72</td><td>Asked every year; its dip is not significant</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Probability</td><td class="num">5</td><td class="num">60</td><td>In all 19 papers</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Sets, relations &amp; functions</td><td class="num">4</td><td class="num">48</td><td>6 in 2026, above its average</td></tr>
+      <tr><td><span class="tag a">Tier A</span></td><td>Statistics</td><td class="num">4</td><td class="num">48</td><td>The only real trend, rising; 6 in 2026</td></tr>
+      <tr><td><span class="tag b">Tier B</span></td><td>Series, coding-decoding, syllogism</td><td class="num">10</td><td class="num">120</td><td>Low effort, high volume: drill the patterns</td></tr>
+      <tr><td><span class="tag b">Tier B</span></td><td>Seating, blood relations, clocks, direction</td><td class="num">8</td><td class="num">96</td><td>Mechanical once you have a notation</td></tr>
+      <tr><td><span class="tag b">Tier B</span></td><td>Grammar &amp; vocabulary</td><td class="num">6</td><td class="num">72</td><td>English is only 10 questions: cap your time</td></tr>
+      <tr><td><span class="tag b">Tier C</span></td><td>P&amp;C, matrices, comprehension, internet &amp; email, small reasoning types</td><td class="num">~10</td><td class="num">~120</td><td>Bounded time. Internet &amp; email: 1.5 forecast, but 6 in 2026. Give it an evening or two, with online security</td></tr>
+      <tr><td><span class="tag no">Skip</span></td><td>Vector algebra, para jumbles, verbal analogy, linear programming</td><td class="num">0</td><td class="num">0</td><td>Off the syllabus. Para jumbles last seen in 2018; verbal analogy seen in 2022 and 2024, so skim it</td></tr>
     </tbody>
   </table>
   </div>
@@ -313,21 +313,21 @@ footer{margin-top:64px; padding-top:22px; border-top:1px solid var(--rule); font
 <section>
   <h2>What this forecast cannot do</h2>
   <div class="note">
-    <p class="kicker">Read this before you trust any number above.</p>
+    <p class="kicker">Read this before trusting any number above.</p>
     <ul>
-      <li><b>No individual question is predicted.</b> The generated 2027 paper reproduces concept, structure and difficulty — not content. Expect concept-level hits, never question-level ones.</li>
-      <li><b>Small topics are noise.</b> Permutation &amp; combination, number theory and complex numbers sit at 0–3 questions, so their intervals run to zero. Do not over-read them.</li>
-      <li><b>The source papers have gaps.</b> 2015 stops at Q90, 2019 has 6 questions marked "Not Available", 2012 has 2 garbled entries and its Q63 is a broken image (so 2012 has 119 questions), so pre-2016 trends carry more uncertainty than the tables suggest. The source also prints five questions twice inside the same paper; each is counted once.</li>
-      <li><b>A new syllabus revision would invalidate this.</b> The split and the vectors call match the <a href="https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf">official revised syllabus</a> in force from 2026 (checked 2026-09-30). If NIMCET revises it again for 2027, re-check both first.</li>
-      <li><b>Only one paper has been set from the new syllabus.</b> 2026 added Internet &amp; Email (6 questions) and asked fewer number-system questions (5). One paper cannot show whether that is the new normal, so the Computer forecast uses the 2023–2026 average and its intervals are wide.</li>
-      <li><b>Raw detector counts overstate re-use.</b> 99 of the 270 pairs the text detector flagged were false matches, so only hand-checked repeats are used above. The detector can also miss heavily reworded repeats, so the confirmed figure is a careful floor — but it clearly shows re-use fading since 2024.</li>
+      <li><b>No single question is predicted.</b> The mock paper matches concepts and difficulty, not content.</li>
+      <li><b>Small topics are noise.</b> P&amp;C, number theory and complex numbers sit at 0–3 questions, and their ranges reach zero.</li>
+      <li><b>The sources have gaps.</b> 2015 stops at Q90. 2019 has 6 missing questions. 2012 has 2 garbled entries and a broken image (Q63). So trends before 2016 are less certain.</li>
+      <li><b>A new syllabus change would break this.</b> The split and the vectors call match the <a href="https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf">official syllabus</a> (checked 2026-09-30). If NIMCET revises it for 2027, re-check both.</li>
+      <li><b>Only one paper uses the new syllabus.</b> 2026 added Internet &amp; Email (6) and cut number systems (5). One paper cannot set a trend, so Computer uses the 2023–2026 average, with wide ranges.</li>
+      <li><b>Detector counts overstate re-use.</b> 99 of 270 flagged pairs were false, so only hand-checked repeats count. Heavily reworded repeats can be missed, so the figure is a floor. Even so, the fall since 2024 is clear.</li>
     </ul>
   </div>
 </section>
 
 <footer>
-  New 2027-syllabus chapter view: <a href="syllabus-2027-heatmap.html">syllabus-2027-heatmap.html</a> · audit notes: <span class="mono">analysis/AUDIT-2026-09-23.md</span>, <span class="mono">analysis/AUDIT-2026-09-30.md</span>.<br>
-  Built from <span class="mono">papers/nimcet-2008.pdf</span> … <span class="mono">nimcet-2026.pdf</span>. Full report in <span class="mono">analysis/nimcet-2027-prediction.md</span>; the generated paper in <span class="mono">analysis/nimcet-2027-predicted-paper.md</span>, whose 67 computable answers are checked by <span class="mono">analysis/verify_predicted_paper.py</span>.
+  Chapter view: <a href="syllabus-2027-heatmap.html">syllabus-2027-heatmap.html</a> · audits: <span class="mono">4-analysis/audits/</span><br>
+  Built from <span class="mono">papers/nimcet-2008.pdf</span> … <span class="mono">nimcet-2026.pdf</span>. Full report: <span class="mono">4-analysis/README.md</span>. Mock paper: <span class="mono">3-practice/mock-paper-2027.md</span>; its 67 computable answers are checked by <span class="mono">scripts/check_mock_answers.py</span>.
 </footer>
 </div>
 

@@ -154,7 +154,7 @@
     <div>
       <p class="eyebrow">NIMCET 2027 · 2027 syllabus · from 19 papers (2008–2026)</p>
       <h1>The 2027 <span class="hot">Heat</span> Map</h1>
-      <p class="lede">Every chapter of the 2027 syllabus, ranked by its chance of appearing in NIMCET 2027 — most likely at the top. Bars run cool&nbsp;→&nbsp;hot with that chance. Tap a chapter to see its history and latest questions.</p>
+      <p class="lede">Every 2027-syllabus chapter, ranked by its chance of appearing, with the most likely at the top. Tap a chapter to see its history and latest questions.</p>
     </div>
     <button class="toggle" id="themeBtn" type="button" aria-label="Toggle theme">◐ theme</button>
   </header>
@@ -337,21 +337,21 @@ const nb = document.getElementById("notes");
 const note = (title, items) => { const ul = el("ul"); for (const it of items) { const li = el("li"); for (const part of it) li.append(typeof part === "string" ? document.createTextNode(part) : part); ul.append(li); } nb.append(el("div", { class: "note" }, el("h3", { text: title }), ul)); };
 const B = t => el("b", { text: t });
 note("How sure is this?", [
-  ["The chance is ", B("how often chapters like this appeared"), ", worked out from all 19 papers with recent papers counting more — not a promise."],
-  ["Tested by predicting each paper 2016–2026 from earlier papers only: ", B(Math.round(100 * (1 - DATA.brier / DATA.flat)) + "% better"), " than giving every chapter the same chance, but only ", B(Math.round(100 * (1 - DATA.brier / DATA.freq)) + "% better"), " than simply counting how often each chapter was asked before — most of the signal is that plain count."],
-  ["The expected count was off by about ", B(DATA.mae.toFixed(1) + " questions per chapter"), " on average. The likely range beside it held the real count ", B(Math.round(100 * DATA.coverage) + "% of the time"), " — plan with the range, not the exact number."],
-  [B("Computer: "), "the section doubled to 20 questions in 2023, and the all-paper average over-predicted Data Representation in every paper since (13.3 vs 12, 13.1 vs 9, 12.7 vs 9, 12.4 vs 5). So each Computer unit's total now comes from the 20-question papers (2023–2026) only; chapters inside a unit still share it by their full history. Internet & Email got 6 questions in 2026, the first paper set from the new syllabus, against 1.5 expected — and Online Security, application software and utility programs are in the syllabus with no past questions yet. They are small and factual: cover them."],
-  [B("↑ / ↓ recent"), " marks chapters where a model that trusts only the latest papers disagrees by 10+ points. 2026 was clearly set from this syllabus — two questions quote it word for word (“Web Browsing”, “Sending, receiving, and managing emails”) — so give ↑ chapters a little extra time."],
+  ["The chance comes from ", B("how often a chapter appeared"), " in all 19 papers, with recent papers weighted more. It is not a promise."],
+  ["Back-tested on 2016–2026: ", B(Math.round(100 * (1 - DATA.brier / DATA.flat)) + "% better"), " than a flat guess, but only ", B(Math.round(100 * (1 - DATA.brier / DATA.freq)) + "% better"), " than counting past appearances."],
+  ["The expected count is off by about ", B(DATA.mae.toFixed(1) + " questions per chapter"), ". The likely range held the real count ", B(Math.round(100 * DATA.coverage) + "% of the time"), ", so plan with the range, not the exact number."],
+  [B("Computer: "), "each unit's total comes from the 20-question papers (2023–2026) only, because using all papers over-predicted Data Representation every year. Internet & Email had 6 questions in 2026 against 1.5 expected. Online Security, application software and utility programs have no past questions yet, but they are in the syllabus, small and factual, so cover them."],
+  [B("↑ / ↓ recent"), " marks chapters where a recent-papers model disagrees by 10+ points. The 2026 paper quotes this syllabus word for word, so give ↑ chapters a little extra time."],
 ]);
 note("Patterns worth knowing", [
-  [B("Re-use of old questions has dropped sharply: "), DATA.recycled2023 + "% of the 2023 paper was re-used, only " + DATA.recycled2026 + "% of 2026. Expect new questions on the same chapters, not copies."],
-  [B("Chapters are noisy, units less so: "), "a typical chapter swings by 1–3 questions from paper to paper (Numerical Reasoning by up to ~5), so covering a whole unit is safer than betting on one chapter. (There is no solid evidence of a fixed quota per unit — only Trigonometry and Verbal Reasoning hint at it.)"],
+  [B("Re-use has almost stopped: "), DATA.recycled2023 + "% of the 2023 paper, but only " + DATA.recycled2026 + "% of 2026. Expect new questions on the same chapters."],
+  [B("Cover whole units: "), "a chapter swings by 1–3 questions from paper to paper (Numerical Reasoning by up to ~5)."],
   [B("Dropped from the syllabus: "), DATA.off.slice(0, 3).map(o => o.name.replace(/ \(.*$/, "") + " (" + o.tot + " past Q)").join(", ") + " — not ranked here. Vectors & 3D already had 0 questions in 2026."],
-  ["Chapters differ a lot in size: “Numerical Reasoning” covers all arithmetic word problems, “Measurement of Angles” is tiny. Tap a row to see what it ", B("includes"), "."],
-  ["The syllabus file in this repo says “Compiled by NIMCET Aspirant”; its chapter list matches the ", el("a", { href: "https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf", text: "official revised syllabus" }), " (in force from 2026, checked 2026-09-30)."],
+  ["Chapter sizes differ: “Numerical Reasoning” covers all arithmetic word problems, while “Measurement of Angles” is tiny. Tap a row to see what it ", B("includes"), "."],
+  ["The chapter list matches the ", el("a", { href: "https://cdnbbsr.s3waas.gov.in/s33e6260b81898beacda3d16db379ed329/uploads/2025/09/1757566062.pdf", text: "official syllabus" }), " (checked 2026-09-30)."],
 ]);
 
-document.getElementById("foot").append("Built from 19 papers (papers/nimcet-2008 … 2026.pdf), " + DATA.total + " questions, each read and placed in a 2027-syllabus chapter. Data: data/syllabus-2027/ · method & reproducible scripts: analysis/syllabus-2027/. Older topic-wise heat map: ", el("a", { href: "index.html", text: "index.html" }), " · whole-paper forecast: ", el("a", { href: "forecast.html", text: "forecast.html" }), ".");
+document.getElementById("foot").append("Built from 19 papers, " + DATA.total.toLocaleString() + " questions, each placed in a 2027-syllabus chapter. Method: 4-analysis/chapter-forecast.md · scripts: scripts/chapter-forecast/ · data: data/syllabus-2027/. Topic heat map: ", el("a", { href: "index.html", text: "index.html" }), " · forecast: ", el("a", { href: "forecast.html", text: "forecast.html" }), ".");
 
 // ---- theme ----
 document.getElementById("themeBtn").addEventListener("click", () => {
