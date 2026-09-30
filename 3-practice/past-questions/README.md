@@ -1,0 +1,24 @@
+# Past questions by chapter
+
+Every question from 19 papers (2008–2026), in full, one page per row of the [study plan](../../1-study-plan/README.md).
+
+Each question is printed as the PDF gave it. A few fraction-heavy options come out garbled; when in doubt, check the paper in [`papers/`](../../papers/). Chapters follow the [study plan](../../1-study-plan/README.md). Most years have no official answer key; the best-known repeats are solved in [re-used questions, solved](../reused-questions-solved.md).
+
+| Page | Area | 2027 Q | Questions on page | Chapters |
+|---|---|:---:|:---:|---|
+| [S1.md](S1.md) | S1 · Number systems & Boolean logic | 9 | 125 | Number systems and conversions (34); Signed numbers (1's / 2's complement, overflow) (30); Floating point (7); Boolean algebra, SOP/POS, K-maps (37); Logic gates and circuits (14); Other forms (3) |
+| [S2.md](S2.md) | S2 · Calculus | 10 | 160 | Limits (23); Continuity and differentiability (18); Differentiation (17); Application of derivatives (tangent, normal, maxima–minima, rates) (36); Indefinite integration (16); Definite integration (32); Area under curves (10); Differential equations (1); Other forms (7) |
+| [S3.md](S3.md) | S3 · Arithmetic word problems | 9 | 127 | Percentages, profit and loss, interest (31); Ratio, proportion, averages, mixtures (37); Time, speed and distance (22); Time and work, pipes (6); Ages (13); Equations and number puzzles (18) |
+| [S4.md](S4.md) | S4 · Logical puzzles & conditional grouping | 8 | 194 | Conditional grouping and selection sets (47); Attribute matching (who has what) (16); Ordering and ranking (40); Truth-tellers and liars (8); Rules, processes and simulations (50); Verbal reasoning (course of action, assumptions, arguments) (14); Other forms (19) |
+| [S5.md](S5.md) | S5 · Trigonometry | 8 | 133 | Heights and distances (18); Identities and values (60); Trigonometric equations and solutions (20); Inverse trigonometric functions (3); Properties of triangles (15); Other forms (17) |
+| [A1.md](A1.md) | A1 · Computer architecture, OS & memory | 9 | 81 | CPU, registers and instruction execution (24); Memory hierarchy, cache and storage (42); I/O, OS and software (15) |
+| [A2.md](A2.md) | A2 · Coordinate & conic geometry | 7 | 116 | Straight lines and pairs of lines (51); Circles (17); Parabola (12); Ellipse (15); Hyperbola (8); Other loci and areas (13) |
+| [A3.md](A3.md) | A3 · Algebra & progressions | 6 | 117 | Quadratic equations and polynomials (39); Progressions (AP, GP, HP) and means (48); Logarithms, indices and exponentials (21); Binomial theorem and coefficients (4); Other forms (5) |
+| [A4.md](A4.md) | A4 · Probability | 5 | 88 | Classical probability (dice, coins, cards, selections) (36); Conditional probability, independence and Bayes (28); Binomial, geometric and expectation (18); Other forms (6) |
+| [A5.md](A5.md) | A5 · Sets, relations & functions | 4 | 59 | Set counting and inclusion–exclusion (35); Set algebra and identities (13); Relations and functions (11) |
+| [A6.md](A6.md) | A6 · Statistics | 4 | 45 | Mean, median, mode (23); Dispersion (mean deviation, variance, SD) (16); Distributions, regression, correlation (6) |
+| [B1.md](B1.md) | B1 · Series, coding-decoding, syllogism | 10 | 167 | Number series (49); Letter and alphanumeric series (14); Figure and table patterns (10); Letter-shift and letter-number codes (32); Code languages and symbol substitution (20); Two-statement syllogisms (27); Multi-statement and logical-consequence sets (15) |
+| [B2.md](B2.md) | B2 · Seating, blood relations, clocks, direction | 8 | 179 | Circular and polygon tables (21); Rows, lines and two rows facing (29); Floors, stacks and schedules (23); Coded relations and one-line statements (24); Family puzzles (couples, professions, colours) (35); Clocks (hands, gaining/losing) (17); Calendars (12); Direction sense (18) |
+| [B3.md](B3.md) | B3 · Grammar & vocabulary | 6 | 169 | Synonyms (95); Subject–verb agreement and tenses (22); Active/passive and reported speech (10); Error spotting, articles, prepositions, spelling (42) |
+| [C.md](C.md) | Tier C · P&C, matrices, comprehension, networking, small reasoning types | ~10 | 347 | Arrangements of letters and digits (28); Selections and distributions (17); Geometric and identity counting (23); Systems of linear equations (12); Determinants (13); Matrix algebra (16); Passages (50); Fill in the blanks (60); Idioms and phrasal verbs (20); Networking and the web (8); Mathematical logic (2); Divisibility, remainders, HCF/LCM (22); Charts and tables (17); Venn diagrams, figures, cubes and dice (22); Data sufficiency (8); Odd one out (14); Complex numbers (4); Differential equations (4); Programming and compilers (7) |
+| [Skip.md](Skip.md) | Skip · Vectors & 3D, para jumbles, verbal analogy | 0 | 133 | Vectors and 3D (off syllabus since 2026 — reference only) (101); Sentence arrangement (7); Analogies (25) |
